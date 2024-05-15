@@ -11,7 +11,7 @@
   background: red;
   width: 15cqw;
   height: 30cqw;
-  transition: 600ms ease;
+  transition: opacity 600ms ease;
   transition-delay: 1200ms;
 }
 
@@ -24,7 +24,7 @@
   background: green;
   width: 45cqw;
   height: 20cqw;
-  transition: 600ms ease;
+  transition: opacity 600ms ease;
   transition-delay: 1100ms;
 }
 
@@ -37,8 +37,10 @@
   background: blue;
   width: 100cqw;
   height: 25cqw;
-  transition: 800ms ease;
-  transition-delay: 300ms;
+  transition:
+    transform 800ms ease-in,
+    opacity 200ms ease;
+  transition-delay: 300ms, 100ms;
 }
 
 .slide.past {
@@ -53,7 +55,8 @@
   }
 
   .landing-layer-3 {
+    opacity: 0;
     transform: translate(-50%, 230%) scale(3);
-    transition-delay: 200ms;
+    transition-delay: 200ms, 700ms;
   }
 }
