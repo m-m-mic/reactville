@@ -1,4 +1,4 @@
-import { Slide, SlideState } from "../types/slide.type.ts";
+import { Slide, SlideState } from "@/shared/types/slide.type";
 
 export const getSlideState = (slideId: string, slideStack: Slide[]): SlideState => {
   if (slideStack.length > 0 && slideId === slideStack[slideStack.length - 1].id) {

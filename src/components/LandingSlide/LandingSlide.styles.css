@@ -4,8 +4,8 @@
   top: 50%;
   transform: translate(-50%, 10%);
   background: red;
-  width: 40vw;
-  height: 200px;
+  width: 40cqw;
+  height: 30cqw;
 }
 
 .level-2 {
@@ -14,8 +14,8 @@
   top: 50%;
   transform: translate(-50%, -30%);
   background: green;
-  width: 60vw;
-  height: 300px;
+  width: 60cqw;
+  height: 30cqw;
 }
 
 .level-3 {
@@ -24,6 +24,6 @@
   top: 50%;
   transform: translate(-50%, -50%);
   background: blue;
-  width: 80vw;
-  height: 400px;
+  width: 80cqw;
+  height: 30cqw;
 }

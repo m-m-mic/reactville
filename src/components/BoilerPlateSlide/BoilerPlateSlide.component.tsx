@@ -15,11 +15,7 @@ export default function BoilerPlateSlide({ slideStack, setNextSlide, returnToLas
         <button onClick={goToTourStart}>Start the Tour!</button>
         <button onClick={() => returnToLastSlide()}>Return</button>
       </div>
-      <div className="background">
-        <div className="level-1"></div>
-        <div className="level-2"></div>
-        <div className="level-3"></div>
-      </div>
+      <div className="background"></div>
     </div>
   );
 }
