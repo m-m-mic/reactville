@@ -1,40 +1,40 @@
-.landing {
-  z-index: 25;
+.boilerplate {
+  z-index: 24;
 }
 
-.landing-layer-1 {
+.boilerplate-layer-1 {
   opacity: 1;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-240%, -30%);
-  background: red;
+  background: #d6b261;
   width: 15cqw;
   height: 30cqw;
-  transition: 600ms ease;
+  transition: 400ms ease;
   transition-delay: 1200ms;
 }
 
-.landing-layer-2 {
+.boilerplate-layer-2 {
   opacity: 1;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-10%, -30%);
-  background: green;
+  background: #e8ca86;
   width: 45cqw;
   height: 20cqw;
-  transition: 600ms ease;
+  transition: 400ms ease;
   transition-delay: 1100ms;
 }
 
-.landing-layer-3 {
+.boilerplate-layer-3 {
   opacity: 1;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, 15%);
-  background: blue;
+  background: #92c16b;
   width: 100cqw;
   height: 25cqw;
   transition: 800ms ease;
@@ -42,18 +42,35 @@
 }
 
 .slide.past {
-  .landing-layer-1 {
+  .boilerplate-layer-1 {
     opacity: 0;
     transition-delay: 0ms;
   }
 
-  .landing-layer-2 {
+  .boilerplate-layer-2 {
     opacity: 0;
     transition-delay: 100ms;
   }
 
-  .landing-layer-3 {
-    transform: translate(-50%, 230%) scale(3);
+  .boilerplate-layer-3 {
+    transform: translate(-50%, 200%) scale(3);
     transition-delay: 200ms;
+  }
+}
+
+.slide.future {
+  .boilerplate-layer-1 {
+    opacity: 0;
+    transition-delay: 0ms;
+  }
+
+  .boilerplate-layer-2 {
+    opacity: 0;
+    transition-delay: 100ms;
+  }
+
+  .boilerplate-layer-3 {
+    transform: translate(-50%, -30%) scale(0);
+    transition-delay: 300ms;
   }
 }

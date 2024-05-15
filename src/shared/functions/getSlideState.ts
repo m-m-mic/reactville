@@ -4,7 +4,8 @@ export const getSlideState = (slideId: string, slideStack: Slide[]): SlideState 
   if (slideStack.length > 0 && slideId === slideStack[slideStack.length - 1].id) {
     return SlideState.Present;
   }
-  const pastSlides = [...slideStack].splice(-1);
+  const pastSlides = [...slideStack];
+  pastSlides.splice(-1);
   for (const slide of pastSlides) {
     if (slideId === slide.id) {
       return SlideState.Past;
