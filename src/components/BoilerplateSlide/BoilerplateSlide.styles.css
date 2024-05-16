@@ -74,7 +74,7 @@
 
   .boilerplate-layer-3 {
     opacity: 0;
-    transform: translate(-50%, -30%) scale(0);
+    transform: translate(-50%, -30%) scale(0.4);
     transition-delay: 200ms, 700ms;
   }
 }
