@@ -25,9 +25,12 @@ export default function App() {
   };
 
   return (
-    <div className={`view-container ${getAspectRatioClass()}`}>
-      <LandingSlide slideStack={slideStack} setNextSlide={setNextSlide} returnToLastSlide={returnToLastSlide} />
-      <BoilerplateSlide slideStack={slideStack} setNextSlide={setNextSlide} returnToLastSlide={returnToLastSlide} />
-    </div>
+    <>
+      <div className={`view-container ${getAspectRatioClass()}`}>
+        <LandingSlide slideStack={slideStack} setNextSlide={setNextSlide} returnToLastSlide={returnToLastSlide} />
+        <BoilerplateSlide slideStack={slideStack} setNextSlide={setNextSlide} returnToLastSlide={returnToLastSlide} />
+      </div>
+      <img className="city-background" src="/tourCityBackground.svg" alt="" />
+    </>
   );
 }

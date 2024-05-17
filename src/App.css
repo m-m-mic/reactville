@@ -2,7 +2,6 @@
   container: viewport / inline-size;
   position: relative;
   aspect-ratio: 16 / 9;
-  background: #646cff;
   overflow: hidden;
 
   &.landscape {
@@ -12,4 +11,13 @@
   &.portrait {
     height: 100vh;
   }
+}
+
+.city-background {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+  width: 100vw;
+  z-index: -1;
 }

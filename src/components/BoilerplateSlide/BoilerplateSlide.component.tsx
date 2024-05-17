@@ -24,9 +24,9 @@ export default function BoilerplateSlide({ slideStack, setNextSlide, returnToLas
         <button onClick={() => returnToLastSlide()}>Return</button>
       </div>
       <div className="background">
-        <div className="boilerplate-layer-3"></div>
-        <div className="boilerplate-layer-2"></div>
-        <div className="boilerplate-layer-1"></div>
+        <img className="boilerplate-layer-3" src="/tourRouter/tourRouter_move.svg" alt="" />
+        <img className="boilerplate-layer-2" src="/tourRouter/tourRouter_fade1.svg" alt="" />
+        <img className="boilerplate-layer-1" src="/tourRouter/tourRouter_fade2.svg" alt="" />
       </div>
     </div>
   );
