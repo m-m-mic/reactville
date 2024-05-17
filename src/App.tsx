@@ -27,10 +27,11 @@ export default function App() {
   return (
     <>
       <div className={`view-container ${getAspectRatioClass()}`}>
+        <div className="inset-shadow"></div>
         <LandingSlide slideStack={slideStack} setNextSlide={setNextSlide} returnToLastSlide={returnToLastSlide} />
         <BoilerplateSlide slideStack={slideStack} setNextSlide={setNextSlide} returnToLastSlide={returnToLastSlide} />
+        <img className="city-background" src="/tourCityBackground.svg" alt="" />
       </div>
-      <img className="city-background" src="/tourCityBackground.svg" alt="" />
     </>
   );
 }

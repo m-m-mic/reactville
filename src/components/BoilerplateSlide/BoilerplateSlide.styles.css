@@ -50,7 +50,7 @@
 
   .boilerplate-layer-3 {
     opacity: 0;
-    transform: translate(-50%, 10%) scale(3);
+    transform: translate(-40%, -30%) scale(3);
     transition-delay: 200ms, 500ms;
   }
 }
