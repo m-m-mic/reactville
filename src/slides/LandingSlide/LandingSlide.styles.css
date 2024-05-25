@@ -18,7 +18,7 @@
   transition:
     transform 800ms ease-out,
     opacity 200ms ease;
-  transition-delay: 700ms, 800ms;
+  transition-delay: 800ms, 900ms;
 
   #landing-fade-4-animation {
     animation: scroll-fade-4 310s infinite linear;
