@@ -1,0 +1,46 @@
+.rv-button {
+  font: inherit;
+  padding: 0.6cqw 1cqw;
+  border: none;
+  box-sizing: border-box;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 100px;
+  gap: 8px;
+  transition: 300ms ease-out;
+  outline: 0.2cqw solid #fcd2d2;
+  background: #fcd2d2;
+  outline-offset: 0.2cqw;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2cqw;
+  color: #b50000;
+
+  &.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  &:not(.disabled) {
+    &:focus,
+    &:hover {
+      transform: scale(1.07);
+      outline: 0.2cqw solid #fcd2d2;
+      outline-offset: -0.1cqw;
+    }
+
+    &:active {
+      transform: scale(1);
+      outline: 0.2cqw solid #fcd2d2;
+      outline-offset: -0.1cqw;
+    }
+  }
+}
+
+.icon-wrapper {
+  display: flex;
+}

@@ -4,9 +4,9 @@ import "./App.css";
 import "./shared/styles/slide.css";
 import { Slide, SlideId } from "@/shared/types/slide.type";
 import { GetOrientation } from "@/shared/functions/getOrientation";
-import LandingSlide from "@/components/LandingSlide/LandingSlide.component";
-import BoilerplateSlide from "@/components/BoilerplateSlide/BoilerplateSlide.component";
-import TourPagesSlide from "@/components/TourPagesSlide/TourPagesSlide.component";
+import LandingSlide from "@/slides/LandingSlide/LandingSlide.component";
+import BoilerplateSlide from "@/slides/BoilerplateSlide/BoilerplateSlide.component";
+import TourPagesSlide from "@/slides/TourPagesSlide/TourPagesSlide.component";
 
 export default function App() {
   const [slideStack, setSlideStack] = useState<Slide[]>([{ id: SlideId.Landing, variant: 0 }]);

@@ -2,6 +2,7 @@ import { SlideId, SlideProps, SlideState } from "@/shared/types/slide.type";
 import { getSlideState } from "@/shared/functions/getSlideState";
 import "./TourPagesSlide.styles.css";
 import { useEffect, useState } from "react";
+import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 
 export default function TourPagesSlide({ slideStack, setNextSlide, returnToLastSlide }: SlideProps) {
   const SLIDE_ID = SlideId.TourPages;
@@ -19,6 +20,10 @@ export default function TourPagesSlide({ slideStack, setNextSlide, returnToLastS
   const goToTourComponentsSimple = () => {
     setNextSlide({ id: SlideId.TourComponents, variant: 0 });
   };
+
+  if (isRemovedFromViewport(SLIDE_ID, slideStack[slideStack.length - 1].id)) {
+    return null;
+  }
 
   return (
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
