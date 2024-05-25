@@ -42,7 +42,7 @@ export default function TourPagesSlide({ slideStack, setNextSlide, returnToLastS
         </div>
         <div className="panel folder-structure">folder here</div>
       </div>
-      <TourPagesBackground />
+      <TourPagesBackground className="background" />
     </div>
   );
 }

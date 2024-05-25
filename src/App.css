@@ -4,11 +4,11 @@
   aspect-ratio: 16 / 9;
   overflow: hidden;
 
-  &.landscape {
+  &.portrait {
     width: 100vw;
   }
 
-  &.portrait,
+  &.landscape,
   &.exact {
     height: 100vh;
   }

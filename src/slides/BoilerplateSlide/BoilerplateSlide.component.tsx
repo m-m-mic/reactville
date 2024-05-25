@@ -31,7 +31,6 @@ export default function BoilerplateSlide({ slideStack, setNextSlide, returnToLas
           <RvButton onClick={() => returnToLastSlide()} label="Back to Start" />
         </div>
       </div>
-      <div className="background"></div>
     </div>
   );
 }

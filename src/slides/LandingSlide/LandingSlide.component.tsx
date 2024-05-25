@@ -33,10 +33,10 @@ export default function LandingSlide({ slideStack, setNextSlide }: SlideProps) {
       <div className="foreground">
         <div className="landing-buttons">
           <RvButton onClick={goToBoilerplateSlide} label="Let's go!" />
-          <RvButton onClick={goToQuickSelectSlide} label="Quick Select" />
+          <RvButton onClick={goToQuickSelectSlide} disabled={true} label="Quick Select" />
         </div>
       </div>
-      <LandingBackground />
+      <LandingBackground className="background" />
     </div>
   );
 }
