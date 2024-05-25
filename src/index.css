@@ -13,6 +13,9 @@
   -moz-osx-font-smoothing: grayscale;
 
   --main-transition-duration: 1600ms;
+
+  --rv-button-background: #fff;
+  --rv-button-foreground: #000;
 }
 
 body {

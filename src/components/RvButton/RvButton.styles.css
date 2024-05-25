@@ -11,13 +11,13 @@
   border-radius: 100px;
   gap: 8px;
   transition: 300ms ease-out;
-  outline: 0.2cqw solid #fcd2d2;
-  background: #fcd2d2;
+  outline: 0.2cqw solid var(--rv-button-background);
+  background: var(--rv-button-background);
   outline-offset: 0.2cqw;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.2cqw;
-  color: #b50000;
+  color: var(--rv-button-foreground);
 
   &.disabled {
     pointer-events: none;
@@ -26,16 +26,21 @@
   }
 
   &:not(.disabled) {
-    &:focus,
     &:hover {
       transform: scale(1.07);
-      outline: 0.2cqw solid #fcd2d2;
+      outline: 0.2cqw solid var(--rv-button-background);
+      outline-offset: -0.1cqw;
+    }
+
+    &:focus {
+      transform: scale(1.07);
+      outline: 0.2cqw solid var(--rv-button-foreground);
       outline-offset: -0.1cqw;
     }
 
     &:active {
       transform: scale(1);
-      outline: 0.2cqw solid #fcd2d2;
+      outline: 0.2cqw solid var(--rv-button-background);
       outline-offset: -0.1cqw;
     }
   }

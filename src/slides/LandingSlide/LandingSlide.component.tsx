@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 
-import LandingSvg from "./LandingSlide.svg?react";
+import LandingBackground from "./LandingSlide.svg?react";
 
 export default function LandingSlide({ slideStack, setNextSlide }: SlideProps) {
   const SLIDE_ID = SlideId.Landing;
@@ -36,9 +36,7 @@ export default function LandingSlide({ slideStack, setNextSlide }: SlideProps) {
           <RvButton onClick={goToQuickSelectSlide} label="Quick Select" />
         </div>
       </div>
-      <div className="background">
-        <LandingSvg />
-      </div>
+      <LandingBackground />
     </div>
   );
 }
