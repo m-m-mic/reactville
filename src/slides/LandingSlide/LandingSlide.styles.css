@@ -28,11 +28,11 @@
 
 @keyframes scroll-fade-4 {
   0% {
-    transform: translate(-80cqw, 0);
+    transform: translate(-55%, 0);
   }
 
   100% {
-    transform: translate(40cqw, 0);
+    transform: translate(25%, 0);
   }
 }
 
@@ -45,17 +45,17 @@
 
   #landing-fade-3-animation {
     animation: scroll-fade-3 400s infinite linear;
-    animation-delay: -170s;
+    animation-delay: -120s;
   }
 }
 
 @keyframes scroll-fade-3 {
   0% {
-    transform: translate(-35cqw, 0);
+    transform: translate(-20%, 0);
   }
 
   100% {
-    transform: translate(80cqw, 0);
+    transform: translate(60%, 0);
   }
 }
 
@@ -74,11 +74,11 @@
 
 @keyframes scroll-fade-2 {
   0% {
-    transform: translate(-75cqw, 0);
+    transform: translate(-50%, 0);
   }
 
   100% {
-    transform: translate(25cqw, 0);
+    transform: translate(20%, 0);
   }
 }
 
@@ -91,17 +91,17 @@
 
   #landing-fade-1-animation {
     animation: scroll-fade-1 210s infinite linear;
-    animation-delay: -40s;
+    animation-delay: -50s;
   }
 }
 
 @keyframes scroll-fade-1 {
   0% {
-    transform: translate(-20cqw, 0);
+    transform: translate(-15%, 0);
   }
 
   100% {
-    transform: translate(80cqw, 0);
+    transform: translate(55%, 0);
   }
 }
 
@@ -120,22 +120,22 @@
 
 @keyframes float {
   0% {
-    transform: translate(0, 20px);
+    transform: translate(0, 1%);
   }
 
   50% {
-    transform: translate(0, 0px);
+    transform: translate(0, 0);
   }
 
   100% {
-    transform: translate(0, 20px);
+    transform: translate(0, 1%);
   }
 }
 
 .slide.past {
   #landing-fade-1 {
     opacity: 0;
-    transform: translate(0, -50cqw);
+    transform: translate(0, -50%);
     transition:
       transform 800ms ease-in,
       opacity 200ms ease;
@@ -144,7 +144,7 @@
 
   #landing-fade-2 {
     opacity: 0;
-    transform: translate(0, -50cqw);
+    transform: translate(0, -50%);
     transition:
       transform 800ms ease-in,
       opacity 200ms ease;
@@ -153,7 +153,7 @@
 
   #landing-fade-3 {
     opacity: 0;
-    transform: translate(0, -50cqw);
+    transform: translate(0, -50%);
     transition:
       transform 800ms ease-in,
       opacity 200ms ease;
@@ -162,7 +162,7 @@
 
   #landing-fade-4 {
     opacity: 0;
-    transform: translate(0, -50cqw);
+    transform: translate(0, -50%);
     transition:
       transform 800ms ease-in,
       opacity 200ms ease;
@@ -171,7 +171,7 @@
 
   #landing-move {
     opacity: 0;
-    transform: translate(0, -50cqw);
+    transform: translate(0, -50%);
     transition:
       transform 800ms ease-in,
       opacity 200ms ease;
