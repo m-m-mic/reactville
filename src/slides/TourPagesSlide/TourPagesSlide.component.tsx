@@ -4,6 +4,8 @@ import "./TourPagesSlide.styles.css";
 import { useEffect, useState } from "react";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 
+import TourPagesBackground from "./tourPagesSlide.background.svg?react";
+
 export default function TourPagesSlide({ slideStack, setNextSlide, returnToLastSlide }: SlideProps) {
   const SLIDE_ID = SlideId.TourPages;
 
@@ -40,11 +42,7 @@ export default function TourPagesSlide({ slideStack, setNextSlide, returnToLastS
         </div>
         <div className="panel folder-structure">folder here</div>
       </div>
-      <div className="background">
-        <img className="tourPages-move" src="/tourPages/tourPages_move.svg" alt="" />
-        <img className="tourPages-fade-1" src="/tourPages/tourPages_fade1.svg" alt="" />
-        <img className="tourPages-fade-2" src="/tourPages/tourPages_fade2.svg" alt="" />
-      </div>
+      <TourPagesBackground />
     </div>
   );
 }

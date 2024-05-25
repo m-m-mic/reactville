@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3840 2160">
+  <g id="tourPages-move">
+    <g id="tourPages-move-animation">
+      <rect y="1469" width="3841" height="700" style="fill: #4f8bc6; stroke-width: 0px;"/>
+      <rect x="-1" y="1315" width="3840" height="259" style="fill: #89baf4; stroke-width: 0px;"/>
+      <rect x="1949" y="637" width="1892" height="678" style="fill: #a2cef9; stroke-width: 0px;"/>
+      <g>
+        <rect x="-1" y="813" width="1570" height="502" style="fill: #a2cef9; stroke-width: 0px;"/>
+        <path d="M1549,623H-1v190h1570v-170c0-11.05-8.95-20-20-20Z" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      </g>
+      <path d="M1969,447h1852c11.04,0,20,8.96,20,20v170h-1892v-170c0-11.04,8.96-20,20-20Z" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <rect x="2597" y="637" width="656" height="678" style="fill: #bbe0ff; stroke-width: 0px;"/>
+      <rect x="2009" y="715" width="120" height="154" rx="5" ry="5" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <rect x="2204" y="715" width="120" height="154" rx="5" ry="5" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <rect x="2399" y="715" width="120" height="154" rx="5" ry="5" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <rect x="2670" y="715" width="120" height="154" rx="5" ry="5" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <rect x="2865" y="715" width="120" height="154" rx="5" ry="5" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <rect x="3060" y="715" width="120" height="154" rx="5" ry="5" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <rect x="3331" y="715" width="120" height="154" rx="5" ry="5" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <rect x="3526" y="715" width="120" height="154" rx="5" ry="5" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <rect x="3721" y="715" width="120" height="154" rx="5" ry="5" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <path d="M2039,1102h110c2.76,0,5,2.24,5,5v209h-120v-209c0-2.76,2.24-5,5-5Z" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <path d="M2532.04,1064h-536.08c-10.31,0-16.52-11.44-10.9-20.08l44.89-69.01c2.4-3.69,6.5-5.91,10.9-5.91h446.3c4.4,0,8.5,2.22,10.9,5.91l44.89,69.01c5.62,8.65-.58,20.08-10.9,20.08Z" style="fill: #75b3f2; stroke-width: 0px;"/>
+      <rect x="2218" y="1102" width="275" height="163" rx="5" ry="5" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <path d="M3044,1102h110c2.76,0,5,2.24,5,5v209h-120v-209c0-2.76,2.24-5,5-5Z" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <path d="M2657.27,1064h535.46c10.45,0,16.73-11.59,11.04-20.35l-44.67-68.67c-2.43-3.73-6.58-5.99-11.04-5.99h-446.12c-4.45,0-8.61,2.25-11.04,5.99l-44.67,68.67c-5.7,8.76.59,20.35,11.04,20.35Z" style="fill: #75b3f2; stroke-width: 0px;"/>
+      <rect x="2677.52" y="1102" width="124.88" height="163" rx="5" ry="5" transform="translate(5479.93 2367) rotate(-180)" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <rect x="2858.5" y="1102" width="118.5" height="163" rx="5" ry="5" transform="translate(5835.5 2367) rotate(-180)" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <path d="M823,983h605c23.18,0,42,18.82,42,42h0c0,8.28-6.72,15-15,15h-659c-8.28,0-15-6.72-15-15h0c0-23.18,18.82-42,42-42Z" style="fill: #75b3f2; stroke-width: 0px;"/>
+      <path d="M1070,1081h110c2.76,0,5,2.24,5,5v230h-120v-230c0-2.76,2.24-5,5-5Z" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <rect x="1295" y="1081" width="120" height="154" rx="5" ry="5" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <rect x="835" y="1081" width="120" height="154" rx="5" ry="5" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <rect x="836" y="861" width="237" height="82" rx="5" ry="5" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <rect x="1178" y="861" width="237" height="82" rx="5" ry="5" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <rect x="113" y="861" width="120" height="154" rx="5" ry="5" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <rect x="308" y="861" width="120" height="154" rx="5" ry="5" style="fill: #5ca6ff; stroke-width: 0px;"/>
+      <rect x="503" y="861" width="120" height="154" rx="5" ry="5" style="fill: #5ca6ff; stroke-width: 0px;"/>
+    </g>
+  </g>
+  <g id="tourPages-fade-1">
+    <g id="tourPages-fade-1-animation">
+      <g>
+        <path d="M1460.17,1268.72h-159c-2.76,0-5,2.24-5,5v3c0,2.76,2.24,5,5,5h71v39.38l-5.69.04c-17.56.12-31.95,14.5-32.06,32.06l-.08,12.64,14,.09.08-12.64c.07-9.95,8.21-18.09,18.16-18.16l12.5-.08h0s12.64.09,12.64.09c9.94.07,18.09,8.21,18.16,18.16l.08,12.64,14-.09-.08-12.64c-.12-17.56-14.5-31.94-32.06-32.06l-5.64-.04v-39.39h74c2.76,0,5-2.24,5-5v-3c0-2.76-2.24-5-5-5Z" style="fill: #e8f9fc; stroke-width: 0px;"/>
+        <path d="M1286,1302h-44v-74c0-2.76-2.24-5-5-5h-4c-2.76,0-5,2.24-5,5v138h14v-46.25c0-2.07,1.68-3.75,3.75-3.75h38.5c2.07,0,3.75,1.68,3.75,3.75v46.25h12v-59c0-2.76-2.24-5-5-5h-9Z" style="fill: #e8f9fc; stroke-width: 0px;"/>
+        <path d="M1471,1302h44s0-74,0-74c0-2.76,2.24-5,5-5h4c2.76,0,5,2.24,5,5v74s0,14,0,14v50h-14v-46.25c0-2.07-1.68-3.75-3.75-3.75h-38.5c-2.07,0-3.75,1.68-3.75,3.75v46.25h-12v-50s0-9,0-9c0-2.76,2.24-5,5-5h9Z" style="fill: #e8f9fc; stroke-width: 0px;"/>
+      </g>
+      <g>
+        <path d="M2733.67,1294.72h-159c-2.76,0-5,2.24-5,5v3c0,2.76,2.24,5,5,5h71v39.38l-5.69.04c-17.56.12-31.95,14.5-32.06,32.06l-.08,12.64,14,.09.08-12.64c.07-9.95,8.21-18.09,18.16-18.16l12.5-.08h0s12.64.09,12.64.09c9.94.07,18.09,8.21,18.16,18.16l.08,12.64,14-.09-.08-12.64c-.12-17.56-14.5-31.94-32.06-32.06l-5.64-.04v-39.39h74c2.76,0,5-2.24,5-5v-3c0-2.76-2.24-5-5-5Z" style="fill: #e8f9fc; stroke-width: 0px;"/>
+        <path d="M2559.5,1328h-44v-74c0-2.76-2.24-5-5-5h-4c-2.76,0-5,2.24-5,5v138h14v-46.25c0-2.07,1.68-3.75,3.75-3.75h38.5c2.07,0,3.75,1.68,3.75,3.75v46.25h12v-59c0-2.76-2.24-5-5-5h-9Z" style="fill: #e8f9fc; stroke-width: 0px;"/>
+        <path d="M2744.5,1328h44s0-74,0-74c0-2.76,2.24-5,5-5h4c2.76,0,5,2.24,5,5v74s0,14,0,14v50h-14v-46.25c0-2.07-1.68-3.75-3.75-3.75h-38.5c-2.07,0-3.75,1.68-3.75,3.75v46.25h-12v-50s0-9,0-9c0-2.76,2.24-5,5-5h9Z" style="fill: #e8f9fc; stroke-width: 0px;"/>
+      </g>
+      <g>
+        <path d="M2285.67,1340.22h-159c-2.76,0-5,2.24-5,5v3c0,2.76,2.24,5,5,5h71v39.38l-5.69.04c-17.56.12-31.95,14.5-32.06,32.06l-.08,12.64,14,.09.08-12.64c.07-9.95,8.21-18.09,18.16-18.16l12.5-.08h0s12.64.09,12.64.09c9.94.07,18.09,8.21,18.16,18.16l.08,12.64,14-.09-.08-12.64c-.12-17.56-14.5-31.94-32.06-32.06l-5.64-.04v-39.39h74c2.76,0,5-2.24,5-5v-3c0-2.76-2.24-5-5-5Z" style="fill: #e8f9fc; stroke-width: 0px;"/>
+        <path d="M2111.5,1373.5h-44v-74c0-2.76-2.24-5-5-5h-4c-2.76,0-5,2.24-5,5v138h14v-46.25c0-2.07,1.68-3.75,3.75-3.75h38.5c2.07,0,3.75,1.68,3.75,3.75v46.25h12v-59c0-2.76-2.24-5-5-5h-9Z" style="fill: #e8f9fc; stroke-width: 0px;"/>
+        <path d="M2296.5,1373.5h44s0-74,0-74c0-2.76,2.24-5,5-5h4c2.76,0,5,2.24,5,5v74s0,14,0,14v50h-14v-46.25c0-2.07-1.68-3.75-3.75-3.75h-38.5c-2.07,0-3.75,1.68-3.75,3.75v46.25h-12v-50s0-9,0-9c0-2.76,2.24-5,5-5h9Z" style="fill: #e8f9fc; stroke-width: 0px;"/>
+      </g>
+    </g>
+  </g>
+  <g id="tourPages-fade-2">
+    <g id="tourPages-fade-2-animation">
+      <g>
+        <circle cx="1138" cy="1299" r="24" style="fill: #2b82d8; stroke-width: 0px;"/>
+        <path d="M1159.8,1364.06l9.52,58.06c4,24.4-12.76,46.89-34.95,46.89h-18.53c-25.05,0-42.24-28.21-33.06-54.28l9.05-25.69,13.11-37.24c13.49-38.33,47.83-30.65,54.87,12.27Z" style="fill: #2b82d8; stroke-width: 0px;"/>
+      </g>
+      <g>
+        <circle cx="1795.54" cy="1270.5" r="24" style="fill: #2b82d8; stroke-width: 0px;"/>
+        <path d="M1817.34,1335.56l9.52,58.06c4,24.4-12.76,46.89-34.95,46.89h-18.53c-25.05,0-42.24-28.21-33.06-54.28l9.05-25.69,13.11-37.24c13.49-38.33,47.83-30.65,54.87,12.27Z" style="fill: #2b82d8; stroke-width: 0px;"/>
+      </g>
+      <g>
+        <circle cx="2450.06" cy="1367.33" r="24" style="fill: #2b82d8; stroke-width: 0px;"/>
+        <path d="M2428.26,1432.39l-9.52,58.06c-4,24.4,12.76,46.89,34.95,46.89h18.53c25.05,0,42.24-28.21,33.06-54.28l-9.05-25.69-13.11-37.24c-13.49-38.33-47.83-30.65-54.87,12.27Z" style="fill: #2b82d8; stroke-width: 0px;"/>
+      </g>
+    </g>
+  </g>
+</svg>

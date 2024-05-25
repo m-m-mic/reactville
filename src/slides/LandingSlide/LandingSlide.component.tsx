@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 
-import LandingBackground from "./LandingSlide.svg?react";
+import LandingBackground from "./LandingSlide.background.svg?react";
 
 export default function LandingSlide({ slideStack, setNextSlide }: SlideProps) {
   const SLIDE_ID = SlideId.Landing;
