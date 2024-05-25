@@ -13,7 +13,7 @@ export default function BoilerplateSlide({ slideStack, setNextSlide, returnToLas
   }, [slideStack]);
 
   const goToTourStart = () => {
-    setNextSlide({ id: SlideId.TourStart, variant: 0 });
+    setNextSlide({ id: SlideId.TourPages, variant: 0 });
   };
 
   return (
@@ -23,11 +23,7 @@ export default function BoilerplateSlide({ slideStack, setNextSlide, returnToLas
         <button onClick={goToTourStart}>Start the Tour!</button>
         <button onClick={() => returnToLastSlide()}>Return</button>
       </div>
-      <div className="background">
-        <img className="boilerplate-layer-3" src="/tourRouter/tourRouter_move.svg" alt="" />
-        <img className="boilerplate-layer-2" src="/tourRouter/tourRouter_fade1.svg" alt="" />
-        <img className="boilerplate-layer-1" src="/tourRouter/tourRouter_fade2.svg" alt="" />
-      </div>
+      <div className="background"></div>
     </div>
   );
 }

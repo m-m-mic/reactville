@@ -23,14 +23,17 @@ export default function LandingSlide({ slideStack, setNextSlide }: SlideProps) {
   return (
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
-        <span>Landing!</span>
-        <button onClick={goToBoilerplateSlide}>Let's go!</button>
-        <button onClick={goToQuickSelectSlide}>Quick Select</button>
+        <div className="landing-buttons">
+          <button onClick={goToBoilerplateSlide}>Let's go!</button>
+          <button onClick={goToQuickSelectSlide}>Quick Select</button>
+        </div>
       </div>
       <div className="background">
-        <div className="landing-layer-3"></div>
-        <div className="landing-layer-2"></div>
-        <div className="landing-layer-1"></div>
+        <img className="landing-fade-1" src="/landing/landing_fade1.svg" alt="" />
+        <img className="landing-fade-4" src="/landing/landing_fade4.svg" alt="" />
+        <img className="landing-move" src="/landing/landing_move.svg" alt="" />
+        <img className="landing-fade-2" src="/landing/landing_fade2.svg" alt="" />
+        <img className="landing-fade-3" src="/landing/landing_fade3.svg" alt="" />
       </div>
     </div>
   );

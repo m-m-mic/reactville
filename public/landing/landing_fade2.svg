@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Fade_Layer_2" data-name="Fade Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3840 2160">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="2297.5" y="1268.67" width="529" height="167.05" rx="83.53" ry="83.53"/>
+  <circle class="cls-1" cx="2451.79" cy="1284.53" r="83.14"/>
+  <circle class="cls-1" cx="2552.72" cy="1284.92" r="112.92"/>
+  <circle class="cls-1" cx="2654.03" cy="1314.31" r="112.92"/>
+  <circle class="cls-1" cx="2653.65" cy="1387.39" r="98.61"/>
+  <circle class="cls-1" cx="2553.11" cy="1368.06" r="98.61"/>
+  <circle class="cls-1" cx="2425.5" cy="1368.06" r="98.61"/>
+</svg>

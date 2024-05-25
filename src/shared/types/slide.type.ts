@@ -13,7 +13,8 @@ export enum SlideId {
   Landing = "landing",
   QuickSelect = "quickSelect",
   Boilerplate = "boilerplate",
-  TourStart = "tourStart",
+  TourPages = "tourPages",
+  TourComponents = "tourComponents",
 }
 
 export enum SlideState {

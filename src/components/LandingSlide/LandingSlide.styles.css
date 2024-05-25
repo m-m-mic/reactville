@@ -2,61 +2,188 @@
   z-index: 25;
 }
 
-.landing-layer-1 {
-  opacity: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-240%, -30%);
-  background: red;
-  width: 15cqw;
-  height: 30cqw;
-  transition: opacity 600ms ease;
-  transition-delay: 1200ms;
+.landing-buttons {
+  flex: 1;
+  box-sizing: border-box;
+  padding-top: 35cqw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5cqw;
 }
 
-.landing-layer-2 {
+.landing-fade-4 {
   opacity: 1;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-10%, -30%);
-  background: green;
-  width: 45cqw;
-  height: 20cqw;
-  transition: opacity 600ms ease;
-  transition-delay: 1100ms;
-}
-
-.landing-layer-3 {
-  opacity: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, 15%);
-  background: blue;
+  transform: translate(-50%, -50%) scale(2);
   width: 100cqw;
-  height: 25cqw;
   transition:
-    transform 800ms ease-in,
+    transform 800ms ease-out,
+    opacity 200ms ease;
+  transition-delay: 700ms, 800ms;
+  animation: scroll-fade-4 310s infinite linear;
+  animation-delay: -90s;
+}
+
+@keyframes scroll-fade-4 {
+  0% {
+    margin-left: -40cqw;
+  }
+
+  100% {
+    margin-left: 120cqw;
+  }
+}
+
+.landing-fade-3 {
+  opacity: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  width: 100cqw;
+  transition:
+    transform 800ms ease-out,
+    opacity 200ms ease;
+  transition-delay: 700ms, 800ms;
+  animation: scroll-fade-3 210s infinite linear;
+  animation-delay: -35s;
+}
+
+@keyframes scroll-fade-3 {
+  0% {
+    margin-left: -30cqw;
+  }
+
+  100% {
+    margin-left: 120cqw;
+  }
+}
+
+.landing-fade-2 {
+  opacity: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  width: 100cqw;
+  transition:
+    transform 800ms ease-out,
+    opacity 200ms ease;
+  transition-delay: 500ms, 600ms;
+  animation: scroll-fade-2 120s infinite linear;
+  animation-delay: -90s;
+}
+
+@keyframes scroll-fade-2 {
+  0% {
+    margin-left: -110cqw;
+  }
+
+  100% {
+    margin-left: 30cqw;
+  }
+}
+
+.landing-fade-1 {
+  opacity: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  width: 100cqw;
+  transition:
+    transform 800ms ease-out,
+    opacity 200ms ease;
+  transition-delay: 400ms, 300ms;
+  animation: scroll-fade-1 400s infinite linear;
+  animation-delay: -300s;
+}
+
+@keyframes scroll-fade-1 {
+  0% {
+    margin-left: -100cqw;
+  }
+
+  100% {
+    margin-left: 45cqw;
+  }
+}
+
+.landing-move {
+  opacity: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  width: 100cqw;
+  transition:
+    transform 800ms ease-out,
     opacity 200ms ease;
   transition-delay: 300ms, 100ms;
+  animation: float 5s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    padding-top: 0;
+  }
+
+  50% {
+    padding-top: 0.8cqw;
+  }
+
+  100% {
+    padding-top: -0.8cqw;
+  }
 }
 
 .slide.past {
-  .landing-layer-1 {
+  .landing-fade-2 {
     opacity: 0;
-    transition-delay: 0ms;
+    transform: translate(-50%, -130%) scale(2);
+    transition:
+      transform 800ms ease-in,
+      opacity 200ms ease;
+    transition-delay: 0ms, 500ms;
   }
 
-  .landing-layer-2 {
+  .landing-fade-1 {
     opacity: 0;
-    transition-delay: 100ms;
+    transform: translate(-50%, -130%) scale(2);
+    transition:
+      transform 800ms ease-in,
+      opacity 200ms ease;
+    transition-delay: 100ms, 600ms;
   }
 
-  .landing-layer-3 {
+  .landing-fade-3 {
     opacity: 0;
-    transform: translate(-50%, 230%) scale(3);
+    transform: translate(-50%, -130%) scale(2);
+    transition:
+      transform 800ms ease-in,
+      opacity 200ms ease;
     transition-delay: 200ms, 700ms;
+  }
+
+  .landing-fade-4 {
+    opacity: 0;
+    transform: translate(-50%, -130%) scale(2);
+    transition:
+      transform 800ms ease-in,
+      opacity 200ms ease;
+    transition-delay: 300ms, 800ms;
+  }
+
+  .landing-move {
+    opacity: 0;
+    transform: translate(-50%, -130%) scale(2);
+    transition:
+      transform 800ms ease-in,
+      opacity 200ms ease;
+    transition-delay: 400ms, 900ms;
   }
 }
