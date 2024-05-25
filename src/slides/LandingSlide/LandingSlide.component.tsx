@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 
+import LandingSvg from "./LandingSlide.svg?react";
+
 export default function LandingSlide({ slideStack, setNextSlide }: SlideProps) {
   const SLIDE_ID = SlideId.Landing;
 
@@ -35,11 +37,7 @@ export default function LandingSlide({ slideStack, setNextSlide }: SlideProps) {
         </div>
       </div>
       <div className="background">
-        <img className="landing-fade-1" src="/landing/landing_fade1.svg" alt="" />
-        <img className="landing-fade-4" src="/landing/landing_fade4.svg" alt="" />
-        <img className="landing-move" src="/landing/landing_move.svg" alt="" />
-        <img className="landing-fade-2" src="/landing/landing_fade2.svg" alt="" />
-        <img className="landing-fade-3" src="/landing/landing_fade3.svg" alt="" />
+        <LandingSvg />
       </div>
     </div>
   );

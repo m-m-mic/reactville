@@ -40,6 +40,13 @@
     color: white;
   }
 
+  svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(4);
+  }
+
   .panel {
     box-sizing: border-box;
     padding: 1cqw;

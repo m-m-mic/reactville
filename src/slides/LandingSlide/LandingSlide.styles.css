@@ -12,175 +12,164 @@
   gap: 5cqw;
 }
 
-.landing-fade-4 {
-  opacity: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(2);
-  width: 100cqw;
+#landing-fade-4 {
   transition:
     transform 800ms ease-out,
     opacity 200ms ease;
   transition-delay: 700ms, 800ms;
-  animation: scroll-fade-4 310s infinite linear;
-  animation-delay: -90s;
+
+  #landing-fade-4-animation {
+    animation: scroll-fade-4 310s infinite linear;
+    animation-delay: -200s;
+  }
 }
 
 @keyframes scroll-fade-4 {
   0% {
-    margin-left: -45cqw;
+    transform: translate(-80cqw, 0);
   }
 
   100% {
-    margin-left: 120cqw;
+    transform: translate(40cqw, 0);
   }
 }
 
-.landing-fade-3 {
+#landing-fade-3 {
   opacity: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(2);
-  width: 100cqw;
   transition:
     transform 800ms ease-out,
     opacity 200ms ease;
   transition-delay: 700ms, 800ms;
-  animation: scroll-fade-3 210s infinite linear;
-  animation-delay: -35s;
+
+  #landing-fade-3-animation {
+    animation: scroll-fade-3 400s infinite linear;
+    animation-delay: -170s;
+  }
 }
 
 @keyframes scroll-fade-3 {
   0% {
-    margin-left: -30cqw;
+    transform: translate(-35cqw, 0);
   }
 
   100% {
-    margin-left: 120cqw;
+    transform: translate(80cqw, 0);
   }
 }
 
-.landing-fade-2 {
+#landing-fade-2 {
   opacity: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(2);
-  width: 100cqw;
   transition:
     transform 800ms ease-out,
     opacity 200ms ease;
   transition-delay: 500ms, 600ms;
-  animation: scroll-fade-2 120s infinite linear;
-  animation-delay: -90s;
+
+  #landing-fade-2-animation {
+    animation: scroll-fade-2 120s infinite linear;
+    animation-delay: -80s;
+  }
 }
 
 @keyframes scroll-fade-2 {
   0% {
-    margin-left: -110cqw;
+    transform: translate(-75cqw, 0);
   }
 
   100% {
-    margin-left: 30cqw;
+    transform: translate(25cqw, 0);
   }
 }
 
-.landing-fade-1 {
+#landing-fade-1 {
   opacity: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(2);
-  width: 100cqw;
   transition:
     transform 800ms ease-out,
     opacity 200ms ease;
   transition-delay: 400ms, 300ms;
-  animation: scroll-fade-1 400s infinite linear;
-  animation-delay: -300s;
+
+  #landing-fade-1-animation {
+    animation: scroll-fade-1 210s infinite linear;
+    animation-delay: -40s;
+  }
 }
 
 @keyframes scroll-fade-1 {
   0% {
-    margin-left: -100cqw;
+    transform: translate(-20cqw, 0);
   }
 
   100% {
-    margin-left: 45cqw;
+    transform: translate(80cqw, 0);
   }
 }
 
-.landing-move {
+#landing-move {
   opacity: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(2);
-  width: 100cqw;
   transition:
     transform 800ms ease-out,
     opacity 200ms ease;
   transition-delay: 300ms, 100ms;
-  animation: float 5s infinite;
-  animation-timing-function: ease-in-out;
+
+  #landing-move-animation {
+    animation: float 5s infinite;
+    animation-timing-function: ease-in-out;
+  }
 }
 
 @keyframes float {
   0% {
-    padding-top: 0;
+    transform: translate(0, 20px);
   }
 
   50% {
-    padding-top: 0.8cqw;
+    transform: translate(0, 0px);
   }
 
   100% {
-    padding-top: -0.8cqw;
+    transform: translate(0, 20px);
   }
 }
 
 .slide.past {
-  .landing-fade-2 {
+  #landing-fade-1 {
     opacity: 0;
-    transform: translate(-50%, -130%) scale(2);
-    transition:
-      transform 800ms ease-in,
-      opacity 200ms ease;
-    transition-delay: 0ms, 500ms;
-  }
-
-  .landing-fade-1 {
-    opacity: 0;
-    transform: translate(-50%, -130%) scale(2);
+    transform: translate(0, -50cqw);
     transition:
       transform 800ms ease-in,
       opacity 200ms ease;
     transition-delay: 100ms, 600ms;
   }
 
-  .landing-fade-3 {
+  #landing-fade-2 {
     opacity: 0;
-    transform: translate(-50%, -130%) scale(2);
+    transform: translate(0, -50cqw);
+    transition:
+      transform 800ms ease-in,
+      opacity 200ms ease;
+    transition-delay: 0ms, 500ms;
+  }
+
+  #landing-fade-3 {
+    opacity: 0;
+    transform: translate(0, -50cqw);
     transition:
       transform 800ms ease-in,
       opacity 200ms ease;
     transition-delay: 200ms, 700ms;
   }
 
-  .landing-fade-4 {
+  #landing-fade-4 {
     opacity: 0;
-    transform: translate(-50%, -130%) scale(2);
+    transform: translate(0, -50cqw);
     transition:
       transform 800ms ease-in,
       opacity 200ms ease;
     transition-delay: 300ms, 800ms;
   }
 
-  .landing-move {
+  #landing-move {
     opacity: 0;
-    transform: translate(-50%, -130%) scale(2);
+    transform: translate(0, -50cqw);
     transition:
       transform 800ms ease-in,
       opacity 200ms ease;
