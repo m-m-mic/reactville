@@ -4,14 +4,15 @@ import "./TourPagesSlide.styles.css";
 import { useContext, useEffect, useState } from "react";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 
-import TourPagesBackground from "./tourPagesSlide.background.svg?react";
-import { StackContext } from "@/App";
+import TourPagesBackground from "./TourPagesSlide.background.svg?react";
+import { ChoicesContext, StackContext } from "@/App";
 import { returnToLastSlide, setNextSlide } from "@/shared/functions/setSlide";
 
 export default function TourPagesSlide() {
   const SLIDE_ID = SlideId.TourPages;
 
   const { slideStack, setSlideStack } = useContext(StackContext);
+  const { choices, setChoices } = useContext(ChoicesContext);
 
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 
@@ -20,7 +21,9 @@ export default function TourPagesSlide() {
   }, [slideStack]);
 
   const goToTourComponentsMultiple = () => {
+    setChoices({ selectedChoices: { ...choices.selectedChoices, pages: true }, highlightedChoice: "pages" });
     setNextSlide({ id: SlideId.TourComponents, variant: 1 }, slideStack, setSlideStack);
+    setChoices({ ...choices, highlightedChoice: undefined });
   };
 
   const goToTourComponentsSimple = () => {

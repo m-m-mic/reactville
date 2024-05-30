@@ -1,7 +1,7 @@
 {
-  "name": "react-animation-showcase",
+  "name": "reactville",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
