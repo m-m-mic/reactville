@@ -14,12 +14,12 @@ export const INITIAL_STACK_CONTEXT: SlideStackContextType = {
 export const INITIAL_CHOICES: Choices = { selectedChoices: {}, highlightedChoice: undefined };
 
 export const INITIAL_CHOICES_STACK: ChoicesContextType = {
-  choices: INITIAL_CHOICES,
+  choices: structuredClone(INITIAL_CHOICES),
   setChoices: () => {},
 };
 
 export const INITIAL_FOLDER_STRUCTURE_CONTEXT: FolderStructureContextType = {
-  folderStructure: INITIAL_FOLDER_STRUCTURE,
+  folderStructure: structuredClone(INITIAL_FOLDER_STRUCTURE),
   setFolderStructure: () => {},
 };
 

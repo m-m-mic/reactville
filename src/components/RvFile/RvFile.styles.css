@@ -1,10 +1,11 @@
 .rv-file {
-  font-size: 0.8cqw;
+  font-size: 1cqw;
   font-weight: 600;
-  height: 1.5cqw;
+  height: 1.8cqw;
+  padding-left: 0.4cqw;
   display: flex;
   align-items: center;
-  transition: 100ms ease;
+  transition: 200ms ease;
 
   &.hidden {
     visibility: hidden;

@@ -1,8 +1,9 @@
 .rv-folder {
-  font-size: 0.8cqw;
+  font-size: 1cqw;
   display: flex;
   flex-flow: column;
-  transition: 100ms ease;
+  transition: 200ms ease;
+  padding-left: 0.4cqw;
 
   &.hidden {
     visibility: hidden;
@@ -16,7 +17,7 @@
 
   .folder-name {
     font-weight: 600;
-    height: 1.5cqw;
+    height: 1.8cqw;
     border: none;
     background: none;
     color: inherit;

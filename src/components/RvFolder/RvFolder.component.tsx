@@ -17,7 +17,7 @@ export default function RvFolder({ keyPath, name, children, highlighted = false,
 
   const { folderStructure, setFolderStructure } = useContext(FolderStructureContext);
 
-  const childHeight = 1.5;
+  const childHeight = 1.8;
 
   const getVisibleChildCount = (children: ReactNode[]) => {
     let childCount = 0;
@@ -52,7 +52,7 @@ export default function RvFolder({ keyPath, name, children, highlighted = false,
   return (
     <div className={`rv-folder ${hidden ? "hidden" : ""} ${highlighted ? "highlighted" : ""}`}>
       <button className="folder-name" onClick={changeOpenState}>
-        + {name}
+        {open ? "-" : "+"} {name}
       </button>
       <div style={{ height: `${childrenHeight}cqw` }} className={`contents ${open ? "open" : "closed"}`}>
         {children}

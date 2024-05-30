@@ -21,8 +21,8 @@ import { INITIAL_FOLDER_STRUCTURE } from "@/shared/data/initialFolderStructure";
 
 export default function App() {
   const [slideStack, setSlideStack] = useState(INITIAL_STACK);
-  const [choices, setChoices] = useState(INITIAL_CHOICES);
-  const [folderStructure, setFolderStructure] = useState(INITIAL_FOLDER_STRUCTURE);
+  const [choices, setChoices] = useState(structuredClone(INITIAL_CHOICES));
+  const [folderStructure, setFolderStructure] = useState(structuredClone(INITIAL_FOLDER_STRUCTURE));
 
   const getAspectRatioClass = () => {
     return GetOrientation();
