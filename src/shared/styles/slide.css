@@ -78,6 +78,7 @@
 }
 
 .folder-structure-wrapper {
+  overflow: hidden;
   flex: 0 0 30cqw;
   background: var(--rv-foreground-color-1);
   border-radius: 0 1.5cqw 1.5cqw 0;

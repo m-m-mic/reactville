@@ -1,7 +1,8 @@
 import { Slide } from "@/shared/types/slide.type";
-import { ChoicesContextType, SlideStackContextType } from "@/shared/types/context.type";
-import { Choices } from "@/shared/types/choices.types";
+import { ChoicesContextType, FolderContextType, SlideStackContextType } from "@/shared/types/context.type";
+import { Choices } from "@/shared/types/choices.type";
 import { createContext } from "react";
+import { initialFolderStructure } from "@/shared/data/initialFolderStructure";
 
 export const INITIAL_STACK: Slide[] = [Slide.Landing];
 
@@ -17,5 +18,11 @@ export const INITIAL_CHOICES_STACK: ChoicesContextType = {
   setChoices: () => {},
 };
 
+export const INITIAL_FOLDER_CONTEXT: FolderContextType = {
+  folder: initialFolderStructure,
+  setFolder: () => {},
+};
+
 export const StackContext = createContext(INITIAL_STACK_CONTEXT);
 export const ChoicesContext = createContext(INITIAL_CHOICES_STACK);
+export const FolderContext = createContext(INITIAL_FOLDER_CONTEXT);

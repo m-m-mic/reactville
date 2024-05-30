@@ -1,6 +1,7 @@
 import { Slide } from "@/shared/types/slide.type";
 import React from "react";
-import { Choices } from "@/shared/types/choices.types";
+import { Choices } from "@/shared/types/choices.type";
+import { FolderStructure } from "@/shared/types/folder-structure.type";
 
 export interface SlideStackContextType {
   slideStack: Slide[];
@@ -10,4 +11,9 @@ export interface SlideStackContextType {
 export interface ChoicesContextType {
   choices: Choices;
   setChoices: React.Dispatch<React.SetStateAction<Choices>>;
+}
+
+export interface FolderContextType {
+  folder: FolderStructure;
+  setFolder: React.Dispatch<React.SetStateAction<FolderStructure>>;
 }

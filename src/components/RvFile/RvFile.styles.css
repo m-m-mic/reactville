@@ -1,0 +1,11 @@
+.rv-file {
+  color: black;
+  font-size: 0.8cqw;
+  height: 1.5cqw;
+  display: flex;
+  align-items: center;
+
+  &.highlighted {
+    background: lightgreen;
+  }
+}

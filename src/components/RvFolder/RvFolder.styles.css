@@ -1,0 +1,32 @@
+.rv-folder {
+  color: black;
+  font-size: 0.8cqw;
+  display: flex;
+  flex-flow: column;
+
+  &.highlighted {
+    background: lightgreen;
+  }
+
+  .folder-name {
+    height: 1.5cqw;
+    border: none;
+    background: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+    text-align: left;
+  }
+
+  .contents {
+    transition: 100ms ease;
+    margin-left: 1cqw;
+    &.closed {
+      visibility: hidden;
+      opacity: 0;
+      height: 0 !important;
+    }
+  }
+}

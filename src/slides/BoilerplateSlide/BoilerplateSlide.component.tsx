@@ -6,6 +6,7 @@ import { RvButton } from "@/components/RvButton/RvButton.component";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 import { setNextSlide } from "@/shared/functions/setSlide";
 import { StackContext } from "@/context";
+import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
 
 export default function BoilerplateSlide() {
   const SLIDE_ID = Slide.Boilerplate;
@@ -30,6 +31,7 @@ export default function BoilerplateSlide() {
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
         <span>Boilerplate!</span>
+        <RvFolderStructure />
         <div className="landing-buttons">
           <RvButton onClick={goToTourStart} label="Start the Tour!" />
         </div>
