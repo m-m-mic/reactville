@@ -1,22 +1,28 @@
 import { FileFolder, FolderStructure } from "@/shared/types/folder-structure.type";
 
-export function setFolderValueInStructure(structure: FolderStructure, keyPath: string[], value: Partial<FileFolder>) {
+export function setFolderValueInStructure(structure: FolderStructure, keyPaths: string[][], value: Partial<FileFolder>) {
   const internalFolderStructure = { ...structure };
-  const internalKeyPath: string[] = [].concat(...keyPath.map((key) => [key, "content"])).slice(0, -1);
 
-  internalKeyPath.reduce((folder: any, key, i) => {
-    if (key === "content") {
+  for (const keyPath of keyPaths) {
+    const internalKeyPath: string[] = [].concat(...keyPath.map((key) => [key, "content"])).slice(0, -1);
+
+    internalKeyPath.reduce((folder: any, key, i) => {
+      if (key === "content") {
+        return folder[key];
+      }
+      if (value.open === true) {
+        folder[key] = { ...folder[key], open: true };
+      }
+
+      if (value.hidden === false) {
+        folder[key] = { ...folder[key], hidden: false };
+      }
+      if (i === internalKeyPath.length - 1) {
+        folder[key] = { ...folder[key], ...value };
+      }
       return folder[key];
-    }
-    if (value.open === true) {
-      folder[key] = { ...folder[key], open: true };
-    }
-    if (i === internalKeyPath.length - 1) {
-      folder[key] = { ...folder[key], ...value };
-    }
-    return folder[key];
-  }, internalFolderStructure);
-
+    }, internalFolderStructure);
+  }
   return internalFolderStructure;
 }
 

@@ -39,22 +39,23 @@ export default function BoilerplateSlide() {
   };
 
   const step1 = () => {
-    const updatedStructure = setFolderValueInStructure(folderStructure, ["public"], { open: true, highlighted: true });
+    const updatedStructure = setFolderValueInStructure(folderStructure, [["public"]], { open: true, highlighted: true });
     setFolderStructure(updatedStructure);
   };
 
   const step2 = () => {
-    let updatedStructure = setFolderValueInStructure(folderStructure, ["public"], { open: false, highlighted: false });
-    updatedStructure = setFolderValueInStructure(updatedStructure, ["src"], { open: true, highlighted: true });
+    let updatedStructure = setFolderValueInStructure(folderStructure, [["public"]], { open: false, highlighted: false });
+    updatedStructure = setFolderValueInStructure(updatedStructure, [["src"]], { open: true, highlighted: true });
     setFolderStructure(updatedStructure);
   };
 
   const step3 = () => {
-    let updatedStructure = setFolderValueInStructure(folderStructure, ["src"], { open: false, highlighted: false });
-    updatedStructure = setFolderValueInStructure(updatedStructure, ["example-config.json"], { highlighted: true });
-    updatedStructure = setFolderValueInStructure(updatedStructure, ["index.html"], { highlighted: true });
-    updatedStructure = setFolderValueInStructure(updatedStructure, ["package.json"], { highlighted: true });
-    updatedStructure = setFolderValueInStructure(updatedStructure, ["README.md"], { highlighted: true });
+    let updatedStructure = setFolderValueInStructure(folderStructure, [["src"]], { open: false, highlighted: false });
+    updatedStructure = setFolderValueInStructure(
+      updatedStructure,
+      [["example-config.json"], ["index.html"], ["package.json"], ["README.md"]],
+      { highlighted: true },
+    );
     setFolderStructure(updatedStructure);
   };
 
@@ -66,17 +67,67 @@ export default function BoilerplateSlide() {
   const showPagesFolder = () => {
     let updatedStructure = closeAllFoldersAndRemoveHighlighting(folderStructure);
 
-    updatedStructure = setFolderValueInStructure(updatedStructure, ["src", "pages"], {
-      hidden: false,
-      open: true,
-      highlighted: true,
-    });
+    updatedStructure = setFolderValueInStructure(
+      updatedStructure,
+      [
+        ["src", "pages", "examplePage1.jsx"],
+        ["src", "pages", "examplePage2.jsx"],
+        ["src", "pages", "examplePage3.jsx"],
+      ],
+      {
+        hidden: false,
+        open: true,
+        highlighted: true,
+      },
+    );
+
+    updatedStructure = setFolderValueInStructure(
+      updatedStructure,
+      [
+        ["src", "pages", "examplePage1"],
+        ["src", "pages", "examplePage2"],
+        ["src", "pages", "examplePage3"],
+      ],
+      {
+        hidden: true,
+        open: false,
+        highlighted: false,
+      },
+    );
 
     setFolderStructure(updatedStructure);
   };
 
   const replace = () => {
-    const updatedStructure = closeAllFoldersAndRemoveHighlighting(folderStructure);
+    let updatedStructure = closeAllFoldersAndRemoveHighlighting(folderStructure);
+
+    updatedStructure = setFolderValueInStructure(
+      updatedStructure,
+      [
+        ["src", "pages", "examplePage1.jsx"],
+        ["src", "pages", "examplePage2.jsx"],
+        ["src", "pages", "examplePage3.jsx"],
+      ],
+      {
+        hidden: true,
+        open: false,
+        highlighted: false,
+      },
+    );
+
+    updatedStructure = setFolderValueInStructure(
+      updatedStructure,
+      [
+        ["src", "pages", "examplePage1"],
+        ["src", "pages", "examplePage2"],
+        ["src", "pages", "examplePage3"],
+      ],
+      {
+        hidden: false,
+        open: true,
+        highlighted: true,
+      },
+    );
 
     setFolderStructure(updatedStructure);
   };
@@ -94,7 +145,7 @@ export default function BoilerplateSlide() {
               <RvButton onClick={step3} label="Step 3!" />
               <RvButton onClick={cleanUp} label="Clean up!" />
               <RvButton onClick={showPagesFolder} label="Show pages folder!" />
-              <RvButton onClick={open} label="Replace pages folder!" />
+              <RvButton onClick={replace} label="Replace pages folder!" />
             </div>
           </div>
           <div className="action-buttons">

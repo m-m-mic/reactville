@@ -5,19 +5,19 @@ export const INITIAL_FOLDER_STRUCTURE: FolderStructure = {
     type: "folder",
     name: "public",
     content: {
-      bconfig: {
+      "browserconfig.xml": {
         type: "file",
         name: "browserconfig.xml",
       },
-      favicon: {
+      "favicon.ico": {
         type: "file",
         name: "favicon.ico",
       },
-      manifest: {
+      "manifest.json": {
         type: "file",
         name: "manifest.json",
       },
-      robots: {
+      "robots.txt": {
         type: "file",
         name: "robots.txt",
       },
@@ -31,7 +31,7 @@ export const INITIAL_FOLDER_STRUCTURE: FolderStructure = {
         type: "folder",
         name: "assets",
         content: {
-          font: {
+          "example-font.woff2": {
             type: "file",
             name: "example-font.woff2",
           },
@@ -42,20 +42,20 @@ export const INITIAL_FOLDER_STRUCTURE: FolderStructure = {
         hidden: true,
         name: "pages",
         content: {
-          examplePage1: {
+          "examplePage1.jsx": {
             type: "file",
             name: "examplePage1.jsx",
           },
-          examplePage2: {
+          "examplePage2.jsx": {
             type: "file",
             name: "examplePage2.jsx",
           },
-          examplePage3: {
+          "examplePage3.jsx": {
             type: "file",
             name: "examplePage3.jsx",
           },
-          examplePage1Folder: {
-            type: "file",
+          examplePage1: {
+            type: "folder",
             hidden: true,
             name: "examplePage1",
             content: {
@@ -73,39 +73,39 @@ export const INITIAL_FOLDER_STRUCTURE: FolderStructure = {
               },
             },
           },
-          examplePage2Folder: {
-            type: "file",
+          examplePage2: {
+            type: "folder",
             hidden: true,
             name: "examplePage2",
             content: {
-              examplePage1Css: {
+              "examplePage2.css": {
                 type: "file",
                 name: "examplePage2.css",
               },
-              examplePage1jsx: {
+              "examplePage2.jsx": {
                 type: "file",
                 name: "examplePage2.jsx",
               },
-              examplePage1SpecJsx: {
+              "examplePage2.spec.jsx": {
                 type: "file",
                 name: "examplePage2.spec.jsx",
               },
             },
           },
-          examplePage3Folder: {
-            type: "file",
+          examplePage3: {
+            type: "folder",
             hidden: true,
             name: "examplePage3",
             content: {
-              examplePage1Css: {
+              "examplePage3.css": {
                 type: "file",
                 name: "examplePage3.css",
               },
-              examplePage1jsx: {
+              "examplePage3.jsx": {
                 type: "file",
                 name: "examplePage3.jsx",
               },
-              examplePage1SpecJsx: {
+              "examplePage3.spec.jsx": {
                 type: "file",
                 name: "examplePage3.spec.jsx",
               },
@@ -113,19 +113,19 @@ export const INITIAL_FOLDER_STRUCTURE: FolderStructure = {
           },
         },
       },
-      appCss: {
+      "App.css": {
         type: "file",
         name: "App.css",
       },
-      appJsx: {
+      "App.jsx": {
         type: "file",
         name: "App.jsx",
       },
-      indexCss: {
+      "index.css": {
         type: "file",
         name: "index.css",
       },
-      mainJsx: {
+      "main.jsx": {
         type: "file",
         name: "main.jsx",
       },

@@ -45,7 +45,7 @@ export default function RvFolder({ keyPath, name, children, highlighted = false,
   }, [children]);
 
   const changeOpenState = () => {
-    const updatedStructure = setFolderValueInStructure(folderStructure, keyPath, { open: !open });
+    const updatedStructure = setFolderValueInStructure(folderStructure, [keyPath], { open: !open });
     setFolderStructure(updatedStructure);
   };
 
