@@ -1,20 +1,15 @@
-export interface SlideProps {
-  slideStack?: Slide[];
-  setNextSlide: (slide: Slide) => void;
-  returnToLastSlide: () => void;
-}
-
-export interface Slide {
-  id: SlideId;
-  variant: number;
-}
-
-export enum SlideId {
+export enum Slide {
   Landing = "landing",
   QuickSelect = "quickSelect",
+  Explanation = "explanation",
   Boilerplate = "boilerplate",
   TourPages = "tourPages",
   TourComponents = "tourComponents",
+  TourStyles = "tourStyles",
+  TourStore = "tourStore",
+  TourRequests = "tourRequests",
+  TourShared = "tourShared",
+  Result = "result"
 }
 
 export enum SlideState {

@@ -1,15 +1,14 @@
 import { Slide, SlideState } from "@/shared/types/slide.type";
 import { getSlideState } from "@/shared/functions/getSlideState";
-import "./TourPagesSlide.styles.css";
+import "./TourComponentsSlide.styles.css";
 import { useContext, useEffect, useState } from "react";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 
-import TourPagesBackground from "./TourPagesSlide.background.svg?react";
 import { setNextSlide } from "@/shared/functions/setSlide";
 import { StackContext } from "@/context";
 
-export default function TourPagesSlide() {
-  const SLIDE_ID = Slide.TourPages;
+export default function TourComponentsSlide() {
+  const SLIDE_ID = Slide.TourComponents;
 
   const { slideStack, setSlideStack } = useContext(StackContext);
 
@@ -19,8 +18,12 @@ export default function TourPagesSlide() {
     setSlideState(getSlideState(SLIDE_ID, slideStack));
   }, [slideStack]);
 
-  const goToTourComponents = () => {
-    setNextSlide(Slide.TourComponents, slideStack, setSlideStack);
+  const goToTourStyles = () => {
+    setNextSlide(Slide.TourStyles, slideStack, setSlideStack);
+  };
+
+  const goToTourStore = () => {
+    setNextSlide(Slide.TourStore, slideStack, setSlideStack);
   };
 
   if (isRemovedFromViewport(SLIDE_ID, slideStack[slideStack.length - 1])) {
@@ -31,15 +34,15 @@ export default function TourPagesSlide() {
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
         <div className="explanation">
-          <div className="panel title">Router Road</div>
+          <h1 className="panel title">Component Close</h1>
           <div className="panel text-body">Lorem ipsum und so bla bla bla....</div>
           <div className="panel buttons">
-            <button onClick={goToTourComponents}>Components</button>
+            <button onClick={goToTourStore}>Store</button>
+            <button onClick={goToTourStyles}>Styles</button>
           </div>
         </div>
         <div className="panel folder-structure">folder here</div>
       </div>
-      <TourPagesBackground className="background" />
     </div>
   );
 }

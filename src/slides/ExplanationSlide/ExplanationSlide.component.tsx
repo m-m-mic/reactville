@@ -1,14 +1,14 @@
 import { Slide, SlideState } from "@/shared/types/slide.type";
-import { getSlideState } from "@/shared/functions/getSlideState";
-import "./BoilerplateSlide.styles.css";
 import { useContext, useEffect, useState } from "react";
-import { RvButton } from "@/components/RvButton/RvButton.component";
-import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
+import { getSlideState } from "@/shared/functions/getSlideState";
 import { returnToLastSlide, setNextSlide } from "@/shared/functions/setSlide";
+import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
+import { RvButton } from "@/components/RvButton/RvButton.component";
 import { StackContext } from "@/context";
+import "./ExplanationSlide.styles.css";
 
-export default function BoilerplateSlide() {
-  const SLIDE_ID = Slide.Boilerplate;
+export default function ExplanationSlide() {
+  const SLIDE_ID = Slide.Explanation;
 
   const { slideStack, setSlideStack } = useContext(StackContext);
 
@@ -18,8 +18,8 @@ export default function BoilerplateSlide() {
     setSlideState(getSlideState(SLIDE_ID, slideStack));
   }, [slideStack]);
 
-  const goToTourStart = () => {
-    setNextSlide(Slide.TourPages, slideStack, setSlideStack);
+  const goToBoilerplate = () => {
+    setNextSlide(Slide.Boilerplate, slideStack, setSlideStack);
   };
 
   const returnToLastSlideInStack = () => {
@@ -33,9 +33,9 @@ export default function BoilerplateSlide() {
   return (
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
-        <span>Boilerplate!</span>
+        <span>Explanation!</span>
         <div className="landing-buttons">
-          <RvButton onClick={goToTourStart} label="Start the Tour!" />
+          <RvButton onClick={goToBoilerplate} label="Continue!" />
           <RvButton onClick={returnToLastSlideInStack} label="Back to Start" />
         </div>
       </div>

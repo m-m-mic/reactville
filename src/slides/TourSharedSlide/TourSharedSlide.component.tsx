@@ -1,15 +1,14 @@
 import { Slide, SlideState } from "@/shared/types/slide.type";
 import { getSlideState } from "@/shared/functions/getSlideState";
-import "./TourPagesSlide.styles.css";
+import "./TourSharedSlide.styles.css";
 import { useContext, useEffect, useState } from "react";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 
-import TourPagesBackground from "./TourPagesSlide.background.svg?react";
 import { setNextSlide } from "@/shared/functions/setSlide";
 import { StackContext } from "@/context";
 
-export default function TourPagesSlide() {
-  const SLIDE_ID = Slide.TourPages;
+export default function TourSharedSlide() {
+  const SLIDE_ID = Slide.TourShared;
 
   const { slideStack, setSlideStack } = useContext(StackContext);
 
@@ -19,8 +18,8 @@ export default function TourPagesSlide() {
     setSlideState(getSlideState(SLIDE_ID, slideStack));
   }, [slideStack]);
 
-  const goToTourComponents = () => {
-    setNextSlide(Slide.TourComponents, slideStack, setSlideStack);
+  const goToResult = () => {
+    setNextSlide(Slide.Result, slideStack, setSlideStack);
   };
 
   if (isRemovedFromViewport(SLIDE_ID, slideStack[slideStack.length - 1])) {
@@ -31,15 +30,14 @@ export default function TourPagesSlide() {
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
         <div className="explanation">
-          <div className="panel title">Router Road</div>
+          <h1 className="panel title">Shared Street</h1>
           <div className="panel text-body">Lorem ipsum und so bla bla bla....</div>
           <div className="panel buttons">
-            <button onClick={goToTourComponents}>Components</button>
+            <button onClick={goToResult}>Result</button>
           </div>
         </div>
         <div className="panel folder-structure">folder here</div>
       </div>
-      <TourPagesBackground className="background" />
     </div>
   );
 }
