@@ -20,8 +20,8 @@ export default function LandingSlide() {
     setSlideState(getSlideState(SLIDE_ID, slideStack));
   }, [slideStack]);
 
-  const goToBoilerplateSlide = () => {
-    setNextSlide(Slide.Boilerplate, slideStack, setSlideStack);
+  const goToExplanation = () => {
+    setNextSlide(Slide.Explanation, slideStack, setSlideStack);
   };
 
   const goToQuickSelectSlide = () => {
@@ -36,7 +36,7 @@ export default function LandingSlide() {
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
         <div className="landing-buttons">
-          <RvButton onClick={goToBoilerplateSlide} label="Let's go!" />
+          <RvButton onClick={goToExplanation} label="Start the tour!" />
           <RvButton onClick={goToQuickSelectSlide} disabled={true} label="Quick Select" />
         </div>
       </div>
