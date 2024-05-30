@@ -1,14 +1,21 @@
 .rv-folder {
-  color: black;
   font-size: 0.8cqw;
   display: flex;
   flex-flow: column;
+  transition: 100ms ease;
+
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0 !important;
+  }
 
   &.highlighted {
-    background: lightgreen;
+    background: #c1fac1;
   }
 
   .folder-name {
+    font-weight: 600;
     height: 1.5cqw;
     border: none;
     background: none;

@@ -1,13 +1,12 @@
 import "./RvFolderStructure.styles.css";
 import RvFolder from "@/components/RvFolder/RvFolder.component";
 import RvFile from "@/components/RvFile/RvFile.component";
-import { FolderContext } from "@/context";
-import { ReactNode, useState } from "react";
-import { initialFolderStructure } from "@/shared/data/initialFolderStructure";
+import { ReactNode, useContext } from "react";
 import { FolderStructure } from "@/shared/types/folder-structure.type";
+import { FolderContext } from "@/context";
 
 export default function RvFolderStructure() {
-  const [folder, setFolder] = useState(initialFolderStructure);
+  const { folder } = useContext(FolderContext);
 
   const constructFilesFromStructure = (structure: FolderStructure, keyPath: string[] = []): ReactNode[] => {
     const files: ReactNode[] = [];
@@ -35,9 +34,5 @@ export default function RvFolderStructure() {
     });
     return files;
   };
-  return (
-    <FolderContext.Provider value={{ folder, setFolder }}>
-      <div className="rv-folder-structure">{constructFilesFromStructure(folder)}</div>
-    </FolderContext.Provider>
-  );
+  return <div className="rv-folder-structure">{constructFilesFromStructure(folder)}</div>;
 }

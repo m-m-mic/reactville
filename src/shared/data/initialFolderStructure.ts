@@ -36,6 +36,11 @@ export const initialFolderStructure: FolderStructure = {
             type: "file",
             name: "example-font.woff2",
           },
+          testO: {
+            type: "file",
+            name: "testFile",
+            hidden: true,
+          },
         },
       },
       appCss: {
