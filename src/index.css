@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Quicksand, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   display: flex;
@@ -14,12 +14,33 @@
 
   --main-transition-duration: 1600ms;
 
-  --rv-button-background: #fff;
-  --rv-button-foreground: #000;
+  --rv-foreground-color-1: #fff;
+  --rv-foreground-color-2: #737373;
+
+  --rv-button-background: var(--rv-foreground-color-1);
+  --rv-button-foreground: var(--rv-foreground-color-2);
+}
+
+@font-face {
+  font-family: "Pally";
+  src: url("assets/fonts/Pally-Variable.woff2") format("woff2");
+  font-weight: 100 1000;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("assets/fonts/Quicksand-Variable.woff2") format("woff2");
+  font-weight: 100 1000;
 }
 
 body {
   overflow: hidden;
   margin: 0;
   background: #3bd1ff;
+}
+
+h1 {
+  font-family: Pally, sans-serif;
+  font-size: 2cqw;
+  font-weight: 700;
 }

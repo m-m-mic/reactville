@@ -1,5 +1,6 @@
 .rv-button {
-  font: inherit;
+  font-family: Pally, sans-serif;
+  font-weight: 600;
   padding: 0.6cqw 1cqw;
   border: none;
   box-sizing: border-box;
@@ -15,7 +16,6 @@
   background: var(--rv-button-background);
   outline-offset: 0.2cqw;
   text-transform: uppercase;
-  font-weight: 600;
   font-size: 1.2cqw;
   color: var(--rv-button-foreground);
 

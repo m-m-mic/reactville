@@ -4,7 +4,7 @@ import "./BoilerplateSlide.styles.css";
 import { useContext, useEffect, useState } from "react";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
-import { returnToLastSlide, setNextSlide } from "@/shared/functions/setSlide";
+import { setNextSlide } from "@/shared/functions/setSlide";
 import { StackContext } from "@/context";
 
 export default function BoilerplateSlide() {
@@ -22,10 +22,6 @@ export default function BoilerplateSlide() {
     setNextSlide(Slide.TourPages, slideStack, setSlideStack);
   };
 
-  const returnToLastSlideInStack = () => {
-    returnToLastSlide(slideStack, setSlideStack);
-  };
-
   if (isRemovedFromViewport(SLIDE_ID, slideStack[slideStack.length - 1])) {
     return null;
   }
@@ -36,7 +32,6 @@ export default function BoilerplateSlide() {
         <span>Boilerplate!</span>
         <div className="landing-buttons">
           <RvButton onClick={goToTourStart} label="Start the Tour!" />
-          <RvButton onClick={returnToLastSlideInStack} label="Back to Start" />
         </div>
       </div>
     </div>

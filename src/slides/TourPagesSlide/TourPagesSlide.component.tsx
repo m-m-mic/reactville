@@ -7,6 +7,8 @@ import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport"
 import TourPagesBackground from "./TourPagesSlide.background.svg?react";
 import { setNextSlide } from "@/shared/functions/setSlide";
 import { StackContext } from "@/context";
+import { RvButton } from "@/components/RvButton/RvButton.component";
+import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
 
 export default function TourPagesSlide() {
   const SLIDE_ID = Slide.TourPages;
@@ -30,14 +32,17 @@ export default function TourPagesSlide() {
   return (
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
-        <div className="explanation">
-          <div className="panel title">Router Road</div>
-          <div className="panel text-body">Lorem ipsum und so bla bla bla....</div>
-          <div className="panel buttons">
-            <button onClick={goToTourComponents}>Components</button>
+        <div className="slide-explanation">
+          <h1 className="slide-title">Router Road</h1>
+          <div className="text-body">Lorem ipsum und so bla bla bla....</div>
+          <div className="action-buttons">
+            <RvButton onClick={goToTourComponents} label="Keep it simple!" />
+            <RvButton onClick={goToTourComponents} label="Lot's of Components!" />
           </div>
         </div>
-        <div className="panel folder-structure">folder here</div>
+        <div className="folder-structure-wrapper">
+          <RvFolderStructure />
+        </div>
       </div>
       <TourPagesBackground className="background" />
     </div>

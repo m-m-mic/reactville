@@ -6,6 +6,8 @@ import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport"
 
 import { setNextSlide } from "@/shared/functions/setSlide";
 import { StackContext } from "@/context";
+import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
+import { RvButton } from "@/components/RvButton/RvButton.component";
 
 export default function TourRequestsSlide() {
   const SLIDE_ID = Slide.TourRequests;
@@ -29,14 +31,16 @@ export default function TourRequestsSlide() {
   return (
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
-        <div className="explanation">
-          <h1 className="panel title">API Avenue</h1>
-          <div className="panel text-body">Lorem ipsum und so bla bla bla....</div>
-          <div className="panel buttons">
-            <button onClick={goToTourShared}>Shared</button>
+        <div className="slide-explanation">
+          <h1 className="slide-title">API Avenue</h1>
+          <div className="text-body">Lorem ipsum und so bla bla bla....</div>
+          <div className="action-buttons">
+            <RvButton onClick={goToTourShared} label="Shared!" />
           </div>
         </div>
-        <div className="panel folder-structure">folder here</div>
+        <div className="folder-structure-wrapper">
+          <RvFolderStructure />
+        </div>
       </div>
     </div>
   );

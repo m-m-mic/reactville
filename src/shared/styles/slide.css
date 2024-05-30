@@ -28,13 +28,12 @@
 
   .foreground {
     box-sizing: border-box;
-    padding: 6cqw;
+    padding: 10cqw 15cqw;
     opacity: 0;
     z-index: 5;
-    font-size: 1cqw;
+    font-size: 1.2cqw;
     transition: opacity 200ms ease;
     display: flex;
-    gap: 2cqw;
     width: 100%;
     height: 100%;
     color: white;
@@ -47,23 +46,39 @@
     transform: translate(-50%, -50%) scale(4);
   }
 
-  .panel {
-    box-sizing: border-box;
-    padding: 1cqw;
-    background: rgba(61, 51, 96, 0.5);
-    border-radius: 0.8cqw;
-    outline: 0.2cqw solid rgba(255, 255, 255, 0.5);
-    outline-offset: 0.4cqw;
-  }
-
-  .explanation {
+  .slide-explanation {
     flex: 1;
     display: flex;
     flex-flow: column;
-    gap: 2cqw;
+    color: var(--rv-foreground-color-1);
+    background: var(--rv-foreground-color-2);
+    overflow: hidden;
+    border-radius: 1.5cqw 0 0 1.5cqw;
+  }
+
+  .slide-title {
+    color: var(--rv-foreground-color-2);
+    background: var(--rv-foreground-color-1);
+    padding: 1cqw 1.5cqw;
+    margin: 0;
   }
 
   .text-body {
     flex: 1;
+    padding: 1.5cqw;
   }
+
+  .action-buttons {
+    display: flex;
+    gap: 2cqw;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 6cqw;
+  }
+}
+
+.folder-structure-wrapper {
+  flex: 0 0 30cqw;
+  background: var(--rv-foreground-color-1);
+  border-radius: 0 1.5cqw 1.5cqw 0;
 }
