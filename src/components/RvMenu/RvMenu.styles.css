@@ -1,0 +1,20 @@
+.rv-menu {
+  position: absolute;
+  top: 1.5cqw;
+  right: 1.5cqw;
+  z-index: 30;
+  display: flex;
+
+  .fullscreen-button {
+    margin-left: 1.5cqw;
+  }
+
+  .start-button {
+    opacity: 1;
+
+    &.hidden {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+}

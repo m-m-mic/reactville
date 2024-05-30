@@ -22,7 +22,7 @@ export default function BoilerplateSlide() {
     setNextSlide(Slide.TourPages, slideStack, setSlideStack);
   };
 
-  if (isRemovedFromViewport(SLIDE_ID, slideStack[slideStack.length - 1])) {
+  if (isRemovedFromViewport(SLIDE_ID, slideStack)) {
     return null;
   }
 

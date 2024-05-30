@@ -24,7 +24,7 @@ export default function TourRequestsSlide() {
     setNextSlide(Slide.TourShared, slideStack, setSlideStack);
   };
 
-  if (isRemovedFromViewport(SLIDE_ID, slideStack[slideStack.length - 1])) {
+  if (isRemovedFromViewport(SLIDE_ID, slideStack)) {
     return null;
   }
 

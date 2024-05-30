@@ -1,0 +1,11 @@
+.rv-navigation {
+  z-index: 30;
+  position: absolute;
+  top: 5cqw;
+  left: 5cqw;
+
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+}

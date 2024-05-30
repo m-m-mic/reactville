@@ -28,7 +28,7 @@ export default function LandingSlide() {
     setNextSlide(Slide.QuickSelect, slideStack, setSlideStack);
   };
 
-  if (isRemovedFromViewport(SLIDE_ID, slideStack[slideStack.length - 1])) {
+  if (isRemovedFromViewport(SLIDE_ID, slideStack)) {
     return null;
   }
 
@@ -37,7 +37,7 @@ export default function LandingSlide() {
       <div className="foreground">
         <div className="landing-buttons">
           <RvButton onClick={goToExplanation} label="Start the tour!" />
-          <RvButton onClick={goToQuickSelectSlide} disabled={true} label="Quick Select" />
+          <RvButton onClick={goToQuickSelectSlide} label="Quick Select" />
         </div>
       </div>
       <LandingBackground className="background" />

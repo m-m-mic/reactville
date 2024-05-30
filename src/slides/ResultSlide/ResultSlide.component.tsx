@@ -21,7 +21,7 @@ export default function ResultSlide() {
     setSlideStack(INITIAL_STACK);
   };
 
-  if (isRemovedFromViewport(SLIDE_ID, slideStack[slideStack.length - 1])) {
+  if (isRemovedFromViewport(SLIDE_ID, slideStack)) {
     return null;
   }
 

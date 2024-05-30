@@ -1,5 +1,5 @@
 import "./RvFolderStructure.styles.css";
 
 export default function RvFolderStructure() {
-  return <div>Structure here</div>;
+  return <div className="rv-folder-structure">Structure here</div>;
 }
