@@ -1,5 +1,5 @@
 export interface SlideProps {
-  slideStack: Slide[];
+  slideStack?: Slide[];
   setNextSlide: (slide: Slide) => void;
   returnToLastSlide: () => void;
 }

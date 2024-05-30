@@ -35,3 +35,10 @@
   width: 100vw;
   z-index: -1;
 }
+
+.top-buttons {
+  position: absolute;
+  top: 1.5cqw;
+  right: 1.5cqw;
+  z-index: 30;
+}

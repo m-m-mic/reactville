@@ -1,14 +1,18 @@
-import { SlideId, SlideProps, SlideState } from "@/shared/types/slide.type";
+import { SlideId, SlideState } from "@/shared/types/slide.type";
 import { getSlideState } from "@/shared/functions/getSlideState";
 import "./LandingSlide.styles.css";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 
 import LandingBackground from "./LandingSlide.background.svg?react";
+import { StackContext } from "@/App";
+import { setNextSlide } from "@/shared/functions/setSlide";
 
-export default function LandingSlide({ slideStack, setNextSlide }: SlideProps) {
+export default function LandingSlide() {
   const SLIDE_ID = SlideId.Landing;
+
+  const { slideStack, setSlideStack } = useContext(StackContext);
 
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 
@@ -17,11 +21,11 @@ export default function LandingSlide({ slideStack, setNextSlide }: SlideProps) {
   }, [slideStack]);
 
   const goToBoilerplateSlide = () => {
-    setNextSlide({ id: SlideId.Boilerplate, variant: 0 });
+    setNextSlide({ id: SlideId.Boilerplate, variant: 0 }, slideStack, setSlideStack);
   };
 
   const goToQuickSelectSlide = () => {
-    setNextSlide({ id: SlideId.QuickSelect, variant: 0 });
+    setNextSlide({ id: SlideId.QuickSelect, variant: 0 }, slideStack, setSlideStack);
   };
 
   if (isRemovedFromViewport(SLIDE_ID, slideStack[slideStack.length - 1].id)) {
