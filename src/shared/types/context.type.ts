@@ -13,7 +13,7 @@ export interface ChoicesContextType {
   setChoices: React.Dispatch<React.SetStateAction<Choices>>;
 }
 
-export interface FolderContextType {
-  folder: FolderStructure;
-  setFolder: React.Dispatch<React.SetStateAction<FolderStructure>>;
+export interface FolderStructureContextType {
+  folderStructure: FolderStructure;
+  setFolderStructure: React.Dispatch<React.SetStateAction<FolderStructure>>;
 }

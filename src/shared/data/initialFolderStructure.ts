@@ -1,6 +1,6 @@
 import { FolderStructure } from "@/shared/types/folder-structure.type";
 
-export const initialFolderStructure: FolderStructure = {
+export const INITIAL_FOLDER_STRUCTURE: FolderStructure = {
   public: {
     type: "folder",
     name: "public",
@@ -26,7 +26,6 @@ export const initialFolderStructure: FolderStructure = {
   src: {
     type: "folder",
     name: "src",
-    open: true,
     content: {
       assets: {
         type: "folder",
@@ -36,10 +35,81 @@ export const initialFolderStructure: FolderStructure = {
             type: "file",
             name: "example-font.woff2",
           },
-          testO: {
+        },
+      },
+      pages: {
+        type: "folder",
+        hidden: true,
+        name: "pages",
+        content: {
+          examplePage1: {
             type: "file",
-            name: "testFile",
+            name: "examplePage1.jsx",
+          },
+          examplePage2: {
+            type: "file",
+            name: "examplePage2.jsx",
+          },
+          examplePage3: {
+            type: "file",
+            name: "examplePage3.jsx",
+          },
+          examplePage1Folder: {
+            type: "file",
             hidden: true,
+            name: "examplePage1",
+            content: {
+              examplePage1Css: {
+                type: "file",
+                name: "examplePage1.css",
+              },
+              examplePage1jsx: {
+                type: "file",
+                name: "examplePage1.jsx",
+              },
+              examplePage1SpecJsx: {
+                type: "file",
+                name: "examplePage1.spec.jsx",
+              },
+            },
+          },
+          examplePage2Folder: {
+            type: "file",
+            hidden: true,
+            name: "examplePage2",
+            content: {
+              examplePage1Css: {
+                type: "file",
+                name: "examplePage2.css",
+              },
+              examplePage1jsx: {
+                type: "file",
+                name: "examplePage2.jsx",
+              },
+              examplePage1SpecJsx: {
+                type: "file",
+                name: "examplePage2.spec.jsx",
+              },
+            },
+          },
+          examplePage3Folder: {
+            type: "file",
+            hidden: true,
+            name: "examplePage3",
+            content: {
+              examplePage1Css: {
+                type: "file",
+                name: "examplePage3.css",
+              },
+              examplePage1jsx: {
+                type: "file",
+                name: "examplePage3.jsx",
+              },
+              examplePage1SpecJsx: {
+                type: "file",
+                name: "examplePage3.spec.jsx",
+              },
+            },
           },
         },
       },
@@ -61,19 +131,19 @@ export const initialFolderStructure: FolderStructure = {
       },
     },
   },
-  config: {
+  "example-config.json": {
     type: "file",
     name: "example-config.json",
   },
-  index: {
+  "index.html": {
     type: "file",
     name: "index.html",
   },
-  package: {
+  "package.json": {
     type: "file",
     name: "package.json",
   },
-  readme: {
+  "README.md": {
     type: "file",
     name: "README.md",
   },

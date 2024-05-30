@@ -2,8 +2,16 @@ import { FileFolder, FolderStructure } from "@/shared/types/folder-structure.typ
 
 export function setFolderValueInStructure(structure: FolderStructure, keyPath: string[], value: Partial<FileFolder>) {
   const internalFolderStructure = { ...structure };
-  keyPath.reduce((folder: any, key, i) => {
-    if (i === keyPath.length - 1) {
+  const internalKeyPath: string[] = [].concat(...keyPath.map((key) => [key, "content"])).slice(0, -1);
+
+  internalKeyPath.reduce((folder: any, key, i) => {
+    if (key === "content") {
+      return folder[key];
+    }
+    if (value.open === true) {
+      folder[key] = { ...folder[key], open: true };
+    }
+    if (i === internalKeyPath.length - 1) {
       folder[key] = { ...folder[key], ...value };
     }
     return folder[key];
@@ -32,16 +40,16 @@ export function modifyOpenOfAllFolders(structure: FolderStructure, open: boolean
 export function removeHighlightFromAllFiles(structure: FolderStructure) {
   const internalFolderStructure = { ...structure };
 
-  const collapseInternalFolders = (folderStructure: FolderStructure) => {
+  const removeInternalHighlights = (folderStructure: FolderStructure) => {
     Object.values(folderStructure).forEach((subFile) => {
+      subFile.highlighted = false;
       if (subFile.type === "folder" && subFile.content) {
-        subFile.highlighted = false;
-        collapseInternalFolders(subFile.content);
+        removeInternalHighlights(subFile.content);
       }
     });
   };
 
-  collapseInternalFolders(internalFolderStructure);
+  removeInternalHighlights(internalFolderStructure);
 
   return internalFolderStructure;
 }

@@ -3,10 +3,10 @@ import RvFolder from "@/components/RvFolder/RvFolder.component";
 import RvFile from "@/components/RvFile/RvFile.component";
 import { ReactNode, useContext } from "react";
 import { FolderStructure } from "@/shared/types/folder-structure.type";
-import { FolderContext } from "@/context";
+import { FolderStructureContext } from "@/context";
 
 export default function RvFolderStructure() {
-  const { folder } = useContext(FolderContext);
+  const { folderStructure } = useContext(FolderStructureContext);
 
   const constructFilesFromStructure = (structure: FolderStructure, keyPath: string[] = []): ReactNode[] => {
     const files: ReactNode[] = [];
@@ -23,7 +23,7 @@ export default function RvFolderStructure() {
             open={subFile.open}
             highlighted={subFile.highlighted}
             hidden={subFile.hidden}>
-            {constructFilesFromStructure(subFile.content, [...keyPath, fileKeys[index], "content"])}
+            {constructFilesFromStructure(subFile.content, [...keyPath, fileKeys[index]])}
           </RvFolder>,
         );
       } else {
@@ -34,5 +34,5 @@ export default function RvFolderStructure() {
     });
     return files;
   };
-  return <div className="rv-folder-structure">{constructFilesFromStructure(folder)}</div>;
+  return <div className="rv-folder-structure">{constructFilesFromStructure(folderStructure)}</div>;
 }
