@@ -34,5 +34,6 @@ export default function RvFolderStructure() {
     });
     return files;
   };
+
   return <div className="rv-folder-structure">{constructFilesFromStructure(folderStructure)}</div>;
 }

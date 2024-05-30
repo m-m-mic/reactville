@@ -1,6 +1,6 @@
 import { FileFolder, FolderStructure } from "@/shared/types/folder-structure.type";
 
-export function setFolderValueInStructure(structure: FolderStructure, keyPaths: string[][], value: Partial<FileFolder>) {
+export function setValuesInStructure(structure: FolderStructure, keyPaths: string[][], value: Partial<FileFolder>) {
   const internalFolderStructure = { ...structure };
 
   for (const keyPath of keyPaths) {

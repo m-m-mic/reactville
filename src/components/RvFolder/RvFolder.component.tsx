@@ -1,7 +1,7 @@
 import "./RvFolder.styles.css";
 import { ReactNode, useContext, useEffect, useState } from "react";
 import { FolderStructureContext } from "@/context";
-import { setFolderValueInStructure } from "@/shared/functions/setStructureFolderValue";
+import { setValuesInStructure } from "@/shared/functions/setStructureFolderValue";
 
 interface RvFolderProps {
   name: string;
@@ -45,7 +45,7 @@ export default function RvFolder({ keyPath, name, children, highlighted = false,
   }, [children]);
 
   const changeOpenState = () => {
-    const updatedStructure = setFolderValueInStructure(folderStructure, [keyPath], { open: !open });
+    const updatedStructure = setValuesInStructure(folderStructure, [keyPath], { open: !open });
     setFolderStructure(updatedStructure);
   };
 

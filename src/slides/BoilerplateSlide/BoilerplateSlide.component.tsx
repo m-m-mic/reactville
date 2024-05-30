@@ -10,7 +10,7 @@ import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.
 import {
   closeAllFoldersAndRemoveHighlighting,
   modifyOpenOfAllFolders,
-  setFolderValueInStructure,
+  setValuesInStructure,
 } from "@/shared/functions/setStructureFolderValue";
 
 export default function BoilerplateSlide() {
@@ -39,19 +39,19 @@ export default function BoilerplateSlide() {
   };
 
   const step1 = () => {
-    const updatedStructure = setFolderValueInStructure(folderStructure, [["public"]], { open: true, highlighted: true });
+    const updatedStructure = setValuesInStructure(folderStructure, [["public"]], { open: true, highlighted: true });
     setFolderStructure(updatedStructure);
   };
 
   const step2 = () => {
-    let updatedStructure = setFolderValueInStructure(folderStructure, [["public"]], { open: false, highlighted: false });
-    updatedStructure = setFolderValueInStructure(updatedStructure, [["src"]], { open: true, highlighted: true });
+    let updatedStructure = setValuesInStructure(folderStructure, [["public"]], { open: false, highlighted: false });
+    updatedStructure = setValuesInStructure(updatedStructure, [["src"]], { open: true, highlighted: true });
     setFolderStructure(updatedStructure);
   };
 
   const step3 = () => {
-    let updatedStructure = setFolderValueInStructure(folderStructure, [["src"]], { open: false, highlighted: false });
-    updatedStructure = setFolderValueInStructure(
+    let updatedStructure = setValuesInStructure(folderStructure, [["src"]], { open: false, highlighted: false });
+    updatedStructure = setValuesInStructure(
       updatedStructure,
       [["example-config.json"], ["index.html"], ["package.json"], ["README.md"]],
       { highlighted: true },
@@ -67,7 +67,7 @@ export default function BoilerplateSlide() {
   const showPagesFolder = () => {
     let updatedStructure = closeAllFoldersAndRemoveHighlighting(folderStructure);
 
-    updatedStructure = setFolderValueInStructure(
+    updatedStructure = setValuesInStructure(
       updatedStructure,
       [
         ["src", "pages", "examplePage1.jsx"],
@@ -81,7 +81,7 @@ export default function BoilerplateSlide() {
       },
     );
 
-    updatedStructure = setFolderValueInStructure(
+    updatedStructure = setValuesInStructure(
       updatedStructure,
       [
         ["src", "pages", "examplePage1"],
@@ -101,7 +101,7 @@ export default function BoilerplateSlide() {
   const replace = () => {
     let updatedStructure = closeAllFoldersAndRemoveHighlighting(folderStructure);
 
-    updatedStructure = setFolderValueInStructure(
+    updatedStructure = setValuesInStructure(
       updatedStructure,
       [
         ["src", "pages", "examplePage1.jsx"],
@@ -115,7 +115,7 @@ export default function BoilerplateSlide() {
       },
     );
 
-    updatedStructure = setFolderValueInStructure(
+    updatedStructure = setValuesInStructure(
       updatedStructure,
       [
         ["src", "pages", "examplePage1"],
