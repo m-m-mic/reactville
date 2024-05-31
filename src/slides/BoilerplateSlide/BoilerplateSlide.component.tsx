@@ -5,18 +5,19 @@ import { useContext, useEffect, useState } from "react";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 import { setNextSlide } from "@/shared/functions/setSlide";
-import { FolderStructureContext, StackContext } from "@/context";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
 import {
   closeAllFoldersAndRemoveHighlighting,
   modifyOpenOfAllFolders,
   setValuesInStructure,
 } from "@/shared/functions/setStructureFolderValue";
+import { SlideStackContext } from "@/context/SlideStackContext.provider";
+import { FolderStructureContext } from "@/context/FolderStructureContext.provider";
 
 export default function BoilerplateSlide() {
   const SLIDE_ID = Slide.Boilerplate;
 
-  const { slideStack, setSlideStack } = useContext(StackContext);
+  const { slideStack, setSlideStack } = useContext(SlideStackContext);
   const { folderStructure, setFolderStructure } = useContext(FolderStructureContext);
 
   const [slideState, setSlideState] = useState<SlideState | undefined>();

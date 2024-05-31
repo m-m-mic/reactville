@@ -1,7 +1,7 @@
 import "./RvFolder.styles.css";
 import { ReactNode, useContext, useEffect, useState } from "react";
-import { FolderStructureContext } from "@/context";
 import { setValuesInStructure } from "@/shared/functions/setStructureFolderValue";
+import { FolderStructureContext } from "@/context/FolderStructureContext.provider";
 
 interface RvFolderProps {
   name: string;

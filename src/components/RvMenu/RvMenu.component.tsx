@@ -1,15 +1,18 @@
 import { RvButton } from "@/components/RvButton/RvButton.component";
-import { ChoicesContext, FolderStructureContext, INITIAL_CHOICES, INITIAL_STACK, StackContext } from "@/context";
+import { INITIAL_CHOICES, INITIAL_SLIDE_STACK } from "@/context/initial.context";
 import { useContext, useEffect, useState } from "react";
 
 import "./RvMenu.styles.css";
 import { Slide } from "@/shared/types/slide.type";
 import { INITIAL_FOLDER_STRUCTURE } from "@/shared/data/initialFolderStructure";
+import { SlideStackContext } from "@/context/SlideStackContext.provider";
+import { FolderStructureContext } from "@/context/FolderStructureContext.provider";
+import { ChoicesContext } from "@/context/ChoicesContext.provider";
 
 export default function RvMenu() {
   const [landingVisibilityClass, setLandingVisibilityClass] = useState<"visible" | "hidden">("hidden");
 
-  const { slideStack, setSlideStack } = useContext(StackContext);
+  const { slideStack, setSlideStack } = useContext(SlideStackContext);
   const { setFolderStructure } = useContext(FolderStructureContext);
   const { setChoices } = useContext(ChoicesContext);
 
@@ -26,7 +29,7 @@ export default function RvMenu() {
   };
 
   const returnToStart = () => {
-    setSlideStack(INITIAL_STACK);
+    setSlideStack(INITIAL_SLIDE_STACK);
     setFolderStructure(structuredClone(INITIAL_FOLDER_STRUCTURE));
     setChoices(structuredClone(INITIAL_CHOICES));
   };

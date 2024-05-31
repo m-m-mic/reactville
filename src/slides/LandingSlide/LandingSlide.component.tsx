@@ -7,12 +7,12 @@ import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport"
 
 import LandingBackground from "./LandingSlide.background.svg?react";
 import { setNextSlide } from "@/shared/functions/setSlide";
-import { StackContext } from "@/context";
+import { SlideStackContext } from "@/context/SlideStackContext.provider";
 
 export default function LandingSlide() {
   const SLIDE_ID = Slide.Landing;
 
-  const { slideStack, setSlideStack } = useContext(StackContext);
+  const { slideStack, setSlideStack } = useContext(SlideStackContext);
 
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 

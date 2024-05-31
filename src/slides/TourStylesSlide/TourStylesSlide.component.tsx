@@ -5,14 +5,14 @@ import { useContext, useEffect, useState } from "react";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 
 import { setNextSlide } from "@/shared/functions/setSlide";
-import { StackContext } from "@/context";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
+import { SlideStackContext } from "@/context/SlideStackContext.provider";
 
 export default function TourStylesSlide() {
   const SLIDE_ID = Slide.TourStyles;
 
-  const { slideStack, setSlideStack } = useContext(StackContext);
+  const { slideStack, setSlideStack } = useContext(SlideStackContext);
 
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 

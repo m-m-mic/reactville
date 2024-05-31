@@ -29,16 +29,16 @@ export function setValuesInStructure(structure: FolderStructure, keyPaths: strin
 export function modifyOpenOfAllFolders(structure: FolderStructure, open: boolean) {
   const internalFolderStructure = { ...structure };
 
-  const collapseInternalFolders = (folderStructure: FolderStructure) => {
+  const modifyInternalFolders = (folderStructure: FolderStructure) => {
     Object.values(folderStructure).forEach((subFile) => {
       if (subFile.type === "folder" && subFile.content) {
         subFile.open = open;
-        collapseInternalFolders(subFile.content);
+        modifyInternalFolders(subFile.content);
       }
     });
   };
 
-  collapseInternalFolders(internalFolderStructure);
+  modifyInternalFolders(internalFolderStructure);
 
   return internalFolderStructure;
 }

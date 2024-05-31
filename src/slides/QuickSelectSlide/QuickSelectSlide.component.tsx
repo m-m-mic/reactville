@@ -4,13 +4,13 @@ import { getSlideState } from "@/shared/functions/getSlideState";
 import { returnToLastSlide, setNextSlide } from "@/shared/functions/setSlide";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 import { RvButton } from "@/components/RvButton/RvButton.component";
-import { StackContext } from "@/context";
 import "./QuickSelectSlide.styles.css";
+import { SlideStackContext } from "@/context/SlideStackContext.provider";
 
 export default function QuickSelectSlide() {
   const SLIDE_ID = Slide.QuickSelect;
 
-  const { slideStack, setSlideStack } = useContext(StackContext);
+  const { slideStack, setSlideStack } = useContext(SlideStackContext);
 
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 
