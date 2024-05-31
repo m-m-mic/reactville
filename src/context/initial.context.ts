@@ -10,11 +10,18 @@ export const INITIAL_SLIDE_STACK_CONTEXT: SlideStackContextType = {
   setSlideStack: () => {},
 };
 
-export const INITIAL_CHOICES: Choices = { selectedChoices: {}, highlightedChoice: undefined };
+export const INITIAL_CHOICES: Choices = {
+  pages: undefined,
+  components: undefined,
+  styles: undefined,
+  store: undefined,
+  requests: undefined,
+  shared: undefined,
+};
 
 export const INITIAL_CHOICES_STACK: ChoicesContextType = {
   choices: structuredClone(INITIAL_CHOICES),
-  setChoices: () => {},
+  updateChoices: (choicesToUpdate: Partial<Choices>) => {},
 };
 
 export const INITIAL_FOLDER_STRUCTURE_CONTEXT: FolderStructureContextType = {

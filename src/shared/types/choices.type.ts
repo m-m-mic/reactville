@@ -1,15 +1,8 @@
 export interface Choices {
-  selectedChoices: SelectedChoices;
-  highlightedChoice: HighlightedChoice;
+  pages: boolean | undefined;
+  components: boolean | undefined;
+  styles: boolean | undefined;
+  store: boolean | undefined;
+  requests: boolean | undefined;
+  shared: boolean | undefined;
 }
-
-export interface SelectedChoices {
-  pages?: boolean;
-  components?: boolean;
-  styles?: boolean;
-  store?: boolean;
-  requests?: boolean;
-  shared?: boolean;
-}
-
-export type HighlightedChoice = "pages" | "components" | "styles" | "store" | "requests" | "shared" | undefined;

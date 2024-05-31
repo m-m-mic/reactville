@@ -10,7 +10,7 @@ export interface SlideStackContextType {
 
 export interface ChoicesContextType {
   choices: Choices;
-  setChoices: React.Dispatch<React.SetStateAction<Choices>>;
+  updateChoices: (choicesToUpdate: Partial<Choices>) => void;
 }
 
 export interface FolderStructureContextType {

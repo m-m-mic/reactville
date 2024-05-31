@@ -4,17 +4,14 @@ import { useContext, useEffect, useState } from "react";
 
 import "./RvMenu.styles.css";
 import { Slide } from "@/shared/types/slide.type";
-import { INITIAL_FOLDER_STRUCTURE } from "@/shared/data/initialFolderStructure";
 import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
-import { FolderStructureContext } from "@/context/providers/FolderStructureContext.provider";
 import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
 
 export default function RvMenu() {
   const [landingVisibilityClass, setLandingVisibilityClass] = useState<"visible" | "hidden">("hidden");
 
   const { slideStack, setSlideStack } = useContext(SlideStackContext);
-  const { setFolderStructure } = useContext(FolderStructureContext);
-  const { setChoices } = useContext(ChoicesContext);
+  const { updateChoices } = useContext(ChoicesContext);
 
   useEffect(() => {
     updateLandingVisibilityClass();
@@ -30,8 +27,7 @@ export default function RvMenu() {
 
   const returnToStart = () => {
     setSlideStack(INITIAL_SLIDE_STACK);
-    setFolderStructure(structuredClone(INITIAL_FOLDER_STRUCTURE));
-    setChoices(structuredClone(INITIAL_CHOICES));
+    updateChoices(structuredClone(INITIAL_CHOICES));
   };
 
   return (
