@@ -72,8 +72,11 @@ export default function BoilerplateSlide() {
       updatedStructure,
       [
         ["src", "pages", "examplePage1.jsx"],
+        ["src", "pages", "examplePage1.spec.jsx"],
+        ["src", "pages", "examplePage1.css"],
         ["src", "pages", "examplePage2.jsx"],
-        ["src", "pages", "examplePage3.jsx"],
+        ["src", "pages", "examplePage2.spec.jsx"],
+        ["src", "pages", "examplePage2.css"],
       ],
       {
         hidden: false,
@@ -106,12 +109,14 @@ export default function BoilerplateSlide() {
       updatedStructure,
       [
         ["src", "pages", "examplePage1.jsx"],
+        ["src", "pages", "examplePage1.spec.jsx"],
+        ["src", "pages", "examplePage1.css"],
         ["src", "pages", "examplePage2.jsx"],
-        ["src", "pages", "examplePage3.jsx"],
+        ["src", "pages", "examplePage2.spec.jsx"],
+        ["src", "pages", "examplePage2.css"],
       ],
       {
         hidden: true,
-        open: false,
         highlighted: false,
       },
     );
