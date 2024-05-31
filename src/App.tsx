@@ -2,9 +2,9 @@ import "./App.css";
 import "./shared/styles/slide.css";
 import { GetOrientation } from "@/shared/functions/getOrientation";
 
-import SlideStackContextProvider from "@/context/SlideStackContext.provider";
-import FolderStructureContextProvider from "@/context/FolderStructureContext.provider";
-import ChoicesContextProvider from "@/context/ChoicesContext.provider";
+import SlideStackContextProvider from "@/context/providers/SlideStackContext.provider";
+import FolderStructureContextProvider from "@/context/providers/FolderStructureContext.provider";
+import ChoicesContextProvider from "@/context/providers/ChoicesContext.provider";
 
 import LandingSlide from "@/slides/LandingSlide/LandingSlide.component";
 import BoilerplateSlide from "@/slides/BoilerplateSlide/BoilerplateSlide.component";

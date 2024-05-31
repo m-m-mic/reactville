@@ -5,7 +5,7 @@ import { returnToLastSlide, setNextSlide } from "@/shared/functions/setSlide";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import "./QuickSelectSlide.styles.css";
-import { SlideStackContext } from "@/context/SlideStackContext.provider";
+import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
 
 export default function QuickSelectSlide() {
   const SLIDE_ID = Slide.QuickSelect;

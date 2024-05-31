@@ -5,7 +5,7 @@ import { returnToLastSlide, setNextSlide } from "@/shared/functions/setSlide";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import "./ExplanationSlide.styles.css";
-import { SlideStackContext } from "@/context/SlideStackContext.provider";
+import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
 
 export default function ExplanationSlide() {
   const SLIDE_ID = Slide.Explanation;

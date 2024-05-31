@@ -3,7 +3,7 @@ import RvFolder from "@/components/RvFolder/RvFolder.component";
 import RvFile from "@/components/RvFile/RvFile.component";
 import { ReactNode, useContext } from "react";
 import { FolderStructure } from "@/shared/types/folder-structure.type";
-import { FolderStructureContext } from "@/context/FolderStructureContext.provider";
+import { FolderStructureContext } from "@/context/providers/FolderStructureContext.provider";
 
 export default function RvFolderStructure() {
   const { folderStructure } = useContext(FolderStructureContext);

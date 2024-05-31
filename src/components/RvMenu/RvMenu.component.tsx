@@ -5,9 +5,9 @@ import { useContext, useEffect, useState } from "react";
 import "./RvMenu.styles.css";
 import { Slide } from "@/shared/types/slide.type";
 import { INITIAL_FOLDER_STRUCTURE } from "@/shared/data/initialFolderStructure";
-import { SlideStackContext } from "@/context/SlideStackContext.provider";
-import { FolderStructureContext } from "@/context/FolderStructureContext.provider";
-import { ChoicesContext } from "@/context/ChoicesContext.provider";
+import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
+import { FolderStructureContext } from "@/context/providers/FolderStructureContext.provider";
+import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
 
 export default function RvMenu() {
   const [landingVisibilityClass, setLandingVisibilityClass] = useState<"visible" | "hidden">("hidden");

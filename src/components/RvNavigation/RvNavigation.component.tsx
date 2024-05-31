@@ -1,6 +1,6 @@
 import "./RvNavigation.styles.css";
 import { useContext, useEffect, useState } from "react";
-import { SlideStackContext } from "@/context/SlideStackContext.provider";
+import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
 
 export default function RvNavigation() {
   const [visibilityClass, setVisibilityClass] = useState<"visible" | "hidden">("hidden");

@@ -11,8 +11,8 @@ import {
   modifyOpenOfAllFolders,
   setValuesInStructure,
 } from "@/shared/functions/setStructureFolderValue";
-import { SlideStackContext } from "@/context/SlideStackContext.provider";
-import { FolderStructureContext } from "@/context/FolderStructureContext.provider";
+import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
+import { FolderStructureContext } from "@/context/providers/FolderStructureContext.provider";
 
 export default function BoilerplateSlide() {
   const SLIDE_ID = Slide.Boilerplate;

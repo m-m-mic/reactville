@@ -3,7 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import { getSlideState } from "@/shared/functions/getSlideState";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 import "./ResultSlide.styles.css";
-import { SlideStackContext } from "@/context/SlideStackContext.provider";
+import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
 
 export default function ResultSlide() {
   const SLIDE_ID = Slide.Result;

@@ -7,7 +7,7 @@ import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport"
 
 import LandingBackground from "./LandingSlide.background.svg?react";
 import { setNextSlide } from "@/shared/functions/setSlide";
-import { SlideStackContext } from "@/context/SlideStackContext.provider";
+import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
 
 export default function LandingSlide() {
   const SLIDE_ID = Slide.Landing;
