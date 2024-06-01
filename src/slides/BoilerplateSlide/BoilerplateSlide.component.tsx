@@ -5,12 +5,20 @@ import { useContext, useEffect, useState } from "react";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 import { setNextSlide } from "@/shared/functions/setSlide";
-import { StackContext } from "@/context";
+import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
+import {
+  closeAllFoldersAndRemoveHighlighting,
+  modifyOpenOfAllFolders,
+  setValuesInStructure,
+} from "@/shared/functions/setStructureFolderValue";
+import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
+import { FolderStructureContext } from "@/context/providers/FolderStructureContext.provider";
 
 export default function BoilerplateSlide() {
   const SLIDE_ID = Slide.Boilerplate;
 
-  const { slideStack, setSlideStack } = useContext(StackContext);
+  const { slideStack, setSlideStack } = useContext(SlideStackContext);
+  const { folderStructure, setFolderStructure } = useContext(FolderStructureContext);
 
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 
@@ -26,12 +34,132 @@ export default function BoilerplateSlide() {
     return null;
   }
 
+  const open = () => {
+    const updatedStructure = modifyOpenOfAllFolders(folderStructure, true);
+    setFolderStructure(updatedStructure);
+  };
+
+  const step1 = () => {
+    const updatedStructure = setValuesInStructure(folderStructure, [["public"]], { open: true, highlighted: true });
+    setFolderStructure(updatedStructure);
+  };
+
+  const step2 = () => {
+    let updatedStructure = setValuesInStructure(folderStructure, [["public"]], { open: false, highlighted: false });
+    updatedStructure = setValuesInStructure(updatedStructure, [["src"]], { open: true, highlighted: true });
+    setFolderStructure(updatedStructure);
+  };
+
+  const step3 = () => {
+    let updatedStructure = setValuesInStructure(folderStructure, [["src"]], { open: false, highlighted: false });
+    updatedStructure = setValuesInStructure(
+      updatedStructure,
+      [["example-config.json"], ["index.html"], ["package.json"], ["README.md"]],
+      { highlighted: true },
+    );
+    setFolderStructure(updatedStructure);
+  };
+
+  const cleanUp = () => {
+    const updatedStructure = closeAllFoldersAndRemoveHighlighting(folderStructure);
+    setFolderStructure(updatedStructure);
+  };
+
+  const showPagesFolder = () => {
+    let updatedStructure = closeAllFoldersAndRemoveHighlighting(folderStructure);
+
+    updatedStructure = setValuesInStructure(
+      updatedStructure,
+      [
+        ["src", "pages", "examplePage1.jsx"],
+        ["src", "pages", "examplePage1.spec.jsx"],
+        ["src", "pages", "examplePage1.css"],
+        ["src", "pages", "examplePage2.jsx"],
+        ["src", "pages", "examplePage2.spec.jsx"],
+        ["src", "pages", "examplePage2.css"],
+      ],
+      {
+        hidden: false,
+        open: true,
+        highlighted: true,
+      },
+    );
+
+    updatedStructure = setValuesInStructure(
+      updatedStructure,
+      [
+        ["src", "pages", "examplePage1"],
+        ["src", "pages", "examplePage2"],
+        ["src", "pages", "examplePage3"],
+      ],
+      {
+        hidden: true,
+        open: false,
+        highlighted: false,
+      },
+    );
+
+    setFolderStructure(updatedStructure);
+  };
+
+  const replace = () => {
+    let updatedStructure = closeAllFoldersAndRemoveHighlighting(folderStructure);
+
+    updatedStructure = setValuesInStructure(
+      updatedStructure,
+      [
+        ["src", "pages", "examplePage1.jsx"],
+        ["src", "pages", "examplePage1.spec.jsx"],
+        ["src", "pages", "examplePage1.css"],
+        ["src", "pages", "examplePage2.jsx"],
+        ["src", "pages", "examplePage2.spec.jsx"],
+        ["src", "pages", "examplePage2.css"],
+      ],
+      {
+        hidden: true,
+        highlighted: false,
+      },
+    );
+
+    updatedStructure = setValuesInStructure(
+      updatedStructure,
+      [
+        ["src", "pages", "examplePage1"],
+        ["src", "pages", "examplePage2"],
+        ["src", "pages", "examplePage3"],
+      ],
+      {
+        hidden: false,
+        open: true,
+        highlighted: true,
+      },
+    );
+
+    setFolderStructure(updatedStructure);
+  };
+
   return (
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
-        <span>Boilerplate!</span>
-        <div className="landing-buttons">
-          <RvButton onClick={goToTourStart} label="Start the Tour!" />
+        <div className="slide-explanation">
+          <h1 className="slide-title">Boilerplate</h1>
+          <div className="text-body">
+            Lorem ipsum und so bla bla bla....
+            <div className="action-buttons" style={{ flexFlow: "row wrap" }}>
+              <RvButton onClick={step1} label="Step 1!" />
+              <RvButton onClick={step2} label="Step 2!" />
+              <RvButton onClick={step3} label="Step 3!" />
+              <RvButton onClick={cleanUp} label="Clean up!" />
+              <RvButton onClick={showPagesFolder} label="Show pages folder!" />
+              <RvButton onClick={replace} label="Replace pages folder!" />
+            </div>
+          </div>
+          <div className="action-buttons">
+            <RvButton onClick={goToTourStart} label="Start the tour!" />
+          </div>
+        </div>
+        <div className="folder-structure-wrapper">
+          <RvFolderStructure />
         </div>
       </div>
     </div>

@@ -1,12 +1,14 @@
-import { useState } from "react";
-
 import "./App.css";
 import "./shared/styles/slide.css";
 import { GetOrientation } from "@/shared/functions/getOrientation";
+
+import SlideStackContextProvider from "@/context/providers/SlideStackContext.provider";
+import FolderStructureContextProvider from "@/context/providers/FolderStructureContext.provider";
+import ChoicesContextProvider from "@/context/providers/ChoicesContext.provider";
+
 import LandingSlide from "@/slides/LandingSlide/LandingSlide.component";
 import BoilerplateSlide from "@/slides/BoilerplateSlide/BoilerplateSlide.component";
 import TourPagesSlide from "@/slides/TourPagesSlide/TourPagesSlide.component";
-import { INITIAL_CHOICES, INITIAL_STACK, ChoicesContext, StackContext } from "@/context";
 import ExplanationSlide from "@/slides/ExplanationSlide/ExplanationSlide.component";
 import QuickSelectSlide from "@/slides/QuickSelectSlide/QuickSelectSlide.component";
 import TourComponentsSlide from "@/slides/TourComponentsSlide/TourComponentsSlide.component";
@@ -19,34 +21,33 @@ import RvNavigation from "@/components/RvNavigation/RvNavigation.component";
 import RvMenu from "@/components/RvMenu/RvMenu.component";
 
 export default function App() {
-  const [slideStack, setSlideStack] = useState(INITIAL_STACK);
-  const [choices, setChoices] = useState(INITIAL_CHOICES);
-
   const getAspectRatioClass = () => {
     return GetOrientation();
   };
 
   return (
-    <ChoicesContext.Provider value={{ choices, setChoices }}>
-      <StackContext.Provider value={{ slideStack, setSlideStack }}>
-        <div className={`view-container ${getAspectRatioClass()}`}>
-          <RvMenu />
-          <RvNavigation />
+    <SlideStackContextProvider>
+      <FolderStructureContextProvider>
+        <ChoicesContextProvider>
+          <div className={`view-container ${getAspectRatioClass()}`}>
+            <RvMenu />
+            <RvNavigation />
 
-          <LandingSlide />
-          <QuickSelectSlide />
-          <ExplanationSlide />
-          <BoilerplateSlide />
-          <TourPagesSlide />
-          <TourComponentsSlide />
-          <TourStylesSlide />
-          <TourStoreSlide />
-          <TourRequestsSlide />
-          <TourSharedSlide />
-          <ResultSlide />
-          <img className="city-background" src="/tourCityBackground.svg" alt="" />
-        </div>
-      </StackContext.Provider>
-    </ChoicesContext.Provider>
+            <LandingSlide />
+            <QuickSelectSlide />
+            <ExplanationSlide />
+            <BoilerplateSlide />
+            <TourPagesSlide />
+            <TourComponentsSlide />
+            <TourStylesSlide />
+            <TourStoreSlide />
+            <TourRequestsSlide />
+            <TourSharedSlide />
+            <ResultSlide />
+            <img className="city-background" src="/tourCityBackground.svg" alt="" />
+          </div>
+        </ChoicesContextProvider>
+      </FolderStructureContextProvider>
+    </SlideStackContextProvider>
   );
 }

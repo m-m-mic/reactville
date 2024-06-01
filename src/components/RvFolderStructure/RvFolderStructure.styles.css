@@ -1,4 +1,22 @@
 .rv-folder-structure {
   color: var(--rv-foreground-color-2);
   height: 100%;
+  overflow: auto;
+
+  .highlighted {
+    background: var(--rv-highlight-color);
+  }
+
+  &::-webkit-scrollbar {
+    width: 0.6cqw;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: var(--rv-foreground-color-2);
+  }
 }

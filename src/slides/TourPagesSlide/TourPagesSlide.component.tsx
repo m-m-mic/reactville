@@ -6,14 +6,16 @@ import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport"
 
 import TourPagesBackground from "./TourPagesSlide.background.svg?react";
 import { setNextSlide } from "@/shared/functions/setSlide";
-import { StackContext } from "@/context";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
+import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
+import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
 
 export default function TourPagesSlide() {
   const SLIDE_ID = Slide.TourPages;
 
-  const { slideStack, setSlideStack } = useContext(StackContext);
+  const { slideStack, setSlideStack } = useContext(SlideStackContext);
+  const { updateChoices } = useContext(ChoicesContext);
 
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 
@@ -23,6 +25,14 @@ export default function TourPagesSlide() {
 
   const goToTourComponents = () => {
     setNextSlide(Slide.TourComponents, slideStack, setSlideStack);
+  };
+
+  const singlePage = () => {
+    updateChoices({ pages: false });
+  };
+
+  const multiplePages = () => {
+    updateChoices({ pages: true });
   };
 
   if (isRemovedFromViewport(SLIDE_ID, slideStack)) {
@@ -35,9 +45,10 @@ export default function TourPagesSlide() {
         <div className="slide-explanation">
           <h1 className="slide-title">Router Road</h1>
           <div className="text-body">Lorem ipsum und so bla bla bla....</div>
+          <RvButton onClick={singlePage} label="Only one page!" />
+          <RvButton onClick={multiplePages} label="Lot's of pages!" />
           <div className="action-buttons">
-            <RvButton onClick={goToTourComponents} label="Keep it simple!" />
-            <RvButton onClick={goToTourComponents} label="Lot's of Components!" />
+            <RvButton onClick={goToTourComponents} label="Tour Components!" />
           </div>
         </div>
         <div className="folder-structure-wrapper">

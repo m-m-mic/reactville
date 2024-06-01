@@ -1,0 +1,61 @@
+.rv-folder {
+  font-size: 1cqw;
+  display: flex;
+  flex-flow: column;
+  outline-offset: -0.1cqw;
+  outline: 0 solid var(--rv-foreground-color-2);
+  transition: height 200ms ease;
+
+  &:has(> .folder-name:focus) {
+    outline-width: 0.1cqw;
+  }
+
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0 !important;
+  }
+
+  .folder-name {
+    font-weight: 600;
+    height: 1.8cqw;
+    border: none;
+    background: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0 0 0 0.4cqw;
+    text-align: left;
+    display: flex;
+    gap: 0.6cqw;
+    align-items: center;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .chevron {
+    flex: 0 0 0.4cqw;
+    transition: transform 200ms ease;
+
+    &.open {
+      transform: rotate(90deg);
+    }
+
+    .cls-1 {
+      fill: var(--rv-foreground-color-2) !important;
+    }
+  }
+
+  .contents {
+    transition: 100ms ease;
+    margin-left: 2cqw;
+    &.closed {
+      visibility: hidden;
+      opacity: 0;
+      height: 0 !important;
+    }
+  }
+}

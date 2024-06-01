@@ -1,0 +1,15 @@
+.rv-file {
+  font-size: 1cqw;
+  font-weight: 600;
+  height: 1.8cqw;
+  padding-left: 0.4cqw;
+  display: flex;
+  align-items: center;
+  transition: 200ms ease;
+
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0 !important;
+  }
+}

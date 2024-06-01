@@ -2,6 +2,7 @@
   font-family: Pally, sans-serif;
   font-weight: 600;
   padding: 0.6cqw 1cqw;
+  margin: 0.4cqw;
   border: none;
   box-sizing: border-box;
   display: flex;
@@ -12,12 +13,12 @@
   border-radius: 100px;
   gap: 8px;
   transition: 300ms ease-out;
-  outline: 0.2cqw solid var(--rv-button-background);
-  background: var(--rv-button-background);
+  outline: 0.2cqw solid var(--rv-foreground-color-1);
+  background: var(--rv-foreground-color-1);
   outline-offset: 0.2cqw;
   text-transform: uppercase;
   font-size: 1.2cqw;
-  color: var(--rv-button-foreground);
+  color: var(--rv-foreground-color-2);
 
   &.disabled {
     pointer-events: none;
@@ -28,19 +29,17 @@
   &:not(.disabled) {
     &:hover {
       transform: scale(1.07);
-      outline: 0.2cqw solid var(--rv-button-background);
       outline-offset: -0.1cqw;
     }
 
     &:focus {
       transform: scale(1.07);
-      outline: 0.2cqw solid var(--rv-button-foreground);
+      outline-color: var(--rv-foreground-color-2);
       outline-offset: -0.1cqw;
     }
 
     &:active {
       transform: scale(1);
-      outline: 0.2cqw solid var(--rv-button-background);
       outline-offset: -0.1cqw;
     }
   }
