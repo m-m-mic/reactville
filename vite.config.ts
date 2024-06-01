@@ -5,7 +5,7 @@ import svgr from "vite-plugin-svgr";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/",
+  base: "/reactville/",
   plugins: [react(), viteTsconfigPaths(), svgr()],
   server: {
     open: true,
