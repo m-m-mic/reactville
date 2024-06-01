@@ -15,12 +15,18 @@ import RvTooltip from "@/components/RvTooltip/RvTooltip.component";
 export default function RvMenu() {
   const [landingVisibilityClass, setLandingVisibilityClass] = useState<"visible" | "hidden">("hidden");
   const [isInFullscreen, setIsInFullscreen] = useState<boolean | undefined>();
+  const [isFullscreenTooltipVisible, setIsFullscreenTooltipVisible] = useState(false);
   const { slideStack, setSlideStack } = useContext(SlideStackContext);
   const { updateChoices } = useContext(ChoicesContext);
 
   useEffect(() => {
     document.addEventListener("fullscreenchange", onFullscreen);
     document.addEventListener("keydown", onF11Keydown);
+
+    if (slideStack[slideStack.length - 1] === Slide.Landing) {
+      setIsFullscreenTooltipVisible(true);
+      new Promise((res) => setTimeout(res, 10000)).then(() => setIsFullscreenTooltipVisible(false));
+    }
 
     return () => {
       document.removeEventListener("fullscreenchange", onFullscreen);
@@ -57,6 +63,7 @@ export default function RvMenu() {
   };
 
   const toggleFullScreen = () => {
+    setIsFullscreenTooltipVisible(false);
     if (isInFullscreen) {
       document.exitFullscreen();
     } else {
@@ -70,7 +77,7 @@ export default function RvMenu() {
         <RvMenuButton label="Return to start" onClick={returnToStart} iconRight={<HomeIcon />} />
       </span>
       <span className="fullscreen-button">
-        <RvTooltip content={"Enter full screen for the best experience!"} isVisible={true} onHover={false}>
+        <RvTooltip content={"Enter Fullscreen for the best Experience!"} isVisible={isFullscreenTooltipVisible} onHover={false}>
           <RvMenuButton
             label={isInFullscreen ? "Exit Fullscreen" : "Enter Fullscreen"}
             iconRight={isInFullscreen ? <FullscreenExitIcon /> : <FullscreenIcon />}

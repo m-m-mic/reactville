@@ -3,9 +3,13 @@ import { FileFolder, FolderStructure } from "@/shared/types/folder-structure.typ
 export function setValuesInStructure(structure: FolderStructure, keyPaths: string[][], value: Partial<FileFolder>) {
   const internalFolderStructure = { ...structure };
 
+  // TODO: remove ts-ignores
   for (const keyPath of keyPaths) {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    //@ts-ignore
     const internalKeyPath: string[] = [].concat(...keyPath.map((key) => [key, "content"])).slice(0, -1);
 
+    // eslint-disable-next-line
     internalKeyPath.reduce((folder: any, key, i) => {
       if (key === "content") {
         return folder[key];

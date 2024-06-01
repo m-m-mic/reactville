@@ -15,13 +15,14 @@
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    width: 15cqw;
+    width: 12cqw;
     background: var(--rv-foreground-color-1);
     border-radius: 1cqw;
     box-sizing: border-box;
     padding: 1cqw;
     top: 115%;
-    font-size: 1.2cqw;
+    font-size: 1cqw;
+    font-weight: 500;
     right: 0;
     transition:
       opacity 200ms ease,
