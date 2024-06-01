@@ -12,7 +12,10 @@
   cursor: pointer;
   border-radius: 100px;
   gap: 8px;
-  transition: 300ms ease-out;
+  transition:
+    transform 300ms ease-out,
+    outline 300ms ease-out,
+    outline-offset 300ms ease-out;
   outline: 0.2cqw solid var(--rv-foreground-color-1);
   background: var(--rv-foreground-color-1);
   outline-offset: 0.2cqw;

@@ -5,7 +5,10 @@
   padding-left: 0.4cqw;
   display: flex;
   align-items: center;
-  transition: 200ms ease;
+  transition:
+    opacity 200ms ease,
+    visibility 200ms ease,
+    height 200ms ease;
 
   &.hidden {
     visibility: hidden;

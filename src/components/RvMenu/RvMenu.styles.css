@@ -6,11 +6,15 @@
   display: flex;
 
   .fullscreen-button {
-    margin-left: 1.5cqw;
+    margin-left: 1cqw;
   }
 
   .start-button {
     opacity: 1;
+    visibility: visible;
+    transition:
+      opacity 200ms ease,
+      visibility 200ms ease;
 
     &.hidden {
       visibility: hidden;
