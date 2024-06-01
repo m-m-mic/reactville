@@ -25,9 +25,15 @@ export default function RvFolder({ keyPath, name, children, highlighted = false,
     let childCount = 0;
 
     for (const child of children) {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      //@ts-ignore
       if (child?.props.hidden) {
         continue;
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        //@ts-ignore
       } else if (child?.props.open) {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        //@ts-ignore
         childCount += 1 + getVisibleChildCount(child.props.children);
       } else {
         childCount += 1;

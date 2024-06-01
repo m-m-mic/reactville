@@ -4,7 +4,10 @@
   flex-flow: column;
   outline-offset: -0.1cqw;
   outline: 0 solid var(--rv-foreground-color-2);
-  transition: height 200ms ease;
+  transition:
+    opacity 200ms ease,
+    visibility 200ms ease,
+    height 200ms ease;
 
   &:has(> .folder-name:focus) {
     outline-width: 0.1cqw;
@@ -39,19 +42,21 @@
   .chevron {
     flex: 0 0 0.4cqw;
     transition: transform 200ms ease;
+    fill: var(--rv-foreground-color-2) !important;
 
     &.open {
       transform: rotate(90deg);
     }
-
-    .cls-1 {
-      fill: var(--rv-foreground-color-2) !important;
-    }
   }
 
   .contents {
-    transition: 100ms ease;
+    transition:
+      opacity 200ms ease,
+      visibility 200ms ease,
+      height 200ms ease;
     margin-left: 2cqw;
+    overflow: hidden;
+
     &.closed {
       visibility: hidden;
       opacity: 0;

@@ -34,7 +34,13 @@
 body {
   overflow: hidden;
   margin: 0;
-  background: #3bd1ff;
+  background: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #000;
+  }
 }
 
 h1 {

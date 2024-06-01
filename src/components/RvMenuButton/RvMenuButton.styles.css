@@ -1,0 +1,115 @@
+.rv-menu-button {
+  font-family: Pally, sans-serif;
+  font-size: 1cqw;
+  font-weight: 600;
+  padding: 0.7cqw;
+  margin: 0.4cqw;
+  border: none;
+  box-sizing: border-box;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 100px;
+  transition:
+    transform 300ms ease-out,
+    outline 300ms ease-out,
+    outline-offset 300ms ease-out;
+  outline: 0.2cqw solid var(--rv-foreground-color-1);
+  background: var(--rv-foreground-color-1);
+  outline-offset: 0.2cqw;
+  text-transform: uppercase;
+  color: var(--rv-foreground-color-2);
+
+  .icon-wrapper {
+    svg {
+      height: 1.5cqw;
+      width: 1.5cqw;
+      fill: var(--rv-foreground-color-2) !important;
+    }
+  }
+
+  .label {
+    line-height: 1.2cqw;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      width 400ms ease,
+      opacity 400ms ease,
+      visibility 400ms ease;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  &:not(.disabled) {
+    &:hover {
+      transform: scale(1.07);
+      outline-offset: -0.1cqw;
+
+      .icon-wrapper.left {
+        margin-left: 0.4cqw;
+      }
+
+      .icon-wrapper.right {
+        margin-left: 0.4cqw;
+      }
+
+      .label {
+        width: 10cqw;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &:focus {
+      transform: scale(1.07);
+      outline-color: var(--rv-foreground-color-2);
+      outline-offset: -0.1cqw;
+
+      .label {
+        width: 10cqw;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .icon-wrapper.left {
+        margin-left: 0.4cqw;
+      }
+
+      .icon-wrapper.right {
+        margin-left: 0.4cqw;
+      }
+    }
+
+    &:active {
+      transform: scale(1);
+      outline-offset: -0.1cqw;
+
+      .label {
+        width: 10cqw;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .icon-wrapper.left {
+        margin-left: 0.4cqw;
+      }
+
+      .icon-wrapper.right {
+        margin-left: 0.4cqw;
+      }
+    }
+  }
+}
+
+.icon-wrapper {
+  display: flex;
+}
