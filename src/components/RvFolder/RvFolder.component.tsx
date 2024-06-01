@@ -3,6 +3,8 @@ import { ReactNode, useContext, useEffect, useState } from "react";
 import { setValuesInStructure } from "@/shared/functions/setStructureFolderValue";
 import { FolderStructureContext } from "@/context/providers/FolderStructureContext.provider";
 
+import Chevron from "@/assets/icons/folder_chevron.svg?react";
+
 interface RvFolderProps {
   name: string;
   children?: ReactNode[] | ReactNode;
@@ -52,7 +54,8 @@ export default function RvFolder({ keyPath, name, children, highlighted = false,
   return (
     <div className={`rv-folder ${hidden ? "hidden" : ""} ${highlighted ? "highlighted" : ""}`}>
       <button className="folder-name" onClick={changeOpenState}>
-        {open ? "-" : "+"} {name}
+        <Chevron className={`chevron ${open ? "open" : "closed"}`} />
+        {name}
       </button>
       <div style={{ height: `${childrenHeight}cqw` }} className={`contents ${open ? "open" : "closed"}`}>
         {children}
