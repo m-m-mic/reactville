@@ -31,11 +31,14 @@
   }
 
   .label {
-    line-height: 1cqw;
+    line-height: 1.2cqw;
     width: 0;
     opacity: 0;
     visibility: hidden;
-    transition: width 200ms ease-out;
+    transition:
+      width 400ms ease,
+      opacity 400ms ease,
+      visibility 400ms ease;
     white-space: nowrap;
     overflow: hidden;
   }

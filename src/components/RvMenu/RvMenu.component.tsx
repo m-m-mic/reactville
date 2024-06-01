@@ -10,6 +10,7 @@ import RvMenuButton from "@/components/RvMenuButton/RvMenuButton.component";
 import FullscreenIcon from "@/assets/icons/fullscreen_icon.svg?react";
 import FullscreenExitIcon from "@/assets/icons/fullscreen-exit_icon.svg?react";
 import HomeIcon from "@/assets/icons/home_icon.svg?react";
+import RvTooltip from "@/components/RvTooltip/RvTooltip.component";
 
 export default function RvMenu() {
   const [landingVisibilityClass, setLandingVisibilityClass] = useState<"visible" | "hidden">("hidden");
@@ -66,14 +67,16 @@ export default function RvMenu() {
   return (
     <div className="rv-menu">
       <span className={`start-button ${landingVisibilityClass}`}>
-        <RvMenuButton label="Go back to start" onClick={returnToStart} iconRight={<HomeIcon />} />
+        <RvMenuButton label="Return to start" onClick={returnToStart} iconRight={<HomeIcon />} />
       </span>
       <span className="fullscreen-button">
-        <RvMenuButton
-          label={isInFullscreen ? "Exit Fullscreen" : "Enter Fullscreen"}
-          iconRight={isInFullscreen ? <FullscreenExitIcon /> : <FullscreenIcon />}
-          onClick={toggleFullScreen}
-        />
+        <RvTooltip content={"Enter full screen for the best experience!"} isVisible={true} onHover={false}>
+          <RvMenuButton
+            label={isInFullscreen ? "Exit Fullscreen" : "Enter Fullscreen"}
+            iconRight={isInFullscreen ? <FullscreenExitIcon /> : <FullscreenIcon />}
+            onClick={toggleFullScreen}
+          />
+        </RvTooltip>
       </span>
     </div>
   );
