@@ -19,6 +19,7 @@ import TourSharedSlide from "@/slides/TourSharedSlide/TourSharedSlide.component"
 import ResultSlide from "@/slides/ResultSlide/ResultSlide.component";
 import RvNavigation from "@/components/RvNavigation/RvNavigation.component";
 import RvMenu from "@/components/RvMenu/RvMenu.component";
+import RvBackground from "@/components/RvBackground/RvBackground.component";
 
 export default function App() {
   const getAspectRatioClass = () => {
@@ -44,7 +45,7 @@ export default function App() {
             <TourRequestsSlide />
             <TourSharedSlide />
             <ResultSlide />
-            <img className="city-background" src="/tourCityBackground.svg" alt="" />
+            <RvBackground />
           </div>
         </ChoicesContextProvider>
       </FolderStructureContextProvider>

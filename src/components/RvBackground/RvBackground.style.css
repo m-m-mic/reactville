@@ -1,0 +1,20 @@
+.city-background {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 100cqw;
+  height: 100cqh;
+  z-index: 3;
+}
+
+.city-sky {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 100cqw;
+  height: 100cqh;
+  z-index: 2;
+  background: #3bd1ff;
+}

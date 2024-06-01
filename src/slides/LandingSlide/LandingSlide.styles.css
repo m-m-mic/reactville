@@ -1,7 +1,7 @@
 .landing {
   z-index: 25;
-  --rv-button-background: #fcd2d2;
-  --rv-button-foreground: #b50000;
+  --rv-foreground-color-1: #fcd2d2;
+  --rv-foreground-color-2: #b50000;
 }
 
 .landing-buttons {
