@@ -16,10 +16,6 @@
     height: 0 !important;
   }
 
-  &.highlighted {
-    background: #c1fac1;
-  }
-
   .folder-name {
     font-weight: 600;
     height: 1.8cqw;

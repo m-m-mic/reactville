@@ -16,9 +16,7 @@
 
   --rv-foreground-color-1: #fff;
   --rv-foreground-color-2: #737373;
-
-  --rv-button-background: var(--rv-foreground-color-1);
-  --rv-button-foreground: var(--rv-foreground-color-2);
+  --rv-highlight-color: rgba(80, 186, 80, 0.2);
 }
 
 @font-face {

@@ -3,6 +3,10 @@
   height: 100%;
   overflow: auto;
 
+  .highlighted {
+    background: var(--rv-highlight-color);
+  }
+
   &::-webkit-scrollbar {
     width: 0.6cqw;
   }

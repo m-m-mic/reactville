@@ -12,8 +12,4 @@
     opacity: 0;
     height: 0 !important;
   }
-
-  &.highlighted {
-    background: #c1fac1;
-  }
 }
