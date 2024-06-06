@@ -3,28 +3,26 @@ import { FileFolder, FolderStructure } from "@/shared/types/folder-structure.typ
 export function setValuesInStructure(structure: FolderStructure, keyPaths: string[][], value: Partial<FileFolder>) {
   const internalFolderStructure = { ...structure };
 
-  // TODO: remove ts-ignores
   for (const keyPath of keyPaths) {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    //@ts-ignore
-    const internalKeyPath: string[] = [].concat(...keyPath.map((key) => [key, "content"])).slice(0, -1);
+    const internalKeyPath: string[] = ([] as string[]).concat(...keyPath.map((key) => [key, "content"])).slice(0, -1);
 
     // eslint-disable-next-line
-    internalKeyPath.reduce((folder: any, key, i) => {
-      if (key === "content") {
-        return folder[key];
+    // @ts-ignore
+    internalKeyPath.reduce((folder, currentKey, i) => {
+      if (currentKey === "content") {
+        return folder[currentKey];
       }
       if (value.open === true) {
-        folder[key] = { ...folder[key], open: true };
+        folder[currentKey] = { ...folder[currentKey], open: true };
       }
 
       if (value.hidden === false) {
-        folder[key] = { ...folder[key], hidden: false };
+        folder[currentKey] = { ...folder[currentKey], hidden: false };
       }
       if (i === internalKeyPath.length - 1) {
-        folder[key] = { ...folder[key], ...value };
+        folder[currentKey] = { ...folder[currentKey], ...value };
       }
-      return folder[key];
+      return folder[currentKey];
     }, internalFolderStructure);
   }
   return internalFolderStructure;
