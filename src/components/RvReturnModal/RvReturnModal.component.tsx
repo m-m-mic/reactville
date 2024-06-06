@@ -21,10 +21,15 @@ export default function RvReturnModal() {
       updateChoices(structuredClone(INITIAL_CHOICES));
       return;
     }
-    // TODO: Resolve choices
+
     const internalSlideStack = [...slideStack];
     const slideIndex = internalSlideStack.indexOf(modalProps.returnTo);
-    console.log([...internalSlideStack.slice(slideIndex)]);
+
+    const slidesToReset = [...internalSlideStack.slice(slideIndex)];
+    const choicesToReset: { [id: string]: boolean | undefined } = {};
+    slidesToReset.forEach((slide: string) => (choicesToReset[slide] = undefined));
+    updateChoices(choicesToReset);
+
     internalSlideStack.length = slideIndex + 1;
     setSlideStack(internalSlideStack);
   };
