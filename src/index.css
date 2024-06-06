@@ -47,4 +47,12 @@ h1 {
   font-family: Pally, sans-serif;
   font-size: 2cqw;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: Pally, sans-serif;
+  font-size: 1.8cqw;
+  font-weight: 700;
+  text-transform: uppercase;
 }

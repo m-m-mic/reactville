@@ -11,6 +11,7 @@ import FullscreenIcon from "@/assets/icons/fullscreen_icon.svg?react";
 import FullscreenExitIcon from "@/assets/icons/fullscreen-exit_icon.svg?react";
 import HomeIcon from "@/assets/icons/home_icon.svg?react";
 import RvTooltip from "@/components/RvTooltip/RvTooltip.component";
+import { ModalContext } from "@/context/providers/ModalContext.provider";
 
 export default function RvMenu() {
   const [landingVisibilityClass, setLandingVisibilityClass] = useState<"visible" | "hidden">("hidden");
@@ -18,6 +19,7 @@ export default function RvMenu() {
   const [isFullscreenTooltipVisible, setIsFullscreenTooltipVisible] = useState(false);
   const { slideStack, setSlideStack } = useContext(SlideStackContext);
   const { updateChoices } = useContext(ChoicesContext);
+  const { openModal } = useContext(ModalContext);
 
   useEffect(() => {
     document.addEventListener("fullscreenchange", onFullscreen);
@@ -58,8 +60,7 @@ export default function RvMenu() {
   };
 
   const returnToStart = () => {
-    setSlideStack(INITIAL_SLIDE_STACK);
-    updateChoices(structuredClone(INITIAL_CHOICES));
+    openModal("Do you really want to go back to the Home Screen?", Slide.Landing);
   };
 
   const toggleFullScreen = () => {
