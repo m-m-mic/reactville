@@ -5,18 +5,28 @@ import "./RvReturnModal.styles.css";
 import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
 import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 import { Slide } from "@/shared/types/slide.type";
+import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
+import { INITIAL_CHOICES, INITIAL_SLIDE_STACK } from "@/context/initial.context";
 
 export default function RvReturnModal() {
   const { modalProps, closeModal } = useContext(ModalContext);
   const { slideStack, setSlideStack } = useContext(SlideStackContext);
+  const { updateChoices } = useContext(ChoicesContext);
 
   const returnToSlide = () => {
+    closeModal();
+
+    if (modalProps.returnTo === Slide.Landing) {
+      setSlideStack(INITIAL_SLIDE_STACK);
+      updateChoices(structuredClone(INITIAL_CHOICES));
+      return;
+    }
     // TODO: Resolve choices
     const internalSlideStack = [...slideStack];
     const slideIndex = internalSlideStack.indexOf(modalProps.returnTo);
+    console.log([...internalSlideStack.slice(slideIndex)]);
     internalSlideStack.length = slideIndex + 1;
     setSlideStack(internalSlideStack);
-    closeModal();
   };
 
   const getModalMessage = () => {

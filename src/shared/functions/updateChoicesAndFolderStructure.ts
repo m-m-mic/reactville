@@ -1,6 +1,7 @@
 import { FolderStructure } from "@/shared/types/folder-structure.type";
 import { Choices } from "@/shared/types/choices.type";
 import { closeAllFoldersAndRemoveHighlighting, setValuesInStructure } from "@/shared/functions/setStructureFolderValue";
+import { Slide } from "@/shared/types/slide.type";
 
 export function updateChoicesAndFolderStructure(
   folderStructure: FolderStructure,
@@ -15,10 +16,10 @@ export function updateChoicesAndFolderStructure(
 
   updateChoiceValues.forEach((value, index) => {
     switch (updateChoiceKeys[index]) {
-      case "pages":
+      case Slide.TourPages:
         updatedFolderStructure = setValuesInStructure(updatedFolderStructure, [["src", "pages"]], { hidden: !value });
         break;
-      case "components":
+      case Slide.TourComponents:
         if (value === true) {
           updatedFolderStructure = setValuesInStructure(
             updatedFolderStructure,
@@ -43,7 +44,7 @@ export function updateChoicesAndFolderStructure(
             { hidden: true },
           );
 
-          if (updatedChoices.pages) {
+          if (updatedChoices[Slide.TourPages]) {
             updatedFolderStructure = setValuesInStructure(
               updatedFolderStructure,
               [
@@ -91,7 +92,7 @@ export function updateChoicesAndFolderStructure(
             { hidden: false },
           );
 
-          if (updatedChoices.pages) {
+          if (updatedChoices[Slide.TourPages]) {
             updatedFolderStructure = setValuesInStructure(
               updatedFolderStructure,
               [
@@ -118,7 +119,7 @@ export function updateChoicesAndFolderStructure(
             );
           } else if (value === undefined) {
             updatedFolderStructure = setValuesInStructure(updatedFolderStructure, [["src", "components"]], { hidden: true });
-            if (updatedChoices.pages) {
+            if (updatedChoices[Slide.TourPages]) {
               updatedFolderStructure = setValuesInStructure(
                 updatedFolderStructure,
                 [
@@ -146,16 +147,16 @@ export function updateChoicesAndFolderStructure(
           }
         }
         break;
-      case "styles":
+      case Slide.TourStyles:
         updatedFolderStructure = setValuesInStructure(updatedFolderStructure, [["src", "styles"]], { hidden: !value });
         break;
-      case "store":
+      case Slide.TourStore:
         updatedFolderStructure = setValuesInStructure(updatedFolderStructure, [["src", "store"]], { hidden: !value });
         break;
-      case "requests":
+      case Slide.TourRequests:
         updatedFolderStructure = setValuesInStructure(updatedFolderStructure, [["src", "api"]], { hidden: !value });
         break;
-      case "shared":
+      case Slide.TourShared:
         updatedFolderStructure = setValuesInStructure(updatedFolderStructure, [["src", "shared"]], { hidden: !value });
         break;
     }

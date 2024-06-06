@@ -28,11 +28,11 @@ export default function TourPagesSlide() {
   };
 
   const singlePage = () => {
-    updateChoices({ pages: false });
+    updateChoices({ [Slide.TourPages]: false });
   };
 
   const multiplePages = () => {
-    updateChoices({ pages: true });
+    updateChoices({ [Slide.TourPages]: true });
   };
 
   if (isRemovedFromViewport(SLIDE_ID, slideStack)) {

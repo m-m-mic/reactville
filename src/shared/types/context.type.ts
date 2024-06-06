@@ -1,5 +1,5 @@
 import { Slide } from "@/shared/types/slide.type";
-import React, { ReactNode } from "react";
+import React from "react";
 import { Choices } from "@/shared/types/choices.type";
 import { FolderStructure } from "@/shared/types/folder-structure.type";
 import { ModalProps } from "@/shared/types/modal.type";
@@ -21,6 +21,6 @@ export interface FolderStructureContextType {
 
 export interface ModalContextType {
   modalProps: ModalProps;
-  openModal: (content: ReactNode, returnTo: Slide, confirmText?: string, dismissText?: string) => void;
+  openModal: (returnTo: Slide, confirmText?: string, dismissText?: string) => void;
   closeModal: () => void;
 }

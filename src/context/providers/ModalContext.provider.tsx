@@ -7,8 +7,8 @@ export const ModalContext = createContext(INITIAL_MODAL_CONTEXT);
 export default function ModalContextProvider({ children }: { children: ReactNode }) {
   const [modalProps, setModalProps] = useState(structuredClone(INITIAL_MODAL));
 
-  const openModal = (content: ReactNode, returnTo: Slide, dismissText = "No, stay", confirmText = "Yes, return") => {
-    setModalProps({ content, returnTo, dismissText, confirmText, open: true });
+  const openModal = (returnTo: Slide, dismissText = "No, stay", confirmText = "Yes, return") => {
+    setModalProps({ returnTo, dismissText, confirmText, open: true });
   };
 
   const closeModal = () => {

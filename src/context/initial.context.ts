@@ -17,17 +17,17 @@ export const INITIAL_SLIDE_STACK_CONTEXT: SlideStackContextType = {
 };
 
 export const INITIAL_CHOICES: Choices = {
-  pages: undefined,
-  components: undefined,
-  styles: undefined,
-  store: undefined,
-  requests: undefined,
-  shared: undefined,
+  [Slide.TourPages]: undefined,
+  [Slide.TourComponents]: undefined,
+  [Slide.TourStyles]: undefined,
+  [Slide.TourStore]: undefined,
+  [Slide.TourRequests]: undefined,
+  [Slide.TourShared]: undefined,
 };
 
 export const INITIAL_CHOICES_STACK: ChoicesContextType = {
   choices: structuredClone(INITIAL_CHOICES),
-  updateChoices: (choicesToUpdate: Partial<Choices>) => {},
+  updateChoices: () => {},
 };
 
 export const INITIAL_FOLDER_STRUCTURE_CONTEXT: FolderStructureContextType = {

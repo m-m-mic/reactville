@@ -1,10 +1,8 @@
-import { INITIAL_CHOICES, INITIAL_SLIDE_STACK } from "@/context/initial.context";
 import { KeyboardEvent, useContext, useEffect, useState } from "react";
 
 import "./RvMenu.styles.css";
 import { Slide } from "@/shared/types/slide.type";
 import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
-import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
 import RvMenuButton from "@/components/RvMenuButton/RvMenuButton.component";
 
 import FullscreenIcon from "@/assets/icons/fullscreen_icon.svg?react";
@@ -17,8 +15,7 @@ export default function RvMenu() {
   const [landingVisibilityClass, setLandingVisibilityClass] = useState<"visible" | "hidden">("hidden");
   const [isInFullscreen, setIsInFullscreen] = useState<boolean | undefined>();
   const [isFullscreenTooltipVisible, setIsFullscreenTooltipVisible] = useState(false);
-  const { slideStack, setSlideStack } = useContext(SlideStackContext);
-  const { updateChoices } = useContext(ChoicesContext);
+  const { slideStack } = useContext(SlideStackContext);
   const { openModal } = useContext(ModalContext);
 
   useEffect(() => {
@@ -60,7 +57,7 @@ export default function RvMenu() {
   };
 
   const returnToStart = () => {
-    openModal("Do you really want to go back to the Home Screen?", Slide.Landing);
+    openModal(Slide.Landing);
   };
 
   const toggleFullScreen = () => {
