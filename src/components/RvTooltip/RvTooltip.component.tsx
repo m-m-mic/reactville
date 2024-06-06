@@ -10,7 +10,7 @@ interface RvTooltipProps {
 
 export default function RvTooltip({ children, isVisible, onHover = true, content }: RvTooltipProps) {
   const [internalIsVisible, setInternalIsVisible] = useState(isVisible);
-  const removeButtonRef = useRef<HTMLButtonElement>(null);
+
   const tooltipRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
@@ -32,7 +32,6 @@ export default function RvTooltip({ children, isVisible, onHover = true, content
 
   const closeTooltip = () => {
     setInternalIsVisible(false);
-    removeButtonRef.current?.blur();
   };
 
   return (

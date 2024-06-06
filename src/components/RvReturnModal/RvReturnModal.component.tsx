@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import React, { KeyboardEvent, useContext, useEffect, useRef, useState } from "react";
 import { ModalContext } from "@/context/providers/ModalContext.provider";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import "./RvReturnModal.styles.css";
@@ -9,9 +9,59 @@ import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
 import { INITIAL_CHOICES, INITIAL_SLIDE_STACK } from "@/context/initial.context";
 
 export default function RvReturnModal() {
+  const [previousFocusedElement, setPreviousFocusedElement] = useState<HTMLElement | null>(null);
+
   const { modalProps, closeModal } = useContext(ModalContext);
   const { slideStack, setSlideStack } = useContext(SlideStackContext);
   const { updateChoices } = useContext(ChoicesContext);
+
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (modalProps.open && modalRef.current) {
+      const activeElement = document.activeElement as HTMLElement | null;
+      setPreviousFocusedElement(activeElement);
+      activeElement?.blur();
+
+      const modalElement = modalRef.current;
+      const focusableElements: NodeListOf<HTMLElement> = modalElement.querySelectorAll("button");
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      const handleTabKeyPress = (event: KeyboardEvent) => {
+        if (event.key === "Tab") {
+          if (!modalRef.current?.contains(document.activeElement)) {
+            event.preventDefault();
+            if (event.shiftKey) {
+              lastElement.focus();
+            } else {
+              firstElement.focus();
+            }
+          } else if (event.shiftKey && document.activeElement === firstElement) {
+            event.preventDefault();
+            lastElement.focus();
+          } else if (!event.shiftKey && document.activeElement === lastElement) {
+            event.preventDefault();
+            firstElement.focus();
+          }
+        }
+      };
+
+      const handleEscapeKeyPress = (event: KeyboardEvent) => {
+        if (event.key === "Escape") {
+          closeModalAndRefocus();
+        }
+      };
+
+      document.addEventListener("keydown", handleTabKeyPress as () => void);
+      document.addEventListener("keydown", handleEscapeKeyPress as () => void);
+
+      return () => {
+        document.removeEventListener("keydown", handleTabKeyPress as () => void);
+        document.removeEventListener("keydown", handleEscapeKeyPress as () => void);
+      };
+    }
+  }, [modalProps]);
 
   const returnToSlide = () => {
     closeModal();
@@ -34,12 +84,17 @@ export default function RvReturnModal() {
     setSlideStack(internalSlideStack);
   };
 
+  const closeModalAndRefocus = () => {
+    closeModal();
+    previousFocusedElement?.focus();
+  };
+
   const getModalMessage = () => {
     return (
       <>
         Are you sure you want to return to {getSlideTitle(modalProps.returnTo)}?
         {modalProps.returnTo !== Slide.Landing ? (
-          <b>Your progress up to that point will be undone.</b>
+          <b>Your progress since then will be undone.</b>
         ) : (
           <b>Your entire progress will be undone.</b>
         )}
@@ -49,12 +104,12 @@ export default function RvReturnModal() {
 
   return (
     <>
-      <div className={`rv-return-modal ${modalProps.open ? "open" : "closed"}`}>
+      <div className={`rv-return-modal ${modalProps.open ? "open" : "closed"}`} ref={modalRef}>
         <h2 className="modal-title">Return to {getSlideTitle(modalProps.returnTo)}</h2>
         <div className="modal-message">{getModalMessage()}</div>
         <div className="modal-buttons">
           <RvButton onClick={returnToSlide} label={modalProps.confirmText} />
-          <RvButton onClick={closeModal} label={modalProps.dismissText} />
+          <RvButton onClick={closeModalAndRefocus} label={modalProps.dismissText} />
         </div>
       </div>
       <div className={`rv-return-modal-backdrop ${modalProps.open ? "open" : "closed"}`} onClick={closeModal}></div>
