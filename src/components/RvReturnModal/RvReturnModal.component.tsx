@@ -112,7 +112,7 @@ export default function RvReturnModal() {
           <RvButton onClick={closeModalAndRefocus} label={modalProps.dismissText} />
         </div>
       </div>
-      <div className={`rv-return-modal-backdrop ${modalProps.open ? "open" : "closed"}`} onClick={closeModal}></div>
+      <div className={`rv-return-modal-backdrop ${modalProps.open ? "open" : "closed"}`} onClick={closeModalAndRefocus}></div>
     </>
   );
 }
