@@ -38,7 +38,6 @@ export const INITIAL_FOLDER_STRUCTURE_CONTEXT: FolderStructureContextType = {
 export const INITIAL_MODAL: ModalProps = {
   open: false,
   returnTo: Slide.Landing,
-  content: "",
   dismissText: "No, stay",
   confirmText: "Yes, go back",
 };
