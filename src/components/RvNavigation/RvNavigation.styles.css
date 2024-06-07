@@ -20,7 +20,7 @@
   color: inherit;
   position: relative;
   width: 4cqw;
-  margin: 0.4cqw;
+  margin: 0.3cqw;
   padding: 0;
   opacity: 1;
   min-height: 0;
@@ -63,7 +63,7 @@
   }
 
   &:active {
-    transform: scale(1);
+    transform: scale(1.04);
     outline-offset: -0.1cqw;
   }
 
