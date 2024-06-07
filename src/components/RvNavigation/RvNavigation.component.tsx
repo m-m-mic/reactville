@@ -4,6 +4,7 @@ import { SlideStackContext } from "@/context/providers/SlideStackContext.provide
 import { SetDocumentTitle } from "@/shared/functions/setDocumentTitle";
 import { Slide } from "@/shared/types/slide.type";
 import { ModalContext } from "@/context/providers/ModalContext.provider";
+import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 
 export default function RvNavigation() {
   const [visibilityClass, setVisibilityClass] = useState<"visible" | "hidden">("hidden");
@@ -35,9 +36,12 @@ export default function RvNavigation() {
 
   return (
     <div className={`rv-navigation ${visibilityClass}`}>
-      <button
-        className={`rv-navigation-button ${isButtonVisible(Slide.TourPages)} tourPages-button`}
-        onClick={() => openModal(Slide.TourPages)}></button>
+      <div className="nav-wrapper">
+        <button
+          className={`rv-navigation-button ${isButtonVisible(Slide.TourPages)} tourPages-button`}
+          onClick={() => openModal(Slide.TourPages)}></button>
+        <div className="nav-tooltip">{getSlideTitle(Slide.TourPages)}</div>
+      </div>
       <div className={`nav-divider ${isButtonVisible(Slide.TourComponents)}`}></div>
       <button
         className={`rv-navigation-button ${isButtonVisible(Slide.TourComponents)} tourComponents-button`}

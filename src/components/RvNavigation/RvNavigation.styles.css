@@ -14,13 +14,14 @@
 }
 
 .rv-navigation-button {
-  width: 6cqw;
+  width: 4cqw;
   margin: 0.4cqw;
   padding: 0;
+  opacity: 1;
   min-height: 0;
   z-index: 31;
   border: none;
-  flex-basis: 6cqw;
+  flex-basis: 4cqw;
   border-radius: 100px;
   cursor: pointer;
   outline: 0.3cqw solid var(--rv-foreground-color-1);
@@ -28,7 +29,14 @@
   transition:
     transform 300ms ease-out,
     outline 300ms ease-out,
-    outline-offset 300ms ease-out;
+    outline-offset 300ms ease-out,
+    flex-basis 600ms ease,
+    width 600ms ease,
+    margin 300ms ease,
+    opacity 300ms ease;
+
+  transition-delay: 0s,0s,0s,400ms,400ms,400ms,400ms, 400ms;
+
 
   &:hover {
     transform: scale(1.07);
@@ -37,7 +45,6 @@
 
   &:focus {
     transform: scale(1.07);
-    outline-color: var(--rv-foreground-color-2);
     outline-offset: -0.1cqw;
   }
 
@@ -51,6 +58,7 @@
     opacity: 0;
     flex-basis: 0;
     margin: 0;
+    width: 0;
   }
 
   &.tourPages-button {
@@ -83,10 +91,19 @@
   z-index: 30;
   background-color: white;
   width: 0.4cqw;
+  transition: flex-basis 700ms ease;
 
   &.hidden {
     visibility: hidden;
     opacity: 0;
     flex-basis: 0;
   }
+}
+
+.nav-wrapper {
+  position: relative;
+}
+
+.nav-tooltip {
+  position: absolute;
 }
