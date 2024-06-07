@@ -107,7 +107,7 @@ export default function BoilerplateSlide() {
                   detail to understand this tutorial.
                 </div>
                 <div className="action-buttons">
-                  <RvButton onClick={goToStep1} label="Got it!" />
+                  <RvButton onClick={goToStep1} label="Understood!" />
                 </div>
               </div>
               <div className={`boilerplate-step step-1 ${boilerplateStep === 1 ? "active" : ""}`}>
@@ -129,7 +129,7 @@ export default function BoilerplateSlide() {
                   results.
                 </div>
                 <div className="action-buttons">
-                  <RvButton onClick={goToStep3} label="Understood!" />
+                  <RvButton onClick={goToStep3} label="Okay!" />
                 </div>
               </div>
               <div className={`boilerplate-step ${boilerplateStep === 3 ? "active" : ""}`}>
@@ -141,7 +141,7 @@ export default function BoilerplateSlide() {
                   such as fonts, icons, and images you may want to use within your application.
                 </div>
                 <div className="action-buttons">
-                  <RvButton onClick={goToStep4} label="Okay!" />
+                  <RvButton onClick={goToStep4} label="All clear!" />
                 </div>
               </div>
               <div className={`boilerplate-step ${boilerplateStep === 4 ? "active" : ""}`}>

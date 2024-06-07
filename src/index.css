@@ -17,6 +17,8 @@
   --rv-foreground-color-1: #fff;
   --rv-foreground-color-2: #737373;
   --rv-highlight-color: rgba(80, 186, 80, 0.2);
+  --landing-foreground-color: #fcd2d2;
+  --landing-background-color: #b50000;
   --explanation-background-color: #5b9fda;
   --boilerplate-background-color: #83bd6d;
   --tourPages-background-color: #237feb;
@@ -63,4 +65,9 @@ h2 {
   font-size: 1.8cqw;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+b,
+a {
+  font-weight: 700;
 }

@@ -22,6 +22,7 @@
 
     .foreground {
       opacity: 1;
+      visibility: visible;
       transition-delay: var(--main-transition-duration);
     }
   }
@@ -35,9 +36,12 @@
     box-sizing: border-box;
     padding: 10cqw 15cqw;
     opacity: 0;
+    visibility: hidden;
     z-index: 5;
     font-size: 1.2cqw;
-    transition: opacity 200ms ease;
+    transition:
+      opacity 200ms ease,
+      visibility 200ms ease;
     display: flex;
     justify-content: center;
     align-items: center;

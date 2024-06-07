@@ -1,4 +1,4 @@
-import React, { KeyboardEvent, useContext, useEffect, useRef, useState } from "react";
+import React, { CSSProperties, KeyboardEvent, useContext, useEffect, useRef, useState } from "react";
 import { ModalContext } from "@/context/providers/ModalContext.provider";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import "./RvReturnModal.styles.css";
@@ -104,7 +104,10 @@ export default function RvReturnModal() {
 
   return (
     <>
-      <div className={`rv-return-modal ${modalProps.open ? "open" : "closed"}`} ref={modalRef}>
+      <div
+        style={{ "--rv-foreground-color-2": `var(--${modalProps.returnTo}-background-color)` } as CSSProperties}
+        className={`rv-return-modal ${modalProps.open ? "open" : "closed"}`}
+        ref={modalRef}>
         <h2 className="modal-title">Return to {getSlideTitle(modalProps.returnTo)}</h2>
         <div className="modal-message">{getModalMessage()}</div>
         <div className="modal-buttons">
