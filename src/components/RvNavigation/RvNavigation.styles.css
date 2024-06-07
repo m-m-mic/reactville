@@ -14,6 +14,11 @@
 }
 
 .rv-navigation-button {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  position: relative;
   width: 4cqw;
   margin: 0.4cqw;
   padding: 0;
@@ -35,17 +40,26 @@
     margin 300ms ease,
     opacity 300ms ease;
 
-  transition-delay: 0s,0s,0s,400ms,400ms,400ms,400ms, 400ms;
-
+  transition-delay: 0s, 0s, 0s, 400ms, 400ms, 400ms, 400ms, 400ms;
 
   &:hover {
     transform: scale(1.07);
     outline-offset: -0.1cqw;
+
+    .nav-tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 
   &:focus {
     transform: scale(1.07);
     outline-offset: -0.1cqw;
+
+    .nav-tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 
   &:active {
@@ -89,7 +103,7 @@
 .nav-divider {
   flex-basis: 2cqw;
   z-index: 30;
-  background-color: white;
+  background-color: var(--rv-foreground-color-1);
   width: 0.4cqw;
   transition: flex-basis 700ms ease;
 
@@ -99,11 +113,21 @@
     flex-basis: 0;
   }
 }
-
-.nav-wrapper {
-  position: relative;
-}
-
 .nav-tooltip {
   position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 5cqw;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-weight: 600;
+  box-shadow: 0.2cqw 0.2cqw 1cqw 0.2cqw rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+  color: var(--rv-foreground-color-2);
+  background: var(--rv-foreground-color-1);
+  border-radius: 5cqw;
+  padding: 0.5cqw 1cqw;
+  transition:
+    opacity 300ms ease,
+    visibility 300ms ease;
 }

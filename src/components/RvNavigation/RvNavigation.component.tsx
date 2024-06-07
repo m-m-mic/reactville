@@ -36,32 +36,41 @@ export default function RvNavigation() {
 
   return (
     <div className={`rv-navigation ${visibilityClass}`}>
-      <div className="nav-wrapper">
-        <button
-          className={`rv-navigation-button ${isButtonVisible(Slide.TourPages)} tourPages-button`}
-          onClick={() => openModal(Slide.TourPages)}></button>
+      <button
+        className={`rv-navigation-button ${isButtonVisible(Slide.TourPages)} tourPages-button`}
+        onClick={() => openModal(Slide.TourPages)}>
         <div className="nav-tooltip">{getSlideTitle(Slide.TourPages)}</div>
-      </div>
+      </button>
       <div className={`nav-divider ${isButtonVisible(Slide.TourComponents)}`}></div>
       <button
         className={`rv-navigation-button ${isButtonVisible(Slide.TourComponents)} tourComponents-button`}
-        onClick={() => openModal(Slide.TourComponents)}></button>
+        onClick={() => openModal(Slide.TourComponents)}>
+        <div className="nav-tooltip">{getSlideTitle(Slide.TourComponents)}</div>
+      </button>
       <div className={`nav-divider ${isButtonVisible(Slide.TourStyles)}`}></div>
       <button
         className={`rv-navigation-button ${isButtonVisible(Slide.TourStyles)} tourStyles-button`}
-        onClick={() => openModal(Slide.TourStyles)}></button>
+        onClick={() => openModal(Slide.TourStyles)}>
+        <div className="nav-tooltip">{getSlideTitle(Slide.TourStyles)}</div>
+      </button>
       <div className={`nav-divider ${isButtonVisible(Slide.TourStore)}`}></div>
       <button
         className={`rv-navigation-button ${isButtonVisible(Slide.TourStore)} tourStore-button`}
-        onClick={() => openModal(Slide.TourStore)}></button>
+        onClick={() => openModal(Slide.TourStore)}>
+        <div className="nav-tooltip">{getSlideTitle(Slide.TourStore)}</div>
+      </button>
       <div className={`nav-divider ${isButtonVisible(Slide.TourRequests)}`}></div>
       <button
         className={`rv-navigation-button ${isButtonVisible(Slide.TourRequests)} tourRequests-button`}
-        onClick={() => openModal(Slide.TourRequests)}></button>
+        onClick={() => openModal(Slide.TourRequests)}>
+        <div className="nav-tooltip">{getSlideTitle(Slide.TourRequests)}</div>
+      </button>
       <div className={`nav-divider ${isButtonVisible(Slide.TourShared)}`}></div>
       <button
         className={`rv-navigation-button ${isButtonVisible(Slide.TourShared)} tourShared-button`}
-        onClick={() => openModal(Slide.TourShared)}></button>
+        onClick={() => openModal(Slide.TourShared)}>
+        <div className="nav-tooltip">{getSlideTitle(Slide.TourShared)}</div>
+      </button>
     </div>
   );
 }
