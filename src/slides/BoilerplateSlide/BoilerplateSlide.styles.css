@@ -1,3 +1,4 @@
 .boilerplate {
+  --rv-foreground-color-2: var(--boilerplate-background-color);
   z-index: 23;
 }
