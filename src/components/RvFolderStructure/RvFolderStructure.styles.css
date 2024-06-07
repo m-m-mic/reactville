@@ -4,7 +4,7 @@
   overflow: auto;
 
   .highlighted {
-    background: var(--rv-highlight-color);
+    background-color: var(--rv-highlight-color);
   }
 
   &::-webkit-scrollbar {

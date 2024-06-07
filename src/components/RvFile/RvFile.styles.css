@@ -6,9 +6,10 @@
   display: flex;
   align-items: center;
   transition:
-    opacity 200ms ease,
-    visibility 200ms ease,
-    height 200ms ease;
+    opacity 300ms ease,
+    visibility 300ms ease,
+    height 300ms ease,
+    background-color 300ms ease;
 
   &.hidden {
     visibility: hidden;

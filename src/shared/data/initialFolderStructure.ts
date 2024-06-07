@@ -334,6 +334,10 @@ export const INITIAL_FOLDER_STRUCTURE: FolderStructure = {
         type: "file",
         name: "App.jsx",
       },
+      "App.spec.jsx": {
+        type: "file",
+        name: "App.spec.jsx",
+      },
       "index.css": {
         type: "file",
         name: "index.css",

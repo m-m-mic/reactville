@@ -26,6 +26,11 @@
     }
   }
 
+  &.past,
+  &.future {
+    pointer-events: none;
+  }
+
   .foreground {
     box-sizing: border-box;
     padding: 10cqw 15cqw;
@@ -38,7 +43,6 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    color: white;
   }
 
   .background {
@@ -76,14 +80,33 @@
 
   .text-body {
     flex: 1;
-    display: flex;
-    flex-flow: column;
+
     padding: 1.5cqw;
+
+    a {
+      display: inline;
+      color: #e0ffff;
+      text-decoration: none;
+      border-bottom: 0.12cqw solid #e0ffff;
+      margin-bottom: -0.12cqw;
+      transition:
+        margin-bottom 100ms ease,
+        border-bottom 100ms ease,
+        color 200ms ease;
+
+      &:hover,
+      &:focus {
+        outline: none;
+        color: #a5efef;
+        border-bottom: 0.2cqw solid #a5efef;
+        margin-bottom: -0.2cqw;
+      }
+    }
   }
 
   .text-divider {
     display: flex;
-    flex-basis: 1cqw;
+    height: 1cqw;
   }
 
   .action-buttons {
