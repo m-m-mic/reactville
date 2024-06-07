@@ -1,11 +1,92 @@
 .rv-navigation {
   z-index: 30;
   position: absolute;
-  top: 5cqw;
-  left: 5cqw;
+  top: 3cqw;
+  left: 3cqw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
   &.hidden {
     visibility: hidden;
     opacity: 0;
+  }
+}
+
+.rv-navigation-button {
+  width: 6cqw;
+  margin: 0.4cqw;
+  padding: 0;
+  min-height: 0;
+  z-index: 31;
+  border: none;
+  flex-basis: 6cqw;
+  border-radius: 100px;
+  cursor: pointer;
+  outline: 0.3cqw solid var(--rv-foreground-color-1);
+  outline-offset: 0.3cqw;
+  transition:
+    transform 300ms ease-out,
+    outline 300ms ease-out,
+    outline-offset 300ms ease-out;
+
+  &:hover {
+    transform: scale(1.07);
+    outline-offset: -0.1cqw;
+  }
+
+  &:focus {
+    transform: scale(1.07);
+    outline-color: var(--rv-foreground-color-2);
+    outline-offset: -0.1cqw;
+  }
+
+  &:active {
+    transform: scale(1);
+    outline-offset: -0.1cqw;
+  }
+
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+    flex-basis: 0;
+    margin: 0;
+  }
+
+  &.tourPages-button {
+    background-color: var(--tourPages-background-color);
+  }
+
+  &.tourComponents-button {
+    background-color: var(--tourComponents-background-color);
+  }
+
+  &.tourStyles-button {
+    background-color: var(--tourStyles-background-color);
+  }
+
+  &.tourStore-button {
+    background-color: var(--tourStore-background-color);
+  }
+
+  &.tourRequests-button {
+    background-color: var(--tourRequests-background-color);
+  }
+
+  &.tourShared-button {
+    background-color: var(--tourShared-background-color);
+  }
+}
+
+.nav-divider {
+  flex-basis: 2cqw;
+  z-index: 30;
+  background-color: white;
+  width: 0.4cqw;
+
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+    flex-basis: 0;
   }
 }

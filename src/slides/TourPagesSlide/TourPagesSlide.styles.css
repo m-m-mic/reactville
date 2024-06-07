@@ -1,6 +1,6 @@
 .tourPages {
   z-index: 22;
-  --rv-foreground-color-2: #3978ac;
+  --rv-foreground-color-2: var(--tourPages-background-color);
 }
 
 #tourPages-fade-2 {

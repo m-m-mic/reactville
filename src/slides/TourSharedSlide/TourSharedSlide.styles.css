@@ -1,3 +1,4 @@
 .tourShared {
   z-index: 17;
+  --rv-foreground-color-2: var(--tourShared-background-color);
 }

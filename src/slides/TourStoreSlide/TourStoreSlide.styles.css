@@ -1,3 +1,4 @@
 .tourStore {
   z-index: 19;
+  --rv-foreground-color-2: var(--tourStore-background-color);
 }

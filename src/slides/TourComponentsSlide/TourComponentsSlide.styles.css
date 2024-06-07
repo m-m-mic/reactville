@@ -1,3 +1,4 @@
 .tourComponents {
   z-index: 21;
+  --rv-foreground-color-2: var(--tourComponents-background-color);
 }

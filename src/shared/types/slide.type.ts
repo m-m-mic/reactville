@@ -9,7 +9,7 @@ export enum Slide {
   TourStore = "tourStore",
   TourRequests = "tourRequests",
   TourShared = "tourShared",
-  Result = "result"
+  Result = "result",
 }
 
 export enum SlideState {

@@ -1,3 +1,4 @@
 .tourStyles {
   z-index: 20;
+  --rv-foreground-color-2: var(--tourStyles-background-color);
 }

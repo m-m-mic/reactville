@@ -1,3 +1,4 @@
 .tourRequests {
   z-index: 18;
+  --rv-foreground-color-2: var(--tourRequests-background-color);
 }
