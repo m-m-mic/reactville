@@ -1,23 +1,22 @@
-import { INITIAL_CHOICES, INITIAL_SLIDE_STACK } from "@/context/initial.context";
 import { KeyboardEvent, useContext, useEffect, useState } from "react";
 
 import "./RvMenu.styles.css";
 import { Slide } from "@/shared/types/slide.type";
 import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
-import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
 import RvMenuButton from "@/components/RvMenuButton/RvMenuButton.component";
 
 import FullscreenIcon from "@/assets/icons/fullscreen_icon.svg?react";
 import FullscreenExitIcon from "@/assets/icons/fullscreen-exit_icon.svg?react";
 import HomeIcon from "@/assets/icons/home_icon.svg?react";
 import RvTooltip from "@/components/RvTooltip/RvTooltip.component";
+import { ModalContext } from "@/context/providers/ModalContext.provider";
 
 export default function RvMenu() {
   const [landingVisibilityClass, setLandingVisibilityClass] = useState<"visible" | "hidden">("hidden");
   const [isInFullscreen, setIsInFullscreen] = useState<boolean | undefined>();
   const [isFullscreenTooltipVisible, setIsFullscreenTooltipVisible] = useState(false);
-  const { slideStack, setSlideStack } = useContext(SlideStackContext);
-  const { updateChoices } = useContext(ChoicesContext);
+  const { slideStack } = useContext(SlideStackContext);
+  const { openModal } = useContext(ModalContext);
 
   useEffect(() => {
     document.addEventListener("fullscreenchange", onFullscreen);
@@ -58,8 +57,7 @@ export default function RvMenu() {
   };
 
   const returnToStart = () => {
-    setSlideStack(INITIAL_SLIDE_STACK);
-    updateChoices(structuredClone(INITIAL_CHOICES));
+    openModal(Slide.Landing);
   };
 
   const toggleFullScreen = () => {

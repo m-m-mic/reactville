@@ -20,6 +20,8 @@ import ResultSlide from "@/slides/ResultSlide/ResultSlide.component";
 import RvNavigation from "@/components/RvNavigation/RvNavigation.component";
 import RvMenu from "@/components/RvMenu/RvMenu.component";
 import RvBackground from "@/components/RvBackground/RvBackground.component";
+import ModalContextProvider from "@/context/providers/ModalContext.provider";
+import RvReturnModal from "@/components/RvReturnModal/RvReturnModal.component";
 
 export default function App() {
   const getAspectRatioClass = () => {
@@ -30,23 +32,26 @@ export default function App() {
     <SlideStackContextProvider>
       <FolderStructureContextProvider>
         <ChoicesContextProvider>
-          <div className={`view-container ${getAspectRatioClass()}`}>
-            <RvMenu />
-            <RvNavigation />
+          <ModalContextProvider>
+            <div className={`view-container ${getAspectRatioClass()}`}>
+              <RvReturnModal />
+              <RvMenu />
+              <RvNavigation />
 
-            <LandingSlide />
-            <QuickSelectSlide />
-            <ExplanationSlide />
-            <BoilerplateSlide />
-            <TourPagesSlide />
-            <TourComponentsSlide />
-            <TourStylesSlide />
-            <TourStoreSlide />
-            <TourRequestsSlide />
-            <TourSharedSlide />
-            <ResultSlide />
-            <RvBackground />
-          </div>
+              <LandingSlide />
+              <QuickSelectSlide />
+              <ExplanationSlide />
+              <BoilerplateSlide />
+              <TourPagesSlide />
+              <TourComponentsSlide />
+              <TourStylesSlide />
+              <TourStoreSlide />
+              <TourRequestsSlide />
+              <TourSharedSlide />
+              <ResultSlide />
+              <RvBackground />
+            </div>
+          </ModalContextProvider>
         </ChoicesContextProvider>
       </FolderStructureContextProvider>
     </SlideStackContextProvider>

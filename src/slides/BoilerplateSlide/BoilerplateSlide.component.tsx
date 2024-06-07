@@ -6,11 +6,7 @@ import { RvButton } from "@/components/RvButton/RvButton.component";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 import { setNextSlide } from "@/shared/functions/setSlide";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
-import {
-  closeAllFoldersAndRemoveHighlighting,
-  modifyOpenOfAllFolders,
-  setValuesInStructure,
-} from "@/shared/functions/setStructureFolderValue";
+import { closeAllFoldersAndRemoveHighlighting, setValuesInStructure } from "@/shared/functions/setStructureFolderValue";
 import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
 import { FolderStructureContext } from "@/context/providers/FolderStructureContext.provider";
 
@@ -33,11 +29,6 @@ export default function BoilerplateSlide() {
   if (isRemovedFromViewport(SLIDE_ID, slideStack)) {
     return null;
   }
-
-  const open = () => {
-    const updatedStructure = modifyOpenOfAllFolders(folderStructure, true);
-    setFolderStructure(updatedStructure);
-  };
 
   const step1 = () => {
     const updatedStructure = setValuesInStructure(folderStructure, [["public"]], { open: true, highlighted: true });

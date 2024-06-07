@@ -8,11 +8,13 @@ import { setNextSlide } from "@/shared/functions/setSlide";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
+import { ModalContext } from "@/context/providers/ModalContext.provider";
 
 export default function TourRequestsSlide() {
   const SLIDE_ID = Slide.TourRequests;
 
   const { slideStack, setSlideStack } = useContext(SlideStackContext);
+  const { openModal } = useContext(ModalContext);
 
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 
@@ -22,6 +24,10 @@ export default function TourRequestsSlide() {
 
   const goToTourShared = () => {
     setNextSlide(Slide.TourShared, slideStack, setSlideStack);
+  };
+
+  const testGoBackToPages = () => {
+    openModal(Slide.TourPages);
   };
 
   if (isRemovedFromViewport(SLIDE_ID, slideStack)) {
@@ -36,6 +42,7 @@ export default function TourRequestsSlide() {
           <div className="text-body">Lorem ipsum und so bla bla bla....</div>
           <div className="action-buttons">
             <RvButton onClick={goToTourShared} label="Shared!" />
+            <RvButton onClick={testGoBackToPages} label="TestGoBackToPages" />
           </div>
         </div>
         <div className="folder-structure-wrapper">
