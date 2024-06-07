@@ -1,16 +1,12 @@
 .rv-navigation {
   z-index: 30;
+  width: 7cqw;
   position: absolute;
-  top: 3cqw;
+  top: 9.2cqw;
   left: 3cqw;
   display: flex;
   align-items: center;
   flex-direction: column;
-
-  &.hidden {
-    visibility: hidden;
-    opacity: 0;
-  }
 }
 
 .rv-navigation-button {
@@ -105,15 +101,21 @@
   z-index: 30;
   background-color: var(--rv-foreground-color-1);
   width: 0.4cqw;
-  transition: flex-basis 700ms ease;
+  transition:
+    flex-basis 700ms ease,
+    border-radius 200ms ease;
+  transition-delay: 0ms, 500ms;
+  border-radius: 0;
 
   &.hidden {
     visibility: hidden;
     opacity: 0;
     flex-basis: 0;
+    border-radius: 0 0 20px 20px;
   }
 }
 .nav-tooltip {
+  font-size: 1.2cqw;
   position: absolute;
   visibility: hidden;
   opacity: 0;
