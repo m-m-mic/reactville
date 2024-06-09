@@ -4,7 +4,12 @@
   overflow: auto;
 
   .highlighted {
-    background-color: var(--rv-highlight-color);
+    background-color: var(--rv-foreground-color-2);
+    color: var(--rv-foreground-color-1);
+
+    .chevron {
+      fill: var(--rv-foreground-color-1) !important;
+    }
   }
 
   &::-webkit-scrollbar {

@@ -43,7 +43,7 @@
   .chevron {
     flex: 0 0 0.4cqw;
     transition: transform 300ms ease;
-    fill: var(--rv-foreground-color-2) !important;
+    fill: var(--rv-foreground-color-2);
 
     &.open {
       transform: rotate(90deg);
