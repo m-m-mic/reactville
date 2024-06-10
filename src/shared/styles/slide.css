@@ -48,6 +48,7 @@
     .boilerplate-step,
     .folder-structure-wrapper {
       visibility: hidden !important;
+      transition: visibility 200ms ease;
     }
   }
 
