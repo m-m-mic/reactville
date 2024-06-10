@@ -23,13 +23,16 @@
     .foreground {
       opacity: 1;
       visibility: visible;
-      transition-delay: var(--main-transition-duration), var(--main-transition-duration), 0ms;
+      transition-delay: var(--main-transition-duration);
     }
 
     &.exploration {
-      .foreground {
+      /** We change the two sub elements of foreground so we don't have to deal with foreground's transition settings**/
+      .slide-explanation,
+      .folder-structure-wrapper {
         pointer-events: none;
-        transform: translate(0, 120%);
+        visibility: hidden;
+        transform: translate(0, 150%);
       }
 
       .background {
@@ -57,8 +60,7 @@
     font-size: 1.2cqw;
     transition:
       opacity 200ms ease,
-      visibility 200ms ease,
-      transform 500ms ease;
+      visibility 200ms ease;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,6 +87,9 @@
     background: var(--rv-foreground-color-2);
     overflow: hidden;
     border-radius: 1.5cqw 0 0 1.5cqw;
+    transition:
+      transform 500ms ease,
+      visibility 500ms;
 
     &.small {
       border-radius: 1.5cqw;
@@ -156,4 +161,7 @@
   padding: 1cqw;
   background: var(--rv-foreground-color-1);
   border-radius: 0 1.5cqw 1.5cqw 0;
+  transition:
+    transform 500ms ease,
+    visibility 500ms;
 }

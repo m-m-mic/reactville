@@ -19,6 +19,7 @@ export default function RvReturnModal() {
 
   useEffect(() => {
     if (modalProps.open && modalRef.current) {
+      // Sets last active element into state and then blurs it
       const activeElement = document.activeElement as HTMLElement | null;
       setPreviousFocusedElement(activeElement);
       activeElement?.blur();
@@ -31,6 +32,7 @@ export default function RvReturnModal() {
       const handleTabKeyPress = (event: KeyboardEvent) => {
         if (event.key === "Tab") {
           if (!modalRef.current?.contains(document.activeElement)) {
+            // If document has no active element we focus one of the modal elements to trap the focus
             event.preventDefault();
             if (event.shiftKey) {
               lastElement.focus();
@@ -86,6 +88,7 @@ export default function RvReturnModal() {
 
   const closeModalAndRefocus = () => {
     closeModal();
+    // We return the focus to the element the user had focused before opening the modal
     previousFocusedElement?.focus();
   };
 

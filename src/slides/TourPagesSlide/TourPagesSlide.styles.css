@@ -5,13 +5,42 @@
 
 #tourPages-fade-2 {
   opacity: 1;
-  transition: opacity 600ms ease;
+  transition: opacity 400ms ease;
   transition-delay: 1200ms;
+  animation: walking 15s infinite linear;
+
+  #tourPages-fade-2-animation {
+    animation: bobbing 700ms infinite;
+  }
+}
+
+@keyframes bobbing {
+  0% {
+    transform: translate(0, 1%);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, 1%);
+  }
+}
+
+@keyframes walking {
+  0% {
+    transform: translate(-50%, 0);
+  }
+
+  100% {
+    transform: translate(60%, 0);
+  }
 }
 
 #tourPages-fade-1 {
   opacity: 1;
-  transition: opacity 600ms ease;
+  transition: opacity 400ms ease;
   transition-delay: 1100ms;
 }
 
@@ -38,7 +67,7 @@
   #tourPages-move {
     opacity: 0;
     transform: translate(0, 10%) scale(2);
-    transition-delay: 200ms, 500ms;
+    transition-delay: 500ms, 800ms;
   }
 }
 

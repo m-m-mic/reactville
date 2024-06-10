@@ -14,6 +14,7 @@ export default function SlideProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (isInExploreMode) {
+      // Gives current active slide "exploration" as class to hide it
       const currentSlide = document.getElementsByClassName(`slide present`)[0];
       if (currentSlide) {
         currentSlide.classList.add("exploration");
@@ -21,6 +22,7 @@ export default function SlideProvider({ children }: { children: ReactNode }) {
     } else {
       const currentSlide = document.getElementsByClassName(`slide present`)[0];
       if (currentSlide) {
+        // Removes exploration class from current active slide
         currentSlide.classList.remove("exploration");
       }
     }
