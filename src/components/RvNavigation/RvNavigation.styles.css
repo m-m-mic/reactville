@@ -7,6 +7,15 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  transition:
+    transform 500ms ease,
+    visibility 500ms ease;
+
+  &.exploration {
+    visibility: hidden;
+    pointer-events: none;
+    transform: translate(-150%, 0);
+  }
 }
 
 .rv-navigation-button {

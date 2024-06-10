@@ -2,7 +2,7 @@ import "./App.css";
 import "./shared/styles/slide.css";
 import { GetOrientation } from "@/shared/functions/getOrientation";
 
-import SlideStackContextProvider from "@/context/providers/SlideStackContext.provider";
+import SlideProvider from "@/context/providers/SlideProvider";
 import FolderStructureContextProvider from "@/context/providers/FolderStructureContext.provider";
 import ChoicesContextProvider from "@/context/providers/ChoicesContext.provider";
 
@@ -22,6 +22,7 @@ import RvMenu from "@/components/RvMenu/RvMenu.component";
 import RvBackground from "@/components/RvBackground/RvBackground.component";
 import ModalContextProvider from "@/context/providers/ModalContext.provider";
 import RvReturnModal from "@/components/RvReturnModal/RvReturnModal.component";
+import RvExitExploreButton from "@/components/RvExitExploreButton/RvExitExploreButton.component";
 
 export default function App() {
   const getAspectRatioClass = () => {
@@ -29,7 +30,7 @@ export default function App() {
   };
 
   return (
-    <SlideStackContextProvider>
+    <SlideProvider>
       <FolderStructureContextProvider>
         <ChoicesContextProvider>
           <ModalContextProvider>
@@ -37,6 +38,7 @@ export default function App() {
               <RvReturnModal />
               <RvMenu />
               <RvNavigation />
+              <RvExitExploreButton />
 
               <LandingSlide />
               <QuickSelectSlide />
@@ -54,6 +56,6 @@ export default function App() {
           </ModalContextProvider>
         </ChoicesContextProvider>
       </FolderStructureContextProvider>
-    </SlideStackContextProvider>
+    </SlideProvider>
   );
 }

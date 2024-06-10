@@ -1,19 +1,17 @@
 import { Slide } from "@/shared/types/slide.type";
-import {
-  ChoicesContextType,
-  FolderStructureContextType,
-  ModalContextType,
-  SlideStackContextType,
-} from "@/shared/types/context.type";
+import { ChoicesContextType, FolderStructureContextType, ModalContextType, SlideContextType } from "@/shared/types/context.type";
 import { Choices } from "@/shared/types/choices.type";
 import { INITIAL_FOLDER_STRUCTURE } from "@/shared/data/initialFolderStructure";
 import { ModalProps } from "@/shared/types/modal.type";
 
 export const INITIAL_SLIDE_STACK: Slide[] = [Slide.Landing];
 
-export const INITIAL_SLIDE_STACK_CONTEXT: SlideStackContextType = {
+export const INITIAL_SLIDE_CONTEXT: SlideContextType = {
   slideStack: INITIAL_SLIDE_STACK,
   setSlideStack: () => {},
+  isInExploreMode: false,
+  enterExploreMode: () => {},
+  exitExploreMode: () => {},
 };
 
 export const INITIAL_CHOICES: Choices = {

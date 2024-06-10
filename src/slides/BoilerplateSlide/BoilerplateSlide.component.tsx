@@ -7,7 +7,7 @@ import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport"
 import { setNextSlide } from "@/shared/functions/setSlide";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
 import { closeAllFoldersAndRemoveHighlighting, setValuesInStructure } from "@/shared/functions/setStructureFolderValue";
-import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
+import { SlideContext } from "@/context/providers/SlideProvider";
 import { FolderStructureContext } from "@/context/providers/FolderStructureContext.provider";
 
 export default function BoilerplateSlide() {
@@ -15,7 +15,7 @@ export default function BoilerplateSlide() {
 
   const [boilerplateStep, setBoilerplateStep] = useState(0);
 
-  const { slideStack, setSlideStack } = useContext(SlideStackContext);
+  const { slideStack, setSlideStack } = useContext(SlideContext);
   const { folderStructure, setFolderStructure } = useContext(FolderStructureContext);
 
   const [slideState, setSlideState] = useState<SlideState | undefined>();

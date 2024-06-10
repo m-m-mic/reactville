@@ -7,12 +7,12 @@ import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport"
 import { setNextSlide } from "@/shared/functions/setSlide";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
-import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
+import { SlideContext } from "@/context/providers/SlideProvider";
 
 export default function TourStoreSlide() {
   const SLIDE_ID = Slide.TourStore;
 
-  const { slideStack, setSlideStack } = useContext(SlideStackContext);
+  const { slideStack, setSlideStack } = useContext(SlideContext);
 
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 

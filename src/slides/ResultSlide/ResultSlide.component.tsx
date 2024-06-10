@@ -3,12 +3,12 @@ import { useContext, useEffect, useState } from "react";
 import { getSlideState } from "@/shared/functions/getSlideState";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 import "./ResultSlide.styles.css";
-import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
+import { SlideContext } from "@/context/providers/SlideProvider";
 
 export default function ResultSlide() {
   const SLIDE_ID = Slide.Result;
 
-  const { slideStack } = useContext(SlideStackContext);
+  const { slideStack } = useContext(SlideContext);
 
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 

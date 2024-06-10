@@ -1,0 +1,28 @@
+.rv-exit-explore-button {
+  position: absolute;
+  z-index: 30;
+  bottom: 3cqw;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 300ms ease,
+    visibility 300ms ease;
+
+  &.exploration {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition-delay: 500ms;
+  }
+
+  .rv-button {
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

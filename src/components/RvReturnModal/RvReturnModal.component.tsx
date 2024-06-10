@@ -2,7 +2,7 @@ import React, { CSSProperties, KeyboardEvent, useContext, useEffect, useRef, use
 import { ModalContext } from "@/context/providers/ModalContext.provider";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import "./RvReturnModal.styles.css";
-import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
+import { SlideContext } from "@/context/providers/SlideProvider";
 import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 import { Slide } from "@/shared/types/slide.type";
 import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
@@ -12,7 +12,7 @@ export default function RvReturnModal() {
   const [previousFocusedElement, setPreviousFocusedElement] = useState<HTMLElement | null>(null);
 
   const { modalProps, closeModal } = useContext(ModalContext);
-  const { slideStack, setSlideStack } = useContext(SlideStackContext);
+  const { slideStack, setSlideStack } = useContext(SlideContext);
   const { updateChoices } = useContext(ChoicesContext);
 
   const modalRef = useRef<HTMLDivElement>(null);

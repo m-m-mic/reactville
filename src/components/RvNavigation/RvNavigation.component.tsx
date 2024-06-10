@@ -1,13 +1,13 @@
 import "./RvNavigation.styles.css";
 import { useContext } from "react";
-import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
+import { SlideContext } from "@/context/providers/SlideProvider";
 import { SetDocumentTitle } from "@/shared/functions/setDocumentTitle";
 import { Slide } from "@/shared/types/slide.type";
 import { ModalContext } from "@/context/providers/ModalContext.provider";
 import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 
 export default function RvNavigation() {
-  const { slideStack } = useContext(SlideStackContext);
+  const { slideStack, isInExploreMode } = useContext(SlideContext);
   const { openModal } = useContext(ModalContext);
 
   SetDocumentTitle();
@@ -27,7 +27,7 @@ export default function RvNavigation() {
   };
 
   return (
-    <div className="rv-navigation">
+    <div className={`rv-navigation ${isInExploreMode ? "exploration" : ""}`}>
       <button
         className={`rv-navigation-button ${isButtonVisible(Slide.TourPages)} tourPages-button`}
         onClick={() => openReturnModal(Slide.TourPages)}>

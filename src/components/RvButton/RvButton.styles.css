@@ -11,7 +11,7 @@
   justify-content: center;
   cursor: pointer;
   border-radius: 100px;
-  gap: 8px;
+  gap: 0.6cqw;
   transition:
     transform 300ms ease-out,
     outline 300ms ease-out,
@@ -50,4 +50,9 @@
 
 .icon-wrapper {
   display: flex;
+  svg {
+    height: 1.5cqw;
+    width: 1.5cqw;
+    fill: var(--rv-foreground-color-2) !important;
+  }
 }
