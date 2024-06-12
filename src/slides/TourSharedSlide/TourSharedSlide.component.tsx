@@ -4,6 +4,7 @@ import "./TourSharedSlide.styles.css";
 import { useContext, useEffect, useState } from "react";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 
+import TourSharedBackground from "./TourSharedSlide.background.svg?react";
 import { setNextSlide } from "@/shared/functions/setSlide";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
@@ -42,6 +43,7 @@ export default function TourSharedSlide() {
           <RvFolderStructure />
         </div>
       </div>
+      <TourSharedBackground className="background" />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import "./TourRequestsSlide.styles.css";
 import { useContext, useEffect, useState } from "react";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 
+import TourRequestsBackground from "./TourRequestsSlide.background.svg?react";
 import { setNextSlide } from "@/shared/functions/setSlide";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
 import { RvButton } from "@/components/RvButton/RvButton.component";
@@ -49,6 +50,7 @@ export default function TourRequestsSlide() {
           <RvFolderStructure />
         </div>
       </div>
+      <TourRequestsBackground className="background" />
     </div>
   );
 }
