@@ -39,7 +39,7 @@
 
   #tourShared-move {
     opacity: 0;
-    transform: translate(0, 40%) scale(0.8);
+    transform: scale(0.5);
     transition-delay: 700ms, 1200ms;
   }
 }

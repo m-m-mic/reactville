@@ -3,13 +3,23 @@
   --rv-foreground-color-2: var(--tourComponents-background-color);
 }
 
+@keyframes train-move {
+  0% {
+    transform: translate(-50%, 0);
+  }
+
+  100% {
+    transform: translate(70%, 0);
+  }
+}
+
 #tourComponents-fade-1 {
   opacity: 1;
   transition: opacity 600ms ease;
   transition-delay: 1100ms;
 
   #tourComponents-fade-1-animation {
-    animation: scroll-fade-2 5s infinite linear;
+    animation: train-move 10s infinite linear;
     animation-delay: -10s;
   }
 }
@@ -32,7 +42,7 @@
 
   #tourComponents-move {
     opacity: 0;
-    transform: translate(0, 40%) scale(0.8);
+    transform: scale(0.5);
     transition-delay: 700ms, 1200ms;
   }
 }
