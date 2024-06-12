@@ -68,7 +68,7 @@
     <rect x="3649.6" y="1092.23" width="71.53" height="90.23" rx="4.41" ry="4.41" style="fill: #e5e6f9; stroke-width: 0px;"/>
     <rect x="3649.6" y="1275.94" width="71.53" height="90.23" rx="4.52" ry="4.52" style="fill: #e5e6f9; stroke-width: 0px;"/>
   </g>
-  <g id="tourShared-fade1">
+  <g id="tourShared-fade-1">
     <rect x="2107.13" y="1328.33" width="17.07" height="124.37" style="fill: #565ac4; stroke-width: 0px;"/>
     <circle cx="2116.07" cy="1272.24" r="72.35" style="fill: #565ac4; stroke-width: 0px;"/>
     <circle cx="2086" cy="1227.53" r="72.35" style="fill: #565ac4; stroke-width: 0px;"/>

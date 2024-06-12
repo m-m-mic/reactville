@@ -2,3 +2,46 @@
   z-index: 21;
   --rv-foreground-color-2: var(--tourComponents-background-color);
 }
+
+#tourComponents-fade-1 {
+  opacity: 1;
+  transition: opacity 600ms ease;
+  transition-delay: 1100ms;
+}
+
+#tourComponents-move {
+  opacity: 1;
+  transform-origin: center;
+  transition:
+    transform 800ms ease-in,
+    opacity 200ms ease;
+  transition-delay: 300ms, 100ms;
+}
+
+
+.slide.future {
+  #tourComponents-fade-1 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  #tourComponents-move {
+    opacity: 0;
+    transform: translate(0, 40%) scale(0.8);
+    transition-delay: 700ms, 1200ms;
+  }
+}
+
+
+.slide.past {
+  #tourComponents-fade-1 {
+    opacity: 0;
+    transition-delay: 100ms;
+  }
+
+  #tourComponents-move {
+    opacity: 0;
+    transform: translate(0, 30%) scale(2);
+    transition-delay: 200ms, 500ms;
+  }
+}
