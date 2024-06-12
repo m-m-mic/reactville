@@ -7,6 +7,11 @@
   opacity: 1;
   transition: opacity 600ms ease;
   transition-delay: 1100ms;
+
+  #tourComponents-fade-1-animation {
+    animation: scroll-fade-2 5s infinite linear;
+    animation-delay: -10s;
+  }
 }
 
 #tourComponents-move {
