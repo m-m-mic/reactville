@@ -18,3 +18,22 @@
   z-index: 2;
   background: #3bd1ff;
 }
+
+.city-ladder {
+  transition:
+    opacity 300ms ease,
+    visibility 300ms;
+
+  &.out-of-frame {
+    transform: translate(0, -200%);
+  }
+
+  &.bottom-section {
+    transform: translate(0, 20%);
+  }
+
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
