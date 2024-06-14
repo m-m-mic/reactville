@@ -165,7 +165,7 @@
     visibility: visible;
   }
 
-  &.bottom-section {
+  &.bottom-section, &.hidden {
     #explanation-move,
     #explanation-fade-1 {
       transform: translate(0, -72%);
@@ -188,8 +188,9 @@
   }
 
   &.hidden {
-    visibility: hidden;
+    visibility: hidden !important;
     opacity: 0;
+
   }
 }
 
