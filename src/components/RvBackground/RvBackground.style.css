@@ -2,10 +2,57 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%);
   width: 100cqw;
   height: 100cqh;
   z-index: 3;
+  transition:
+    fill var(--main-transition-duration) ease,
+    transform var(--main-transition-duration) ease,
+    visibility 800ms,
+    opacity 800ms ease;
+  fill: #55b2ff;
+
+  &.out-of-frame {
+    transform: translate(-50%, 30%);
+  }
+
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &.boilerplate {
+    fill: #44894f;
+  }
+
+  &.tourPages {
+    fill: #72b7f1;
+  }
+
+  &.tourComponents {
+    fill: #edc479;
+  }
+
+  &.tourStyles {
+    fill: #eb8b5f;
+  }
+
+  &.tourStore {
+    fill: #ff9a9a;
+  }
+
+  &.tourRequests {
+    fill: #aa66ab;
+  }
+
+  &.tourShared {
+    fill: #5f64bc;
+  }
+
+  &.result {
+    fill: #498656;
+  }
 }
 
 .city-sky {
@@ -16,5 +63,167 @@
   width: 100cqw;
   height: 100cqh;
   z-index: 2;
-  background: #3bd1ff;
+  background-color: #3bd1ff;
+  transition: background-color var(--main-transition-duration) ease;
+
+  &.explanation {
+    background-color: #77baf5;
+  }
+
+  &.boilerplate {
+    background-color: #7bd089;
+  }
+
+  &.tourPages {
+    background-color: #bbdaf3;
+  }
+
+  &.tourComponents {
+    background-color: #efd7ab;
+  }
+
+  &.tourStyles {
+    background-color: #f0b194;
+  }
+
+  &.tourStore {
+    background-color: #ff7c7c;
+  }
+
+  &.tourRequests {
+    background-color: #854b86;
+  }
+
+  &.tourShared {
+    background-color: #494c86;
+  }
+
+  &.result {
+    background-color: #498656;
+  }
+}
+
+.city-ladder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-20%, 12%) scale(2);
+  width: 100cqw;
+  height: auto;
+  overflow: hidden;
+  z-index: 4;
+  visibility: hidden;
+  transition:
+    opacity 300ms ease,
+    visibility 800ms;
+
+  #explanation-move,
+  #explanation-fade-1,
+  #explanation-fade-2,
+  #explanation-fade-3 {
+    transition: transform 800ms ease-out;
+  }
+
+  #explanation-fade-1-animation {
+    animation: hover 4s infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  #explanation-fade-2-animation {
+    animation: explanation-scroll-fade-2 205s infinite linear;
+    animation-delay: -40s;
+  }
+
+  #explanation-fade-3-animation {
+    animation: explanation-scroll-fade-3 160s infinite linear;
+    animation-delay: -100s;
+  }
+
+  &.out-of-frame {
+    #explanation-move,
+    #explanation-fade-1,
+    #explanation-fade-2,
+    #explanation-fade-3 {
+      transform: translate(0, 40%);
+    }
+  }
+
+  &.middle-section {
+    #explanation-move,
+    #explanation-fade-1 {
+      transition-delay: 800ms;
+    }
+
+    #explanation-fade-2 {
+      transition-delay: 1000ms;
+    }
+
+    #explanation-fade-3 {
+      transition-delay: 900ms;
+    }
+
+    visibility: visible;
+  }
+
+  &.bottom-section, &.hidden {
+    #explanation-move,
+    #explanation-fade-1 {
+      transform: translate(0, -72%);
+      transition: transform var(--main-transition-duration) ease;
+      transition-delay: 200ms;
+    }
+
+    #explanation-fade-2 {
+      transform: translate(0, -72%);
+      transition: transform var(--main-transition-duration) ease;
+      transition-delay: 100ms;
+    }
+
+    #explanation-fade-3 {
+      transform: translate(0, -72%);
+      transition: transform var(--main-transition-duration) ease;
+    }
+
+    visibility: visible;
+  }
+
+  &.hidden {
+    visibility: hidden !important;
+    opacity: 0;
+
+  }
+}
+
+@keyframes hover {
+  0% {
+    transform: translateY(0.3%);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0.3%);
+  }
+}
+
+@keyframes explanation-scroll-fade-2 {
+  0% {
+    transform: translate(-20%, 0);
+  }
+
+  100% {
+    transform: translate(55%, 0);
+  }
+}
+
+@keyframes explanation-scroll-fade-3 {
+  0% {
+    transform: translate(-55%, 0);
+  }
+
+  100% {
+    transform: translate(25%, 0);
+  }
 }

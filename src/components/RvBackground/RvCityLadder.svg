@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3840 4287">
+  <g id="explanation-fade-3">
+    <g id="explanation-fade-3-animation">
+      <g>
+        <rect x="1532.44" y="669.87" width="913.12" height="288.35" rx="144.18" ry="144.18" style="fill: #f5fcff; stroke-width: 0px;"/>
+        <circle cx="1798.77" cy="697.24" r="143.51" style="fill: #f5fcff; stroke-width: 0px;"/>
+        <circle cx="1972.98" cy="697.91" r="194.91" style="fill: #f5fcff; stroke-width: 0px;"/>
+        <circle cx="2147.86" cy="748.64" r="194.91" style="fill: #f5fcff; stroke-width: 0px;"/>
+        <circle cx="2147.19" cy="874.79" r="170.21" style="fill: #f5fcff; stroke-width: 0px;"/>
+        <circle cx="1973.65" cy="841.42" r="170.21" style="fill: #f5fcff; stroke-width: 0px;"/>
+        <circle cx="1753.38" cy="841.42" r="170.21" style="fill: #f5fcff; stroke-width: 0px;"/>
+      </g>
+    </g>
+  </g>
+  <g id="explanation-move">
+    <g id="explanation-move-animation">
+      <g>
+        <path d="M1693.65,4287h0c-4.24,0-7.67-3.43-7.67-7.67V527.3s15.34,0,15.34,0v3752.03c0,4.24-3.43,7.67-7.67,7.67Z" style="fill: #d2b580; stroke-width: 0px;"/>
+        <path d="M1864.35,4287h0c-4.24,0-7.67-3.43-7.67-7.67V527.3s15.34,0,15.34,0v3752.03c0,4.24-3.43,7.67-7.67,7.67Z" style="fill: #d2b580; stroke-width: 0px;"/>
+        <rect x="1670" y="561.82" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="657.07" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="752.33" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="847.58" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="942.84" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="1038.09" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="1133.35" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="1228.6" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="1323.86" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="1419.11" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="1514.37" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="1609.63" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="1704.88" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="1800.14" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="1895.39" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="1990.65" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="2085.9" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="2181.16" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="2276.41" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="2371.67" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="2466.92" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="2562.18" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="2657.43" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="2752.69" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="2847.94" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="2943.2" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="3038.45" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="3133.71" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="3228.96" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="3324.22" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="3419.47" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="3514.73" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="3609.98" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="3705.24" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="3800.5" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="3895.75" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="3991.01" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="4086.26" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+        <rect x="1670" y="4181.52" width="218" height="25.57" rx="7.64" ry="7.64" style="fill: #a87f54; stroke-width: 0px;"/>
+      </g>
+    </g>
+  </g>
+  <g id="explanation-fade-1">
+    <g id="explanation-fade-1-animation">
+      <g>
+        <rect x="1511.5" y="421.67" width="529" height="167.05" rx="83.53" ry="83.53" style="fill: #ebf4f7; stroke-width: 0px;"/>
+        <circle cx="1665.79" cy="437.53" r="83.14" style="fill: #ebf4f7; stroke-width: 0px;"/>
+        <circle cx="1766.72" cy="437.92" r="112.92" style="fill: #ebf4f7; stroke-width: 0px;"/>
+        <circle cx="1868.03" cy="467.31" r="112.92" style="fill: #ebf4f7; stroke-width: 0px;"/>
+        <circle cx="1867.65" cy="540.39" r="98.61" style="fill: #ebf4f7; stroke-width: 0px;"/>
+        <circle cx="1767.11" cy="521.06" r="98.61" style="fill: #ebf4f7; stroke-width: 0px;"/>
+        <circle cx="1639.5" cy="521.06" r="98.61" style="fill: #ebf4f7; stroke-width: 0px;"/>
+      </g>
+    </g>
+  </g>
+  <g id="explanation-fade-2">
+    <g id="explanation-fade-2-animation">
+      <g>
+        <rect x="251.44" y="940.87" width="913.12" height="288.35" rx="144.18" ry="144.18" style="fill: #e4f3f9; stroke-width: 0px;"/>
+        <circle cx="517.77" cy="968.24" r="143.51" style="fill: #e4f3f9; stroke-width: 0px;"/>
+        <circle cx="691.98" cy="968.91" r="194.91" style="fill: #e4f3f9; stroke-width: 0px;"/>
+        <circle cx="866.86" cy="1019.64" r="194.91" style="fill: #e4f3f9; stroke-width: 0px;"/>
+        <circle cx="866.19" cy="1145.79" r="170.21" style="fill: #e4f3f9; stroke-width: 0px;"/>
+        <circle cx="692.65" cy="1112.42" r="170.21" style="fill: #e4f3f9; stroke-width: 0px;"/>
+        <circle cx="472.38" cy="1112.42" r="170.21" style="fill: #e4f3f9; stroke-width: 0px;"/>
+      </g>
+    </g>
+  </g>
+</svg>
