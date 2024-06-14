@@ -1,22 +1,11 @@
 import RvCityBackground from "./RvCityBackground.svg?react";
 import "./RvBackground.style.css";
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
 import { Slide } from "@/shared/types/slide.type";
 
 export default function RvBackground() {
   const { slideStack } = useContext(SlideStackContext);
-  const [cityLadderState, setCityLadderState] = useState<"out-of-frame" | "middle-section" | "bottom-section" | "hidden">(
-    "out-of-frame",
-  );
-  const [cityBackgroundState, setCityBackgroundState] = useState<"out-of-frame" | "in-frame" | "hidden">("out-of-frame");
-  const [cityMountainsState, setCityMountainsState] = useState<"visible" | "hidden">("hidden");
-
-  useEffect(() => {
-    setCityLadder();
-    setCityBackground();
-    setCityMountains();
-  }, [slideStack]);
 
   // City-ladder: Ändert sich in Landing (state: out of frame below), Explanation (state: in screen), Boilerplate (state: in screen, bottom of ladder), rest (fade out)
   // city-background: landing, explanation: out of frame | boilerplate-tourShared: in frame | result: fade?
@@ -27,47 +16,46 @@ export default function RvBackground() {
     return `city-sky ${slideStack[slideStack.length - 1]}`;
   };
 
-  const setCityLadder = () => {
+  const getCityLadderClass = () => {
     const currentSlide = slideStack[slideStack.length - 1];
-
     if (currentSlide === Slide.Landing) {
-      setCityLadderState("out-of-frame");
+      return "city-ladder out-of-frame";
     } else if (currentSlide === Slide.Explanation) {
-      setCityLadderState("middle-section");
+      return "city-ladder middle-section";
     } else if (currentSlide === Slide.Boilerplate) {
-      setCityLadderState("bottom-section");
+      return "city-ladder bottom-section";
     } else {
-      setCityLadderState("hidden");
+      return "city-ladder hidden";
     }
   };
 
-  const setCityBackground = () => {
+  const getCityBackgroundClass = () => {
     const currentSlide = slideStack[slideStack.length - 1];
 
     if (currentSlide === Slide.Landing || currentSlide === Slide.Explanation) {
-      setCityBackgroundState("out-of-frame");
+      return `city-background ${currentSlide} out-of-frame`;
     } else if (currentSlide === Slide.Result) {
-      setCityBackgroundState("hidden");
+      return `city-background ${currentSlide} hidden`;
     } else {
-      setCityBackgroundState("in-frame");
+      return `city-background ${currentSlide} in-frame`;
     }
   };
 
-  const setCityMountains = () => {
+  const getCityMountainsClass = () => {
     const currentSlide = slideStack[slideStack.length - 1];
 
     if (currentSlide === Slide.Result) {
-      setCityMountainsState("visible");
+      return "city-mountains visible";
     } else {
-      setCityBackgroundState("hidden");
+      return "city-mountains hidden";
     }
   };
 
   return (
     <>
-      <div className={`city-ladder ${cityLadderState}`}></div>
-      <RvCityBackground className={`city-background ${cityBackgroundState}`} />
-      <div className={`city-mountains ${cityMountainsState}`}></div>
+      <div className={getCityLadderClass()}></div>
+      <RvCityBackground className={getCityBackgroundClass()} />
+      <div className={getCityMountainsClass()}></div>
       <div className={getCitySkyClass()}></div>
     </>
   );
