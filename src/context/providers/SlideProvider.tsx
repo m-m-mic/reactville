@@ -9,7 +9,7 @@ export default function SlideProvider({ children }: { children: ReactNode }) {
   const [isInExploreMode, setIsInExploreMode] = useState(false);
 
   useEffect(() => {
-    if (IS_IN_DEV_MODE) console.debug("[SlideStackContext]", slideStack);
+    if (IS_IN_DEV_MODE) console.debug("[SlideContext]", slideStack);
   }, [slideStack]);
 
   useEffect(() => {
