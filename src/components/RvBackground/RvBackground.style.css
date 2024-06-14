@@ -2,10 +2,53 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%);
   width: 100cqw;
   height: 100cqh;
   z-index: 3;
+  transition: fill var(--main-transition-duration) ease, transform var(--main-transition-duration) ease, visibility 800ms, opacity 800ms ease;
+  fill: #55B2FF;
+  
+  &.out-of-frame {
+    transform: translate(-50%, 30%);
+  }
+
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &.boilerplate {
+    fill: #44894F;
+  }
+
+  &.tourPages {
+    fill: #72B7F1;
+  }
+
+  &.tourComponents {
+    fill: #EDC479;
+  }
+
+  &.tourStyles {
+    fill: #EB8B5F;
+  }
+
+  &.tourStore {
+    fill: #FF9A9A;
+  }
+
+  &.tourRequests {
+    fill: #AA66AB;
+  }
+
+  &.tourShared {
+    fill: #5F64BC;
+  }
+
+  &.result {
+    fill: #498656;
+  }
 }
 
 .city-sky {
@@ -16,20 +59,76 @@
   width: 100cqw;
   height: 100cqh;
   z-index: 2;
-  background: #3bd1ff;
+  background-color: #3bd1ff;
+  transition: background-color var(--main-transition-duration) ease;
+
+  &.explanation {
+    background-color: #77BAF5;
+  }
+
+  &.boilerplate {
+    background-color: #7BD089;
+  }
+
+  &.tourPages {
+    background-color: #BBDAF3;
+  }
+
+  &.tourComponents {
+    background-color: #EFD7AB;
+  }
+
+  &.tourStyles {
+    background-color: #F0B194;
+  }
+
+  &.tourStore {
+    background-color: #FF7C7C;
+  }
+
+  &.tourRequests {
+    background-color: #854B86;
+  }
+
+  &.tourShared {
+    background-color: #494C86;
+  }
+
+  &.result {
+    background-color: #498656;
+  }
 }
 
 .city-ladder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,8%) scale(2);
+  width: 100cqw;
+  height: 100cqh;
+  z-index: 4;
+  visibility: hidden;
   transition:
     opacity 300ms ease,
-    visibility 300ms;
+    visibility 800ms,
+    transform 800ms ease-out;
 
   &.out-of-frame {
-    transform: translate(0, -200%);
+    transform: translate(-50%,80%) scale(2);
+  }
+
+  &.middle-section {
+    transition-delay: 0s,0s,800ms;
+    visibility: visible;
   }
 
   &.bottom-section {
-    transform: translate(0, 20%);
+    transform: translate(-50%,-127%) scale(2);
+    visibility: visible;
+    transition:
+    opacity 300ms ease,
+    visibility 300ms,
+    transform var(--main-transition-duration) ease-out;
   }
 
   &.hidden {
