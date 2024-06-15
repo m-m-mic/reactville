@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3840 2160">
-  <g id="mountain-layer">
-    <polygon points="3841.33 1770 3841 1769.52 3841 1651 3841.33 1651 3841.33 1254.04 3460.46 692 3285.64 949.98 3191.46 811 3116.05 922.28 2964.2 691 2671.61 1136.62 2476.2 839 2390.23 969.94 2168.34 632 1896.76 1045.63 1682.87 730 1582.4 878.26 1416.2 633 1241.38 890.98 1147.2 752 980.42 998.12 766.2 682 464.96 1126.54 219.04 752 0 1085.61 0 1592 0 1711 0 2160 3841 2160 3841 1770 3841.33 1770" style="fill: #142d13; stroke-width: 0px;"/>
-  </g>
   <g id="result-move">
     <rect x="0" y="1495" width="3840" height="664" style="fill: #1f381e; stroke-width: 0px;"/>
     <rect x="1589" y="1495" width="664" height="667" style="fill: #264724; stroke-width: 0px;"/>
@@ -17,11 +14,11 @@
     </g>
   </g>
   <g id="result-fade-2">
-    <rect x="2326.65" y="1324.63" width="111.03" height="190.37" transform="translate(4764.33 2839.63) rotate(180)" style="fill: #20421d; stroke-width: 0px;"/>
-    <polygon points="2382.09 1086.97 2714.51 1409.51 2049.66 1409.51 2382.09 1086.97" style="fill: #20421d; stroke-width: 0px;"/>
-    <polygon points="2382.61 970.56 2668.79 1248.24 2096.42 1248.24 2382.61 970.56" style="fill: #20421d; stroke-width: 0px;"/>
-    <polygon points="2382.31 857.79 2632.25 1100.3 2132.37 1100.3 2382.31 857.79" style="fill: #20421d; stroke-width: 0px;"/>
-    <polygon points="2382.5 762 2589.95 963.29 2175.04 963.29 2382.5 762" style="fill: #20421d; stroke-width: 0px;"/>
+    <rect x="2368.65" y="1324.63" width="111.03" height="190.37" transform="translate(4848.33 2839.63) rotate(180)" style="fill: #20421d; stroke-width: 0px;"/>
+    <polygon points="2424.09 1086.97 2756.51 1409.51 2091.66 1409.51 2424.09 1086.97" style="fill: #20421d; stroke-width: 0px;"/>
+    <polygon points="2424.61 970.56 2710.79 1248.24 2138.42 1248.24 2424.61 970.56" style="fill: #20421d; stroke-width: 0px;"/>
+    <polygon points="2424.31 857.79 2674.25 1100.3 2174.37 1100.3 2424.31 857.79" style="fill: #20421d; stroke-width: 0px;"/>
+    <polygon points="2424.5 762 2631.95 963.29 2217.04 963.29 2424.5 762" style="fill: #20421d; stroke-width: 0px;"/>
     <rect x="3221.67" y="1351.28" width="111.03" height="190.37" transform="translate(6554.37 2892.94) rotate(180)" style="fill: #20421d; stroke-width: 0px;"/>
     <polygon points="3277.1 1113.62 3609.53 1436.16 2944.68 1436.16 3277.1 1113.62" style="fill: #20421d; stroke-width: 0px;"/>
     <polygon points="3277.63 997.21 3563.81 1274.89 2991.44 1274.89 3277.63 997.21" style="fill: #20421d; stroke-width: 0px;"/>
@@ -56,7 +53,7 @@
     <circle cx="439.94" cy="671.68" r="180.31" style="fill: #2e7028; stroke-width: 0px;"/>
   </g>
   <g id="result-fade-4">
-    <rect x="1350" y="1281" width="23" height="333" style="fill: #4b8245; stroke-width: 0px;"/>
-    <rect x="1216" y="1115" width="291" height="171" rx="13.43" ry="13.43" style="fill: #4b8245; stroke-width: 0px;"/>
+    <rect x="1350" y="1236" width="23" height="333" style="fill: #4b8245; stroke-width: 0px;"/>
+    <rect x="1216" y="1070" width="291" height="171" rx="13.43" ry="13.43" style="fill: #4b8245; stroke-width: 0px;"/>
   </g>
 </svg>

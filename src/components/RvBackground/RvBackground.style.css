@@ -103,6 +103,24 @@
   }
 }
 
+.city-mountains &.visible {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 100cqw;
+  height: 100cqh;
+  z-index: 2;
+  transition: background-color var(--main-transition-duration) ease;
+  visibility: visible;
+
+
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
 .city-ladder {
   position: absolute;
   left: 50%;
