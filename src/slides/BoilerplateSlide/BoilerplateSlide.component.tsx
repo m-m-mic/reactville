@@ -9,6 +9,7 @@ import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.
 import { closeAllFoldersAndRemoveHighlighting, setValuesInStructure } from "@/shared/functions/setStructureFolderValue";
 import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
 import { FolderStructureContext } from "@/context/providers/FolderStructureContext.provider";
+import BoilerplateBackground from "./BoilerplateSlide.background.svg?react";
 
 export default function BoilerplateSlide() {
   const SLIDE_ID = Slide.Boilerplate;
@@ -153,6 +154,7 @@ export default function BoilerplateSlide() {
           <RvFolderStructure />
         </div>
       </div>
+      <BoilerplateBackground className="background" />
     </div>
   );
 }
