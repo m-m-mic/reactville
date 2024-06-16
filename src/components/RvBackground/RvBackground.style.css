@@ -103,17 +103,20 @@
   }
 }
 
-.city-mountains &.visible {
+.city-mountains {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 100cqw;
-  height: 100cqh;
-  z-index: 2;
-  transition: background-color var(--main-transition-duration) ease;
-  visibility: visible;
-
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100cqw;
+    height: 100cqh;
+    z-index: 5;
+    visibility: visible;
+    opacity: 100%;
+    transition:
+      transform var(--main-transition-duration) ease,
+      visibility 800ms,
+      opacity 800ms ease;
 
   &.hidden {
     visibility: hidden;
@@ -183,7 +186,8 @@
     visibility: visible;
   }
 
-  &.bottom-section, &.hidden {
+  &.bottom-section,
+  &.hidden {
     #explanation-move,
     #explanation-fade-1 {
       transform: translate(0, -72%);
@@ -208,7 +212,6 @@
   &.hidden {
     visibility: hidden !important;
     opacity: 0;
-
   }
 }
 

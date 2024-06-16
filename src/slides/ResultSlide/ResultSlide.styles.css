@@ -1,3 +1,44 @@
 .result {
   z-index: 16;
 }
+
+#result-fade-1, #result-fade-2, #result-fade-3, #result-fade-4 {
+  opacity: 1;
+  transition: opacity 600ms ease;
+  transition-delay: 1100ms;
+}
+
+#result-move {
+  opacity: 1;
+  transform-origin: center;
+  transition:
+    transform 800ms ease-in,
+    opacity 200ms ease;
+  transition-delay: 300ms, 100ms;
+}
+
+.slide.past {
+  #result-fade-1, #result-fade-2, #result-fade-3, #result-fade-4 {
+    opacity: 0;
+    transition-delay: 100ms;
+  }
+
+  #result-move {
+    opacity: 0;
+    transform: scale(2);
+    transition-delay: 200ms, 500ms;
+  }
+}
+
+.slide.future {
+  #result-fade-1, #result-fade-2, #result-fade-3, #result-fade-4 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  #result-move {
+    opacity: 0;
+    transform: scale(0.5);
+    transition-delay: 700ms, 1200ms;
+  }
+}

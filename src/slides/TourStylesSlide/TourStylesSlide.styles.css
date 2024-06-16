@@ -24,7 +24,6 @@
   transition-delay: 300ms, 100ms;
 }
 
-
 .slide.future {
   #tourStyles-fade-1 {
     opacity: 0;
@@ -42,7 +41,6 @@
     transition-delay: 700ms, 1200ms;
   }
 }
-
 
 .slide.past {
   #tourStyles-fade-1 {
