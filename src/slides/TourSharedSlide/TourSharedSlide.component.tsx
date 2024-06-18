@@ -14,7 +14,6 @@ export default function TourSharedSlide() {
   const SLIDE_ID = Slide.TourShared;
 
   const { slideStack, setSlideStack } = useContext(SlideStackContext);
-
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 
   useEffect(() => {
