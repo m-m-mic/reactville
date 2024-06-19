@@ -1,5 +1,6 @@
 import RvCityBackground from "./RvCityBackground.svg?react";
 import RvCityLadder from "./RvCityLadder.svg?react";
+import RvMountainBackground from "./RvMountainBackground.svg?react";
 import "./RvBackground.style.css";
 import { useContext } from "react";
 import { Slide } from "@/shared/types/slide.type";
@@ -56,7 +57,7 @@ export default function RvBackground() {
     <>
       <RvCityLadder className={getCityLadderClass()} />
       <RvCityBackground className={getCityBackgroundClass()} />
-      <div className={getCityMountainsClass()}></div>
+      <RvMountainBackground className={getCityMountainsClass()} />
       <div className={getCitySkyClass()}></div>
     </>
   );

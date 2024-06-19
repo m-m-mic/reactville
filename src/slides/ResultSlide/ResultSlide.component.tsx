@@ -11,6 +11,8 @@ import RvSlideHeader from "@/components/RvSlideHeader/RvSlideHeader.component";
 import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 import { FolderStructureContext } from "@/context/providers/FolderStructureContext.provider";
 import { openAllFoldersAndRemoveHighlighting } from "@/shared/functions/setStructureFolderValue";
+import ResultBackground from "./ResultSlide.background.svg?react";
+
 
 export default function ResultSlide() {
   const SLIDE_ID = Slide.Result;
@@ -47,6 +49,7 @@ export default function ResultSlide() {
           <RvFolderStructure />
         </div>
       </div>
+      <ResultBackground className="background" />
     </div>
   );
 }

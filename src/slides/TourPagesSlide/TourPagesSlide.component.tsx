@@ -10,6 +10,8 @@ import { RvButton } from "@/components/RvButton/RvButton.component";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
 import { SlideContext } from "@/context/providers/SlideProvider";
 import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
+import RvSlideContentChoice from "@/components/RvSlideContentChoice/RvSlideContentChoice.component";
+import { tourPagesSlideContent } from "@/shared/data/slideContent";
 import RvSlideHeader from "@/components/RvSlideHeader/RvSlideHeader.component";
 import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 
@@ -17,7 +19,7 @@ export default function TourPagesSlide() {
   const SLIDE_ID = Slide.TourPages;
 
   const { slideStack, setSlideStack } = useContext(SlideContext);
-  const { updateChoices } = useContext(ChoicesContext);
+  const { choices, updateChoices } = useContext(ChoicesContext);
 
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 
@@ -46,12 +48,35 @@ export default function TourPagesSlide() {
       <div className="foreground">
         <div className="slide-explanation">
           <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
-          <div className="text-body">Lorem ipsum und so bla bla bla....</div>
-          <RvButton onClick={singlePage} label="Only one page!" />
-          <RvButton onClick={multiplePages} label="Lot's of pages!" />
-          <div className="action-buttons">
-            <RvButton onClick={goToTourComponents} label="Tour Components!" />
-          </div>
+          <RvSlideContentChoice
+            slide={SLIDE_ID}
+            choice={choices.tourPages}
+            undefinedChoice={
+              <>
+                {tourPagesSlideContent.undefined}
+                <div className="action-buttons">
+                  <RvButton onClick={singlePage} label="single!" />
+                  <RvButton onClick={multiplePages} label="multiple!" />
+                </div>
+              </>
+            }
+            falseChoice={
+              <>
+                {tourPagesSlideContent.false}
+                <div className="action-buttons">
+                  <RvButton onClick={goToTourComponents} label="Components!" />
+                </div>
+              </>
+            }
+            trueChoice={
+              <>
+                {tourPagesSlideContent.true}
+                <div className="action-buttons">
+                  <RvButton onClick={goToTourComponents} label="Components!" />
+                </div>
+              </>
+            }
+          />
         </div>
         <div className="folder-structure-wrapper">
           <RvFolderStructure />

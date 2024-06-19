@@ -16,11 +16,11 @@
 
   --rv-foreground-color-1: #fff;
   --rv-foreground-color-2: #737373;
-  --landing-foreground-color: #fcd2d2;
-  --landing-background-color: #b50000;
-  --explanation-background-color: #5b9fda;
-  --boilerplate-background-color: #556c3d;
-  --tourPages-background-color: #237feb;
+    --landing-foreground-color: #fcd2d2;
+    --landing-background-color: #b50000;
+    --explanation-background-color: #5b9fda;
+    --boilerplate-background-color: #556c3d;
+    --tourPages-background-color: #237feb;
   --tourComponents-background-color: #e39d1d;
   --tourStyles-background-color: #e3672c;
   --tourStore-background-color: #e45252;

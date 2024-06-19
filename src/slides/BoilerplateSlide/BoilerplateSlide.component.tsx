@@ -11,6 +11,7 @@ import { SlideContext } from "@/context/providers/SlideProvider";
 import { FolderStructureContext } from "@/context/providers/FolderStructureContext.provider";
 import RvSlideHeader from "@/components/RvSlideHeader/RvSlideHeader.component";
 import { getSlideTitle } from "@/shared/functions/getSlideTitle";
+import BoilerplateBackground from "./BoilerplateSlide.background.svg?react";
 
 export default function BoilerplateSlide() {
   const SLIDE_ID = Slide.Boilerplate;
@@ -186,6 +187,7 @@ export default function BoilerplateSlide() {
           </div>
         </div>
       </div>
+      <BoilerplateBackground className="background" />
     </div>
   );
 }

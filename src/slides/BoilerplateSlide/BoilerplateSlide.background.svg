@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3840 2160">
+  <g id="boilerplate-move">
+    <rect x="0" y="1495" width="3840" height="664" style="fill: #386037; stroke-width: 0px;"/>
+    <rect x="1589" y="1495" width="664" height="667" style="fill: #264724; stroke-width: 0px;"/>
+    <rect x="1898" y="1542" width="45.33" height="112" style="fill: #5a9156; stroke-width: 0px;"/>
+    <rect x="1897.99" y="1724.52" width="45.33" height="112" style="fill: #5a9156; stroke-width: 0px;"/>
+    <rect x="1896.99" y="1907.52" width="45.33" height="112" style="fill: #5a9156; stroke-width: 0px;"/>
+    <rect x="1897.99" y="2090.52" width="45.33" height="71.48" style="fill: #5a9156; stroke-width: 0px;"/>
+  </g>
+  <g id="boilerplate-fade-2">
+    <rect x="1196.53" y="1324.63" width="111.03" height="190.37" style="fill: #3aa532; stroke-width: 0px;"/>
+    <polygon points="1252.12 1086.97 919.7 1409.51 1584.55 1409.51 1252.12 1086.97" style="fill: #3aa532; stroke-width: 0px;"/>
+    <polygon points="1251.6 970.56 965.42 1248.24 1537.78 1248.24 1251.6 970.56" style="fill: #3aa532; stroke-width: 0px;"/>
+    <polygon points="1251.9 857.79 1001.95 1100.3 1501.84 1100.3 1251.9 857.79" style="fill: #3aa532; stroke-width: 0px;"/>
+    <polygon points="1251.71 762 1044.26 963.29 1459.16 963.29 1251.71 762" style="fill: #3aa532; stroke-width: 0px;"/>
+    <rect x="301.51" y="1351.28" width="111.03" height="190.37" style="fill: #3aa532; stroke-width: 0px;"/>
+    <polygon points="357.1 1113.62 24.68 1436.16 689.53 1436.16 357.1 1113.62" style="fill: #3aa532; stroke-width: 0px;"/>
+    <polygon points="356.58 997.21 70.4 1274.89 642.77 1274.89 356.58 997.21" style="fill: #3aa532; stroke-width: 0px;"/>
+    <polygon points="356.88 884.45 106.94 1126.96 606.82 1126.96 356.88 884.45" style="fill: #3aa532; stroke-width: 0px;"/>
+    <polygon points="356.69 788.65 149.24 989.94 564.15 989.94 356.69 788.65" style="fill: #3aa532; stroke-width: 0px;"/>
+    <rect x="3221.51" y="1351.28" width="111.03" height="190.37" style="fill: #3aa532; stroke-width: 0px;"/>
+    <polygon points="3277.1 1113.62 2944.68 1436.16 3609.53 1436.16 3277.1 1113.62" style="fill: #3aa532; stroke-width: 0px;"/>
+    <polygon points="3276.58 997.21 2990.4 1274.89 3562.77 1274.89 3276.58 997.21" style="fill: #3aa532; stroke-width: 0px;"/>
+    <polygon points="3276.88 884.45 3026.94 1126.96 3526.82 1126.96 3276.88 884.45" style="fill: #3aa532; stroke-width: 0px;"/>
+    <polygon points="3276.69 788.65 3069.24 989.94 3484.15 989.94 3276.69 788.65" style="fill: #3aa532; stroke-width: 0px;"/>
+  </g>
+  <g id="boilerplate-fade-1">
+    <rect x="3405.75" y="1208.32" width="50.15" height="365.39" style="fill: #5abf55; stroke-width: 0px;"/>
+    <circle cx="3432.02" cy="1043.54" r="212.55" style="fill: #5abf55; stroke-width: 0px;"/>
+    <circle cx="3343.66" cy="912.19" r="212.55" style="fill: #5abf55; stroke-width: 0px;"/>
+    <circle cx="3497.69" cy="839.35" r="180.31" style="fill: #5abf55; stroke-width: 0px;"/>
+    <circle cx="3397.39" cy="698.45" r="180.31" style="fill: #5abf55; stroke-width: 0px;"/>
+    <rect x="2731.45" y="1186.5" width="44.86" height="326.86" transform="translate(5507.77 2699.87) rotate(180)" style="fill: #5abf55; stroke-width: 0px;"/>
+    <circle cx="2727.18" cy="1039.09" r="190.14" style="fill: #5abf55; stroke-width: 0px;"/>
+    <circle cx="2831.86" cy="975" r="190.14" style="fill: #5abf55; stroke-width: 0px;"/>
+    <circle cx="2694.07" cy="822.25" r="161.3" style="fill: #5abf55; stroke-width: 0px;"/>
+    <circle cx="2783.79" cy="730.39" r="161.3" style="fill: #5abf55; stroke-width: 0px;"/>
+    <rect x="1029.92" y="1234.07" width="46.2" height="336.64" style="fill: #5abf55; stroke-width: 0px;"/>
+    <circle cx="1054.12" cy="1082.25" r="195.82" style="fill: #5abf55; stroke-width: 0px;"/>
+    <circle cx="972.71" cy="923.84" r="195.82" style="fill: #5abf55; stroke-width: 0px;"/>
+    <circle cx="1112.43" cy="960.14" r="166.12" style="fill: #5abf55; stroke-width: 0px;"/>
+    <circle cx="1028.82" cy="762.12" r="166.12" style="fill: #5abf55; stroke-width: 0px;"/>
+    <rect x="448.3" y="1181.55" width="50.15" height="365.39" style="fill: #5abf55; stroke-width: 0px;"/>
+    <circle cx="474.57" cy="1016.77" r="212.55" style="fill: #5abf55; stroke-width: 0px;"/>
+    <circle cx="386.21" cy="885.42" r="212.55" style="fill: #5abf55; stroke-width: 0px;"/>
+    <circle cx="540.24" cy="812.58" r="180.31" style="fill: #5abf55; stroke-width: 0px;"/>
+    <circle cx="439.94" cy="671.68" r="180.31" style="fill: #5abf55; stroke-width: 0px;"/>
+  </g>
+  <g id="boilerplate-fade-3">
+    <rect x="2645" y="1238" width="23" height="333" style="fill: #99c695; stroke-width: 0px;"/>
+    <rect x="2511" y="1072" width="291" height="171" rx="13.43" ry="13.43" style="fill: #99c695; stroke-width: 0px;"/>
+  </g>
+</svg>
