@@ -1,7 +1,7 @@
 import { Slide, SlideState } from "@/shared/types/slide.type";
 import { getSlideState } from "@/shared/functions/getSlideState";
 import "./TourSharedSlide.styles.css";
-import { useContext, useEffect, useState } from "react";
+import { TransitionEvent, useContext, useEffect, useState } from "react";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 
 import { setNextSlide } from "@/shared/functions/setSlide";
@@ -23,9 +23,6 @@ export default function TourSharedSlide() {
   useEffect(() => {
     const updatedState = getSlideState(SLIDE_ID, slideStack);
     setSlideState(updatedState);
-    if (updatedState === SlideState.Present) {
-      updateChoices({ [Slide.TourShared]: true });
-    }
   }, [slideStack]);
 
   const goToResult = () => {
@@ -36,9 +33,15 @@ export default function TourSharedSlide() {
     return null;
   }
 
+  const setSharedChoiceToTrue = (event: TransitionEvent) => {
+    if (slideState === SlideState.Present && event.target === event.currentTarget) {
+      updateChoices({ [Slide.TourShared]: true });
+    }
+  };
+
   return (
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
-      <div className="foreground">
+      <div className="foreground" onTransitionEnd={(event) => setSharedChoiceToTrue(event)}>
         <div className="slide-explanation">
           <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
           <div className="text-body">

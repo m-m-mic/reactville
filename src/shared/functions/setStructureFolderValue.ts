@@ -69,3 +69,11 @@ export function closeAllFoldersAndRemoveHighlighting(structure: FolderStructure)
 
   return internalFolderStructure;
 }
+
+export function openAllFoldersAndRemoveHighlighting(structure: FolderStructure) {
+  let internalFolderStructure = { ...structure };
+  internalFolderStructure = modifyOpenOfAllFolders(internalFolderStructure, true);
+  internalFolderStructure = removeHighlightFromAllFiles(internalFolderStructure);
+
+  return internalFolderStructure;
+}
