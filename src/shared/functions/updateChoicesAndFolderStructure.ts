@@ -22,6 +22,13 @@ export function updateChoicesAndFolderStructure(
           open: value,
           highlighted: value,
         });
+
+        if (value === false) {
+          updatedFolderStructure = setValuesInStructure(updatedFolderStructure, [["src"]], {
+            open: true,
+          });
+        }
+
         break;
       case Slide.TourComponents:
         if (value === true) {
@@ -136,42 +143,68 @@ export function updateChoicesAndFolderStructure(
               open: true,
               highlighted: true,
             });
-          } else if (value === undefined) {
-            updatedFolderStructure = setValuesInStructure(updatedFolderStructure, [["src", "components"]], { hidden: true });
-            if (updatedChoices[Slide.TourPages]) {
-              updatedFolderStructure = setValuesInStructure(
-                updatedFolderStructure,
-                [
-                  ["src", "pages"],
-                  ["src", "pages", "examplePage1"],
-                  ["src", "pages", "examplePage2"],
-                  ["src", "pages", "examplePage3"],
-                ],
-                { hidden: true },
-              );
-              updatedFolderStructure = setValuesInStructure(
-                updatedFolderStructure,
-                [
-                  ["src", "pages", "examplePage1.css"],
-                  ["src", "pages", "examplePage1.jsx"],
-                  ["src", "pages", "examplePage1.spec.jsx"],
-                  ["src", "pages", "examplePage2.css"],
-                  ["src", "pages", "examplePage2.jsx"],
-                  ["src", "pages", "examplePage2.spec.jsx"],
-                ],
-                { hidden: false },
-              );
-              break;
-            }
+          }
+        } else if (value === undefined) {
+          updatedFolderStructure = setValuesInStructure(updatedFolderStructure, [["src", "components"]], { hidden: true });
+          if (updatedChoices[Slide.TourPages]) {
+            updatedFolderStructure = setValuesInStructure(
+              updatedFolderStructure,
+              [
+                ["src", "pages"],
+                ["src", "pages", "examplePage1"],
+                ["src", "pages", "examplePage2"],
+                ["src", "pages", "examplePage3"],
+              ],
+              { hidden: true },
+            );
+            updatedFolderStructure = setValuesInStructure(
+              updatedFolderStructure,
+              [
+                ["src", "pages", "examplePage1.css"],
+                ["src", "pages", "examplePage1.jsx"],
+                ["src", "pages", "examplePage1.spec.jsx"],
+                ["src", "pages", "examplePage2.css"],
+                ["src", "pages", "examplePage2.jsx"],
+                ["src", "pages", "examplePage2.spec.jsx"],
+              ],
+              { hidden: false },
+            );
+            break;
           }
         }
         break;
       case Slide.TourStyles:
-        updatedFolderStructure = setValuesInStructure(updatedFolderStructure, [["src", "styles"]], {
-          hidden: !value,
-          open: value,
-          highlighted: value,
-        });
+        if (value === true) {
+          updatedFolderStructure = setValuesInStructure(updatedFolderStructure, [["src", "components"]], {
+            open: true,
+          });
+          updatedFolderStructure = setValuesInStructure(
+            updatedFolderStructure,
+            [
+              ["src", "components", "exampleComponent1.css"],
+              ["src", "components", "exampleComponent2.css"],
+            ],
+            { hidden: false, highlighted: true },
+          );
+        } else if (value === false) {
+          updatedFolderStructure = setValuesInStructure(updatedFolderStructure, [["src", "styles"]], {
+            hidden: false,
+            open: true,
+            highlighted: true,
+          });
+        } else if (value === undefined) {
+          updatedFolderStructure = setValuesInStructure(updatedFolderStructure, [["src", "styles"]], {
+            hidden: true,
+          });
+          updatedFolderStructure = setValuesInStructure(
+            updatedFolderStructure,
+            [
+              ["src", "components", "exampleComponent1.css"],
+              ["src", "components", "exampleComponent2.css"],
+            ],
+            { hidden: true },
+          );
+        }
         break;
       case Slide.TourStore:
         updatedFolderStructure = setValuesInStructure(updatedFolderStructure, [["src", "store"]], {

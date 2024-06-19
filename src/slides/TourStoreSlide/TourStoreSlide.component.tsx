@@ -55,8 +55,8 @@ export default function TourStoreSlide() {
                 <>
                   {tourStoreSlideContent.undefined}
                   <div className="action-buttons">
-                    <RvButton onClick={noStore} label="no!" />
-                    <RvButton onClick={yesStore} label="yes!" />
+                    <RvButton onClick={noStore} label="Not for me!" />
+                    <RvButton onClick={yesStore} label="I need one!" />
                   </div>
                 </>
               }
@@ -64,7 +64,7 @@ export default function TourStoreSlide() {
                 <>
                   {tourStoreSlideContent.false}
                   <div className="action-buttons">
-                    <RvButton onClick={goToTourRequests} label="API!" />
+                    <RvButton onClick={goToTourRequests} label="Let's go!" />
                   </div>
                 </>
               }
@@ -72,7 +72,7 @@ export default function TourStoreSlide() {
                 <>
                   {tourStoreSlideContent.true}
                   <div className="action-buttons">
-                    <RvButton onClick={goToTourRequests} label="API!" />
+                    <RvButton onClick={goToTourRequests} label="Let's go!" />
                   </div>
                 </>
               }

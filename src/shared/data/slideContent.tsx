@@ -25,7 +25,8 @@ export const tourPagesSlideContent: SlideContent = {
     <div className="text-body">
       In this case you will need a <b>router</b>, which helps you assign specific pages within your application to routes. The
       established router for react projects is called <b>React Router</b> and to use it you will need to install it as a package.
-      (If this is your first time hearing about the React Router, click{" "}
+      <div className="text-divider"></div>
+      If this is your first time hearing about the React Router, click{" "}
       <a href="https://reactrouter.com/en/main/start/tutorial" target="_blank" referrerPolicy="no-referrer">
         here
       </a>{" "}
@@ -136,9 +137,37 @@ export const tourStylesSlideContent: SlideContent = {
 };
 
 export const tourStoreSlideContent: SlideContent = {
-  undefined: <div className="text-body">undefined</div>,
-  false: <div className="text-body">false</div>,
-  true: <div className="text-body">true</div>,
+  undefined: (
+    <div className="text-body">
+      Our Tour has led us to <b>Store Mall</b>! A bit of an uninspired name for a shopping mall, but I digress.
+      <div className="text-divider"></div>
+      It’s now time to choose whether you want to add a <b>store</b> such as{" "}
+      <a href="https://redux.js.org/introduction/getting-started" target="_blank" referrerPolicy="no-referrer">
+        Redux
+      </a>{" "}
+      to your application. Within React, components often have to interact with one another, for example one component might
+      change a value which is used by a different component. A store helps you control state management from one central place
+      that all parts of your application can access. This makes your code both more robust and more readable.
+      <div className="text-divider"></div>A simple application with limited user interaction might not benefit as much from a
+      store, while a large one certainly does.
+    </div>
+  ),
+  false: (
+    <div className="text-body">
+      Alright, in that case nothing changes for you! Fortunately adding a store to your application later on is always an option
+      if you ever change your mind.
+      <div className="text-divider"></div>
+      Make sure to stick with us as we move on, our next destination is usually quite crowded!
+    </div>
+  ),
+  true: (
+    <div className="text-body">
+      We’ll add a store in a separate <b>'store' folder</b> to the 'src' folder, as it works independently from the rest of the
+      applications. In this folder you can set up the configuration and features the store requires.
+      <div className="text-divider"></div>
+      We're slowly but surely reaching the end of our Tour, just two more stops!
+    </div>
+  ),
 };
 
 export const tourRequestsSlideContent: SlideContent = {
