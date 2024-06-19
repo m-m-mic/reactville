@@ -10,15 +10,15 @@
   height: 100%;
   display: flex;
   flex-flow: column;
-  opacity: 1;
+  visibility: hidden;
+  opacity: 0;
   transition:
     opacity 300ms ease,
     visibility 300ms ease;
-  transition-delay: 300ms;
 
-  &.hidden {
-    visibility: hidden;
-    opacity: 0;
-    transition-delay: 0ms;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 300ms;
   }
 }

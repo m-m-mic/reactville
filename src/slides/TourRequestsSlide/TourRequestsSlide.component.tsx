@@ -50,6 +50,7 @@ export default function TourRequestsSlide() {
           <div className="slide-explanation">
             <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
             <RvSlideContentChoice
+              slide={SLIDE_ID}
               choice={choices.tourRequests}
               undefinedChoice={
                 <>
