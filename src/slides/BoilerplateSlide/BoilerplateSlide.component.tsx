@@ -87,11 +87,11 @@ export default function BoilerplateSlide() {
   return (
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
-        <div className="boilerplate-foreground">
-          <div className="boilerplate-slide-explanation">
+        <div className="foreground-wrapper">
+          <div className="slide-explanation">
             <RvSlideHeader title={getSlideTitle(SLIDE_ID)} showExploreButton={false} />
             <div className="boilerplate-slide-content">
-              <div className={`boilerplate-step ${boilerplateStep === 0 ? "active" : ""}`}>
+              <div className={`boilerplate-step ${boilerplateStep === 0 ? "" : "hidden"}`}>
                 <div className="text-body">
                   Before we get going you should first generate a <b>new React project</b>. There are multiple ways of doing this,
                   but all of them result in a very similar base structure which can be used for our Tour.
@@ -108,7 +108,7 @@ export default function BoilerplateSlide() {
                   <RvButton onClick={goToStep1} label="Understood!" />
                 </div>
               </div>
-              <div className={`boilerplate-step step-1 ${boilerplateStep === 1 ? "active" : ""}`}>
+              <div className={`boilerplate-step step-1 ${boilerplateStep === 1 ? "" : "hidden"}`}>
                 <div className="text-body">
                   After creating your React application you will end up with a folder structure that looks something like the one
                   you can see <b>on the right side</b>.<div className="text-divider"></div>
@@ -118,7 +118,7 @@ export default function BoilerplateSlide() {
                   <RvButton onClick={goToStep2} label="Alright!" />
                 </div>
               </div>
-              <div className={`boilerplate-step ${boilerplateStep === 2 ? "active" : ""}`}>
+              <div className={`boilerplate-step ${boilerplateStep === 2 ? "" : "hidden"}`}>
                 <div className="text-body">
                   The <b>‘public’ folder</b> includes public information of your application, such as the favicon or things like
                   site descriptions for search engines.
@@ -130,7 +130,7 @@ export default function BoilerplateSlide() {
                   <RvButton onClick={goToStep3} label="Okay!" />
                 </div>
               </div>
-              <div className={`boilerplate-step ${boilerplateStep === 3 ? "active" : ""}`}>
+              <div className={`boilerplate-step ${boilerplateStep === 3 ? "" : "hidden"}`}>
                 <div className="text-body">
                   Next up is where the coding magic happens, the <b>‘src’ folder</b>.<div className="text-divider"></div>
                   For now there are only a couple of basic JavaScript and CSS files in here, but we will be adding quite a bit
@@ -142,7 +142,7 @@ export default function BoilerplateSlide() {
                   <RvButton onClick={goToStep4} label="All clear!" />
                 </div>
               </div>
-              <div className={`boilerplate-step ${boilerplateStep === 4 ? "active" : ""}`}>
+              <div className={`boilerplate-step ${boilerplateStep === 4 ? "" : "hidden"}`}>
                 <div className="text-body">
                   In the ‘src’ folder you can also find a <b>spec file</b>. These files are used for <b>unit tests</b>, small
                   tests that verify whether parts of your code work as you intended.
@@ -155,7 +155,7 @@ export default function BoilerplateSlide() {
                   <RvButton onClick={goToStep5} label="Got it!" />
                 </div>
               </div>
-              <div className={`boilerplate-step ${boilerplateStep === 5 ? "active" : ""}`}>
+              <div className={`boilerplate-step ${boilerplateStep === 5 ? "" : "hidden"}`}>
                 <div className="text-body">
                   Outside of any folders you are going to find a multitude of setup files and the <b>package.json</b>
                   <div className="text-divider"></div>
@@ -171,7 +171,7 @@ export default function BoilerplateSlide() {
                   <RvButton onClick={goToStep6} label="Aha!" />
                 </div>
               </div>
-              <div className={`boilerplate-step ${boilerplateStep === 6 ? "active" : ""}`}>
+              <div className={`boilerplate-step ${boilerplateStep === 6 ? "" : "hidden"}`}>
                 <div className="text-body">
                   Alright, now that we’ve taken a closer look at our initial project structure we can start exploring{" "}
                   <b>Reactville</b>!
@@ -182,7 +182,7 @@ export default function BoilerplateSlide() {
               </div>
             </div>
           </div>
-          <div className={`boilerplate-folder-structure-wrapper ${boilerplateStep === 0 ? "hidden" : ""}`}>
+          <div className={`folder-structure-wrapper ${boilerplateStep === 0 ? "hidden" : ""}`}>
             <RvFolderStructure />
           </div>
         </div>

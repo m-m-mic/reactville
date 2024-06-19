@@ -46,41 +46,43 @@ export default function TourStylesSlide() {
   return (
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
-        <div className="slide-explanation">
-          <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
-          <h1 className="slide-title">Style Square</h1>
-          <RvSlideContentChoice
-            slide={SLIDE_ID}
-            choice={choices.tourStyles}
-            undefinedChoice={
-              <>
-                {tourStylesSlideContent.undefined}
-                <div className="action-buttons">
-                  <RvButton onClick={fewStyles} label="few!" />
-                  <RvButton onClick={manyStyles} label="many!" />
-                </div>
-              </>
-            }
-            falseChoice={
-              <>
-                {tourStylesSlideContent.false}
-                <div className="action-buttons">
-                  <RvButton onClick={goToTourStore} label="Store!" />
-                </div>
-              </>
-            }
-            trueChoice={
-              <>
-                {tourStylesSlideContent.true}
-                <div className="action-buttons">
-                  <RvButton onClick={goToTourStore} label="Store!" />
-                </div>
-              </>
-            }
-          />
-        </div>
-        <div className="folder-structure-wrapper">
-          <RvFolderStructure />
+        <div className="foreground-wrapper">
+          <div className="slide-explanation">
+            <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
+            <h1 className="slide-title">Style Square</h1>
+            <RvSlideContentChoice
+              slide={SLIDE_ID}
+              choice={choices.tourStyles}
+              undefinedChoice={
+                <>
+                  {tourStylesSlideContent.undefined}
+                  <div className="action-buttons">
+                    <RvButton onClick={fewStyles} label="few!" />
+                    <RvButton onClick={manyStyles} label="many!" />
+                  </div>
+                </>
+              }
+              falseChoice={
+                <>
+                  {tourStylesSlideContent.false}
+                  <div className="action-buttons">
+                    <RvButton onClick={goToTourStore} label="Store!" />
+                  </div>
+                </>
+              }
+              trueChoice={
+                <>
+                  {tourStylesSlideContent.true}
+                  <div className="action-buttons">
+                    <RvButton onClick={goToTourStore} label="Store!" />
+                  </div>
+                </>
+              }
+            />
+          </div>
+          <div className="folder-structure-wrapper">
+            <RvFolderStructure />
+          </div>
         </div>
       </div>
       <TourStylesBackground className="background" />

@@ -46,40 +46,42 @@ export default function TourRequestsSlide() {
   return (
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
-        <div className="slide-explanation">
-          <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
-          <RvSlideContentChoice
-            slide={SLIDE_ID}
-            choice={choices.tourRequests}
-            undefinedChoice={
-              <>
-                {tourRequestsSlideContent.undefined}
-                <div className="action-buttons">
-                  <RvButton onClick={fewRequests} label="few!" />
-                  <RvButton onClick={manyRequests} label="many!" />
-                </div>
-              </>
-            }
-            falseChoice={
-              <>
-                {tourRequestsSlideContent.false}
-                <div className="action-buttons">
-                  <RvButton onClick={goToTourShared} label="Shared!" />
-                </div>
-              </>
-            }
-            trueChoice={
-              <>
-                {tourRequestsSlideContent.true}
-                <div className="action-buttons">
-                  <RvButton onClick={goToTourShared} label="Shared!" />
-                </div>
-              </>
-            }
-          />
-        </div>
-        <div className="folder-structure-wrapper">
-          <RvFolderStructure />
+        <div className="foreground-wrapper">
+          <div className="slide-explanation">
+            <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
+            <RvSlideContentChoice
+              slide={SLIDE_ID}
+              choice={choices.tourRequests}
+              undefinedChoice={
+                <>
+                  {tourRequestsSlideContent.undefined}
+                  <div className="action-buttons">
+                    <RvButton onClick={fewRequests} label="few!" />
+                    <RvButton onClick={manyRequests} label="many!" />
+                  </div>
+                </>
+              }
+              falseChoice={
+                <>
+                  {tourRequestsSlideContent.false}
+                  <div className="action-buttons">
+                    <RvButton onClick={goToTourShared} label="Shared!" />
+                  </div>
+                </>
+              }
+              trueChoice={
+                <>
+                  {tourRequestsSlideContent.true}
+                  <div className="action-buttons">
+                    <RvButton onClick={goToTourShared} label="Shared!" />
+                  </div>
+                </>
+              }
+            />
+          </div>
+          <div className="folder-structure-wrapper">
+            <RvFolderStructure />
+          </div>
         </div>
       </div>
       <TourRequestsBackground className="background" />
