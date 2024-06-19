@@ -81,11 +81,6 @@ export default function BoilerplateSlide() {
 
   const goToTourPages = () => {
     setNextSlide(Slide.TourPages, slideStack, setSlideStack);
-
-    new Promise((res) => setTimeout(res, 300)).then(() => {
-      const updatedStructure = closeAllFoldersAndRemoveHighlighting(folderStructure);
-      setFolderStructure(updatedStructure);
-    });
   };
 
   return (
