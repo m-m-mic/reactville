@@ -1,6 +1,6 @@
 import { ReactNode, useContext } from "react";
 import "./RvSlideContentChoice.style.css";
-import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
+import { SlideContext } from "@/context/providers/SlideProvider";
 
 interface RvSlideContentChoiceProps {
   slide: string;
@@ -17,7 +17,7 @@ export default function RvSlideContentChoice({
   falseChoice,
   trueChoice,
 }: RvSlideContentChoiceProps) {
-  const { slideStack } = useContext(SlideStackContext);
+  const { slideStack } = useContext(SlideContext);
 
   const getCurrentSlide = () => {
     return slideStack[slideStack.length - 1];

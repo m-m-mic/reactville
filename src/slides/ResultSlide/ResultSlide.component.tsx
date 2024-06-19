@@ -40,7 +40,7 @@ export default function ResultSlide() {
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground" onTransitionEnd={(event) => openAllFolders(event)}>
         <div className="slide-explanation">
-          <RvSlideHeader title={`${getSlideTitle(SLIDE_ID)} - ${getResultName(choices)}`} />
+          <RvSlideHeader title={`${getSlideTitle(SLIDE_ID)} - ${getResultName(choices)}`} showExploreButton={false} />
           <div className="text-body">Lorem ipsum und so bla bla bla....</div>
           <div className="action-buttons"></div>
         </div>

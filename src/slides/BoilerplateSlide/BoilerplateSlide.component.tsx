@@ -89,7 +89,7 @@ export default function BoilerplateSlide() {
       <div className="foreground">
         <div className="boilerplate-foreground">
           <div className="boilerplate-slide-explanation">
-            <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
+            <RvSlideHeader title={getSlideTitle(SLIDE_ID)} showExploreButton={false} />
             <div className="boilerplate-slide-content">
               <div className={`boilerplate-step ${boilerplateStep === 0 ? "active" : ""}`}>
                 <div className="text-body">

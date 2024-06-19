@@ -9,11 +9,6 @@ import { SlideContext } from "@/context/providers/SlideProvider";
 export default function RvBackground() {
   const { slideStack } = useContext(SlideContext);
 
-  // City-ladder: Ändert sich in Landing (state: out of frame below), Explanation (state: in screen), Boilerplate (state: in screen, bottom of ladder), rest (fade out)
-  // city-background: landing, explanation: out of frame | boilerplate-tourShared: in frame | result: fade?
-  // city-mountains: result: fade-in | everything else: fade-out
-  // city-sky: changes color based on current slide
-
   const getCitySkyClass = () => {
     return `city-sky ${slideStack[slideStack.length - 1]}`;
   };
