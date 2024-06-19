@@ -13,7 +13,7 @@ import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
 import RvSlideHeader from "@/components/RvSlideHeader/RvSlideHeader.component";
 import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 import RvSlideContentChoice from "@/components/RvSlideContentChoice/RvSlideContentChoice.component";
-import { tourComponentsSlideContent } from "@/shared/data/slideContent";
+import { tourComponentsSlideContent, tourComponentsWithPagesSlideContent } from "@/shared/data/slideContent";
 
 export default function TourComponentsSlide() {
   const SLIDE_ID = Slide.TourComponents;
@@ -27,11 +27,18 @@ export default function TourComponentsSlide() {
     setSlideState(getSlideState(SLIDE_ID, slideStack));
   }, [slideStack]);
 
-  const fewComponents = () => {
+  const getChoiceContent = () => {
+    if (choices[Slide.TourPages]) {
+      return tourComponentsWithPagesSlideContent;
+    }
+    return tourComponentsSlideContent;
+  };
+
+  const chooseFewComponents = () => {
     updateChoices({ [Slide.TourComponents]: false });
   };
 
-  const manyComponents = () => {
+  const chooseManyComponents = () => {
     updateChoices({ [Slide.TourComponents]: true });
   };
 
@@ -41,6 +48,13 @@ export default function TourComponentsSlide() {
 
   const goToTourStore = () => {
     setNextSlide(Slide.TourStore, slideStack, setSlideStack);
+  };
+
+  const getNavigationForFalseOption = () => {
+    if (choices[Slide.TourPages]) {
+      return goToTourStore();
+    }
+    return goToTourStyles();
   };
 
   if (isRemovedFromViewport(SLIDE_ID, slideStack)) {
@@ -54,30 +68,29 @@ export default function TourComponentsSlide() {
           <div className="slide-explanation">
             <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
             <RvSlideContentChoice
-              slide={SLIDE_ID}
               choice={choices.tourComponents}
               undefinedChoice={
                 <>
-                  {tourComponentsSlideContent.undefined}
+                  {getChoiceContent().undefined}
                   <div className="action-buttons">
-                    <RvButton onClick={fewComponents} label="few!" />
-                    <RvButton onClick={manyComponents} label="many!" />
+                    <RvButton onClick={chooseFewComponents} label="Only a few!" />
+                    <RvButton onClick={chooseManyComponents} label="Quite a lot!" />
                   </div>
                 </>
               }
               falseChoice={
                 <>
-                  {tourComponentsSlideContent.false}
+                  {getChoiceContent().false}
                   <div className="action-buttons">
-                    <RvButton onClick={goToTourStyles} label="Styles!" />
+                    <RvButton onClick={getNavigationForFalseOption} label="Let's go!" />
                   </div>
                 </>
               }
               trueChoice={
                 <>
-                  {tourComponentsSlideContent.true}
+                  {getChoiceContent().true}
                   <div className="action-buttons">
-                    <RvButton onClick={goToTourStore} label="Store!" />
+                    <RvButton onClick={goToTourStore} label="Let's go!" />
                   </div>
                 </>
               }

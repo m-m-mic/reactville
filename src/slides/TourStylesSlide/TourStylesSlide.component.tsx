@@ -49,16 +49,14 @@ export default function TourStylesSlide() {
         <div className="foreground-wrapper">
           <div className="slide-explanation">
             <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
-            <h1 className="slide-title">Style Square</h1>
             <RvSlideContentChoice
-              slide={SLIDE_ID}
               choice={choices.tourStyles}
               undefinedChoice={
                 <>
                   {tourStylesSlideContent.undefined}
                   <div className="action-buttons">
-                    <RvButton onClick={fewStyles} label="few!" />
-                    <RvButton onClick={manyStyles} label="many!" />
+                    <RvButton onClick={fewStyles} label="Just a few!" />
+                    <RvButton onClick={manyStyles} label="Lot's of styling!" />
                   </div>
                 </>
               }
@@ -66,7 +64,7 @@ export default function TourStylesSlide() {
                 <>
                   {tourStylesSlideContent.false}
                   <div className="action-buttons">
-                    <RvButton onClick={goToTourStore} label="Store!" />
+                    <RvButton onClick={goToTourStore} label="Let's go!" />
                   </div>
                 </>
               }
@@ -74,7 +72,7 @@ export default function TourStylesSlide() {
                 <>
                   {tourStylesSlideContent.true}
                   <div className="action-buttons">
-                    <RvButton onClick={goToTourStore} label="Store!" />
+                    <RvButton onClick={goToTourStore} label="Let's go!" />
                   </div>
                 </>
               }

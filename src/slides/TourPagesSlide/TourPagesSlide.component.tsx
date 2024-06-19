@@ -50,14 +50,13 @@ export default function TourPagesSlide() {
           <div className="slide-explanation">
             <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
             <RvSlideContentChoice
-              slide={SLIDE_ID}
               choice={choices.tourPages}
               undefinedChoice={
                 <>
                   {tourPagesSlideContent.undefined}
                   <div className="action-buttons">
-                    <RvButton onClick={singlePage} label="single!" />
-                    <RvButton onClick={multiplePages} label="multiple!" />
+                    <RvButton onClick={singlePage} label="Just on page!" />
+                    <RvButton onClick={multiplePages} label="Several pages!" />
                   </div>
                 </>
               }
@@ -65,7 +64,7 @@ export default function TourPagesSlide() {
                 <>
                   {tourPagesSlideContent.false}
                   <div className="action-buttons">
-                    <RvButton onClick={goToTourComponents} label="Components!" />
+                    <RvButton onClick={goToTourComponents} label="Let's go!" />
                   </div>
                 </>
               }
@@ -73,7 +72,7 @@ export default function TourPagesSlide() {
                 <>
                   {tourPagesSlideContent.true}
                   <div className="action-buttons">
-                    <RvButton onClick={goToTourComponents} label="Components!" />
+                    <RvButton onClick={goToTourComponents} label="Let's go!" />
                   </div>
                 </>
               }
