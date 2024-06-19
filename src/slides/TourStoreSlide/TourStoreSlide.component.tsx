@@ -15,7 +15,6 @@ import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
 import RvSlideContentChoice from "@/components/RvSlideContentChoice/RvSlideContentChoice.component";
 import { tourStoreSlideContent } from "@/shared/data/slideContent";
 
-
 export default function TourStoreSlide() {
   const SLIDE_ID = Slide.TourStore;
 
@@ -49,7 +48,7 @@ export default function TourStoreSlide() {
       <div className="foreground">
         <div className="slide-explanation">
           <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
-<RvSlideContentChoice
+          <RvSlideContentChoice
             slide={SLIDE_ID}
             choice={choices.tourStore}
             undefinedChoice={

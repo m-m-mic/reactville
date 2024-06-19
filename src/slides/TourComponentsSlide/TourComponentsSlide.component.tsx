@@ -9,18 +9,17 @@ import { setNextSlide } from "@/shared/functions/setSlide";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
 import { SlideContext } from "@/context/providers/SlideProvider";
-import { ChoicesContext} from "@/context/providers/ChoicesContext.provider";
+import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
 import RvSlideHeader from "@/components/RvSlideHeader/RvSlideHeader.component";
 import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 import RvSlideContentChoice from "@/components/RvSlideContentChoice/RvSlideContentChoice.component";
 import { tourComponentsSlideContent } from "@/shared/data/slideContent";
 
-
 export default function TourComponentsSlide() {
   const SLIDE_ID = Slide.TourComponents;
 
   const { slideStack, setSlideStack } = useContext(SlideContext);
-const { choices, updateChoices } = useContext(ChoicesContext);
+  const { choices, updateChoices } = useContext(ChoicesContext);
 
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 
@@ -53,7 +52,7 @@ const { choices, updateChoices } = useContext(ChoicesContext);
       <div className="foreground">
         <div className="slide-explanation">
           <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
-<RvSlideContentChoice
+          <RvSlideContentChoice
             slide={SLIDE_ID}
             choice={choices.tourComponents}
             undefinedChoice={

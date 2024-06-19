@@ -13,7 +13,6 @@ import { FolderStructureContext } from "@/context/providers/FolderStructureConte
 import { openAllFoldersAndRemoveHighlighting } from "@/shared/functions/setStructureFolderValue";
 import ResultBackground from "./ResultSlide.background.svg?react";
 
-
 export default function ResultSlide() {
   const SLIDE_ID = Slide.Result;
 

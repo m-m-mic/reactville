@@ -19,7 +19,7 @@ export default function TourRequestsSlide() {
   const SLIDE_ID = Slide.TourRequests;
 
   const { slideStack, setSlideStack } = useContext(SlideContext);
- const { choices, updateChoices } = useContext(ChoicesContext);
+  const { choices, updateChoices } = useContext(ChoicesContext);
 
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 
@@ -48,7 +48,7 @@ export default function TourRequestsSlide() {
       <div className="foreground">
         <div className="slide-explanation">
           <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
-<RvSlideContentChoice
+          <RvSlideContentChoice
             slide={SLIDE_ID}
             choice={choices.tourRequests}
             undefinedChoice={
