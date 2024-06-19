@@ -87,8 +87,8 @@ export default function BoilerplateSlide() {
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
         <div className="boilerplate-foreground">
-          <div className="slide-explanation">
-            <RvSlideHeader title={getSlideTitle(SLIDE_ID)} showExploreButton={false} />
+          <div className="boilerplate-slide-explanation">
+            <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
             <div className="boilerplate-slide-content">
               <div className={`boilerplate-step ${boilerplateStep === 0 ? "active" : ""}`}>
                 <div className="text-body">
@@ -181,7 +181,7 @@ export default function BoilerplateSlide() {
               </div>
             </div>
           </div>
-          <div className={`folder-structure-wrapper ${boilerplateStep === 0 ? "hidden" : ""}`}>
+          <div className={`boilerplate-folder-structure-wrapper ${boilerplateStep === 0 ? "hidden" : ""}`}>
             <RvFolderStructure />
           </div>
         </div>

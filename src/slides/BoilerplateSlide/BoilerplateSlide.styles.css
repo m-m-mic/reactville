@@ -25,6 +25,7 @@
   height: 100%;
   overflow: hidden;
   border-radius: 1.5cqw;
+  transition: transform 500ms ease;
 }
 
 .boilerplate-slide-content {

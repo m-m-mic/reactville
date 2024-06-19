@@ -29,7 +29,8 @@
     &.exploration {
       /** We change the two sub elements of foreground so we don't have to deal with foreground's transition settings**/
       .slide-explanation,
-      .folder-structure-wrapper {
+      .folder-structure-wrapper,
+      .boilerplate-foreground {
         pointer-events: none;
         visibility: hidden;
         transform: translate(0, 150%);
@@ -79,7 +80,8 @@
     transition: transform 500ms ease;
   }
 
-  .slide-explanation {
+  .slide-explanation,
+  .boilerplate-slide-explanation {
     flex: 1;
     height: 100%;
     display: flex;
@@ -139,7 +141,8 @@
   }
 }
 
-.folder-structure-wrapper {
+.folder-structure-wrapper,
+.boilerplate-folder-structure-wrapper {
   height: 100%;
   overflow: hidden;
   flex: 0 0 30cqw;
