@@ -51,6 +51,7 @@ export default function TourComponentsSlide() {
         <div className="slide-explanation">
           <h1 className="slide-title">Component Close</h1>
           <RvSlideContentChoice
+            slide={SLIDE_ID}
             choice={choices.tourComponents}
             undefinedChoice={
               <>

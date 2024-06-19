@@ -46,6 +46,7 @@ export default function TourStoreSlide() {
         <div className="slide-explanation">
           <h1 className="slide-title">Store Mall</h1>
           <RvSlideContentChoice
+            slide={SLIDE_ID}
             choice={choices.tourStore}
             undefinedChoice={
               <>

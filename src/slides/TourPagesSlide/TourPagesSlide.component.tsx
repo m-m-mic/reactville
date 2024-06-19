@@ -48,6 +48,7 @@ export default function TourPagesSlide() {
           <h1 className="slide-title">Router Road</h1>
 
           <RvSlideContentChoice
+            slide={SLIDE_ID}
             choice={choices.tourPages}
             undefinedChoice={
               <>

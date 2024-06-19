@@ -48,6 +48,7 @@ export default function TourRequestsSlide() {
         <div className="slide-explanation">
           <h1 className="slide-title">API Avenue</h1>
           <RvSlideContentChoice
+            slide={SLIDE_ID}
             choice={choices.tourRequests}
             undefinedChoice={
               <>

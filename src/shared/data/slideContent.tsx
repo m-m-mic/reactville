@@ -25,8 +25,3 @@ export const tourRequestsSlideContent: SlideContent = {
   false: <div className="text-body">false</div>,
   true: <div className="text-body">true</div>,
 };
-export const tourSharedSlideContent: SlideContent = {
-  undefined: <div className="text-body">undefined</div>,
-  false: <div className="text-body">false</div>,
-  true: <div className="text-body">true</div>,
-};

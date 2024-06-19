@@ -46,6 +46,7 @@ export default function TourStylesSlide() {
         <div className="slide-explanation">
           <h1 className="slide-title">Style Square</h1>
           <RvSlideContentChoice
+            slide={SLIDE_ID}
             choice={choices.tourStyles}
             undefinedChoice={
               <>
