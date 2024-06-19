@@ -55,8 +55,8 @@ export default function TourRequestsSlide() {
                 <>
                   {tourRequestsSlideContent.undefined}
                   <div className="action-buttons">
-                    <RvButton onClick={fewRequests} label="few!" />
-                    <RvButton onClick={manyRequests} label="many!" />
+                    <RvButton onClick={fewRequests} label="Not that many!" />
+                    <RvButton onClick={manyRequests} label="A lot!" />
                   </div>
                 </>
               }
@@ -64,7 +64,7 @@ export default function TourRequestsSlide() {
                 <>
                   {tourRequestsSlideContent.false}
                   <div className="action-buttons">
-                    <RvButton onClick={goToTourShared} label="Shared!" />
+                    <RvButton onClick={goToTourShared} label="Let's go!" />
                   </div>
                 </>
               }
@@ -72,7 +72,7 @@ export default function TourRequestsSlide() {
                 <>
                   {tourRequestsSlideContent.true}
                   <div className="action-buttons">
-                    <RvButton onClick={goToTourShared} label="Shared!" />
+                    <RvButton onClick={goToTourShared} label="Let's go!" />
                   </div>
                 </>
               }

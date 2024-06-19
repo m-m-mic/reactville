@@ -171,7 +171,29 @@ export const tourStoreSlideContent: SlideContent = {
 };
 
 export const tourRequestsSlideContent: SlideContent = {
-  undefined: <div className="text-body">undefined</div>,
-  false: <div className="text-body">false</div>,
-  true: <div className="text-body">true</div>,
+  undefined: (
+    <div className="text-body">
+      This is <b>API Avenue</b>, look at all these people!
+      <div className="text-divider"></div>
+      You might know that a lot of applications get the data they display from different services, called <b>APIs</b>, short for
+      <b>Application Programming Interfaces</b>. To get the data they have to fetch it from these sources.
+      <div className="text-divider"></div>
+      Will your application make many API calls or only a few to none?
+    </div>
+  ),
+  false: (
+    <div className="text-body">
+      As your application only requires a few API calls it's best to simply put the requests in the components that require them.
+      <div className="text-divider"></div>
+      Not much longer before we reach the end of our stroll through Reactville.
+    </div>
+  ),
+  true: (
+    <div className="text-body">
+      With lots of API calls it’s best to keep requests separate from components and put them in a dedicated <b>'api' folder</b>{" "}
+      instead. In this folder you can organize all the requests you need so they can be called within the application when needed.
+      <div className="text-divider"></div>
+      We have almost reached the end of our Tour. Hope your legs aren't too tired!
+    </div>
+  ),
 };

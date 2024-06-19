@@ -1,5 +1,6 @@
 .result {
   z-index: 16;
+  --rv-foreground-color-2: var(--result-background-color);
 }
 
 #result-fade-1,

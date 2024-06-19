@@ -64,7 +64,6 @@
   .foreground-wrapper {
     display: flex;
     justify-content: center;
-    background-color: var(--rv-foreground-color-1);
     align-items: center;
     width: 100%;
     height: 100%;
