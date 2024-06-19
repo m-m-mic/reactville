@@ -2,8 +2,8 @@ import { KeyboardEvent, useContext, useEffect, useState } from "react";
 
 import "./RvMenu.styles.css";
 import { Slide } from "@/shared/types/slide.type";
-import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
-import RvMenuButton from "@/components/RvMenuButton/RvMenuButton.component";
+import { SlideContext } from "@/context/providers/SlideProvider";
+import RvExpandingButton from "@/components/RvExpandingButton/RvExpandingButton.component";
 
 import FullscreenIcon from "@/assets/icons/fullscreen_icon.svg?react";
 import FullscreenExitIcon from "@/assets/icons/fullscreen-exit_icon.svg?react";
@@ -15,7 +15,7 @@ export default function RvMenu() {
   const [landingVisibilityClass, setLandingVisibilityClass] = useState<"visible" | "hidden">("hidden");
   const [isInFullscreen, setIsInFullscreen] = useState<boolean | undefined>();
   const [isFullscreenTooltipVisible, setIsFullscreenTooltipVisible] = useState(false);
-  const { slideStack } = useContext(SlideStackContext);
+  const { slideStack, isInExploreMode } = useContext(SlideContext);
   const { openModal } = useContext(ModalContext);
 
   useEffect(() => {
@@ -70,13 +70,13 @@ export default function RvMenu() {
   };
 
   return (
-    <div className="rv-menu">
+    <div className={`rv-menu ${isInExploreMode ? "exploration" : ""}`}>
       <span className={`start-button ${landingVisibilityClass}`}>
-        <RvMenuButton label="Return to start" onClick={returnToStart} iconRight={<HomeIcon />} />
+        <RvExpandingButton label="Return to start" onClick={returnToStart} iconRight={<HomeIcon />} />
       </span>
       <span className="fullscreen-button">
         <RvTooltip content={"Enter Fullscreen for the best Experience!"} isVisible={isFullscreenTooltipVisible} onHover={false}>
-          <RvMenuButton
+          <RvExpandingButton
             label={isInFullscreen ? "Exit Fullscreen" : "Enter Fullscreen"}
             iconRight={isInFullscreen ? <FullscreenExitIcon /> : <FullscreenIcon />}
             onClick={toggleFullScreen}

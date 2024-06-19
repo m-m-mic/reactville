@@ -4,11 +4,16 @@
   overflow: auto;
 
   .highlighted {
-    background: var(--rv-highlight-color);
+    background-color: var(--rv-foreground-color-2);
+    color: var(--rv-foreground-color-1);
+
+    .chevron {
+      fill: var(--rv-foreground-color-1) !important;
+    }
   }
 
   &::-webkit-scrollbar {
-    width: 0.6cqw;
+    width: 1cqw;
   }
 
   &::-webkit-scrollbar-track {
@@ -17,6 +22,7 @@
 
   &::-webkit-scrollbar-thumb {
     border-radius: 20px;
+    border: 0.2cqw solid var(--rv-foreground-color-1);
     background: var(--rv-foreground-color-2);
   }
 }

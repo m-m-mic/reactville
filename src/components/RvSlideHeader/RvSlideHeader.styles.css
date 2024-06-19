@@ -1,0 +1,13 @@
+.rv-slide-header {
+  color: var(--rv-foreground-color-2);
+  background: var(--rv-foreground-color-1);
+  padding: 1cqw 1.5cqw;
+  display: flex;
+  align-items: center;
+  gap: 1cqw;
+
+  .rv-expanding-button {
+    --rv-expanding-button-foreground: var(--rv-foreground-color-1);
+    --rv-expanding-button-background: var(--rv-foreground-color-2);
+  }
+}

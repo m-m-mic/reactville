@@ -1,7 +1,7 @@
 :root {
   font-family: Quicksand, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,13 +16,17 @@
 
   --rv-foreground-color-1: #fff;
   --rv-foreground-color-2: #737373;
-  --rv-highlight-color: rgba(80, 186, 80, 0.2);
+  --landing-foreground-color: #fcd2d2;
+  --landing-background-color: #b50000;
+  --explanation-background-color: #5b9fda;
+  --boilerplate-background-color: #30672e;
   --tourPages-background-color: #237feb;
   --tourComponents-background-color: #e39d1d;
   --tourStyles-background-color: #e3672c;
   --tourStore-background-color: #e45252;
   --tourRequests-background-color: #853887;
   --tourShared-background-color: #3c3f8f;
+  --result-background-color: #1c3219;
 }
 
 @font-face {
@@ -54,6 +58,7 @@ h1 {
   font-size: 2cqw;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
 }
 
 h2 {
@@ -61,4 +66,10 @@ h2 {
   font-size: 1.8cqw;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+}
+
+b,
+a {
+  font-weight: 700;
 }

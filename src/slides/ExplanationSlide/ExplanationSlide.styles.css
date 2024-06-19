@@ -1,3 +1,4 @@
 .explanation {
+  --rv-foreground-color-2: var(--explanation-background-color);
   z-index: 24;
 }

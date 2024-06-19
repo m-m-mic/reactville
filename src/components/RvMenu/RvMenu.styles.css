@@ -4,6 +4,19 @@
   right: 1.5cqw;
   z-index: 30;
   display: flex;
+  transition:
+    transform 500ms ease,
+    visibility 500ms ease;
+
+  &.exploration {
+    pointer-events: none;
+    visibility: hidden;
+    transform: translate(0, -150%);
+
+    .start-button {
+      visibility: hidden !important;
+    }
+  }
 
   .fullscreen-button {
     margin-left: 1cqw;

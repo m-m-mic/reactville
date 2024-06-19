@@ -8,7 +8,9 @@ import TourStoreBackground from "./TourStoreSlide.background.svg?react";
 import { setNextSlide } from "@/shared/functions/setSlide";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
-import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
+import { SlideContext } from "@/context/providers/SlideProvider";
+import RvSlideHeader from "@/components/RvSlideHeader/RvSlideHeader.component";
+import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
 import RvSlideContentChoice from "@/components/RvSlideContentChoice/RvSlideContentChoice.component";
 import { tourStoreSlideContent } from "@/shared/data/slideContent";
@@ -16,8 +18,9 @@ import { tourStoreSlideContent } from "@/shared/data/slideContent";
 export default function TourStoreSlide() {
   const SLIDE_ID = Slide.TourStore;
 
-  const { slideStack, setSlideStack } = useContext(SlideStackContext);
+  const { slideStack, setSlideStack } = useContext(SlideContext);
   const { choices, updateChoices } = useContext(ChoicesContext);
+
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 
   useEffect(() => {
@@ -43,40 +46,42 @@ export default function TourStoreSlide() {
   return (
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
-        <div className="slide-explanation">
-          <h1 className="slide-title">Store Mall</h1>
-          <RvSlideContentChoice
-            slide={SLIDE_ID}
-            choice={choices.tourStore}
-            undefinedChoice={
-              <>
-                {tourStoreSlideContent.undefined}
-                <div className="action-buttons">
-                  <RvButton onClick={noStore} label="no!" />
-                  <RvButton onClick={yesStore} label="yes!" />
-                </div>
-              </>
-            }
-            falseChoice={
-              <>
-                {tourStoreSlideContent.false}
-                <div className="action-buttons">
-                  <RvButton onClick={goToTourRequests} label="API!" />
-                </div>
-              </>
-            }
-            trueChoice={
-              <>
-                {tourStoreSlideContent.true}
-                <div className="action-buttons">
-                  <RvButton onClick={goToTourRequests} label="API!" />
-                </div>
-              </>
-            }
-          />
-        </div>
-        <div className="folder-structure-wrapper">
-          <RvFolderStructure />
+        <div className="foreground-wrapper">
+          <div className="slide-explanation">
+            <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
+            <RvSlideContentChoice
+              slide={SLIDE_ID}
+              choice={choices.tourStore}
+              undefinedChoice={
+                <>
+                  {tourStoreSlideContent.undefined}
+                  <div className="action-buttons">
+                    <RvButton onClick={noStore} label="Not for me!" />
+                    <RvButton onClick={yesStore} label="I need one!" />
+                  </div>
+                </>
+              }
+              falseChoice={
+                <>
+                  {tourStoreSlideContent.false}
+                  <div className="action-buttons">
+                    <RvButton onClick={goToTourRequests} label="Let's go!" />
+                  </div>
+                </>
+              }
+              trueChoice={
+                <>
+                  {tourStoreSlideContent.true}
+                  <div className="action-buttons">
+                    <RvButton onClick={goToTourRequests} label="Let's go!" />
+                  </div>
+                </>
+              }
+            />
+          </div>
+          <div className="folder-structure-wrapper">
+            <RvFolderStructure />
+          </div>
         </div>
       </div>
       <TourStoreBackground className="background" />

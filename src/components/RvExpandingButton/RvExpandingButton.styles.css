@@ -1,4 +1,6 @@
-.rv-menu-button {
+.rv-expanding-button {
+  --rv-expanding-button-foreground: var(--rv-foreground-color-2);
+  --rv-expanding-button-background: var(--rv-foreground-color-1);
   font-family: Pally, sans-serif;
   font-size: 1cqw;
   font-weight: 600;
@@ -16,17 +18,78 @@
     transform 300ms ease-out,
     outline 300ms ease-out,
     outline-offset 300ms ease-out;
-  outline: 0.2cqw solid var(--rv-foreground-color-1);
-  background: var(--rv-foreground-color-1);
+  outline: 0.2cqw solid var(--rv-expanding-button-background);
+  background: var(--rv-expanding-button-background);
   outline-offset: 0.2cqw;
   text-transform: uppercase;
-  color: var(--rv-foreground-color-2);
+  color: var(--rv-expanding-button-foreground);
 
   .icon-wrapper {
+    transition:
+      margin-left 400ms ease,
+      margin-right 400ms ease;
     svg {
       height: 1.5cqw;
       width: 1.5cqw;
-      fill: var(--rv-foreground-color-2) !important;
+      fill: var(--rv-expanding-button-foreground) !important;
+    }
+  }
+
+  &.small {
+    font-size: 0.8cqw;
+    padding: 0.4cqw;
+
+    svg {
+      height: 1cqw;
+      width: 1cqw;
+    }
+
+    .label {
+      line-height: 1cqw;
+    }
+
+    &:not(.disabled) {
+      &:hover {
+        .icon-wrapper.left {
+          margin-left: 0.2cqw;
+        }
+
+        .icon-wrapper.right {
+          margin-right: 0.2cqw;
+        }
+
+        .label {
+          width: 5cqw;
+        }
+      }
+
+      &:focus {
+        .icon-wrapper.left {
+          margin-left: 0.2cqw;
+        }
+
+        .icon-wrapper.right {
+          margin-right: 0.2cqw;
+        }
+
+        .label {
+          width: 5cqw;
+        }
+      }
+
+      &:active {
+        .icon-wrapper.left {
+          margin-left: 0.2cqw;
+        }
+
+        .icon-wrapper.right {
+          margin-right: 0.2cqw;
+        }
+
+        .label {
+          width: 5cqw;
+        }
+      }
     }
   }
 
@@ -59,7 +122,7 @@
       }
 
       .icon-wrapper.right {
-        margin-left: 0.4cqw;
+        margin-right: 0.4cqw;
       }
 
       .label {
@@ -71,7 +134,7 @@
 
     &:focus {
       transform: scale(1.07);
-      outline-color: var(--rv-foreground-color-2);
+      outline-color: var(--rv-expanding-button-foreground);
       outline-offset: -0.1cqw;
 
       .label {

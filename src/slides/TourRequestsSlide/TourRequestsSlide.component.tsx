@@ -8,8 +8,9 @@ import TourRequestsBackground from "./TourRequestsSlide.background.svg?react";
 import { setNextSlide } from "@/shared/functions/setSlide";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
 import { RvButton } from "@/components/RvButton/RvButton.component";
-import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
-import { ModalContext } from "@/context/providers/ModalContext.provider";
+import { SlideContext } from "@/context/providers/SlideProvider";
+import RvSlideHeader from "@/components/RvSlideHeader/RvSlideHeader.component";
+import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
 import RvSlideContentChoice from "@/components/RvSlideContentChoice/RvSlideContentChoice.component";
 import { tourRequestsSlideContent } from "@/shared/data/slideContent";
@@ -17,9 +18,9 @@ import { tourRequestsSlideContent } from "@/shared/data/slideContent";
 export default function TourRequestsSlide() {
   const SLIDE_ID = Slide.TourRequests;
 
-  const { slideStack, setSlideStack } = useContext(SlideStackContext);
-  const { openModal } = useContext(ModalContext);
+  const { slideStack, setSlideStack } = useContext(SlideContext);
   const { choices, updateChoices } = useContext(ChoicesContext);
+
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 
   useEffect(() => {
@@ -45,40 +46,42 @@ export default function TourRequestsSlide() {
   return (
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
-        <div className="slide-explanation">
-          <h1 className="slide-title">API Avenue</h1>
-          <RvSlideContentChoice
-            slide={SLIDE_ID}
-            choice={choices.tourRequests}
-            undefinedChoice={
-              <>
-                {tourRequestsSlideContent.undefined}
-                <div className="action-buttons">
-                  <RvButton onClick={fewRequests} label="few!" />
-                  <RvButton onClick={manyRequests} label="many!" />
-                </div>
-              </>
-            }
-            falseChoice={
-              <>
-                {tourRequestsSlideContent.false}
-                <div className="action-buttons">
-                  <RvButton onClick={goToTourShared} label="Shared!" />
-                </div>
-              </>
-            }
-            trueChoice={
-              <>
-                {tourRequestsSlideContent.true}
-                <div className="action-buttons">
-                  <RvButton onClick={goToTourShared} label="Shared!" />
-                </div>
-              </>
-            }
-          />
-        </div>
-        <div className="folder-structure-wrapper">
-          <RvFolderStructure />
+        <div className="foreground-wrapper">
+          <div className="slide-explanation">
+            <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
+            <RvSlideContentChoice
+              slide={SLIDE_ID}
+              choice={choices.tourRequests}
+              undefinedChoice={
+                <>
+                  {tourRequestsSlideContent.undefined}
+                  <div className="action-buttons">
+                    <RvButton onClick={fewRequests} label="Not that many!" />
+                    <RvButton onClick={manyRequests} label="A lot!" />
+                  </div>
+                </>
+              }
+              falseChoice={
+                <>
+                  {tourRequestsSlideContent.false}
+                  <div className="action-buttons">
+                    <RvButton onClick={goToTourShared} label="Let's go!" />
+                  </div>
+                </>
+              }
+              trueChoice={
+                <>
+                  {tourRequestsSlideContent.true}
+                  <div className="action-buttons">
+                    <RvButton onClick={goToTourShared} label="Let's go!" />
+                  </div>
+                </>
+              }
+            />
+          </div>
+          <div className="folder-structure-wrapper">
+            <RvFolderStructure />
+          </div>
         </div>
       </div>
       <TourRequestsBackground className="background" />

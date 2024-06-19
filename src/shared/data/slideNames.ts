@@ -2,7 +2,7 @@ import { Slide } from "@/shared/types/slide.type";
 
 export const slideNames: { [id: string]: string } = {
   [Slide.Landing]: "the Title Screen",
-  [Slide.Explanation]: "Introduction to the Tour",
+  [Slide.Explanation]: "Thank you for choosing our Tour!",
   [Slide.Boilerplate]: "Boilerplate",
   [Slide.QuickSelect]: "Quick Select",
   [Slide.TourPages]: "Router Road",

@@ -8,7 +8,9 @@ import TourStylesBackground from "./TourStylesSlide.background.svg?react";
 import { setNextSlide } from "@/shared/functions/setSlide";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
-import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
+import { SlideContext } from "@/context/providers/SlideProvider";
+import RvSlideHeader from "@/components/RvSlideHeader/RvSlideHeader.component";
+import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
 import RvSlideContentChoice from "@/components/RvSlideContentChoice/RvSlideContentChoice.component";
 import { tourStylesSlideContent } from "@/shared/data/slideContent";
@@ -16,8 +18,9 @@ import { tourStylesSlideContent } from "@/shared/data/slideContent";
 export default function TourStylesSlide() {
   const SLIDE_ID = Slide.TourStyles;
 
-  const { slideStack, setSlideStack } = useContext(SlideStackContext);
+  const { slideStack, setSlideStack } = useContext(SlideContext);
   const { choices, updateChoices } = useContext(ChoicesContext);
+
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 
   useEffect(() => {
@@ -43,40 +46,42 @@ export default function TourStylesSlide() {
   return (
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
-        <div className="slide-explanation">
-          <h1 className="slide-title">Style Square</h1>
-          <RvSlideContentChoice
-            slide={SLIDE_ID}
-            choice={choices.tourStyles}
-            undefinedChoice={
-              <>
-                {tourStylesSlideContent.undefined}
-                <div className="action-buttons">
-                  <RvButton onClick={fewStyles} label="few!" />
-                  <RvButton onClick={manyStyles} label="many!" />
-                </div>
-              </>
-            }
-            falseChoice={
-              <>
-                {tourStylesSlideContent.false}
-                <div className="action-buttons">
-                  <RvButton onClick={goToTourStore} label="Store!" />
-                </div>
-              </>
-            }
-            trueChoice={
-              <>
-                {tourStylesSlideContent.true}
-                <div className="action-buttons">
-                  <RvButton onClick={goToTourStore} label="Store!" />
-                </div>
-              </>
-            }
-          />
-        </div>
-        <div className="folder-structure-wrapper">
-          <RvFolderStructure />
+        <div className="foreground-wrapper">
+          <div className="slide-explanation">
+            <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
+            <RvSlideContentChoice
+              slide={SLIDE_ID}
+              choice={choices.tourStyles}
+              undefinedChoice={
+                <>
+                  {tourStylesSlideContent.undefined}
+                  <div className="action-buttons">
+                    <RvButton onClick={fewStyles} label="Just a few!" />
+                    <RvButton onClick={manyStyles} label="Lot's of styling!" />
+                  </div>
+                </>
+              }
+              falseChoice={
+                <>
+                  {tourStylesSlideContent.false}
+                  <div className="action-buttons">
+                    <RvButton onClick={goToTourStore} label="Let's go!" />
+                  </div>
+                </>
+              }
+              trueChoice={
+                <>
+                  {tourStylesSlideContent.true}
+                  <div className="action-buttons">
+                    <RvButton onClick={goToTourStore} label="Let's go!" />
+                  </div>
+                </>
+              }
+            />
+          </div>
+          <div className="folder-structure-wrapper">
+            <RvFolderStructure />
+          </div>
         </div>
       </div>
       <TourStylesBackground className="background" />

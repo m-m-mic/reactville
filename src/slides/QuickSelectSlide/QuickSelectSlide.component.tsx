@@ -1,16 +1,16 @@
 import { Slide, SlideState } from "@/shared/types/slide.type";
 import { useContext, useEffect, useState } from "react";
 import { getSlideState } from "@/shared/functions/getSlideState";
-import { returnToLastSlide, setNextSlide } from "@/shared/functions/setSlide";
+import { setNextSlide } from "@/shared/functions/setSlide";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import "./QuickSelectSlide.styles.css";
-import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
+import { SlideContext } from "@/context/providers/SlideProvider";
 
 export default function QuickSelectSlide() {
   const SLIDE_ID = Slide.QuickSelect;
 
-  const { slideStack, setSlideStack } = useContext(SlideStackContext);
+  const { slideStack, setSlideStack } = useContext(SlideContext);
 
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 
@@ -20,10 +20,6 @@ export default function QuickSelectSlide() {
 
   const goToResult = () => {
     setNextSlide(Slide.Result, slideStack, setSlideStack);
-  };
-
-  const returnToLastSlideInStack = () => {
-    returnToLastSlide(slideStack, setSlideStack);
   };
 
   if (isRemovedFromViewport(SLIDE_ID, slideStack)) {
@@ -36,7 +32,6 @@ export default function QuickSelectSlide() {
         <span>Quick Select!</span>
         <div className="landing-buttons">
           <RvButton onClick={goToResult} label="Result!" />
-          <RvButton onClick={returnToLastSlideInStack} label="Back to Start" />
         </div>
       </div>
     </div>

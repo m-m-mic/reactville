@@ -4,9 +4,12 @@ import { Choices } from "@/shared/types/choices.type";
 import { FolderStructure } from "@/shared/types/folder-structure.type";
 import { ModalProps } from "@/shared/types/modal.type";
 
-export interface SlideStackContextType {
+export interface SlideContextType {
   slideStack: Slide[];
   setSlideStack: React.Dispatch<React.SetStateAction<Slide[]>>;
+  isInExploreMode: boolean;
+  enterExploreMode: () => void;
+  exitExploreMode: () => void;
 }
 
 export interface ChoicesContextType {

@@ -1,5 +1,50 @@
 .boilerplate {
+  --rv-foreground-color-2: var(--boilerplate-background-color);
   z-index: 23;
+
+  .folder-structure-wrapper {
+    transition:
+      flex 500ms ease,
+      padding 500ms ease;
+    transition-delay: 300ms;
+
+    &.hidden {
+      flex: 0 0 0;
+      visibility: hidden;
+      padding: 1cqw 0;
+    }
+  }
+}
+
+.boilerplate-slide-content {
+  flex: 1;
+  position: relative;
+  height: 100%;
+}
+
+.boilerplate-step {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  opacity: 1;
+  transition:
+    opacity 300ms ease,
+    visibility 300ms ease;
+  transition-delay: 300ms;
+
+  &.step-1:not(.hidden) {
+    transition-delay: 800ms;
+  }
+
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 0ms;
+  }
 }
 
 #boilerplate-fade-1,

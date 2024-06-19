@@ -5,9 +5,10 @@
   outline-offset: -0.1cqw;
   outline: 0 solid var(--rv-foreground-color-2);
   transition:
-    opacity 200ms ease,
-    visibility 200ms ease,
-    height 200ms ease;
+    opacity 300ms ease,
+    visibility 300ms ease,
+    height 300ms ease,
+    background-color 300ms ease;
 
   &:has(> .folder-name:focus) {
     outline-width: 0.1cqw;
@@ -17,6 +18,7 @@
     visibility: hidden;
     opacity: 0;
     height: 0 !important;
+    pointer-events: none;
   }
 
   .folder-name {
@@ -41,8 +43,8 @@
 
   .chevron {
     flex: 0 0 0.4cqw;
-    transition: transform 200ms ease;
-    fill: var(--rv-foreground-color-2) !important;
+    transition: transform 300ms ease;
+    fill: var(--rv-foreground-color-2);
 
     &.open {
       transform: rotate(90deg);
@@ -51,9 +53,9 @@
 
   .contents {
     transition:
-      opacity 200ms ease,
-      visibility 200ms ease,
-      height 200ms ease;
+      opacity 300ms ease,
+      visibility 300ms ease,
+      height 300ms ease;
     margin-left: 2cqw;
     overflow: hidden;
 

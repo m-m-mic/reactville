@@ -3,16 +3,11 @@ import RvCityLadder from "./RvCityLadder.svg?react";
 import RvMountainBackground from "./RvMountainBackground.svg?react";
 import "./RvBackground.style.css";
 import { useContext } from "react";
-import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
 import { Slide } from "@/shared/types/slide.type";
+import { SlideContext } from "@/context/providers/SlideProvider";
 
 export default function RvBackground() {
-  const { slideStack } = useContext(SlideStackContext);
-
-  // City-ladder: Ändert sich in Landing (state: out of frame below), Explanation (state: in screen), Boilerplate (state: in screen, bottom of ladder), rest (fade out)
-  // city-background: landing, explanation: out of frame | boilerplate-tourShared: in frame | result: fade?
-  // city-mountains: result: fade-in | everything else: fade-out
-  // city-sky: changes color based on current slide
+  const { slideStack } = useContext(SlideContext);
 
   const getCitySkyClass = () => {
     return `city-sky ${slideStack[slideStack.length - 1]}`;

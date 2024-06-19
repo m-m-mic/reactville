@@ -2,7 +2,7 @@ import React, { KeyboardEvent, useContext, useEffect, useRef, useState } from "r
 import { ModalContext } from "@/context/providers/ModalContext.provider";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import "./RvReturnModal.styles.css";
-import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
+import { SlideContext } from "@/context/providers/SlideProvider";
 import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 import { Slide } from "@/shared/types/slide.type";
 import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
@@ -12,13 +12,14 @@ export default function RvReturnModal() {
   const [previousFocusedElement, setPreviousFocusedElement] = useState<HTMLElement | null>(null);
 
   const { modalProps, closeModal } = useContext(ModalContext);
-  const { slideStack, setSlideStack } = useContext(SlideStackContext);
+  const { slideStack, setSlideStack } = useContext(SlideContext);
   const { updateChoices } = useContext(ChoicesContext);
 
   const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (modalProps.open && modalRef.current) {
+      // Sets last active element into state and then blurs it
       const activeElement = document.activeElement as HTMLElement | null;
       setPreviousFocusedElement(activeElement);
       activeElement?.blur();
@@ -31,6 +32,7 @@ export default function RvReturnModal() {
       const handleTabKeyPress = (event: KeyboardEvent) => {
         if (event.key === "Tab") {
           if (!modalRef.current?.contains(document.activeElement)) {
+            // If document has no active element we focus one of the modal elements to trap the focus
             event.preventDefault();
             if (event.shiftKey) {
               lastElement.focus();
@@ -86,6 +88,7 @@ export default function RvReturnModal() {
 
   const closeModalAndRefocus = () => {
     closeModal();
+    // We return the focus to the element the user had focused before opening the modal
     previousFocusedElement?.focus();
   };
 
