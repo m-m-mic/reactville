@@ -175,10 +175,10 @@ export const tourRequestsSlideContent: SlideContent = {
     <div className="text-body">
       This is <b>API Avenue</b>, look at all these people!
       <div className="text-divider"></div>
-      You might know that a lot of applications get the data they display from different services, called <b>APIs</b>, short for
+      You might know that a lot of applications get the data they display from different services, called <b>APIs</b>, short for{" "}
       <b>Application Programming Interfaces</b>. To get the data they have to fetch it from these sources.
       <div className="text-divider"></div>
-      Will your application make many API calls or only a few to none?
+      Will your application have to make many API calls or only a few to none?
     </div>
   ),
   false: (
