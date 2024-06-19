@@ -4,30 +4,38 @@ import "./TourRequestsSlide.styles.css";
 import { useContext, useEffect, useState } from "react";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 
+import TourRequestsBackground from "./TourRequestsSlide.background.svg?react";
 import { setNextSlide } from "@/shared/functions/setSlide";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
 import { ModalContext } from "@/context/providers/ModalContext.provider";
+import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
+import RvSlideContentChoice from "@/components/RvSlideContentChoice/RvSlideContentChoice.component";
+import { tourRequestsSlideContent } from "@/shared/data/slideContent";
 
 export default function TourRequestsSlide() {
   const SLIDE_ID = Slide.TourRequests;
 
   const { slideStack, setSlideStack } = useContext(SlideStackContext);
   const { openModal } = useContext(ModalContext);
-
+  const { choices, updateChoices } = useContext(ChoicesContext);
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 
   useEffect(() => {
     setSlideState(getSlideState(SLIDE_ID, slideStack));
   }, [slideStack]);
 
-  const goToTourShared = () => {
-    setNextSlide(Slide.TourShared, slideStack, setSlideStack);
+  const fewRequests = () => {
+    updateChoices({ [Slide.TourRequests]: false });
   };
 
-  const testGoBackToPages = () => {
-    openModal(Slide.TourPages);
+  const manyRequests = () => {
+    updateChoices({ [Slide.TourRequests]: true });
+  };
+
+  const goToTourShared = () => {
+    setNextSlide(Slide.TourShared, slideStack, setSlideStack);
   };
 
   if (isRemovedFromViewport(SLIDE_ID, slideStack)) {
@@ -39,16 +47,41 @@ export default function TourRequestsSlide() {
       <div className="foreground">
         <div className="slide-explanation">
           <h1 className="slide-title">API Avenue</h1>
-          <div className="text-body">Lorem ipsum und so bla bla bla....</div>
-          <div className="action-buttons">
-            <RvButton onClick={goToTourShared} label="Shared!" />
-            <RvButton onClick={testGoBackToPages} label="TestGoBackToPages" />
-          </div>
+          <RvSlideContentChoice
+            slide={SLIDE_ID}
+            choice={choices.tourRequests}
+            undefinedChoice={
+              <>
+                {tourRequestsSlideContent.undefined}
+                <div className="action-buttons">
+                  <RvButton onClick={fewRequests} label="few!" />
+                  <RvButton onClick={manyRequests} label="many!" />
+                </div>
+              </>
+            }
+            falseChoice={
+              <>
+                {tourRequestsSlideContent.false}
+                <div className="action-buttons">
+                  <RvButton onClick={goToTourShared} label="Shared!" />
+                </div>
+              </>
+            }
+            trueChoice={
+              <>
+                {tourRequestsSlideContent.true}
+                <div className="action-buttons">
+                  <RvButton onClick={goToTourShared} label="Shared!" />
+                </div>
+              </>
+            }
+          />
         </div>
         <div className="folder-structure-wrapper">
           <RvFolderStructure />
         </div>
       </div>
+      <TourRequestsBackground className="background" />
     </div>
   );
 }

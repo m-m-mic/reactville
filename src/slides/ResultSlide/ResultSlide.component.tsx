@@ -4,6 +4,7 @@ import { getSlideState } from "@/shared/functions/getSlideState";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
 import "./ResultSlide.styles.css";
 import { SlideStackContext } from "@/context/providers/SlideStackContext.provider";
+import Resultbackground from "./ResultSlide.background.svg?react";
 
 export default function ResultSlide() {
   const SLIDE_ID = Slide.Result;
@@ -26,6 +27,7 @@ export default function ResultSlide() {
         <span>Result!</span>
         <div className="landing-buttons"></div>
       </div>
+      <Resultbackground className="background" />
     </div>
   );
 }

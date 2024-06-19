@@ -3,12 +3,6 @@
   --rv-foreground-color-2: var(--tourPages-background-color);
 }
 
-#tourPages-fade-2 {
-  opacity: 1;
-  transition: opacity 600ms ease;
-  transition-delay: 1200ms;
-}
-
 #tourPages-fade-1 {
   opacity: 1;
   transition: opacity 600ms ease;
@@ -25,11 +19,6 @@
 }
 
 .slide.past {
-  #tourPages-fade-2 {
-    opacity: 0;
-    transition-delay: 0ms;
-  }
-
   #tourPages-fade-1 {
     opacity: 0;
     transition-delay: 100ms;
@@ -37,17 +26,12 @@
 
   #tourPages-move {
     opacity: 0;
-    transform: translate(0, 10%) scale(2);
+    transform: scale(2);
     transition-delay: 200ms, 500ms;
   }
 }
 
 .slide.future {
-  #tourPages-fade-2 {
-    opacity: 0;
-    transition-delay: 0ms;
-  }
-
   #tourPages-fade-1 {
     opacity: 0;
     transition-delay: 200ms;
@@ -55,7 +39,7 @@
 
   #tourPages-move {
     opacity: 0;
-    transform: translate(0, 40%) scale(0.8);
+    transform: scale(0.5);
     transition-delay: 700ms, 1200ms;
   }
 }

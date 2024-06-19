@@ -2,3 +2,60 @@
   z-index: 19;
   --rv-foreground-color-2: var(--tourStore-background-color);
 }
+
+#tourStore-fade-1 {
+  opacity: 1;
+  transition: opacity 600ms ease;
+  transition-delay: 1100ms;
+}
+
+#tourStore-fade-2 {
+  opacity: 1;
+  transition: opacity 600ms ease;
+  transition-delay: 1200ms;
+}
+
+#tourStore-move {
+  opacity: 1;
+  transform-origin: center;
+  transition:
+    transform 800ms ease-in,
+    opacity 200ms ease;
+  transition-delay: 300ms, 100ms;
+}
+
+.slide.future {
+  #tourStore-fade-1 {
+    opacity: 0;
+    transition-delay: 200ms;
+  }
+
+  #tourStore-fade-2 {
+    opacity: 0;
+    transition-delay: 0ms;
+  }
+
+  #tourStore-move {
+    opacity: 0;
+    transform: scale(0.5);
+    transition-delay: 700ms, 1200ms;
+  }
+}
+
+.slide.past {
+  #tourStore-fade-1 {
+    opacity: 0;
+    transition-delay: 100ms;
+  }
+
+  #tourStore-fade-2 {
+    opacity: 0;
+    transition-delay: 0ms;
+  }
+
+  #tourStore-move {
+    opacity: 0;
+    transform: translate(0, 10%) scale(2);
+    transition-delay: 200ms, 500ms;
+  }
+}
