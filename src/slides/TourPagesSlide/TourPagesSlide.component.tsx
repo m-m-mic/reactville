@@ -56,7 +56,7 @@ export default function TourPagesSlide() {
                 <>
                   {tourPagesSlideContent.undefined}
                   <div className="action-buttons">
-                    <RvButton onClick={singlePage} label="Just on page!" />
+                    <RvButton onClick={singlePage} label="Just one page!" />
                     <RvButton onClick={multiplePages} label="Several pages!" />
                   </div>
                 </>
