@@ -9,6 +9,8 @@ import { RvButton } from "@/components/RvButton/RvButton.component";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
 import { SlideContext } from "@/context/providers/SlideProvider";
 import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
+import RvSlideHeader from "@/components/RvSlideHeader/RvSlideHeader.component";
+import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 
 export default function TourSharedSlide() {
   const SLIDE_ID = Slide.TourShared;
@@ -38,7 +40,7 @@ export default function TourSharedSlide() {
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
         <div className="slide-explanation">
-          <h1 className="slide-title">Shared Street</h1>
+          <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
           <div className="text-body">
             We have almost reached the final destination of our stroll through town.
             <div className="text-divider"></div>

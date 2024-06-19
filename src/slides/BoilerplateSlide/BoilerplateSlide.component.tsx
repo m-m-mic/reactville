@@ -9,6 +9,8 @@ import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.
 import { closeAllFoldersAndRemoveHighlighting, setValuesInStructure } from "@/shared/functions/setStructureFolderValue";
 import { SlideContext } from "@/context/providers/SlideProvider";
 import { FolderStructureContext } from "@/context/providers/FolderStructureContext.provider";
+import RvSlideHeader from "@/components/RvSlideHeader/RvSlideHeader.component";
+import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 
 export default function BoilerplateSlide() {
   const SLIDE_ID = Slide.Boilerplate;
@@ -91,7 +93,7 @@ export default function BoilerplateSlide() {
       <div className="foreground">
         <div className="boilerplate-foreground">
           <div className="slide-explanation">
-            <h1 className="slide-title">Boilerplate</h1>
+            <RvSlideHeader title={getSlideTitle(SLIDE_ID)} showExploreButton={false} />
             <div className="boilerplate-slide-content">
               <div className={`boilerplate-step ${boilerplateStep === 0 ? "active" : ""}`}>
                 <div className="text-body">

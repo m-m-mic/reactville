@@ -99,21 +99,6 @@
     }
   }
 
-  .slide-title {
-    color: var(--rv-foreground-color-2);
-    background: var(--rv-foreground-color-1);
-    padding: 1cqw 1.5cqw;
-    display: flex;
-    align-items: center;
-    gap: 1cqw;
-    margin: 0;
-
-    .rv-expanding-button {
-      --rv-expanding-button-foreground: var(--rv-foreground-color-1);
-      --rv-expanding-button-background: var(--rv-foreground-color-2);
-    }
-  }
-
   .text-body {
     flex: 1;
 

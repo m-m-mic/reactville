@@ -57,6 +57,7 @@ h1 {
   font-size: 2cqw;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
 }
 
 h2 {
@@ -64,6 +65,7 @@ h2 {
   font-size: 1.8cqw;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
 }
 
 b,

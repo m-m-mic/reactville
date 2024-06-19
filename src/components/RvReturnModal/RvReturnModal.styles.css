@@ -34,7 +34,6 @@
   background: var(--rv-foreground-color-1);
   color: var(--rv-foreground-color-2);
   padding: 1cqw 1.5cqw;
-  margin: 0;
 }
 
 .modal-message {

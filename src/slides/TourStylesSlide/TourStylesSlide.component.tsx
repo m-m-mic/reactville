@@ -8,6 +8,8 @@ import { setNextSlide } from "@/shared/functions/setSlide";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
 import { SlideContext } from "@/context/providers/SlideProvider";
+import RvSlideHeader from "@/components/RvSlideHeader/RvSlideHeader.component";
+import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 
 export default function TourStylesSlide() {
   const SLIDE_ID = Slide.TourStyles;
@@ -32,7 +34,7 @@ export default function TourStylesSlide() {
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
         <div className="slide-explanation">
-          <h1 className="slide-title">Style Square</h1>
+          <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
           <div className="text-body">Lorem ipsum und so bla bla bla....</div>
           <div className="action-buttons">
             <RvButton onClick={goToTourStore} label="Store!" />

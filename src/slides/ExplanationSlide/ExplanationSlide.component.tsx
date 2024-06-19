@@ -7,6 +7,7 @@ import { RvButton } from "@/components/RvButton/RvButton.component";
 import "./ExplanationSlide.styles.css";
 import { SlideContext } from "@/context/providers/SlideProvider";
 import { getSlideTitle } from "@/shared/functions/getSlideTitle";
+import RvSlideHeader from "@/components/RvSlideHeader/RvSlideHeader.component";
 
 export default function ExplanationSlide() {
   const SLIDE_ID = Slide.Explanation;
@@ -31,7 +32,7 @@ export default function ExplanationSlide() {
     <div className={`slide ${SLIDE_ID} ${slideState}`}>
       <div className="foreground">
         <div className="slide-explanation small">
-          <h1 className="slide-title">{getSlideTitle(SLIDE_ID)}</h1>
+          <RvSlideHeader title={getSlideTitle(SLIDE_ID)} showExploreButton={false} />
           <div className="text-body">
             In the following minutes we will walk you through each important decision when it comes to structuring your project.
             Each step of the way you will choose which path to follow next, that way you will end up with a recommended folder
