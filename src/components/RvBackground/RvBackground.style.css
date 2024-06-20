@@ -191,7 +191,7 @@
     #explanation-move,
     #explanation-fade-1 {
       transform: translate(0, -72%);
-      transition: transform var(--main-transition-duration) ease;
+      transition: transform 1500ms ease;
       transition-delay: 200ms;
     }
 
