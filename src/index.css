@@ -69,6 +69,12 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  font-size: 1.6cqw;
+  font-weight: 700;
+  margin: 0;
+}
+
 b,
 a {
   font-weight: 700;

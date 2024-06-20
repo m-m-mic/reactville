@@ -6,7 +6,7 @@ import "./ResultSlide.styles.css";
 import { SlideContext } from "@/context/providers/SlideProvider";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
 import { ChoicesContext } from "@/context/providers/ChoicesContext.provider";
-import { getResultName } from "@/shared/functions/getResultName";
+import { getResultNameAndDescription } from "@/shared/functions/getResultNameAndDescription";
 import RvSlideHeader from "@/components/RvSlideHeader/RvSlideHeader.component";
 import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 import { FolderStructureContext } from "@/context/providers/FolderStructureContext.provider";
@@ -41,9 +41,17 @@ export default function ResultSlide() {
       <div className="foreground" onTransitionEnd={(event) => openAllFolders(event)}>
         <div className="foreground-wrapper">
           <div className="slide-explanation">
-            <RvSlideHeader title={`${getSlideTitle(SLIDE_ID)} - ${getResultName(choices)}`} showExploreButton={false} />
-            <div className="text-body">Lorem ipsum und so bla bla bla....</div>
-            <div className="action-buttons"></div>
+            <RvSlideHeader title={getSlideTitle(SLIDE_ID)} showExploreButton={false} />
+            <div className="text-body">
+              We have reached the end of our Tour, the folder structure you have built is called...
+              <div className="text-divider"></div>
+              <h3>"{getResultNameAndDescription(choices).name}"</h3>
+              <div className="text-divider"></div>
+              {getResultNameAndDescription(choices).description}
+              <div className="text-divider"></div>
+              Thank you for going on Tour with us. We hope the structure you ended up with suits your needs and that you learned a
+              thing or two along the way!
+            </div>
           </div>
           <div className="folder-structure-wrapper">
             <RvFolderStructure />
