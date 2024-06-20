@@ -1,3 +1,4 @@
 .quickSelect {
   z-index: 24;
+  --rv-foreground-color-2: var(--quickSelect-background-color);
 }

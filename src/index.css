@@ -18,11 +18,12 @@
   --rv-foreground-color-2: #737373;
   --landing-foreground-color: #fcd2d2;
   --landing-background-color: #b50000;
+  --quickSelect-background-color: #27a394;
   --explanation-background-color: #458bc9;
   --boilerplate-background-color: #30672e;
   --tourPages-background-color: #237feb;
   --tourComponents-background-color: #d59319;
-  --tourStyles-background-color: #e3672c;
+  --tourStyles-background-color: #d55b22;
   --tourStore-background-color: #e45252;
   --tourRequests-background-color: #762f78;
   --tourShared-background-color: #3c3f8f;
