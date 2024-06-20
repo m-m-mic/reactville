@@ -6,7 +6,7 @@ export function getResultNameAndDescription(choices: Choices) {
     return { name: "The All-In-One", description: "Your application's core functionalities can all be found in the same place!" };
   }
 
-  if (choices[Slide.TourStore] === true && choices[Slide.TourShared] === true) {
+  if (choices[Slide.TourStore] === true && choices[Slide.TourRequests] === true) {
     return {
       name: "The Communicator",
       description: "Your application communicates a lot, both between components and with outside services!",
