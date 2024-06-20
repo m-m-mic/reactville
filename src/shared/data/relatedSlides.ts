@@ -1,5 +1,5 @@
 export const relatedSlides: { [id: string]: string[] } = {
-  landing: ["quickSelect", "explanation", "result"],
+  landing: ["quickSelect", "explanation"],
   quickSelect: ["landing", "result"],
   explanation: ["landing", "boilerplate"],
   boilerplate: ["explanation", "tourPages"],
@@ -9,5 +9,5 @@ export const relatedSlides: { [id: string]: string[] } = {
   tourStore: ["tourComponents", "tourStyles", "tourRequests"],
   tourRequests: ["tourStore", "tourShared"],
   tourShared: ["tourRequests", "result"],
-  result: ["quickSelect", "tourShared", "landing"],
+  result: ["quickSelect", "tourShared"],
 };
