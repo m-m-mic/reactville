@@ -6,28 +6,49 @@
 #tourRequests-fade-1 {
   opacity: 1;
   transition: opacity 600ms ease;
-  transition-delay: 1100ms;
+  transition-delay: 1900ms;
 }
 
 #tourRequests-fade-2 {
   opacity: 1;
   transition: opacity 600ms ease;
-  transition-delay: 1200ms;
+  transition-delay: 2000ms;
 }
 
 #tourRequests-move {
   opacity: 1;
   transform-origin: center;
   transition:
-    transform 800ms ease-in,
+    transform 1000ms ease-out,
+    opacity 600ms ease;
+  transition-delay: 600ms, 700ms;
+}
+
+.slide.past {
+  #tourRequests-fade-1 {
+    opacity: 0;
+    transition-delay: 0ms;
+  }
+
+  #tourRequests-fade-2 {
+    opacity: 0;
+    transition-delay: 0ms;
+  }
+
+  #tourRequests-move {
+    opacity: 0;
+    transform: scale(2);
+    transition:
+    transform 1000ms ease-in,
     opacity 200ms ease;
-  transition-delay: 300ms, 100ms;
+    transition-delay: 600ms, 1400ms;
+  }
 }
 
 .slide.future {
   #tourRequests-fade-1 {
     opacity: 0;
-    transition-delay: 200ms;
+    transition-delay: 0ms;
   }
 
   #tourRequests-fade-2 {
@@ -39,23 +60,5 @@
     opacity: 0;
     transform: scale(0.5);
     transition-delay: 700ms, 1200ms;
-  }
-}
-
-.slide.past {
-  #tourRequests-fade-1 {
-    opacity: 0;
-    transition-delay: 100ms;
-  }
-
-  #tourRequests-fade-2 {
-    opacity: 0;
-    transition-delay: 0ms;
-  }
-
-  #tourRequests-move {
-    opacity: 0;
-    transform: scale(2);
-    transition-delay: 200ms, 500ms;
   }
 }
