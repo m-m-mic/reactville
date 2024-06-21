@@ -5,12 +5,12 @@
 
 #tourRequests-fade-1 {
   opacity: 1;
-  animation: bobbing 3.3s infinite linear;
+  animation: crowd-bobbing 3.3s infinite linear;
   transition: opacity 600ms ease;
   transition-delay: 1900ms;
 }
 
-@keyframes bobbing {
+@keyframes crowd-bobbing {
   0% {
     transform: translate(0, 0.4%);
   }
