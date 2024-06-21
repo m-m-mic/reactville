@@ -2,164 +2,177 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3840 2160">
   <g id="tourStyles-move">
     <rect y="1514" width="3840" height="647" style="fill: #b8592c; stroke-width: 0px;"/>
-    <rect x="2081" y="987" width="1759" height="528" style="fill: #e77d4b; stroke-width: 0px;"/>
-    <rect y="987" width="1628" height="528" style="fill: #e77d4b; stroke-width: 0px;"/>
-    <path d="M3840,868h-1663.49c-4.1,0-7.95,1.93-10.41,5.21-28.37,37.93-56.73,75.86-85.1,113.79h1759v-119Z" style="fill: #d6652f; stroke-width: 0px;"/>
-    <path d="M0,868h1538.89c4.22,0,8.17,2.07,10.57,5.54,26.18,37.82,52.36,75.64,78.54,113.46H0v-119Z" style="fill: #d6652f; stroke-width: 0px;"/>
-    <rect x="2173" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="2173" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M2202.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M2205.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="2355" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="2355" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M2384.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M2387.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="2544" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="2544" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M2573.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #a54417; stroke-width: 0px;"/>
-    <path d="M2576.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="2721" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="2721" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M2750.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M2753.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="2903" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="2903" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M2932.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M2935.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="3092" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="3092" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M3121.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #a54417; stroke-width: 0px;"/>
-    <path d="M3124.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="3271" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="3271" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M3300.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M3303.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="3453" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="3453" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M3482.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M3485.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="3642" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="3642" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M3671.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #a54417; stroke-width: 0px;"/>
-    <path d="M3674.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="1462" y="1021" width="66" height="99" rx="3.61" ry="3.61" transform="translate(2990 2141) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="1462" y="1155" width="66" height="139" rx="3.01" ry="3.01" transform="translate(2990 2449) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M1436,1329h118v130.93c0,30.39-24.68,55.07-55.07,55.07h-7.86c-30.39,0-55.07-24.68-55.07-55.07v-130.93h0Z" transform="translate(2990 2844) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M1462,901h67v52.5c0,18.49-15.01,33.5-33.5,33.5h0c-18.49,0-33.5-15.01-33.5-33.5v-52.5h0Z" transform="translate(2991 1888) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="1280" y="1021" width="66" height="99" rx="3.61" ry="3.61" transform="translate(2626 2141) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="1280" y="1155" width="66" height="139" rx="3.01" ry="3.01" transform="translate(2626 2449) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M1254,1329h118v130.93c0,30.39-24.68,55.07-55.07,55.07h-7.86c-30.39,0-55.07-24.68-55.07-55.07v-130.93h0Z" transform="translate(2626 2844) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M1280,901h67v52.5c0,18.49-15.01,33.5-33.5,33.5h0c-18.49,0-33.5-15.01-33.5-33.5v-52.5h0Z" transform="translate(2627 1888) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="1091" y="1021" width="66" height="99" rx="3.61" ry="3.61" transform="translate(2248 2141) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="1091" y="1155" width="66" height="139" rx="3.01" ry="3.01" transform="translate(2248 2449) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M1065,1329h118v130.93c0,30.39-24.68,55.07-55.07,55.07h-7.86c-30.39,0-55.07-24.68-55.07-55.07v-130.93h0Z" transform="translate(2248 2844) rotate(180)" style="fill: #a54417; stroke-width: 0px;"/>
-    <path d="M1091,901h67v52.5c0,18.49-15.01,33.5-33.5,33.5h0c-18.49,0-33.5-15.01-33.5-33.5v-52.5h0Z" transform="translate(2249 1888) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="914" y="1021" width="66" height="99" rx="3.61" ry="3.61" transform="translate(1894 2141) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="914" y="1155" width="66" height="139" rx="3.01" ry="3.01" transform="translate(1894 2449) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M888,1329h118v130.93c0,30.39-24.68,55.07-55.07,55.07h-7.86c-30.39,0-55.07-24.68-55.07-55.07v-130.93h0Z" transform="translate(1894 2844) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M914,901h67v52.5c0,18.49-15.01,33.5-33.5,33.5h0c-18.49,0-33.5-15.01-33.5-33.5v-52.5h0Z" transform="translate(1895 1888) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="732" y="1021" width="66" height="99" rx="3.61" ry="3.61" transform="translate(1530 2141) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="732" y="1155" width="66" height="139" rx="3.01" ry="3.01" transform="translate(1530 2449) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M706,1329h118v130.93c0,30.39-24.68,55.07-55.07,55.07h-7.86c-30.39,0-55.07-24.68-55.07-55.07v-130.93h0Z" transform="translate(1530 2844) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M732,901h67v52.5c0,18.49-15.01,33.5-33.5,33.5h0c-18.49,0-33.5-15.01-33.5-33.5v-52.5h0Z" transform="translate(1531 1888) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="543" y="1021" width="66" height="99" rx="3.61" ry="3.61" transform="translate(1152 2141) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="543" y="1155" width="66" height="139" rx="3.01" ry="3.01" transform="translate(1152 2449) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M517,1329h118v130.93c0,30.39-24.68,55.07-55.07,55.07h-7.86c-30.39,0-55.07-24.68-55.07-55.07v-130.93h0Z" transform="translate(1152 2844) rotate(180)" style="fill: #a54417; stroke-width: 0px;"/>
-    <path d="M543,901h67v52.5c0,18.49-15.01,33.5-33.5,33.5h0c-18.49,0-33.5-15.01-33.5-33.5v-52.5h0Z" transform="translate(1153 1888) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="364" y="1021" width="66" height="99" rx="3.61" ry="3.61" transform="translate(794 2141) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="364" y="1155" width="66" height="139" rx="3.01" ry="3.01" transform="translate(794 2449) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M338,1329h118v130.93c0,30.39-24.68,55.07-55.07,55.07h-7.86c-30.39,0-55.07-24.68-55.07-55.07v-130.93h0Z" transform="translate(794 2844) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M364,901h67v52.5c0,18.49-15.01,33.5-33.5,33.5h0c-18.49,0-33.5-15.01-33.5-33.5v-52.5h0Z" transform="translate(795 1888) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="182" y="1021" width="66" height="99" rx="3.61" ry="3.61" transform="translate(430 2141) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <rect x="182" y="1155" width="66" height="139" rx="3.01" ry="3.01" transform="translate(430 2449) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M156,1329h118v130.93c0,30.39-24.68,55.07-55.07,55.07h-7.86c-30.39,0-55.07-24.68-55.07-55.07v-130.93h0Z" transform="translate(430 2844) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
-    <path d="M182,901h67v52.5c0,18.49-15.01,33.5-33.5,33.5h0c-18.49,0-33.5-15.01-33.5-33.5v-52.5h0Z" transform="translate(431 1888) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="2158" y="987" width="1682" height="528" style="fill: #e77d4b; stroke-width: 0px;"/>
+    <rect y="987" width="1687" height="528" style="fill: #e77d4b; stroke-width: 0px;"/>
+    <path d="M3840,868h-1590.67c-3.92,0-7.6,1.93-9.95,5.21-27.13,37.93-54.25,75.86-81.38,113.79h1682v-119Z" style="fill: #d6652f; stroke-width: 0px;"/>
+    <path d="M0,868h1594.66c4.37,0,8.46,2.07,10.95,5.54,27.13,37.82,54.26,75.64,81.38,113.46H0v-119Z" style="fill: #d6652f; stroke-width: 0px;"/>
+    <rect x="2250" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="2250" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M2279.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M2282.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="2432" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="2432" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M2461.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M2464.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="2626" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="2626" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M2655.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #a54417; stroke-width: 0px;"/>
+    <path d="M2658.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="2798" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="2798" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M2827.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M2830.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="2980" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="2980" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M3009.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M3012.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="3169" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="3169" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M3198.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #a54417; stroke-width: 0px;"/>
+    <path d="M3201.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="3348" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="3348" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M3377.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M3380.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="3530" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="3530" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M3559.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M3562.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="3719" y="1021" width="66" height="99" rx="3.61" ry="3.61" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="3719" y="1155" width="66" height="139" rx="3.01" ry="3.01" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M3748.07,1329h7.86c30.39,0,55.07,24.68,55.07,55.07v130.93h-118v-130.93c0-30.39,24.68-55.07,55.07-55.07Z" style="fill: #a54417; stroke-width: 0px;"/>
+    <path d="M3751.5,901h0c18.49,0,33.5,15.01,33.5,33.5v52.5h-67v-52.5c0-18.49,15.01-33.5,33.5-33.5Z" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="1521" y="1021" width="66" height="99" rx="3.61" ry="3.61" transform="translate(3108 2141) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="1521" y="1155" width="66" height="139" rx="3.01" ry="3.01" transform="translate(3108 2449) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M1495,1329h118v130.93c0,30.39-24.68,55.07-55.07,55.07h-7.86c-30.39,0-55.07-24.68-55.07-55.07v-130.93h0Z" transform="translate(3108 2844) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M1521,901h67v52.5c0,18.49-15.01,33.5-33.5,33.5h0c-18.49,0-33.5-15.01-33.5-33.5v-52.5h0Z" transform="translate(3109 1888) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="1339" y="1021" width="66" height="99" rx="3.61" ry="3.61" transform="translate(2744 2141) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="1339" y="1155" width="66" height="139" rx="3.01" ry="3.01" transform="translate(2744 2449) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M1313,1329h118v130.93c0,30.39-24.68,55.07-55.07,55.07h-7.86c-30.39,0-55.07-24.68-55.07-55.07v-130.93h0Z" transform="translate(2744 2844) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M1339,901h67v52.5c0,18.49-15.01,33.5-33.5,33.5h0c-18.49,0-33.5-15.01-33.5-33.5v-52.5h0Z" transform="translate(2745 1888) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="1150" y="1021" width="66" height="99" rx="3.61" ry="3.61" transform="translate(2366 2141) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="1150" y="1155" width="66" height="139" rx="3.01" ry="3.01" transform="translate(2366 2449) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M1124,1329h118v130.93c0,30.39-24.68,55.07-55.07,55.07h-7.86c-30.39,0-55.07-24.68-55.07-55.07v-130.93h0Z" transform="translate(2366 2844) rotate(180)" style="fill: #a54417; stroke-width: 0px;"/>
+    <path d="M1150,901h67v52.5c0,18.49-15.01,33.5-33.5,33.5h0c-18.49,0-33.5-15.01-33.5-33.5v-52.5h0Z" transform="translate(2367 1888) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="973" y="1021" width="66" height="99" rx="3.61" ry="3.61" transform="translate(2012 2141) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="973" y="1155" width="66" height="139" rx="3.01" ry="3.01" transform="translate(2012 2449) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M947,1329h118v130.93c0,30.39-24.68,55.07-55.07,55.07h-7.86c-30.39,0-55.07-24.68-55.07-55.07v-130.93h0Z" transform="translate(2012 2844) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M973,901h67v52.5c0,18.49-15.01,33.5-33.5,33.5h0c-18.49,0-33.5-15.01-33.5-33.5v-52.5h0Z" transform="translate(2013 1888) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="791" y="1021" width="66" height="99" rx="3.61" ry="3.61" transform="translate(1648 2141) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="791" y="1155" width="66" height="139" rx="3.01" ry="3.01" transform="translate(1648 2449) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M765,1329h118v130.93c0,30.39-24.68,55.07-55.07,55.07h-7.86c-30.39,0-55.07-24.68-55.07-55.07v-130.93h0Z" transform="translate(1648 2844) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M791,901h67v52.5c0,18.49-15.01,33.5-33.5,33.5h0c-18.49,0-33.5-15.01-33.5-33.5v-52.5h0Z" transform="translate(1649 1888) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="602" y="1021" width="66" height="99" rx="3.61" ry="3.61" transform="translate(1270 2141) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="602" y="1155" width="66" height="139" rx="3.01" ry="3.01" transform="translate(1270 2449) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M576,1329h118v130.93c0,30.39-24.68,55.07-55.07,55.07h-7.86c-30.39,0-55.07-24.68-55.07-55.07v-130.93h0Z" transform="translate(1270 2844) rotate(180)" style="fill: #a54417; stroke-width: 0px;"/>
+    <path d="M602,901h67v52.5c0,18.49-15.01,33.5-33.5,33.5h0c-18.49,0-33.5-15.01-33.5-33.5v-52.5h0Z" transform="translate(1271 1888) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="423" y="1021" width="66" height="99" rx="3.61" ry="3.61" transform="translate(912 2141) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="423" y="1155" width="66" height="139" rx="3.01" ry="3.01" transform="translate(912 2449) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M397,1329h118v130.93c0,30.39-24.68,55.07-55.07,55.07h-7.86c-30.39,0-55.07-24.68-55.07-55.07v-130.93h0Z" transform="translate(912 2844) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M423,901h67v52.5c0,18.49-15.01,33.5-33.5,33.5h0c-18.49,0-33.5-15.01-33.5-33.5v-52.5h0Z" transform="translate(913 1888) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="241" y="1021" width="66" height="99" rx="3.61" ry="3.61" transform="translate(548 2141) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="241" y="1155" width="66" height="139" rx="3.01" ry="3.01" transform="translate(548 2449) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M215,1329h118v130.93c0,30.39-24.68,55.07-55.07,55.07h-7.86c-30.39,0-55.07-24.68-55.07-55.07v-130.93h0Z" transform="translate(548 2844) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M241,901h67v52.5c0,18.49-15.01,33.5-33.5,33.5h0c-18.49,0-33.5-15.01-33.5-33.5v-52.5h0Z" transform="translate(549 1888) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="57" y="1021" width="66" height="99" rx="3.61" ry="3.61" transform="translate(180 2141) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <rect x="57" y="1155" width="66" height="139" rx="3.01" ry="3.01" transform="translate(180 2449) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
+    <path d="M31,1329h118v130.93c0,30.39-24.68,55.07-55.07,55.07h-7.86c-30.39,0-55.07-24.68-55.07-55.07v-130.93h0Z" transform="translate(180 2844) rotate(180)" style="fill: #a54417; stroke-width: 0px;"/>
+    <path d="M57,901h67v52.5c0,18.49-15.01,33.5-33.5,33.5h0c-18.49,0-33.5-15.01-33.5-33.5v-52.5h0Z" transform="translate(181 1888) rotate(180)" style="fill: #f6e6de; stroke-width: 0px;"/>
   </g>
   <g id="tourStyles-fade-1">
-    <path d="M1660.7,1445h388.61c6.46,0,11.7,5.24,11.7,11.7v97.3h-412v-97.3c0-6.46,5.24-11.7,11.7-11.7Z" style="fill: #d6652f; stroke-width: 0px;"/>
-    <path d="M1757.3,1222h193.4c9,0,16.3,7.3,16.3,16.3v209.7h-226v-209.7c0-9,7.3-16.3,16.3-16.3Z" style="fill: #d6652f; stroke-width: 0px;"/>
-    <rect x="1798" y="779" width="111" height="445" style="fill: #d6652f; stroke-width: 0px;"/>
-    <rect x="1741" y="749" width="226" height="31" rx="7.36" ry="7.36" style="fill: #d6652f; stroke-width: 0px;"/>
-    <rect x="1841" y="639" width="25" height="64" rx="5.78" ry="5.78" style="fill: #d6652f; stroke-width: 0px;"/>
-    <circle cx="1853" cy="748" r="62" style="fill: #d6652f; stroke-width: 0px;"/>
+    <g>
+      <path d="M1725.7,1445h388.61c6.46,0,11.7,5.24,11.7,11.7v97.3h-412v-97.3c0-6.46,5.24-11.7,11.7-11.7Z" style="fill: #d6652f; stroke-width: 0px;"/>
+      <path d="M1823.3,1222h193.4c9,0,16.3,7.3,16.3,16.3v209.7h-226v-209.7c0-9,7.3-16.3,16.3-16.3Z" style="fill: #d6652f; stroke-width: 0px;"/>
+      <rect x="1864.5" y="779" width="111" height="445" style="fill: #d6652f; stroke-width: 0px;"/>
+      <rect x="1807" y="749" width="226" height="31" rx="7.36" ry="7.36" style="fill: #d6652f; stroke-width: 0px;"/>
+      <rect x="1907.5" y="639" width="25" height="64" rx="5.78" ry="5.78" style="fill: #d6652f; stroke-width: 0px;"/>
+      <circle cx="1920" cy="748" r="62" style="fill: #d6652f; stroke-width: 0px;"/>
+    </g>
   </g>
   <g id="tourStyles-fade-2">
-    <path d="M1551.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="1553" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="1545" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="1525.14" y="1164.25" width="21" height="73.14" transform="translate(-386.85 1523.64) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="1582.39" y="1163.95" width="21" height="73.14" transform="translate(1781.98 3186.16) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="1603" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="1487" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <path d="M2116.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2118" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2110" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2090.14" y="1164.25" width="21" height="73.14" transform="translate(-203.15 1940.57) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2147.39" y="1163.95" width="21" height="73.14" transform="translate(2728.28 3603.1) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2168" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2052" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <path d="M2406.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2408" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2400" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2380.14" y="1164.25" width="21" height="73.14" transform="translate(-108.86 2154.58) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2437.39" y="1163.95" width="21" height="73.14" transform="translate(3213.99 3817.1) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2458" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2342" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <path d="M2688.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2690" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2682" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2662.14" y="1164.25" width="21" height="73.14" transform="translate(-17.17 2362.67) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2719.39" y="1163.95" width="21" height="73.14" transform="translate(3686.3 4025.2) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2740" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2624" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <path d="M2986.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2988" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2980" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2960.14" y="1164.25" width="21" height="73.14" transform="translate(79.72 2582.58) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="3017.39" y="1163.95" width="21" height="73.14" transform="translate(4185.41 4245.11) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="3038" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="2922" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <path d="M3302.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="3304" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="3296" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="3276.14" y="1164.25" width="21" height="73.14" transform="translate(182.46 2815.77) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="3333.39" y="1163.95" width="21" height="73.14" transform="translate(4714.67 4478.3) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="3354" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="3238" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <path d="M3584.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="3586" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="3578" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="3558.14" y="1164.25" width="21" height="73.14" transform="translate(274.15 3023.87) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="3615.39" y="1163.95" width="21" height="73.14" transform="translate(5186.98 4686.39) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="3636" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="3520" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <path d="M354.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="356" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="348" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="328.14" y="1164.25" width="21" height="73.14" transform="translate(-776.03 640.32) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="385.39" y="1163.95" width="21" height="73.14" transform="translate(-222.84 2302.85) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="406" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="290" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <path d="M636.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="638" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="630" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="610.14" y="1164.25" width="21" height="73.14" transform="translate(-684.34 848.42) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="667.39" y="1163.95" width="21" height="73.14" transform="translate(249.47 2510.95) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="688" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="572" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <path d="M934.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="936" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="928" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="908.14" y="1164.25" width="21" height="73.14" transform="translate(-587.45 1068.33) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="965.39" y="1163.95" width="21" height="73.14" transform="translate(748.58 2730.86) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="986" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="870" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <path d="M1250.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="1252" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="1244" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="1224.14" y="1164.25" width="21" height="73.14" transform="translate(-484.71 1301.52) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="1281.39" y="1163.95" width="21" height="73.14" transform="translate(1277.84 2964.04) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="1302" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
-    <rect x="1186" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <path d="M1605.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="1607" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="1599" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="1579.14" y="1164.25" width="21" height="73.14" transform="translate(-369.29 1563.49) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="1636.39" y="1163.95" width="21" height="73.14" transform="translate(1872.42 3226.01) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="1657" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="1541" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <path d="M2213.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2215" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2207" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2187.14" y="1164.25" width="21" height="73.14" transform="translate(-171.61 2012.15) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2244.39" y="1163.95" width="21" height="73.14" transform="translate(2890.74 3674.68) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2265" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2149" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <path d="M2514.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2516" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2508" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2488.14" y="1164.25" width="21" height="73.14" transform="translate(-73.74 2234.27) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2545.39" y="1163.95" width="21" height="73.14" transform="translate(3394.87 3896.8) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2566" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2450" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <path d="M2810.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2812" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2804" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2784.14" y="1164.25" width="21" height="73.14" transform="translate(22.5 2452.7) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2841.39" y="1163.95" width="21" height="73.14" transform="translate(3890.63 4115.23) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2862" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="2746" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <path d="M3094.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3096" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3088" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3068.14" y="1164.25" width="21" height="73.14" transform="translate(114.83 2662.28) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3125.39" y="1163.95" width="21" height="73.14" transform="translate(4366.3 4324.8) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3146" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3030" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <path d="M3399.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3401" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3393" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3373.14" y="1164.25" width="21" height="73.14" transform="translate(214 2887.35) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3430.39" y="1163.95" width="21" height="73.14" transform="translate(4877.13 4549.88) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3451" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3335" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <path d="M3681.57,1433h24.86c3.63,0,6.57,2.94,6.57,6.57v77.43h-38v-77.43c0-3.63,2.94-6.57,6.57-6.57Z" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3683" y="1155" width="21" height="279" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3675" y="1097" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3655.14" y="1164.25" width="21" height="73.14" transform="translate(305.69 3095.45) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3712.39" y="1163.95" width="21" height="73.14" transform="translate(5349.44 4757.98) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3733" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="3617" y="1125" width="37" height="61" rx="10.01" ry="10.01" style="fill: #b04f21; stroke-width: 0px;"/>
+    <path d="M1293,1433h38v77.43c0,3.63-2.94,6.57-6.57,6.57h-24.86c-3.63,0-6.57-2.94-6.57-6.57v-77.43h0Z" transform="translate(2624 2950) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="1302" y="1155" width="21" height="279" transform="translate(2625 2589) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="1294" y="1097" width="37" height="61" rx="10.01" ry="10.01" transform="translate(2625 2255) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="1329.86" y="1164.25" width="21" height="73.14" transform="translate(1358.79 3000.32) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="1272.61" y="1163.95" width="21" height="73.14" transform="translate(-468.73 1337.18) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="1236" y="1125" width="37" height="61" rx="10.01" ry="10.01" transform="translate(2509 2311) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="1352" y="1125" width="37" height="61" rx="10.01" ry="10.01" transform="translate(2741 2311) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <path d="M994,1433h38v77.43c0,3.63-2.94,6.57-6.57,6.57h-24.86c-3.63,0-6.57-2.94-6.57-6.57v-77.43h0Z" transform="translate(2026 2950) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="1003" y="1155" width="21" height="279" transform="translate(2027 2589) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="995" y="1097" width="37" height="61" rx="10.01" ry="10.01" transform="translate(2027 2255) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="1030.86" y="1164.25" width="21" height="73.14" transform="translate(858 2779.68) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="973.61" y="1163.95" width="21" height="73.14" transform="translate(-565.94 1116.54) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="937" y="1125" width="37" height="61" rx="10.01" ry="10.01" transform="translate(1911 2311) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="1053" y="1125" width="37" height="61" rx="10.01" ry="10.01" transform="translate(2143 2311) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <path d="M713,1433h38v77.43c0,3.63-2.94,6.57-6.57,6.57h-24.86c-3.63,0-6.57-2.94-6.57-6.57v-77.43h0Z" transform="translate(1464 2950) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="722" y="1155" width="21" height="279" transform="translate(1465 2589) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="714" y="1097" width="37" height="61" rx="10.01" ry="10.01" transform="translate(1465 2255) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="749.86" y="1164.25" width="21" height="73.14" transform="translate(387.37 2572.32) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="692.61" y="1163.95" width="21" height="73.14" transform="translate(-657.31 909.18) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="656" y="1125" width="37" height="61" rx="10.01" ry="10.01" transform="translate(1349 2311) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="772" y="1125" width="37" height="61" rx="10.01" ry="10.01" transform="translate(1581 2311) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <path d="M408,1433h38v77.43c0,3.63-2.94,6.57-6.57,6.57h-24.86c-3.63,0-6.57-2.94-6.57-6.57v-77.43h0Z" transform="translate(854 2950) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="417" y="1155" width="21" height="279" transform="translate(855 2589) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="409" y="1097" width="37" height="61" rx="10.01" ry="10.01" transform="translate(855 2255) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="444.86" y="1164.25" width="21" height="73.14" transform="translate(-123.47 2347.25) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="387.61" y="1163.95" width="21" height="73.14" transform="translate(-756.47 684.11) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="351" y="1125" width="37" height="61" rx="10.01" ry="10.01" transform="translate(739 2311) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="467" y="1125" width="37" height="61" rx="10.01" ry="10.01" transform="translate(971 2311) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <path d="M126,1433h38v77.43c0,3.63-2.94,6.57-6.57,6.57h-24.86c-3.63,0-6.57-2.94-6.57-6.57v-77.43h0Z" transform="translate(290 2950) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="135" y="1155" width="21" height="279" transform="translate(291 2589) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="127" y="1097" width="37" height="61" rx="10.01" ry="10.01" transform="translate(291 2255) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="162.86" y="1164.25" width="21" height="73.14" transform="translate(-595.78 2139.15) rotate(-132.44)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="105.61" y="1163.95" width="21" height="73.14" transform="translate(-848.16 476.01) rotate(-47.56)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="69" y="1125" width="37" height="61" rx="10.01" ry="10.01" transform="translate(175 2311) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
+    <rect x="185" y="1125" width="37" height="61" rx="10.01" ry="10.01" transform="translate(407 2311) rotate(180)" style="fill: #b04f21; stroke-width: 0px;"/>
   </g>
 </svg>
