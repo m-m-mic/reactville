@@ -39,12 +39,11 @@
     opacity: 0;
     transform: scale(2);
     transition:
-    transform 1000ms ease-in,
-    opacity 200ms ease;
+      transform 1000ms ease-in,
+      opacity 200ms ease;
     transition-delay: 600ms, 1400ms;
   }
 }
-
 
 .slide.future {
   #tourStyles-fade-1 {

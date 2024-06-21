@@ -8,6 +8,7 @@ import "./QuickSelectSlide.styles.css";
 import { SlideContext } from "@/context/providers/SlideProvider";
 import RvSlideHeader from "@/components/RvSlideHeader/RvSlideHeader.component";
 import { getSlideTitle } from "@/shared/functions/getSlideTitle";
+import QuickSelectBackground from "./QuickSelectSlide.background.svg?react";
 
 export default function QuickSelectSlide() {
   const SLIDE_ID = Slide.QuickSelect;
@@ -40,6 +41,7 @@ export default function QuickSelectSlide() {
           </div>
         </div>
       </div>
+      <QuickSelectBackground className="background" />
     </div>
   );
 }
