@@ -5,56 +5,56 @@
 
 #tourRequests-fade-1 {
   opacity: 1;
-  animation: crowd-bobbing 3.3s infinite linear;
+  animation: crowd-bobbing 4.6s infinite linear;
   transition: opacity 600ms ease;
   transition-delay: 1900ms;
 }
 
 @keyframes crowd-bobbing {
   0% {
-    transform: translate(0, 0.4%);
+    transform: translateY(0.4%);
   }
 
   13% {
-    transform: translate(0.3%, 0%);
+    transform: translateY(0);
   }
 
   20% {
-    transform: translate(0.1%, 0.5%);
+    transform: translateY(0.6%);
   }
 
   35% {
-    transform: translate(-0.2%, -0.3%);
+    transform: translateY(-0.3%);
   }
 
   42% {
-    transform: translate(0, -0.3%);
+    transform: translateY(-0.2%);
   }
 
   57% {
-    transform: translate(0.3%, -0.5%);
+    transform: translateY(-0.6%);
   }
 
   70% {
-    transform: translate(-0.4%, 0);
+    transform: translateY(0);
   }
 
   81% {
-    transform: translate(-0.5%, 0.3%);
+    transform: translateY(0.4%);
   }
 
   94% {
-    transform: translate(0.3%, 0.1%);
+    transform: translateY(0.1%);
   }
 
   100% {
-    transform: translate(0%, 0.4%);
+    transform: translateY(0.4%);
   }
 }
 
 #tourRequests-fade-2 {
   opacity: 1;
-  animation: bobbing 3.3s infinite reverse linear;
+  animation: crowd-bobbing 5.6s infinite reverse linear;
   transition: opacity 600ms ease;
   transition-delay: 2000ms;
 }
