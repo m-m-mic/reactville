@@ -69,7 +69,9 @@
     height: 100%;
     overflow: hidden;
     border-radius: 1.5cqw;
-    transition: transform 500ms ease;
+    transition:
+      transform 500ms ease,
+      visibility 500ms;
 
     &.small {
       flex: 0 0 60cqw;
