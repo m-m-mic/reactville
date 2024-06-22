@@ -3,7 +3,6 @@ import { getSlideState } from "@/shared/functions/getSlideState";
 import "./TourSharedSlide.styles.css";
 import { TransitionEvent, useContext, useEffect, useState } from "react";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
-
 import TourSharedBackground from "./TourSharedSlide.background.svg?react";
 import { setNextSlide } from "@/shared/functions/setSlide";
 import { RvButton } from "@/components/RvButton/RvButton.component";
@@ -50,8 +49,9 @@ export default function TourSharedSlide() {
               We have almost reached the final destination of our stroll through town. One last stop: <b>Shared Street</b>.
               <div className="text-divider"></div>
               If you ever need to add something to your project which doesn't neatly fit into your current project folders, it's
-              best to create a new <b>'shared' folder</b>. Just like with everything else in your project, make sure to keep this
-              folder organized with appropriate sub-folders.
+              best to create a new <b>'shared' folder</b>. An example for this would be a method or an object which is used by
+              multiple components or pages. Just like with everything else in your project, make sure to keep this folder
+              organized with appropriate sub-folders.
               <div className="text-divider"></div>
               But now, without further ado. We have finally arrived at...
             </div>

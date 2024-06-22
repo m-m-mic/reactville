@@ -36,9 +36,9 @@ export function updateChoicesAndFolderStructure(
             updatedFolderStructure,
             [
               ["src", "components"],
-              ["src", "components", "exampleComponent1"],
-              ["src", "components", "exampleComponent2"],
-              ["src", "components", "exampleComponent3"],
+              ["src", "components", "exampleComponentA"],
+              ["src", "components", "exampleComponentB"],
+              ["src", "components", "exampleComponentC"],
             ],
             { hidden: false },
           );
@@ -49,12 +49,12 @@ export function updateChoicesAndFolderStructure(
           updatedFolderStructure = setValuesInStructure(
             updatedFolderStructure,
             [
-              ["src", "components", "exampleComponent1.css"],
-              ["src", "components", "exampleComponent1.jsx"],
-              ["src", "components", "exampleComponent1.spec.jsx"],
-              ["src", "components", "exampleComponent2.css"],
-              ["src", "components", "exampleComponent2.jsx"],
-              ["src", "components", "exampleComponent2.spec.jsx"],
+              ["src", "components", "exampleComponentA.css"],
+              ["src", "components", "exampleComponentA.jsx"],
+              ["src", "components", "exampleComponentA.spec.jsx"],
+              ["src", "components", "exampleComponentB.css"],
+              ["src", "components", "exampleComponentB.jsx"],
+              ["src", "components", "exampleComponentB.spec.jsx"],
             ],
             { hidden: true },
           );
@@ -91,21 +91,21 @@ export function updateChoicesAndFolderStructure(
           updatedFolderStructure = setValuesInStructure(
             updatedFolderStructure,
             [
-              ["src", "components", "exampleComponent1"],
-              ["src", "components", "exampleComponent2"],
-              ["src", "components", "exampleComponent3"],
-              ["src", "components", "exampleComponent1.css"],
-              ["src", "components", "exampleComponent2.css"],
+              ["src", "components", "exampleComponentA"],
+              ["src", "components", "exampleComponentB"],
+              ["src", "components", "exampleComponentC"],
+              ["src", "components", "exampleComponentA.css"],
+              ["src", "components", "exampleComponentB.css"],
             ],
             { hidden: true },
           );
           updatedFolderStructure = setValuesInStructure(
             updatedFolderStructure,
             [
-              ["src", "components", "exampleComponent1.jsx"],
-              ["src", "components", "exampleComponent1.spec.jsx"],
-              ["src", "components", "exampleComponent2.jsx"],
-              ["src", "components", "exampleComponent2.spec.jsx"],
+              ["src", "components", "exampleComponentA.jsx"],
+              ["src", "components", "exampleComponentA.spec.jsx"],
+              ["src", "components", "exampleComponentB.jsx"],
+              ["src", "components", "exampleComponentB.spec.jsx"],
             ],
             { hidden: false },
           );
@@ -133,8 +133,8 @@ export function updateChoicesAndFolderStructure(
                 ["src", "pages", "examplePage2.css"],
                 ["src", "pages", "examplePage2.jsx"],
                 ["src", "pages", "examplePage2.spec.jsx"],
-                ["src", "components", "exampleComponent1.css"],
-                ["src", "components", "exampleComponent2.css"],
+                ["src", "components", "exampleComponentA.css"],
+                ["src", "components", "exampleComponentB.css"],
               ],
               { hidden: false },
             );
@@ -181,8 +181,8 @@ export function updateChoicesAndFolderStructure(
           updatedFolderStructure = setValuesInStructure(
             updatedFolderStructure,
             [
-              ["src", "components", "exampleComponent1.css"],
-              ["src", "components", "exampleComponent2.css"],
+              ["src", "components", "exampleComponentA.css"],
+              ["src", "components", "exampleComponentB.css"],
             ],
             { hidden: false, highlighted: true },
           );
@@ -192,6 +192,14 @@ export function updateChoicesAndFolderStructure(
             open: true,
             highlighted: true,
           });
+          updatedFolderStructure = setValuesInStructure(
+            updatedFolderStructure,
+            [
+              ["src", "App.css"],
+              ["src", "index.css"],
+            ],
+            { hidden: true },
+          );
         } else if (value === undefined) {
           updatedFolderStructure = setValuesInStructure(updatedFolderStructure, [["src", "styles"]], {
             hidden: true,
@@ -199,10 +207,18 @@ export function updateChoicesAndFolderStructure(
           updatedFolderStructure = setValuesInStructure(
             updatedFolderStructure,
             [
-              ["src", "components", "exampleComponent1.css"],
-              ["src", "components", "exampleComponent2.css"],
+              ["src", "components", "exampleComponentA.css"],
+              ["src", "components", "exampleComponentB.css"],
             ],
             { hidden: true },
+          );
+          updatedFolderStructure = setValuesInStructure(
+            updatedFolderStructure,
+            [
+              ["src", "App.css"],
+              ["src", "index.css"],
+            ],
+            { hidden: false },
           );
         }
         break;

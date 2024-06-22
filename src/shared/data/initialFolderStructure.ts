@@ -114,53 +114,53 @@ const components: FileFolder = {
   name: "components",
   hidden: true,
   content: {
-    "exampleComponent1.css": {
+    "exampleComponentA.css": {
       hidden: true,
       type: "file",
-      name: "exampleComponent1.css",
+      name: "exampleComponentA.css",
     },
-    "exampleComponent1.jsx": {
+    "exampleComponentA.jsx": {
       type: "file",
-      name: "exampleComponent1.jsx",
+      name: "exampleComponentA.jsx",
     },
-    "exampleComponent1.spec.jsx": {
+    "exampleComponentA.spec.jsx": {
       type: "file",
-      name: "exampleComponent1.spec.jsx",
+      name: "exampleComponentA.spec.jsx",
     },
-    "exampleComponent2.css": {
+    "exampleComponentB.css": {
       hidden: true,
       type: "file",
-      name: "exampleComponent2.css",
+      name: "exampleComponentB.css",
     },
-    "exampleComponent2.jsx": {
+    "exampleComponentB.jsx": {
       type: "file",
-      name: "exampleComponent2.jsx",
+      name: "exampleComponentB.jsx",
     },
-    "exampleComponent2.spec.jsx": {
+    "exampleComponentB.spec.jsx": {
       type: "file",
-      name: "exampleComponent2.spec.jsx",
+      name: "exampleComponentB.spec.jsx",
     },
-    exampleComponent1: {
+    exampleComponentA: {
       type: "folder",
-      name: "exampleComponent1",
+      name: "exampleComponentA",
       content: {
-        "exampleComponent1.css": {
+        "exampleComponentA.css": {
           type: "file",
-          name: "exampleComponent1.css",
+          name: "exampleComponentA.css",
         },
-        "exampleComponent1.jsx": {
+        "exampleComponentA.jsx": {
           type: "file",
-          name: "exampleComponent1.jsx",
+          name: "exampleComponentA.jsx",
         },
-        "exampleComponent1.spec.jsx": {
+        "exampleComponentA.spec.jsx": {
           type: "file",
-          name: "exampleComponent1.spec.jsx",
+          name: "exampleComponentA.spec.jsx",
         },
       },
     },
-    exampleComponent2: {
+    exampleComponentB: {
       type: "folder",
-      name: "exampleComponent2",
+      name: "exampleComponentB",
       content: {
         "examplePage2.css": {
           type: "file",
@@ -176,9 +176,9 @@ const components: FileFolder = {
         },
       },
     },
-    exampleComponent3: {
+    exampleComponentC: {
       type: "folder",
-      name: "exampleComponent3",
+      name: "exampleComponentC",
       content: {
         "examplePage3.css": {
           type: "file",
