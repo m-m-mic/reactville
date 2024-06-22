@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="favicon7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 350">
+  <rect y="0" width="350" height="350" rx="66" ry="66" style="fill: #55b2ff; stroke-width: 0px;"/>
+  <rect x="108" width="52" height="350" style="fill: #cae7fc; stroke-width: 0px;"/>
+  <rect x="150" y="71" width="50" height="350" transform="translate(421 71) rotate(90)" style="fill: #cae7fc; stroke-width: 0px;"/>
+  <rect x="234" y="0" width="52" height="249" style="fill: #cae7fc; stroke-width: 0px;"/>
+  <rect x="150" y="-66" width="50" height="350" transform="translate(284 -66) rotate(90)" style="fill: #cae7fc; stroke-width: 0px;"/>
+</svg>
