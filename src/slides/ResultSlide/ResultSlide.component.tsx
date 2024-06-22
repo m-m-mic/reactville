@@ -12,6 +12,8 @@ import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 import { FolderStructureContext } from "@/context/providers/FolderStructureContext.provider";
 import { openAllFoldersAndRemoveHighlighting } from "@/shared/functions/setStructureFolderValue";
 import ResultBackground from "./ResultSlide.background.svg?react";
+import { RvButton } from "@/components/RvButton/RvButton.component";
+import { ModalContext } from "@/context/providers/ModalContext.provider";
 
 export default function ResultSlide() {
   const SLIDE_ID = Slide.Result;
@@ -19,6 +21,7 @@ export default function ResultSlide() {
   const { slideStack } = useContext(SlideContext);
   const { choices } = useContext(ChoicesContext);
   const { folderStructure, setFolderStructure } = useContext(FolderStructureContext);
+  const { openModal } = useContext(ModalContext);
 
   const [slideState, setSlideState] = useState<SlideState | undefined>();
 
@@ -30,6 +33,10 @@ export default function ResultSlide() {
     if (slideState === SlideState.Present && event.target === event.currentTarget) {
       setFolderStructure(openAllFoldersAndRemoveHighlighting(folderStructure));
     }
+  };
+
+  const returnToStart = () => {
+    openModal(Slide.Landing);
   };
 
   if (isRemovedFromViewport(SLIDE_ID, slideStack)) {
@@ -51,6 +58,9 @@ export default function ResultSlide() {
               <div className="text-divider"></div>
               Thank you for going on Tour with us. We hope the structure you ended up with suits your needs and that you learned a
               thing or two along the way!
+            </div>
+            <div className="action-buttons">
+              <RvButton label="Back to Start" onClick={returnToStart} />
             </div>
           </div>
           <div className="folder-structure-wrapper">

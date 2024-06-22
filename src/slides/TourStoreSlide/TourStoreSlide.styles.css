@@ -6,31 +6,99 @@
 #tourStore-fade-1 {
   opacity: 1;
   transition: opacity 600ms ease;
-  transition-delay: 1100ms;
+  transition-delay: 1900ms;
 }
 
 #tourStore-fade-2 {
   opacity: 1;
   transition: opacity 600ms ease;
-  transition-delay: 1200ms;
+  transition-delay: 2050ms;
+}
+
+#tourStore-fade-3 {
+  opacity: 1;
+  transition: opacity 600ms ease;
+  transition-delay: 2000ms;
+
+  #tourStore-fade-3-animation-1 {
+    animation: drive-1 15s infinite linear;
+  }
+
+  #tourStore-fade-3-animation-2 {
+    animation: drive-2 8s infinite linear;
+  }
+}
+
+@keyframes drive-1 {
+  0% {
+    transform: translateY(15%);
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  17% {
+    transform: translateY(-13.5%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-13.5%);
+    opacity: 0;
+  }
+}
+
+@keyframes drive-2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-11.7%);
+  }
+
+  4% {
+    opacity: 1;
+  }
+
+  35% {
+    transform: translateY(15%);
+  }
+
+  100% {
+    transform: translateY(15%);
+  }
 }
 
 #tourStore-move {
   opacity: 1;
   transform-origin: center;
   transition:
-    transform 800ms ease-in,
-    opacity 200ms ease;
-  transition-delay: 300ms, 100ms;
+    transform 1000ms ease-out,
+    opacity 600ms ease;
+  transition-delay: 600ms, 700ms;
+}
+
+.slide.past {
+  #tourStore-fade-1,
+  #tourStore-fade-2,
+  #tourStore-fade-3 {
+    opacity: 0;
+    transition-delay: 0ms;
+  }
+
+  #tourStore-move {
+    opacity: 0;
+    transform: scale(2);
+    transition:
+      transform 1000ms ease-in,
+      opacity 200ms ease;
+    transition-delay: 600ms, 1400ms;
+  }
 }
 
 .slide.future {
-  #tourStore-fade-1 {
-    opacity: 0;
-    transition-delay: 200ms;
-  }
-
-  #tourStore-fade-2 {
+  #tourStore-fade-1,
+  #tourStore-fade-2,
+  #tourStore-fade-3 {
     opacity: 0;
     transition-delay: 0ms;
   }
@@ -39,23 +107,5 @@
     opacity: 0;
     transform: scale(0.5);
     transition-delay: 700ms, 1200ms;
-  }
-}
-
-.slide.past {
-  #tourStore-fade-1 {
-    opacity: 0;
-    transition-delay: 100ms;
-  }
-
-  #tourStore-fade-2 {
-    opacity: 0;
-    transition-delay: 0ms;
-  }
-
-  #tourStore-move {
-    opacity: 0;
-    transform: translate(0, 10%) scale(2);
-    transition-delay: 200ms, 500ms;
   }
 }

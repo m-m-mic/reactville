@@ -73,29 +73,27 @@
     <rect x="2347.94" y="1240.59" width="48.23" height="77.51" style="fill: #f7efe2; stroke-width: 0px;"/>
     <rect x="2090.45" y="1421.44" width="56.84" height="130.04" style="fill: #8d5b00; stroke-width: 0px;"/>
     <rect x="2192.93" y="1421.44" width="57.7" height="130.04" style="fill: #f7efe2; stroke-width: 0px;"/>
-    <rect x="2072.36" y="1014.97" width="214.43" height="17.22" style="fill: #c58819; stroke-width: 0px;"/>
-    <rect x="2072.36" y="1161.37" width="214.43" height="17.22" style="fill: #c58819; stroke-width: 0px;"/>
-    <rect x="2072.36" y="880.62" width="214.43" height="17.22" style="fill: #c58819; stroke-width: 0px;"/>
-    <rect x="2072.36" y="1318.96" width="214.43" height="17.22" style="fill: #c58819; stroke-width: 0px;"/>
-    <rect x="2053.89" y="1239.51" width="181.28" height="17.22" transform="translate(2255.74 3726.92) rotate(-122.77)" style="fill: #c58819; stroke-width: 0px;"/>
-    <rect x="2058.15" y="1087.93" width="181.28" height="17.22" transform="translate(2389.76 3496.88) rotate(-122.77)" style="fill: #c58819; stroke-width: 0px;"/>
-    <rect x="2071.69" y="949.1" width="161.98" height="17.22" transform="translate(2512.5 3286.17) rotate(-122.77)" style="fill: #c58819; stroke-width: 0px;"/>
+    <rect x="2093.36" y="1014.97" width="214.43" height="17.22" style="fill: #c58819; stroke-width: 0px;"/>
+    <rect x="2093.36" y="1161.37" width="214.43" height="17.22" style="fill: #c58819; stroke-width: 0px;"/>
+    <rect x="2093.36" y="880.62" width="214.43" height="17.22" style="fill: #c58819; stroke-width: 0px;"/>
+    <rect x="2093.36" y="1318.96" width="214.43" height="17.22" style="fill: #c58819; stroke-width: 0px;"/>
+    <rect x="2074.89" y="1239.51" width="181.28" height="17.22" transform="translate(2288.1 3744.58) rotate(-122.77)" style="fill: #c58819; stroke-width: 0px;"/>
+    <rect x="2079.15" y="1087.93" width="181.28" height="17.22" transform="translate(2422.13 3514.54) rotate(-122.77)" style="fill: #c58819; stroke-width: 0px;"/>
+    <rect x="2092.69" y="949.1" width="161.98" height="17.22" transform="translate(2544.87 3303.83) rotate(-122.77)" style="fill: #c58819; stroke-width: 0px;"/>
     <rect x="2264.4" y="1421.44" width="80.09" height="75.78" style="fill: #f7efe2; stroke-width: 0px;"/>
     <rect x="2356.55" y="1421.44" width="80.09" height="75.78" style="fill: #f7efe2; stroke-width: 0px;"/>
-    <rect x="1792.48" y="779.87" width="265.24" height="558.04" style="fill: #bb7c09; stroke-width: 0px;"/>
+    <rect x="1792.48" y="876" width="265.24" height="461.91" style="fill: #bb7c09; stroke-width: 0px;"/>
     <rect x="1792.48" y="1337.91" width="265.24" height="213.57" style="fill: #eea727; stroke-width: 0px;"/>
-    <rect x="1792.48" y="724.03" width="265.24" height="56.84" style="fill: #fbbd4c; stroke-width: 0px;"/>
-    <rect x="1842.43" y="805.7" width="48.23" height="77.51" style="fill: #f7efe2; stroke-width: 0px;"/>
-    <rect x="1842.43" y="940.04" width="48.23" height="77.51" style="fill: #f7efe2; stroke-width: 0px;"/>
-    <rect x="1842.43" y="1086.44" width="48.23" height="77.51" style="fill: #f7efe2; stroke-width: 0px;"/>
-    <rect x="1841.57" y="1234.57" width="48.23" height="77.51" style="fill: #f7efe2; stroke-width: 0px;"/>
-    <rect x="1959.55" y="805.7" width="48.23" height="77.51" style="fill: #f7efe2; stroke-width: 0px;"/>
-    <rect x="1959.55" y="940.04" width="48.23" height="77.51" style="fill: #f7efe2; stroke-width: 0px;"/>
-    <rect x="1959.55" y="1086.44" width="48.23" height="77.51" style="fill: #f7efe2; stroke-width: 0px;"/>
-    <rect x="1959.55" y="1233.71" width="48.23" height="77.51" style="fill: #f7efe2; stroke-width: 0px;"/>
+    <rect x="1792.48" y="826.03" width="265.24" height="56.84" style="fill: #fbbd4c; stroke-width: 0px;"/>
+    <rect x="1842.43" y="937.04" width="48.23" height="77.51" style="fill: #f7efe2; stroke-width: 0px;"/>
+    <rect x="1842.43" y="1083.44" width="48.23" height="77.51" style="fill: #f7efe2; stroke-width: 0px;"/>
+    <rect x="1841.57" y="1231.57" width="48.23" height="77.51" style="fill: #f7efe2; stroke-width: 0px;"/>
+    <rect x="1959.55" y="937.04" width="48.23" height="77.51" style="fill: #f7efe2; stroke-width: 0px;"/>
+    <rect x="1959.55" y="1083.44" width="48.23" height="77.51" style="fill: #f7efe2; stroke-width: 0px;"/>
+    <rect x="1959.55" y="1230.71" width="48.23" height="77.51" style="fill: #f7efe2; stroke-width: 0px;"/>
     <rect x="1807.12" y="1403.36" width="56.84" height="148.12" style="fill: #f7efe2; stroke-width: 0px;"/>
     <rect x="1877.74" y="1403.36" width="103.34" height="148.12" style="fill: #f7efe2; stroke-width: 0px;"/>
-    <rect x="2000.02" y="1434.36" width="45.64" height="117.12" style="fill: #8d5b00; stroke-width: 0px;"/>
+    <rect x="2000.02" y="1445" width="45.64" height="106.48" style="fill: #8d5b00; stroke-width: 0px;"/>
     <rect x="1119.04" y="769.53" width="279.88" height="583.02" style="fill: #fbbd4c; stroke-width: 0px;"/>
     <rect x="1119.04" y="713.69" width="279.88" height="56.84" style="fill: #db9d25; stroke-width: 0px;"/>
     <rect x="1119.04" y="1352.55" width="279.88" height="198.93" style="fill: #db9b25; stroke-width: 0px;"/>
@@ -191,8 +189,8 @@
     <rect x="2834.35" y="1161.37" width="181.71" height="17.22" style="fill: #c58819; stroke-width: 0px;"/>
     <rect x="2834.35" y="880.62" width="181.71" height="17.22" style="fill: #c58819; stroke-width: 0px;"/>
     <rect x="2834.35" y="1318.96" width="181.71" height="17.22" style="fill: #c58819; stroke-width: 0px;"/>
-    <rect x="2820.14" y="1239.51" width="181.28" height="17.22" transform="translate(285.83 3020.16) rotate(-57.23)" style="fill: #c58819; stroke-width: 0px;"/>
-    <rect x="2815.88" y="1087.93" width="181.28" height="17.22" transform="translate(411.34 2947.03) rotate(-57.23)" style="fill: #c58819; stroke-width: 0px;"/>
+    <rect x="2833.14" y="1239.51" width="181.28" height="17.22" transform="translate(291.8 3031.09) rotate(-57.23)" style="fill: #c58819; stroke-width: 0px;"/>
+    <rect x="2828.88" y="1087.93" width="181.28" height="17.22" transform="translate(417.3 2957.97) rotate(-57.23)" style="fill: #c58819; stroke-width: 0px;"/>
     <rect x="2833.68" y="949.1" width="161.98" height="17.22" transform="translate(531.82 2890.2) rotate(-57.23)" style="fill: #c58819; stroke-width: 0px;"/>
     <rect x="2992.81" y="1421.44" width="74.92" height="72.34" style="fill: #f7efe2; stroke-width: 0px;"/>
     <rect x="89.59" y="769.26" width="279.88" height="583.02" style="fill: #fbbd4c; stroke-width: 0px;"/>

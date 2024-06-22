@@ -1,3 +1,79 @@
 .quickSelect {
   z-index: 24;
+  --rv-foreground-color-2: var(--quickSelect-background-color);
+}
+
+@keyframes fast-train-move {
+  0% {
+    transform: translate(-80%, 0);
+  }
+
+  25% {
+    transform: translate(-7%);
+  }
+  30% {
+    transform: translate(0%, 0);
+  }
+  55% {
+    transform: translate(0%, 0);
+  }
+  60% {
+    transform: translate(7%, 0);
+  }
+
+  87% {
+    transform: translate(70%, 0);
+  }
+
+  100% {
+    transform: translate(70%, 0);
+  }
+}
+
+#quickSelect-fade-1 {
+  opacity: 1;
+  transition: opacity 600ms ease;
+  transition-delay: 1900ms;
+
+  #quickSelect-fade-1-animation {
+    animation: fast-train-move 5s infinite linear;
+    animation-delay: -20s;
+  }
+}
+
+#quickSelect-move {
+  opacity: 1;
+  transform-origin: center;
+  transition:
+    transform 1000ms ease-out,
+    opacity 200ms ease;
+  transition-delay: 500ms, 100ms;
+}
+
+.slide.past {
+  #quickSelect-fade-1 {
+    opacity: 0;
+    transition-delay: 0ms;
+  }
+
+  #quickSelect-move {
+    opacity: 0;
+    transform: scale(2);
+    transition-delay: 600ms, 1400ms;
+  }
+}
+
+.slide.future {
+  #quickSelect-fade-1 {
+    opacity: 0;
+    transition:
+      transform 0ms ease-out,
+      opacity 0ms ease;
+    transition-delay: 0ms;
+  }
+
+  #quickSelect-move {
+    opacity: 0;
+    transform: translate(0, 50%);
+  }
 }

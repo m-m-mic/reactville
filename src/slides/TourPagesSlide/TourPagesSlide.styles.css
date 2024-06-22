@@ -3,43 +3,115 @@
   --rv-foreground-color-2: var(--tourPages-background-color);
 }
 
-#tourPages-fade-1 {
+#tourPages-fade-1,
+#tourPages-fade-2,
+#tourPages-fade-3 {
   opacity: 1;
   transition: opacity 600ms ease;
-  transition-delay: 1100ms;
+  transition-delay: 1900ms;
+}
+
+#tourPages-fade-1 {
+  animation: walk-1 22s linear infinite;
+
+  #tourPages-fade-1-animation {
+    animation: bobbing 400ms infinite;
+  }
+}
+
+@keyframes walk-1 {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+#tourPages-fade-2 {
+  animation: walk-2 16s linear infinite;
+
+  #tourPages-fade-2-animation {
+    animation: bobbing 350ms infinite;
+  }
+}
+
+@keyframes walk-2 {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(45%);
+  }
+}
+
+#tourPages-fade-3 {
+  animation: walk-3 29s linear infinite;
+
+  #tourPages-fade-3-animation {
+    animation: bobbing 550ms infinite;
+  }
+}
+
+@keyframes walk-3 {
+  0% {
+    transform: translateX(35%);
+  }
+  100% {
+    transform: translateX(-35%);
+  }
+}
+
+@keyframes bobbing {
+  0% {
+    transform: translateY(0.5%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(0.5%);
+  }
 }
 
 #tourPages-move {
   opacity: 1;
   transform-origin: center;
   transition:
-    transform 800ms ease-in,
-    opacity 200ms ease;
-  transition-delay: 300ms, 100ms;
+    transform 1000ms ease-out,
+    opacity 600ms ease;
+  transition-delay: 600ms, 700ms;
 }
 
 .slide.past {
-  #tourPages-fade-1 {
+  #tourPages-fade-1,
+  #tourPages-fade-2,
+  #tourPages-fade-3 {
     opacity: 0;
-    transition-delay: 100ms;
+    transition-delay: 0ms;
   }
 
   #tourPages-move {
     opacity: 0;
     transform: scale(2);
-    transition-delay: 200ms, 500ms;
+    transition:
+      transform 1000ms ease-in,
+      opacity 200ms ease;
+    transition-delay: 600ms, 1400ms;
   }
 }
 
 .slide.future {
-  #tourPages-fade-1 {
+  #tourPages-fade-1,
+  #tourPages-fade-2,
+  #tourPages-fade-3 {
     opacity: 0;
-    transition-delay: 200ms;
+    transition-delay: 0ms;
   }
 
   #tourPages-move {
     opacity: 0;
     transform: scale(0.5);
-    transition-delay: 700ms, 1200ms;
+    transition-delay: 600ms, 1400ms;
   }
 }

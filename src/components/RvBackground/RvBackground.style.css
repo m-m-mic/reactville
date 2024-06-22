@@ -22,6 +22,10 @@
     opacity: 0;
   }
 
+  &.quickSelect {
+    fill: #3ab2a4;
+  }
+
   &.boilerplate {
     fill: #44894f;
   }
@@ -65,6 +69,10 @@
   z-index: 2;
   background-color: #3bd1ff;
   transition: background-color var(--main-transition-duration) ease;
+
+  &.quickSelect {
+    background-color: #4cd0c1;
+  }
 
   &.explanation {
     background-color: #77baf5;
@@ -191,7 +199,7 @@
     #explanation-move,
     #explanation-fade-1 {
       transform: translate(0, -72%);
-      transition: transform var(--main-transition-duration) ease;
+      transition: transform 1500ms ease;
       transition-delay: 200ms;
     }
 
