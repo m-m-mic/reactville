@@ -113,7 +113,7 @@ export const tourComponentsWithPagesSlideContent: SlideContent = {
 export const tourStylesSlideContent: SlideContent = {
   undefined: (
     <div className="text-body">
-      Some say the prettiest place in Reactville, but there might be some shady figures around, welcome to <b>Styles Square</b>.
+      Some say the prettiest place in Reactville, but there might be some shady figures around, welcome to <b>Style Square</b>.
       <div className="text-divider"></div>
       Do you think you will need a lot of styling in your application?
     </div>

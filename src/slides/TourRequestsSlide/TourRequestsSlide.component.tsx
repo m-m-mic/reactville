@@ -3,7 +3,7 @@ import { getSlideState } from "@/shared/functions/getSlideState";
 import "./TourRequestsSlide.styles.css";
 import { useContext, useEffect, useState } from "react";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
-
+import ArrowBackIcon from "@/assets/icons/arrow-back_icon.svg?react";
 import TourRequestsBackground from "./TourRequestsSlide.background.svg?react";
 import { setNextSlide } from "@/shared/functions/setSlide";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
@@ -39,6 +39,12 @@ export default function TourRequestsSlide() {
     setNextSlide(Slide.TourShared, slideStack, setSlideStack);
   };
 
+  const revertChoice = () => {
+    updateChoices({ [Slide.TourRequests]: undefined });
+  };
+
+  const goBackButton = <RvButton iconLeft={<ArrowBackIcon />} title="Go back" onClick={revertChoice} />;
+
   if (isRemovedFromViewport(SLIDE_ID, slideStack)) {
     return null;
   }
@@ -65,6 +71,7 @@ export default function TourRequestsSlide() {
                 <>
                   {tourRequestsSlideContent.false}
                   <div className="action-buttons">
+                    {goBackButton}
                     <RvButton onClick={goToTourShared} label="Let's go!" />
                   </div>
                 </>
@@ -73,6 +80,7 @@ export default function TourRequestsSlide() {
                 <>
                   {tourRequestsSlideContent.true}
                   <div className="action-buttons">
+                    {goBackButton}
                     <RvButton onClick={goToTourShared} label="Let's go!" />
                   </div>
                 </>

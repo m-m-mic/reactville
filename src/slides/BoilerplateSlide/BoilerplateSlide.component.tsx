@@ -13,6 +13,8 @@ import RvSlideHeader from "@/components/RvSlideHeader/RvSlideHeader.component";
 import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 import BoilerplateBackground from "./BoilerplateSlide.background.svg?react";
 
+import ArrowBackIcon from "@/assets/icons/arrow-back_icon.svg?react";
+
 export default function BoilerplateSlide() {
   const SLIDE_ID = Slide.Boilerplate;
 
@@ -34,6 +36,12 @@ export default function BoilerplateSlide() {
   if (isRemovedFromViewport(SLIDE_ID, slideStack)) {
     return null;
   }
+
+  const goBack = () => {
+    setBoilerplateStep(boilerplateStep - 1);
+  };
+
+  const goBackButton = <RvButton iconLeft={<ArrowBackIcon />} title="Go back" onClick={goBack} />;
 
   const goToStep1 = () => {
     setBoilerplateStep(1);
@@ -115,6 +123,7 @@ export default function BoilerplateSlide() {
                   This is already quite a bit, so let’s break it down one by one before we start exploring <b>Reactville</b>.
                 </div>
                 <div className="action-buttons">
+                  {goBackButton}
                   <RvButton onClick={goToStep2} label="Alright!" />
                 </div>
               </div>
@@ -127,6 +136,7 @@ export default function BoilerplateSlide() {
                   results.
                 </div>
                 <div className="action-buttons">
+                  {goBackButton}
                   <RvButton onClick={goToStep3} label="Okay!" />
                 </div>
               </div>
@@ -139,6 +149,7 @@ export default function BoilerplateSlide() {
                   such as fonts, icons, and images you may want to use within your application.
                 </div>
                 <div className="action-buttons">
+                  {goBackButton}
                   <RvButton onClick={goToStep4} label="All clear!" />
                 </div>
               </div>
@@ -152,6 +163,7 @@ export default function BoilerplateSlide() {
                   project for now.
                 </div>
                 <div className="action-buttons">
+                  {goBackButton}
                   <RvButton onClick={goToStep5} label="Got it!" />
                 </div>
               </div>
@@ -168,6 +180,7 @@ export default function BoilerplateSlide() {
                   therefore <b>highly recommended</b>.
                 </div>
                 <div className="action-buttons">
+                  {goBackButton}
                   <RvButton onClick={goToStep6} label="Aha!" />
                 </div>
               </div>
@@ -177,6 +190,7 @@ export default function BoilerplateSlide() {
                   <b>Reactville</b>!
                 </div>
                 <div className="action-buttons">
+                  {goBackButton}
                   <RvButton onClick={goToTourPages} label="Let's go!" />
                 </div>
               </div>

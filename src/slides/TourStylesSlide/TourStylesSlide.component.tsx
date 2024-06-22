@@ -3,7 +3,7 @@ import { getSlideState } from "@/shared/functions/getSlideState";
 import "./TourStylesSlide.styles.css";
 import { useContext, useEffect, useState } from "react";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
-
+import ArrowBackIcon from "@/assets/icons/arrow-back_icon.svg?react";
 import TourStylesBackground from "./TourStylesSlide.background.svg?react";
 import { setNextSlide } from "@/shared/functions/setSlide";
 import { RvButton } from "@/components/RvButton/RvButton.component";
@@ -39,6 +39,12 @@ export default function TourStylesSlide() {
     setNextSlide(Slide.TourStore, slideStack, setSlideStack);
   };
 
+  const revertChoice = () => {
+    updateChoices({ [Slide.TourStyles]: undefined });
+  };
+
+  const goBackButton = <RvButton iconLeft={<ArrowBackIcon />} title="Go back" onClick={revertChoice} />;
+
   if (isRemovedFromViewport(SLIDE_ID, slideStack)) {
     return null;
   }
@@ -65,6 +71,7 @@ export default function TourStylesSlide() {
                 <>
                   {tourStylesSlideContent.false}
                   <div className="action-buttons">
+                    {goBackButton}
                     <RvButton onClick={goToTourStore} label="Let's go!" />
                   </div>
                 </>
@@ -73,6 +80,7 @@ export default function TourStylesSlide() {
                 <>
                   {tourStylesSlideContent.true}
                   <div className="action-buttons">
+                    {goBackButton}
                     <RvButton onClick={goToTourStore} label="Let's go!" />
                   </div>
                 </>
