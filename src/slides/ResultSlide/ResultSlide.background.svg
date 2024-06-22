@@ -2,58 +2,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3840 2160">
   <g id="result-move">
     <rect x="0" y="1495" width="3840" height="664" style="fill: #1f381e; stroke-width: 0px;"/>
-    <rect x="1589" y="1495" width="664" height="667" style="fill: #264724; stroke-width: 0px;"/>
-    <rect x="1898" y="1542" width="45.33" height="112" style="fill: #5a9156; stroke-width: 0px;"/>
-    <rect x="1897.99" y="1724.52" width="45.33" height="112" style="fill: #5a9156; stroke-width: 0px;"/>
-    <rect x="1896.99" y="1907.52" width="45.33" height="112" style="fill: #5a9156; stroke-width: 0px;"/>
-    <rect x="1897.99" y="2090.52" width="45.33" height="71.48" style="fill: #5a9156; stroke-width: 0px;"/>
+    <rect x="2508.57" y="1494.71" width="405.36" height="607.29" style="fill: #264724; stroke-width: 0px;"/>
+    <rect x="2697.67" y="1532.01" width="27.68" height="71.52" style="fill: #5a9156; stroke-width: 0px;"/>
+    <rect x="2697.67" y="1648.56" width="27.68" height="71.52" style="fill: #5a9156; stroke-width: 0px;"/>
+    <rect x="2697.67" y="1765.42" width="27.68" height="71.52" style="fill: #5a9156; stroke-width: 0px;"/>
+    <rect x="2697.67" y="1882.57" width="27.68" height="71.52" style="fill: #5a9156; stroke-width: 0px;"/>
+    <rect x="2697.67" y="2000.14" width="27.68" height="71.52" style="fill: #5a9156; stroke-width: 0px;"/>
+    <rect x="319.32" y="1051.44" width="1884.83" height="458.69" style="fill: #264724; stroke-width: 0px;"/>
+    <rect x="1947.57" y="1102.19" width="79.96" height="161.02" style="fill: #568755; stroke-width: 0px;"/>
+    <rect x="2063.3" y="1102.41" width="141.78" height="94.9" style="fill: #c8efc7; stroke-width: 0px;"/>
+    <rect x="1833.27" y="1102.01" width="79.96" height="161.02" transform="translate(3746.5 2365.04) rotate(180)" style="fill: #568755; stroke-width: 0px;"/>
+    <rect x="1657.52" y="1102.22" width="141.78" height="94.9" transform="translate(3456.83 2299.35) rotate(180)" style="fill: #c8efc7; stroke-width: 0px;"/>
+    <rect x="1335.87" y="1102.43" width="79.96" height="161.02" style="fill: #568755; stroke-width: 0px;"/>
+    <rect x="1449.8" y="1102.65" width="141.78" height="94.9" style="fill: #c8efc7; stroke-width: 0px;"/>
+    <rect x="1221.57" y="1102.25" width="79.96" height="161.02" transform="translate(2523.1 2365.52) rotate(180)" style="fill: #568755; stroke-width: 0px;"/>
+    <rect x="1045.83" y="1102.47" width="141.78" height="94.9" transform="translate(2233.43 2299.83) rotate(180)" style="fill: #c8efc7; stroke-width: 0px;"/>
+    <rect x="720.73" y="1102.42" width="79.96" height="161.02" style="fill: #568755; stroke-width: 0px;"/>
+    <rect x="834.66" y="1102.63" width="141.78" height="94.9" style="fill: #c8efc7; stroke-width: 0px;"/>
+    <rect x="606.43" y="1102.24" width="79.96" height="161.02" transform="translate(1292.82 2365.5) rotate(180)" style="fill: #568755; stroke-width: 0px;"/>
+    <rect x="430.69" y="1102.45" width="141.78" height="94.9" transform="translate(1003.15 2299.81) rotate(180)" style="fill: #c8efc7; stroke-width: 0px;"/>
+    <rect x="318.44" y="1102.88" width="46.3" height="94.9" style="fill: #c8efc7; stroke-width: 0px;"/>
+    <rect x="318.44" y="1009.26" width="1912.95" height="58.87" style="fill: #89b788; stroke-width: 0px;"/>
+    <rect x="318.44" y="1245.63" width="1912.95" height="58.87" style="fill: #89b788; stroke-width: 0px;"/>
+    <rect x="1947.13" y="1349.04" width="79.96" height="161.02" style="fill: #568755; stroke-width: 0px;"/>
+    <rect x="2062.87" y="1349.26" width="141.78" height="94.9" style="fill: #c8efc7; stroke-width: 0px;"/>
+    <rect x="1832.83" y="1348.86" width="79.96" height="161.02" transform="translate(3745.62 2858.74) rotate(180)" style="fill: #568755; stroke-width: 0px;"/>
+    <rect x="1657.09" y="1349.08" width="141.78" height="94.9" transform="translate(3455.95 2793.06) rotate(180)" style="fill: #c8efc7; stroke-width: 0px;"/>
+    <rect x="1335.43" y="1349.28" width="79.96" height="161.02" style="fill: #568755; stroke-width: 0px;"/>
+    <rect x="1449.36" y="1349.5" width="141.78" height="94.9" style="fill: #c8efc7; stroke-width: 0px;"/>
+    <rect x="1221.13" y="1349.1" width="79.96" height="161.02" transform="translate(2522.23 2859.23) rotate(180)" style="fill: #568755; stroke-width: 0px;"/>
+    <rect x="1045.39" y="1349.32" width="141.78" height="94.9" transform="translate(2232.56 2793.54) rotate(180)" style="fill: #c8efc7; stroke-width: 0px;"/>
+    <rect x="720.29" y="1349.27" width="79.96" height="161.02" style="fill: #568755; stroke-width: 0px;"/>
+    <rect x="834.22" y="1349.49" width="141.78" height="94.9" style="fill: #c8efc7; stroke-width: 0px;"/>
+    <rect x="605.99" y="1349.09" width="79.96" height="161.02" transform="translate(1291.95 2859.2) rotate(180)" style="fill: #568755; stroke-width: 0px;"/>
+    <rect x="430.25" y="1349.31" width="141.78" height="94.9" transform="translate(1002.28 2793.52) rotate(180)" style="fill: #c8efc7; stroke-width: 0px;"/>
+    <rect x="318" y="1349.73" width="46.3" height="94.9" style="fill: #c8efc7; stroke-width: 0px;"/>
+    <rect x="1799.24" y="941.56" width="383.05" height="105.7" style="fill: #1f381e; stroke-width: 0px;"/>
+    <polygon points="1838.45 1007.44 1619.11 1025.78 1619.11 922.1 1838.45 935.66 1838.45 1007.44" style="fill: #345b32; stroke-width: 0px;"/>
+    <rect x="2358.38" y="1259.52" width="24.62" height="251" style="fill: #1e4718; stroke-width: 0px;"/>
+    <path d="M2467.82,1263.29h-194.26c-6.92,0-12.54-5.61-12.54-12.54v-103.81c0-6.92,5.61-12.54,12.54-12.54l230.66,2.8c6.92,0,12.54,5.61,12.54,12.54l-35.7,99.06c-.33.91-.48,1.87-.85,2.76-1.72,4.15-6.12,11.73-12.39,11.73Z" style="fill: #1e4718; stroke-width: 0px;"/>
+    <path d="M2349.1,1326.25v37.96l31.61-3.76c36.53-4.34,63.91-35.54,63.46-72.33l-.12-10.19c-.02-1.63-1.35-2.94-2.98-2.94h-44.38c-1.64,0-2.98,1.33-2.98,2.98v14.19c0,16.23-12.06,29.93-28.16,31.98l-16.45,2.1Z" style="fill: #182d14; stroke-width: 0px;"/>
+    <path d="M2284.09,1346.95l63.58,36.71c1.69.97,3.8-.24,3.8-2.19v-73.42c0-1.95-2.11-3.17-3.8-2.19l-63.58,36.71c-1.69.97-1.69,3.41,0,4.39Z" style="fill: #182d14; stroke-width: 0px;"/>
   </g>
   <g id="result-fade-3">
     <g id="result-fade-3-animation">
-      <path d="M1432.25,591.46c-50.64,0-105.49,9.11-144.75,23.5-7.4-9.23-17.04-16.52-28.09-20.99-5.41-2.19-11.3,1.84-11.3,7.67v33.69c-9.43,7.46-14.85,15.54-14.85,23.98,0,5.59,2.37,11.02,6.71,16.22,2.22,2.65,4.95,5.24,8.14,7.76v33.89c0,5.83,5.9,9.86,11.3,7.67,11.11-4.5,20.81-11.84,28.22-21.14,31.56,11.55,73.15,19.69,114.53,22.44l8.85,18.77c2.04,4.32,6.38,7.08,11.16,7.08h51.11c5.93,0,10.98-4.21,12.11-9.97.04-.19.07-.38.1-.58l1.41-9.6,1.35-9.21c39.79-7.2,64.28-22.43,74.46-41.46,3.67-6.86,5.48-14.22,5.48-21.87,0-37.48-43.43-67.86-135.92-67.86Z" style="fill: #22421d; stroke-width: 0px;"/>
+      <path d="M1503.21,653.8c-47.27,0-98.46,8.5-135.1,21.94-6.9-8.61-15.9-15.42-26.22-19.59-5.05-2.04-10.55,1.72-10.55,7.16v31.44c-8.8,6.96-13.86,14.5-13.86,22.38,0,5.22,2.21,10.29,6.27,15.14,2.07,2.48,4.62,4.89,7.6,7.24v31.63c0,5.44,5.5,9.2,10.55,7.16,10.37-4.2,19.42-11.05,26.34-19.74,29.46,10.78,68.28,18.38,106.9,20.94l8.26,17.52c1.9,4.03,5.96,6.6,10.41,6.6h47.7c5.53,0,10.25-3.93,11.3-9.31.03-.18.07-.36.09-.54l1.31-8.96,1.26-8.59c37.14-6.72,60-20.93,69.5-38.7,3.42-6.4,5.11-13.27,5.11-20.41,0-34.98-40.54-63.34-126.86-63.34Z" style="fill: #182d14; stroke-width: 0px;"/>
     </g>
   </g>
   <g id="result-fade-2">
-    <rect x="2368.65" y="1324.63" width="111.03" height="190.37" transform="translate(4848.33 2839.63) rotate(180)" style="fill: #20421d; stroke-width: 0px;"/>
-    <polygon points="2424.09 1086.97 2756.51 1409.51 2091.66 1409.51 2424.09 1086.97" style="fill: #20421d; stroke-width: 0px;"/>
-    <polygon points="2424.61 970.56 2710.79 1248.24 2138.42 1248.24 2424.61 970.56" style="fill: #20421d; stroke-width: 0px;"/>
-    <polygon points="2424.31 857.79 2674.25 1100.3 2174.37 1100.3 2424.31 857.79" style="fill: #20421d; stroke-width: 0px;"/>
-    <polygon points="2424.5 762 2631.95 963.29 2217.04 963.29 2424.5 762" style="fill: #20421d; stroke-width: 0px;"/>
-    <rect x="3221.67" y="1351.28" width="111.03" height="190.37" transform="translate(6554.37 2892.94) rotate(180)" style="fill: #20421d; stroke-width: 0px;"/>
-    <polygon points="3277.1 1113.62 3609.53 1436.16 2944.68 1436.16 3277.1 1113.62" style="fill: #20421d; stroke-width: 0px;"/>
-    <polygon points="3277.63 997.21 3563.81 1274.89 2991.44 1274.89 3277.63 997.21" style="fill: #20421d; stroke-width: 0px;"/>
-    <polygon points="3277.33 884.45 3527.27 1126.96 3027.39 1126.96 3277.33 884.45" style="fill: #20421d; stroke-width: 0px;"/>
-    <polygon points="3277.52 788.65 3484.97 989.94 3070.06 989.94 3277.52 788.65" style="fill: #20421d; stroke-width: 0px;"/>
-    <rect x="301.67" y="1351.28" width="111.03" height="190.37" transform="translate(714.37 2892.94) rotate(180)" style="fill: #20421d; stroke-width: 0px;"/>
-    <polygon points="357.1 1113.62 689.53 1436.16 24.68 1436.16 357.1 1113.62" style="fill: #20421d; stroke-width: 0px;"/>
-    <polygon points="357.63 997.21 643.81 1274.89 71.44 1274.89 357.63 997.21" style="fill: #20421d; stroke-width: 0px;"/>
-    <polygon points="357.33 884.45 607.27 1126.96 107.39 1126.96 357.33 884.45" style="fill: #20421d; stroke-width: 0px;"/>
-    <polygon points="357.52 788.65 564.97 989.94 150.06 989.94 357.52 788.65" style="fill: #20421d; stroke-width: 0px;"/>
+    <rect x="3210.48" y="1405.68" width="59.29" height="101.65" transform="translate(6480.24 2913.02) rotate(180)" style="fill: #20421d; stroke-width: 0px;"/>
+    <polygon points="3240.08 1278.78 3417.58 1451.01 3062.58 1451.01 3240.08 1278.78" style="fill: #20421d; stroke-width: 0px;"/>
+    <polygon points="3240.36 1216.62 3393.17 1364.89 3087.55 1364.89 3240.36 1216.62" style="fill: #20421d; stroke-width: 0px;"/>
+    <polygon points="3240.2 1156.41 3373.66 1285.9 3106.74 1285.9 3240.2 1156.41" style="fill: #20421d; stroke-width: 0px;"/>
+    <polygon points="3240.3 1105.26 3351.07 1212.74 3129.53 1212.74 3240.3 1105.26" style="fill: #20421d; stroke-width: 0px;"/>
   </g>
   <g id="result-fade-1">
-    <rect x="3405.75" y="1208.32" width="50.15" height="365.39" style="fill: #2e7028; stroke-width: 0px;"/>
-    <circle cx="3432.02" cy="1043.54" r="212.55" style="fill: #2e7028; stroke-width: 0px;"/>
-    <circle cx="3343.66" cy="912.19" r="212.55" style="fill: #2e7028; stroke-width: 0px;"/>
-    <circle cx="3497.69" cy="839.35" r="180.31" style="fill: #2e7028; stroke-width: 0px;"/>
-    <circle cx="3397.39" cy="698.45" r="180.31" style="fill: #2e7028; stroke-width: 0px;"/>
-    <rect x="2731.45" y="1186.5" width="44.86" height="326.86" transform="translate(5507.77 2699.87) rotate(180)" style="fill: #2e7028; stroke-width: 0px;"/>
-    <circle cx="2727.18" cy="1039.09" r="190.14" style="fill: #2e7028; stroke-width: 0px;"/>
-    <circle cx="2831.86" cy="975" r="190.14" style="fill: #2e7028; stroke-width: 0px;"/>
-    <circle cx="2694.07" cy="822.25" r="161.3" style="fill: #2e7028; stroke-width: 0px;"/>
-    <circle cx="2783.79" cy="730.39" r="161.3" style="fill: #2e7028; stroke-width: 0px;"/>
-    <rect x="1029.92" y="1234.07" width="46.2" height="336.64" style="fill: #2e7028; stroke-width: 0px;"/>
-    <circle cx="1054.12" cy="1082.25" r="195.82" style="fill: #2e7028; stroke-width: 0px;"/>
-    <circle cx="972.71" cy="923.84" r="195.82" style="fill: #2e7028; stroke-width: 0px;"/>
-    <circle cx="1112.43" cy="960.14" r="166.12" style="fill: #2e7028; stroke-width: 0px;"/>
-    <circle cx="1028.82" cy="762.12" r="166.12" style="fill: #2e7028; stroke-width: 0px;"/>
-    <rect x="448.3" y="1181.55" width="50.15" height="365.39" style="fill: #2e7028; stroke-width: 0px;"/>
-    <circle cx="474.57" cy="1016.77" r="212.55" style="fill: #2e7028; stroke-width: 0px;"/>
-    <circle cx="386.21" cy="885.42" r="212.55" style="fill: #2e7028; stroke-width: 0px;"/>
-    <circle cx="540.24" cy="812.58" r="180.31" style="fill: #2e7028; stroke-width: 0px;"/>
-    <circle cx="439.94" cy="671.68" r="180.31" style="fill: #2e7028; stroke-width: 0px;"/>
-  </g>
-  <g id="result-fade-4">
-    <rect x="1350" y="1236" width="23" height="333" style="fill: #4b8245; stroke-width: 0px;"/>
-    <rect x="1216" y="1070" width="291" height="171" rx="13.43" ry="13.43" style="fill: #4b8245; stroke-width: 0px;"/>
+    <rect x="3008.17" y="1355.69" width="22.9" height="166.81" transform="translate(6039.23 2878.19) rotate(180)" style="fill: #245b1e; stroke-width: 0px;"/>
+    <circle cx="3005.99" cy="1280.46" r="97.04" style="fill: #245b1e; stroke-width: 0px;"/>
+    <circle cx="3059.41" cy="1247.75" r="97.04" style="fill: #245b1e; stroke-width: 0px;"/>
+    <circle cx="2989.09" cy="1169.79" r="82.32" style="fill: #245b1e; stroke-width: 0px;"/>
+    <circle cx="3034.88" cy="1122.91" r="82.32" style="fill: #245b1e; stroke-width: 0px;"/>
+    <rect x="3377.11" y="1362.9" width="23.58" height="171.8" style="fill: #2e7028; stroke-width: 0px;"/>
+    <circle cx="3389.47" cy="1285.42" r="99.94" style="fill: #2e7028; stroke-width: 0px;"/>
+    <circle cx="3347.92" cy="1204.57" r="99.94" style="fill: #2e7028; stroke-width: 0px;"/>
+    <circle cx="3419.22" cy="1223.1" r="84.78" style="fill: #2e7028; stroke-width: 0px;"/>
+    <circle cx="3376.55" cy="1122.04" r="84.78" style="fill: #2e7028; stroke-width: 0px;"/>
   </g>
 </svg>

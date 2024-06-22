@@ -48,7 +48,7 @@ export default function ResultSlide() {
       <div className="foreground" onTransitionEnd={(event) => openAllFolders(event)}>
         <div className="foreground-wrapper">
           <div className="slide-explanation">
-            <RvSlideHeader title={getSlideTitle(SLIDE_ID)} showExploreButton={false} />
+            <RvSlideHeader title={getSlideTitle(SLIDE_ID)} />
             <div className="text-body">
               We have reached the end of our Tour, the folder structure you have built is called...
               <div className="text-divider"></div>

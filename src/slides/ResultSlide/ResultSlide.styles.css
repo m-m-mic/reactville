@@ -3,10 +3,19 @@
   --rv-foreground-color-2: var(--result-background-color);
 }
 
+@keyframes zeppelin-movement {
+  0% {
+    transform: translate(-30%, 0);
+  }
+
+  100% {
+    transform: translate(50%, 0);
+  }
+}
+
 #result-fade-1,
 #result-fade-2,
-#result-fade-3,
-#result-fade-4 {
+#result-fade-3{
   opacity: 1;
   transition: opacity 600ms ease;
 }
@@ -21,11 +30,9 @@
 
 #result-fade-3 {
   transition-delay: 2200ms;
+  animation: zeppelin-movement 100s infinite linear;
 }
 
-#result-fade-4 {
-  transition-delay: 2250ms;
-}
 
 #result-move {
   opacity: 1;
@@ -39,8 +46,7 @@
 .slide.future {
   #result-fade-1,
   #result-fade-2,
-  #result-fade-3,
-  #result-fade-4 {
+  #result-fade-3 {
     opacity: 0;
     transition-delay: 0ms;
   }
