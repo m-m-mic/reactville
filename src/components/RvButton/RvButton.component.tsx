@@ -11,8 +11,12 @@ interface RvButtonProps {
 }
 
 export function RvButton({ onClick, disabled = false, label, title, iconLeft, iconRight }: RvButtonProps) {
+  const getButtonClasses = () => {
+    return `rv-button${disabled ? " disabled" : ""}${!label ? " icon-only" : ""}`;
+  };
+
   return (
-    <button className={`rv-button ${disabled ? "disabled" : ""}`} disabled={disabled} title={title} onClick={onClick}>
+    <button className={getButtonClasses()} disabled={disabled} title={title} onClick={onClick}>
       {iconLeft && (
         <div className="icon-wrapper" data-testid="icon-left">
           {iconLeft}

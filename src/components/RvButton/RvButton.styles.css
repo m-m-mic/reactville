@@ -23,6 +23,10 @@
   font-size: 1.2cqw;
   color: var(--rv-foreground-color-2);
 
+  &.icon-only {
+    padding: 0.6cqw;
+  }
+
   &.disabled {
     pointer-events: none;
     cursor: default;

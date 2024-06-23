@@ -1,10 +1,10 @@
+import "./TourPagesSlide.styles.css";
+import TourPagesBackground from "./TourPagesSlide.background.svg?react";
+import ArrowBackIcon from "@/assets/icons/arrow-back_icon.svg?react";
+import { useContext, useEffect, useState } from "react";
 import { Slide, SlideState } from "@/shared/types/slide.type";
 import { getSlideState } from "@/shared/functions/getSlideState";
-import "./TourPagesSlide.styles.css";
-import { useContext, useEffect, useState } from "react";
 import { isRemovedFromViewport } from "@/shared/functions/isRemovedFromViewport";
-
-import TourPagesBackground from "./TourPagesSlide.background.svg?react";
 import { setNextSlide } from "@/shared/functions/setSlide";
 import { RvButton } from "@/components/RvButton/RvButton.component";
 import RvFolderStructure from "@/components/RvFolderStructure/RvFolderStructure.component";
@@ -39,6 +39,12 @@ export default function TourPagesSlide() {
     updateChoices({ [Slide.TourPages]: true });
   };
 
+  const revertChoice = () => {
+    updateChoices({ [Slide.TourPages]: undefined });
+  };
+
+  const goBackButton = <RvButton iconLeft={<ArrowBackIcon />} title="Go back" onClick={revertChoice} />;
+
   if (isRemovedFromViewport(SLIDE_ID, slideStack)) {
     return null;
   }
@@ -65,6 +71,7 @@ export default function TourPagesSlide() {
                 <>
                   {tourPagesSlideContent.false}
                   <div className="action-buttons">
+                    {goBackButton}
                     <RvButton onClick={goToTourComponents} label="Let's go!" />
                   </div>
                 </>
@@ -73,6 +80,7 @@ export default function TourPagesSlide() {
                 <>
                   {tourPagesSlideContent.true}
                   <div className="action-buttons">
+                    {goBackButton}
                     <RvButton onClick={goToTourComponents} label="Let's go!" />
                   </div>
                 </>

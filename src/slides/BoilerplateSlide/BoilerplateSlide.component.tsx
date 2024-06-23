@@ -13,6 +13,8 @@ import RvSlideHeader from "@/components/RvSlideHeader/RvSlideHeader.component";
 import { getSlideTitle } from "@/shared/functions/getSlideTitle";
 import BoilerplateBackground from "./BoilerplateSlide.background.svg?react";
 
+import ArrowBackIcon from "@/assets/icons/arrow-back_icon.svg?react";
+
 export default function BoilerplateSlide() {
   const SLIDE_ID = Slide.Boilerplate;
 
@@ -35,13 +37,37 @@ export default function BoilerplateSlide() {
     return null;
   }
 
+  const goBack = () => {
+    const step = boilerplateStep - 1;
+    switch (step) {
+      case 0:
+        return setBoilerplateStep(0);
+      case 1:
+        return goToStep1();
+      case 2:
+        return goToStep2();
+      case 3:
+        return goToStep3();
+      case 4:
+        return goToStep4();
+      case 5:
+        return goToStep5();
+      case 6:
+        return goToStep6();
+    }
+  };
+
+  const goBackButton = <RvButton iconLeft={<ArrowBackIcon />} title="Go back" onClick={goBack} />;
+
   const goToStep1 = () => {
     setBoilerplateStep(1);
+    return setFolderStructure(closeAllFoldersAndRemoveHighlighting(folderStructure));
   };
 
   const goToStep2 = () => {
     setBoilerplateStep(2);
-    const updatedStructure = setValuesInStructure(folderStructure, [["public"]], { open: true, highlighted: true });
+    let updatedStructure = closeAllFoldersAndRemoveHighlighting(folderStructure);
+    updatedStructure = setValuesInStructure(updatedStructure, [["public"]], { open: true, highlighted: true });
     setFolderStructure(updatedStructure);
   };
 
@@ -91,7 +117,7 @@ export default function BoilerplateSlide() {
           <div className="slide-explanation">
             <RvSlideHeader title={getSlideTitle(SLIDE_ID)} showExploreButton={false} />
             <div className="boilerplate-slide-content">
-              <div className={`boilerplate-step ${boilerplateStep === 0 ? "" : "hidden"}`}>
+              <div className={`boilerplate-step step-0 ${boilerplateStep === 0 ? "" : "hidden"}`}>
                 <div className="text-body">
                   Before we get going you should first generate a <b>new React project</b>. There are multiple ways of doing this,
                   but all of them result in a very similar base structure which can be used for our Tour.
@@ -115,6 +141,7 @@ export default function BoilerplateSlide() {
                   This is already quite a bit, so let’s break it down one by one before we start exploring <b>Reactville</b>.
                 </div>
                 <div className="action-buttons">
+                  {goBackButton}
                   <RvButton onClick={goToStep2} label="Alright!" />
                 </div>
               </div>
@@ -127,6 +154,7 @@ export default function BoilerplateSlide() {
                   results.
                 </div>
                 <div className="action-buttons">
+                  {goBackButton}
                   <RvButton onClick={goToStep3} label="Okay!" />
                 </div>
               </div>
@@ -139,6 +167,7 @@ export default function BoilerplateSlide() {
                   such as fonts, icons, and images you may want to use within your application.
                 </div>
                 <div className="action-buttons">
+                  {goBackButton}
                   <RvButton onClick={goToStep4} label="All clear!" />
                 </div>
               </div>
@@ -152,6 +181,7 @@ export default function BoilerplateSlide() {
                   project for now.
                 </div>
                 <div className="action-buttons">
+                  {goBackButton}
                   <RvButton onClick={goToStep5} label="Got it!" />
                 </div>
               </div>
@@ -168,6 +198,7 @@ export default function BoilerplateSlide() {
                   therefore <b>highly recommended</b>.
                 </div>
                 <div className="action-buttons">
+                  {goBackButton}
                   <RvButton onClick={goToStep6} label="Aha!" />
                 </div>
               </div>
@@ -177,6 +208,7 @@ export default function BoilerplateSlide() {
                   <b>Reactville</b>!
                 </div>
                 <div className="action-buttons">
+                  {goBackButton}
                   <RvButton onClick={goToTourPages} label="Let's go!" />
                 </div>
               </div>

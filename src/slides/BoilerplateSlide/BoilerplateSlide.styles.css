@@ -5,7 +5,8 @@
   .folder-structure-wrapper {
     transition:
       flex 500ms ease,
-      padding 500ms ease;
+      padding 500ms ease,
+      visibility 500ms;
     transition-delay: 300ms;
 
     &.hidden {
@@ -36,7 +37,8 @@
     visibility 300ms ease;
   transition-delay: 300ms;
 
-  &.step-1:not(.hidden) {
+  &.step-1:not(.hidden),
+  &.step-0:not(.hidden) {
     transition-delay: 800ms;
   }
 
