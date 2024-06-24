@@ -15,6 +15,23 @@
   transition-delay: 2000ms;
 }
 
+#tourStyles-fade-3,
+#tourStyles-fade-4,
+#tourStyles-fade-5 {
+  opacity: 1;
+  transition: opacity 600ms ease;
+  transition-delay: 2100ms;
+}
+
+@keyframes walking-style-1 {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 #tourStyles-move {
   opacity: 1;
   transform-origin: center;
@@ -25,12 +42,11 @@
 }
 
 .slide.past {
-  #tourStyles-fade-1 {
-    opacity: 0;
-    transition-delay: 0ms;
-  }
-
-  #tourStyles-fade-2 {
+  #tourStyles-fade-1,
+  #tourStyles-fade-2,
+  #tourStyles-fade-3,
+  #tourStyles-fade-4,
+  #tourStyles-fade-5 {
     opacity: 0;
     transition-delay: 0ms;
   }
@@ -46,12 +62,11 @@
 }
 
 .slide.future {
-  #tourStyles-fade-1 {
-    opacity: 0;
-    transition-delay: 0ms;
-  }
-
-  #tourStyles-fade-2 {
+  #tourStyles-fade-1,
+  #tourStyles-fade-2,
+  #tourStyles-fade-3,
+  #tourStyles-fade-4,
+  #tourStyles-fade-5 {
     opacity: 0;
     transition-delay: 0ms;
   }
