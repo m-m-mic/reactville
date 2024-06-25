@@ -13,6 +13,108 @@
   opacity: 1;
   transition: opacity 600ms ease;
   transition-delay: 2050ms;
+
+  #tourStore-fade-2-animation-1 {
+    animation: store-walk-1 15s infinite linear;
+  }
+
+  #tourStore-fade-2-animation-2 {
+    animation: store-walk-2 12s infinite linear;
+    animation-delay: 4s;
+  }
+
+  #tourStore-fade-2-animation-3 {
+    animation: store-walk-3 18s infinite linear;
+    animation-delay: 8s;
+  }
+
+  #tourStore-fade-2-animation-4 {
+    animation: store-walk-4 17s infinite linear;
+    animation-delay: -6s;
+  }
+
+  #tourStore-fade-2-animation-1-sub,
+  #tourStore-fade-2-animation-2-sub,
+  #tourStore-fade-2-animation-3-sub,
+  #tourStore-fade-2-animation-4-sub {
+    animation: bobbing 400ms infinite;
+  }
+}
+
+@keyframes store-walk-1 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  75% {
+    transform: translate(-9%, 80%);
+  }
+
+  100% {
+    transform: translate(-9%, 80%);
+  }
+}
+
+@keyframes store-walk-2 {
+  0% {
+    transform: translate(-23%, 80%);
+  }
+
+  15% {
+    transform: translate(-23%, 80%);
+  }
+
+  98% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes store-walk-3 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  75% {
+    transform: translate(31%, 80%);
+  }
+
+  100% {
+    transform: translate(31%, 80%);
+  }
+}
+
+@keyframes store-walk-4 {
+  0% {
+    transform: translate(11%, 80%);
+  }
+
+  15% {
+    transform: translate(11%, 80%);
+  }
+
+  98% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
 }
 
 #tourStore-fade-3 {
