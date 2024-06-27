@@ -40,6 +40,8 @@
   font-size: 1.2cqw;
   color: var(--rv-foreground-color-1);
   transition:
+    outline 200ms ease,
+    transform 200ms ease,
     background-color 200ms ease,
     opacity 200ms ease;
 
@@ -47,8 +49,19 @@
     opacity: 0.8;
   }
 
+  &:focus-visible {
+    outline: 0.2cqw solid var(--rv-foreground-color-1);
+    outline-offset: -0.1cqw;
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
+
   &:not(:disabled) {
-    &:not(.active):hover {
+    &:not(.active):hover,
+    :not(.active):focus,
+    &:not(.active):active {
       background-color: rgba(255, 255, 255, 0.12);
     }
   }
