@@ -3,6 +3,31 @@
   --rv-foreground-color-2: var(--quickSelect-background-color);
 }
 
+.choice-selection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4cqw 2cqw;
+  flex: 1;
+  padding: 1.5cqw;
+}
+
+.shared-disclaimer {
+  flex: 1;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  font-size: 1.1cqw;
+  box-sizing: border-box;
+  padding: 0 1.3cqw;
+}
+
+.toggle-container {
+  display: flex;
+  flex-flow: column;
+  gap: 0.6cqw;
+  align-items: center;
+}
+
 @keyframes fast-train-move {
   0% {
     transform: translate(-120%, 0);
