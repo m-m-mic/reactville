@@ -17,6 +17,18 @@
   &.disabled {
     opacity: 0.3;
   }
+
+  &:has(.rv-toggle-button.false:not(:disabled):active) {
+    .rv-toggle-background.false {
+      transform: scale(0.96);
+    }
+  }
+
+  &:has(.rv-toggle-button.true:not(:disabled):active) {
+    .rv-toggle-background.true {
+      transform: scale(0.96);
+    }
+  }
 }
 
 .rv-toggle-button {
@@ -54,11 +66,15 @@
     outline-offset: -0.1cqw;
   }
 
-  &:active {
-    transform: scale(0.96);
+  &:disabled {
+    cursor: default;
   }
 
   &:not(:disabled) {
+    &:active {
+      transform: scale(0.96);
+    }
+
     &:not(.active):hover,
     :not(.active):focus,
     &:not(.active):active {
@@ -77,6 +93,7 @@
   height: calc(100% - 0.8cqw);
   transition:
     left 300ms ease-in-out,
+    transform 200ms ease,
     background-color 200ms ease;
 
   &.true {
@@ -86,9 +103,5 @@
 
   &.false {
     background-color: var(--rv-foreground-color-2);
-  }
-
-  &:disabled {
-    cursor: default;
   }
 }

@@ -18,13 +18,13 @@ export default function RvToggle({
   return (
     <div className={`rv-toggle${disabled ? " disabled" : ""}`}>
       <button
-        className={`rv-toggle-button${currentState === false ? " active" : ""}`}
+        className={`rv-toggle-button false${currentState === false ? " active" : ""}`}
         onClick={() => onChange(false)}
         disabled={disabled}>
         {falseLabel}
       </button>
       <button
-        className={`rv-toggle-button${currentState === true ? " active" : ""}`}
+        className={`rv-toggle-button true${currentState === true ? " active" : ""}`}
         onClick={() => onChange(true)}
         disabled={disabled}>
         {trueLabel}
