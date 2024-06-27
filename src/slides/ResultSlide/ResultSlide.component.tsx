@@ -56,8 +56,9 @@ export default function ResultSlide() {
               <div className="text-divider"></div>
               {getResultNameAndDescription(choices).description}
               <div className="text-divider"></div>
-              Thank you for going on Tour with us. We hope the structure you ended up with suits your needs and that you learned a
-              thing or two along the way!
+              It's been a long day full of new sights and information. Might be a good time to rest, now that we've arrived at our
+              stay for the night. Thank you for going on Tour with us. We hope the structure you ended up with suits your needs
+              and that you learned a thing or two along the way!
             </div>
             <div className="action-buttons">
               <RvButton label="Back to Start" onClick={returnToStart} />
