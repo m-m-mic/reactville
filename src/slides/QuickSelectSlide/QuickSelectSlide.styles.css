@@ -5,28 +5,11 @@
 
 @keyframes fast-train-move {
   0% {
-    transform: translate(-80%, 0);
-  }
-
-  25% {
-    transform: translate(-7%);
-  }
-  30% {
-    transform: translate(0%, 0);
-  }
-  55% {
-    transform: translate(0%, 0);
-  }
-  60% {
-    transform: translate(7%, 0);
-  }
-
-  87% {
-    transform: translate(70%, 0);
+    transform: translate(-120%, 0);
   }
 
   100% {
-    transform: translate(70%, 0);
+    transform: translate(180%, 0);
   }
 }
 
