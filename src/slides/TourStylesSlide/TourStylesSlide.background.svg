@@ -167,22 +167,26 @@
   </g>
   <g id="tourStyles-fade-3">
     <g id="tourStyles-fade-3-animation">
+      <g id="tourStyles-fade-3-animation-sub">
           <circle cx="2657.51" cy="1435.73" r="12.88" style="fill: #603423; stroke-width: 0px;"/>
           <path d="M2645.8,1470.66l-5.11,31.17c-2.15,13.1,6.85,25.17,18.76,25.17h9.95c13.45,0,22.67-15.15,17.75-29.14l-4.86-13.79-7.04-19.99c-7.24-20.58-25.68-16.46-29.45,6.58Z" style="fill: #603423; stroke-width: 0px;"/>
+      </g>
     </g>
   </g>
   <g id="tourStyles-fade-4">
     <g id="tourStyles-fade-4-animation">
+      <g id="tourStyles-fade-4-animation-sub">
           <circle cx="1185.43" cy="1435.73" r="12.88" style="fill: #603423; stroke-width: 0px;"/>
           <path d="M1197.14,1470.66l5.11,31.17c2.15,13.1-6.85,25.17-18.76,25.17h-9.95c-13.45,0-22.67-15.15-17.75-29.14l4.86-13.79,7.04-19.99c7.24-20.58,25.68-16.46,29.45,6.58Z" style="fill: #603423; stroke-width: 0px;"/>
-
+      </g>
     </g>
   </g>
   <g id="tourStyles-fade-5">
     <g id="tourStyles-fade-5-animation">
+      <g id="tourStyles-fade-5-animation-sub">
           <circle cx="1191.18" cy="1435.73" r="12.88" style="fill: #603423; stroke-width: 0px;"/>
           <path d="M1179.47,1470.66l-5.11,31.17c-2.15,13.1,6.85,25.17,18.76,25.17h9.95c13.45,0,22.67-15.15,17.75-29.14l-4.86-13.79-7.04-19.99c-7.24-20.58-25.68-16.46-29.45,6.58Z" style="fill: #603423; stroke-width: 0px;"/>
-
+      </g>
     </g>
   </g>
   <g id="tourStyles-fade-1">
