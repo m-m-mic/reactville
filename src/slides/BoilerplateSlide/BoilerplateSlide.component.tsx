@@ -122,11 +122,8 @@ export default function BoilerplateSlide() {
                   Before we get going you should first generate a <b>new React project</b>. There are multiple ways of doing this,
                   but all of them result in a very similar base structure which can be used for our Tour.
                   <div className="text-divider"></div>
-                  If you’re unsure how to set up a project we recommend taking a look at{" "}
-                  <a href="https://vitejs.dev/guide/" target="_blank" referrerPolicy="no-referrer">
-                    Vite
-                  </a>
-                  .<div className="text-divider"></div>
+                  If you’re unsure how to set up a project we recommend taking a look at <a>Vite</a>.
+                  <div className="text-divider"></div>
                   Vite is a tool which lets you create and build web applications, though you won’t need to know about it in
                   detail to understand this tutorial.
                 </div>
